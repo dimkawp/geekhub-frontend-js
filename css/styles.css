@@ -1,0 +1,49 @@
+body {
+    margin: 0 auto;
+    background-image: url(../images/background.png);
+    color: white;
+}
+.template {
+    width: 1170px;
+    margin: 0 auto;  
+}
+.header {
+    display: flex;
+    flex-direction: column;
+}
+    .header span {
+        font-size: 50px;
+    }
+    .header-block {
+        display: flex;
+        justify-content: space-between;
+    }
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-block {
+    display: flex;
+}
+.menu {
+    display: flex;
+    width: 270px;
+}
+    .menu li {
+        width: 200px;
+    }
+.content-item p {
+    text-align: justify;
+}
+.footer-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
