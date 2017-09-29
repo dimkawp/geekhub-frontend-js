@@ -1,12 +1,15 @@
+/* GeekHub Test */
 body {
     margin: 0 auto;
     background-image: url(../images/background.png);
     color: white;
 }
+/* main template */
 .template {
     width: 1170px;
     margin: 0 auto;  
 }
+/* main header block */
 .header {
     display: flex;
     flex-direction: column;
@@ -27,6 +30,7 @@ body {
 .logo h2 {
     margin: 5px;
 }
+/* nav bar in header */
 .nav {
     display: flex;
     align-items: center;
@@ -36,51 +40,49 @@ body {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-
 }
 .nav-bar a {
     text-decoration: none;
     font-size: 20px;
     color: white;
     padding: 5px;
-
 }
 .nav-bar a:hover {
     color: #9E9D9D;
 }
-.menu a {
-    text-align: left;
-    text-decoration: none;
-    color: white;
-}
-    .menu a:visited {
-        color: white;
-    }
-    .menu a:active {
-        color: white;
-    }
-    .menu a:hover {
-        color: #9E9D9D;
-    }
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.menu li {
-    float: left;
-    margin: 5px;
-}
-.main-block {
-    display: flex;
-}
+/* block left menu */
 .menu {
     display: flex;
     width: 270px;
 }
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
     .menu li {
         width: 190px;
+        float: left;
+        margin: 5px;
     }
+    .menu a {
+        text-align: left;
+        text-decoration: none;
+        color: white;
+    }
+        .menu a:visited {
+            color: white;
+        }
+        .menu a:active {
+            color: white;
+        }
+        .menu a:hover {
+            color: #9E9D9D;
+        }
+/* main block content */
+.main-block {
+    display: flex;
+}
 .content-item h2:hover {
     color: #9E9D9D;
 }
@@ -91,10 +93,12 @@ body {
     text-align: justify;
     margin: 5px;
 }
+/* footer */
 .footer-block {
+    height: 50px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    font-size: 20px;
 }
