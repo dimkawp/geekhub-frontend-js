@@ -1,0 +1,116 @@
+body {
+    
+}
+
+.header {
+    margin: 0 auto;
+    width: 800px;
+}
+/*Form Yourself*/
+.form-yourself {
+    margin: 30px auto;
+    width: 800px;
+    border: 1px solid black;
+    position: relative;
+}
+.form-yourself .form-header {
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    height: 20px;   
+    background-color: #FFFFFF;
+}
+.form-yourself .input-block {
+    display: flex;
+    margin: 5px 5px;
+    height: 25px;
+}
+.form-yourself .input-block-name {
+    width: 75px;
+}
+/*form more yourself*/
+.form-more-yourself {
+    margin: 30px auto;
+    width: 800px;
+    border: 1px solid black;
+    position: relative;
+}
+.form-more-yourself .form-header {
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    height: 20px;   
+    background-color: #FFFFFF;
+}
+.form-more-yourself .input-block {
+    display: flex;
+    margin: 5px 5px;
+
+}
+.gender-choice {
+    display: flex;
+    flex-direction: column;  
+}
+.checkbox-profile {
+    display: flex;
+    flex-direction: column;   
+}
+.profile-block {
+    display: flex;
+    flex-direction: column;  
+}
+.profile-block span {
+    margin: 0 10px 0 10px;
+}
+.profile-input {
+    border-radius: 3px 3px 3px 3px;
+}
+.book-choice {
+    display: flex;
+    flex-direction: column; 
+}
+
+.form-more-yourself .input-block-name {
+    width: 75px;
+}
+/*form end*/
+.form-end {
+    margin: 30px auto;
+    width: 800px;
+    border: 1px solid black;
+    position: relative;
+}
+.form-end .form-header {
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    height: 20px;   
+    background-color: #FFFFFF;
+}
+.form-end .input-block {
+    display: flex;
+    margin: 5px 5px;
+}
+.email-block {
+    display: flex;
+    flex-direction: column;    
+}
+.subscribe-block {
+    display: flex;
+    flex-direction: column;   
+}
+.form-end .input-block-name {
+    width: 75px;
+}
+
+/*footer submit btn*/
+.submit {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.btn-submit {
+    width: 100px;
+    height: 25px;
+}

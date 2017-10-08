@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../css/homework-1-css/styles.css">
+        <title>GeekHub Test</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Lesson "Forms": tags and their attributes.</h1>
+            <h2>Tell about yourself ...</h2>
+            <p>Сreate a similar form. For the purpose of demonstration, fictional ones are also quite appropriate.</p>
+        </div>
+        <section class="form-yourself">
+            <div class="form-header">Briefly about yourself</div>
+            <br>
+            <form action="">
+                <div class="input-block">
+                    <div class="input-block-name"><span>Name: </span></div>
+                    
+                    <input type="text">
+                </div>
+                <br>
+                <div class="input-block">
+                    <div class="input-block-name"><span>Surname: </span></div>
+                    <input type="text">
+                </div>
+                <br>
+                <div class="input-block">
+                    <div class="input-block-name"><span>Gender: </span></div>
+                    <input type="radio" name="Gender" value="male"><span>male</span>
+                    <input type="radio" name="Gender" value="feminine"><span>feminine</span>
+                </div>
+                <br>
+                <div class="input-block">
+                    <div class="input-block-name"><span>Years: </span></div>
+                    <input type="number" name="Years" value="1" min="1" max="100" step="1">
+                </div>
+            </form>
+        </section>
+
+        <section class="form-more-yourself">
+                <div class="form-header">More about yourself</div>
+                <br>
+                <form action="">
+                    <div class="input-block gender-choice">
+                        <div>
+                            <input type="radio" name="Gender" value="boy"><span>Young Boy</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="Gender" value="girl"><span>Girl</span>
+                        </div>                   
+                    </div>
+                    <br>
+                    <div class="input-block profile-block">                        
+                        <div><input class="profile-input" type="text"><span>Date of Birth</span></div>
+                        <div><input class="profile-input" type="text"><span>Family status</span></div>
+                        <div><input class="profile-input" type="text"><span>Social status</span></div>
+                        <div><input class="profile-input" type="text"><span>Residence    </span></div>
+                    </div>
+                    <br>
+                    <div class="input-block checkbox-profile">
+                        <h3>What do you usually do on the weekends?</h3>
+                        <div><input type="checkbox"><span>Sleep</span></div>
+                        <div><input type="checkbox"><span>Walking with friends</span></div>
+                        <div><input type="checkbox"><span>Go fishing</span></div>
+                        <div><input type="checkbox"><span>Playing games</span></div>
+                    </div>
+                    <br>
+                    <div class="input-block book-choice">
+                        <h3>Tell about forms in the book dedicated to HTML: </h3>
+                        <div>
+                            <select>
+                                <option disabled>html</option>
+                                <option>Site frequency: </option>
+                                <option>Site frequency: </option>
+                                <option>Site frequency: </option>
+                                <option>Site frequency: </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-block book-choice">
+                        <h3>How many books have you read in your life</h3>
+                        <div><input type="radio" name="Choice-bock" value=""><span>0-10 </span></div>
+                        <div><input type="radio" name="Choice-bock" value=""><span>11-20</span></div>
+                        <div><input type="radio" name="Choice-bock" value=""><span>21-50</span></div>
+                        <div><input type="radio" name="Choice-bock" value=""><span>50+  </span></div>
+                    </div>
+                    <div class="input-block book-choice">
+                        <h3>Your comments: </h3>
+                        <textarea rows="10" cols="20" name="text"></textarea>
+                    </div>
+                    <div class="input-block">
+                        <select size="3">
+                            <option disabled>first position</option>
+                            <option>second position</option>
+                            <option>third position </option>
+                            <option>fourth position</option>
+                            <option>fifth position </option>
+                        </select>
+                    </div>
+                </form>
+            </section>
+
+            <section class="form-end">
+                    <div class="form-header">In the end</div>
+                    <br>
+                    <form action="">
+                        <div class="input-block email-block">
+                            <div>
+                                <input type="text" size="30" placeholder="This field was entered before you">
+                            </div>
+                            <div>
+                                <label for="email">Email: </label>
+                            </div>
+                            <div>
+                                <input id="email" type="text" size="30" name="email">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="input-block subscribe-block">
+                            <h3>Do you want to subscribe to the most fashionable spamming?</h3>
+                            <span>Select a category</span>
+                            <div><input type="checkbox"><span>Equipment</span></div>
+                            <div><input type="checkbox"><span>How to cook dinner</span></div>
+                            <div><input type="checkbox"><span>Earn a million in two days</span></div>
+                            <h3>How difficult is the task:</h3>
+                            <div><input type="radio" name="Choice-task" value=""><span>Easy </span></div>
+                            <div><input type="radio" name="Choice-task" value=""><span>normal</span></div>
+                            <div><input type="radio" name="Choice-task" value=""><span>Hard</span></div>
+                        </div>
+                    </form>
+                </section>
+                <div class="submit">
+                    <button class="btn-submit" type="submit">Submit</button>
+                </div>
+                
+                
+</html>
