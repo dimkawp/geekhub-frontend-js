@@ -1,0 +1,49 @@
+body {
+    
+}
+/*First Table*/
+.first-table {
+    width: 1000px;
+    margin: 0 auto;
+}
+.first-table table {
+    border: 1px solid black;
+}
+.first-table table th {
+    border: 1px solid black;
+}
+.first-table table td {
+    width: 1000px;
+    border: 1px solid black;
+}
+/*Second Table*/
+.second-table {
+    width: 600px;
+    margin: 0 auto;
+}
+.second-table table {
+    border: 1px solid black;
+}
+.second-table table th {
+    border: 1px solid black;
+}
+.second-table table td {
+    width: 600px;
+    border: 1px solid black;
+}
+/*Third Table*/
+.third-table {
+    width: 600px;
+    margin: 0 auto;
+}
+.third-table table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.third-table table th {
+    border: 2px solid black;
+    text-align: left;
+}
+.third-table table td {
+    border: 2px solid black;
+}
