@@ -7,6 +7,24 @@ h1 {
     margin: 0 auto;
     text-align: center;
 }
+.git-url {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+.git-url a {
+    text-decoration: none;
+}
+    .git-url a:visited {
+        color: #311313;
+    }
+    .git-url a:active {
+        color: #311313;
+    }
+    .git-url a:hover {
+        color: #860000;
+    }
 /* Main content */
 .main-content {
     width: 250px;
