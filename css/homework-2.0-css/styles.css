@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Aparajita;
+}
+
+header {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .head {
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    align-items: center;
+}
+header .welcome-block {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+    color: white;
+}
+header .welcome-block h1 {
+    font-size: 86px;
+}
+header .welcome-block h2 {
+    font-size: 60px;
+}
+section {
+    width: 1170px;
+    margin: 0 auto;
+
+}
+
+header .about-header {
+    width: 1140px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    color: #2C3D4F;
+}
+
+header .about-header h3 {
+    margin: 0 auto;
+}
+#head {
+    width: 2000px;
+    background-color: #3397DB;;
+}
+#about {
+    width: 2000px;
+    background: url(../../tasks/homework-2.0/img/background.fw.png); 
+}
+
+#recent {
+    width: 2000px;
+    background-color: green;
+}
+
+section .about-description {
+    width: 1140px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+
+}
+
+section .about-description p {
+    width: 775px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #2C3D4F;
+}
+
+section .button-block {
+    margin: 0 auto;
+    width: 270px;
+    height: 210px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+    margin: 0 auto;
+    width: 270px;
+    height: 75px;
+
+    background-color: #3397DB;
+    border: 0;
+    border-radius: 40px 40px 40px 40px;
+
+    font-size: 12px;
+    color: white;
+}
+.figure-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.figure-block figcaption {
+    width: 220px;
+    height: 65px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2C3D4F;
+}
+.circle {
+    width: 220px;
+    height: 220px;
+
+    border-radius: 110px 110px 110px 110px;
+    background-color: white;
+}
+
+#recent article header {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+}
+
+#recent article header h3 {
+    font-size: 40px;
+    color: white;
+}
+
+#recent article header p {
+    width: 775px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.slider img {
+    width: 1506px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+#article {
+    width: 2000px;
+    background: url(../../tasks/homework-2.0/img/background.fw.png); 
+
+}
+
+section .info {
+    font-size: 40px;
+    color: #2C3D4F;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+section .info p {
+    margin: 0;
+
+}
+
+section .content {
+    margin: 0 auto;
+    width: 1170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content article {
+
+    margin: 0 auto;
+    width: 555px;
+    height: 540px;
+
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content article h5{
+    font-size: 40px;
+    color: #2C3D4F;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.content article p{
+    width: 450px;
+    font-size: 20px;
+    color: #2C3D4F;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.footer-content {
+    width: 1170px;
+    margin: 0 auto;
+    
+}
+
+.footer-content h5{
+    width: 450px;
+    margin: 0 auto;
+    font-size: 40px;
+    color: #2C3D4F;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.clients-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#team {
+    width: 2000px;
+    background: url(../../tasks/homework-2.0/img/background.fw.png); 
+
+}
+
+#team h5 {
+    width: 450px;
+    margin: 0 auto;
+    font-size: 40px;
+    color: #2C3D4F;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#team p {
+    width: 750px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #2C3D4F;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.figure-block {
+    margin: 0 auto;
+    width: 1140px;
+}
+
+.figure-block figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure-block figure h6{
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #2C3D4F;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.figure-block figcaption {
+    width: 305px;
+
+}
+
+footer {
+    width: 2000px;
+    
+    margin: 0 auto;
+    background-color: #2B3D4F;
+
+}
+
+footer .footer-content {
+    width: 1170px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-content nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer .footer-content nav li {
+    width: 120px;
+
+}
+
+
+
+
+
+
+
