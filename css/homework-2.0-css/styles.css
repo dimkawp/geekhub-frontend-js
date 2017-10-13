@@ -71,16 +71,16 @@ header .about-header h3 {
 
 }
 #head {
-    width: 2000px;
+    width: 1920px;
     background-color: #3397DB;;
 }
 #about {
-    width: 2000px;
+    width: 1920px;
     background: url(../../tasks/homework-2.0/img/background.fw.png); 
 }
 
 #recent {
-    width: 2000px;
+    width: 1920px;
     background-color: green;
 }
 
@@ -138,7 +138,7 @@ button {
 .figure-block figcaption {
     
     width: 220px;
-    height: 65px;
+
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
@@ -194,7 +194,7 @@ button {
 }
 
 #article {
-    width: 2000px;
+    width: 1920px;
     /*background: url(../../tasks/homework-2.0/img/background.fw.png); */
     background-color: #9B59B5;
 
@@ -324,7 +324,7 @@ section .content {
 }
 
 #team {
-    width: 2000px;
+    width: 1920px;
     background: url(../../tasks/homework-2.0/img/background.fw.png); 
 
 }
@@ -360,7 +360,6 @@ section .content {
 
 .figure-block figure h6{
     width: 150px;
-    height: 50px;
     margin: 0 auto;
     margin-top: 30px;
     font-size: 20px;
@@ -387,7 +386,7 @@ section .content {
 }
 
 footer {
-    width: 2000px;
+    width: 1920px;
     
     margin: 0 auto;
     background-color: #2B3D4F;
@@ -415,9 +414,8 @@ footer .footer-content nav ul {
     text-transform: uppercase;
 }
 
-footer .footer-content nav li {
-    width: 120px;
-
+footer li {
+    margin: 10px;
 }
 
 
