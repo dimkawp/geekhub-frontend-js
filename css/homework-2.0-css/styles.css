@@ -13,12 +13,15 @@ header {
 }
 
 header .head {
+    margin-top: 55px;
     display: flex;
     flex-direction: row;  
     justify-content: space-between;
     align-items: center;
 }
 header .welcome-block {
+    margin-top: 230px;
+    margin-bottom: 175px;
     display: flex;
     flex-direction: column;  
     justify-content: center;
@@ -28,9 +31,11 @@ header .welcome-block {
     color: white;
 }
 header .welcome-block h1 {
+    margin: 0 auto;
     font-size: 86px;
 }
 header .welcome-block h2 {
+    margin: 0 auto;
     font-size: 60px;
 }
 section {
@@ -42,6 +47,7 @@ section {
 header .about-header {
     width: 1140px;
     margin: 0 auto;
+    
     background-color: white;
     border-radius: 10px 10px 0 0;
 
@@ -55,7 +61,14 @@ header .about-header {
 }
 
 header .about-header h3 {
-    margin: 0 auto;
+
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+
+.about-header img {
+    margin-bottom: 30px;
+
 }
 #head {
     width: 2000px;
@@ -74,6 +87,7 @@ header .about-header h3 {
 section .about-description {
     width: 1140px;
     margin: 0 auto;
+    
     background-color: white;
     border-radius: 0 0 10px 10px;
 
@@ -104,19 +118,25 @@ button {
     width: 270px;
     height: 75px;
 
+    margin-bottom: 75px;
+
     background-color: #3397DB;
     border: 0;
     border-radius: 40px 40px 40px 40px;
 
-    font-size: 12px;
+    font-size: 20px;
     color: white;
 }
 .figure-block {
+    margin: 0 auto;
+    width: 1140px;
+    margin-top: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .figure-block figcaption {
+    
     width: 220px;
     height: 65px;
     font-size: 20px;
@@ -140,11 +160,14 @@ button {
 }
 
 #recent article header h3 {
+    margin: 0 auto;
+    margin-top: 100px;
     font-size: 40px;
     color: white;
 }
 
 #recent article header p {
+    margin-bottom: 75px;
     width: 775px;
     font-size: 20px;
     color: white;
@@ -152,9 +175,19 @@ button {
     text-transform: uppercase;
 }
 
+.slider {
+    margin: 0 auto;
+}
+
+.slider-footer {
+    height: 120px;
+    
+}
+
 .slider img {
     width: 1506px;
     margin: 0 auto;
+
     display: flex;
     justify-content: center;
 
@@ -162,21 +195,59 @@ button {
 
 #article {
     width: 2000px;
-    background: url(../../tasks/homework-2.0/img/background.fw.png); 
+    /*background: url(../../tasks/homework-2.0/img/background.fw.png); */
+    background-color: #9B59B5;
 
 }
 
 section .info {
+
+    margin: 0 auto;
     font-size: 40px;
+    font-weight: 600;
     color: #2C3D4F;
     text-align: center;
     text-transform: uppercase;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+
+    background: url(../../tasks/homework-2.0/img/background.fw.png);
+
 }
 
 section .info p {
-    margin: 0;
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
 
+.content-headers {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+
+}
+
+.content-header {
+    margin: 0 auto;
+    width: 555px;
+    height: 200px;
+
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 section .content {
@@ -185,20 +256,22 @@ section .content {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
 }
 
 .content article {
 
     margin: 0 auto;
     width: 555px;
-    height: 540px;
+
 
     background-color: white;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 0 0 10px 10px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
 
 }
@@ -219,17 +292,21 @@ section .content {
     text-transform: uppercase;
 
 }
+
 .footer-content {
     width: 1170px;
+    
     margin: 0 auto;
+    margin-top: 120px;
     
 }
 
 .footer-content h5{
     width: 450px;
     margin: 0 auto;
+    margin-bottom: 95px;
     font-size: 40px;
-    color: #2C3D4F;
+    color: white;
     text-align: center;
     text-transform: uppercase;
 }
@@ -239,6 +316,11 @@ section .content {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
+}
+
+.clients-block-item {
+    margin-bottom: 125px;
 }
 
 #team {
@@ -249,7 +331,10 @@ section .content {
 
 #team h5 {
     width: 450px;
+    
     margin: 0 auto;
+    padding-top: 100px;
+    
     font-size: 40px;
     color: #2C3D4F;
     text-align: center;
@@ -259,15 +344,11 @@ section .content {
 #team p {
     width: 750px;
     margin: 0 auto;
+    padding-top: 40px;
     font-size: 20px;
     color: #2C3D4F;
     text-align: center;
     text-transform: uppercase;
-}
-
-.figure-block {
-    margin: 0 auto;
-    width: 1140px;
 }
 
 .figure-block figure{
@@ -281,6 +362,7 @@ section .content {
     width: 150px;
     height: 50px;
     margin: 0 auto;
+    margin-top: 30px;
     font-size: 20px;
     color: #2C3D4F;
     text-align: center;
@@ -288,7 +370,19 @@ section .content {
 }
 
 .figure-block figcaption {
-    width: 305px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 280px;
+
+}
+
+.social-block {
+    margin: 0 auto;
+    width: 140px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
