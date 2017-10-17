@@ -74,6 +74,8 @@ header .about-header h3 {
     width: 1920px;
     background-color: #3397DB;;
 }
+
+
 #about {
     width: 1920px;
     background: url(../../tasks/homework-2.0/img/background.fw.png); 
@@ -418,6 +420,30 @@ footer li {
     margin: 10px;
 }
 
+
+@media screen and (max-width:1170px) {
+    #head {
+        width: 1170px;
+    }
+    #about {
+        width: 1170px;
+    }
+    #recent {
+        width: 1170px;
+    }
+    #article {
+        width: 1170px;
+    }
+    #team {
+        width: 1170px;
+    }
+    .slider img {
+        width: 100%;
+    }
+    footer {
+        width: 1170px;
+    }
+}
 
 
 
