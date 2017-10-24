@@ -3,7 +3,11 @@ body {
     padding: 0;
     font-family: Aparajita;
 }
-
+/*section id head block*/
+#head {
+    width: 1920px;
+    background-color: #3397DB;;
+}
 header {
     width: 1170px;
     margin: 0 auto;
@@ -11,7 +15,6 @@ header {
     flex-direction: column;
     justify-content: center;
 }
-
 header .head {
     margin-top: 55px;
     display: flex;
@@ -41,7 +44,6 @@ header .welcome-block h2 {
 section {
     width: 1170px;
     margin: 0 auto;
-
 }
 
 header .about-header {
@@ -59,42 +61,25 @@ header .about-header {
     font-size: 40px;
     color: #2C3D4F;
 }
-
 header .about-header h3 {
-
     margin-top: 75px;
     margin-bottom: 30px;
 }
-
 .about-header img {
     margin-bottom: 30px;
-
 }
-#head {
-    width: 1920px;
-    background-color: #3397DB;;
-}
-
-
+/*section id about block*/
 #about {
     width: 1920px;
     background: url(../../tasks/homework-2.0/img/background.fw.png); 
 }
-
-#recent {
-    width: 1920px;
-    background-color: green;
-}
-
 section .about-description {
     width: 1140px;
     margin: 0 auto;
     
     background-color: white;
     border-radius: 0 0 10px 10px;
-
 }
-
 section .about-description p {
     width: 775px;
     margin: 0 auto;
@@ -103,7 +88,6 @@ section .about-description p {
     font-size: 20px;
     color: #2C3D4F;
 }
-
 section .button-block {
     margin: 0 auto;
     width: 270px;
@@ -112,9 +96,7 @@ section .button-block {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 button {
     margin: 0 auto;
     width: 270px;
@@ -137,8 +119,7 @@ button {
     justify-content: space-between;
     align-items: center;
 }
-.figure-block figcaption {
-    
+.figure-block figcaption {    
     width: 220px;
 
     font-size: 20px;
@@ -153,21 +134,23 @@ button {
     border-radius: 110px 110px 110px 110px;
     background-color: white;
 }
-
+/*section id recent block*/
+#recent {
+    width: 1920px;
+    background-color: green;
+}
 #recent article header {
     display: flex;
     flex-direction: column;  
     justify-content: center;
     align-items: center;
 }
-
 #recent article header h3 {
     margin: 0 auto;
     margin-top: 100px;
     font-size: 40px;
     color: white;
 }
-
 #recent article header p {
     margin-bottom: 75px;
     width: 775px;
@@ -176,34 +159,27 @@ button {
     text-align: center;
     text-transform: uppercase;
 }
-
 .slider {
     margin: 0 auto;
 }
-
 .slider-footer {
     height: 120px;
     
 }
-
 .slider img {
     width: 1506px;
     margin: 0 auto;
 
     display: flex;
     justify-content: center;
-
 }
-
+/*section id article block*/
 #article {
     width: 1920px;
     /*background: url(../../tasks/homework-2.0/img/background.fw.png); */
     background-color: #9B59B5;
-
 }
-
 section .info {
-
     margin: 0 auto;
     font-size: 40px;
     font-weight: 600;
@@ -214,28 +190,19 @@ section .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    
-
     background: url(../../tasks/homework-2.0/img/background.fw.png);
-
 }
-
 section .info p {
     width: 1100px;
     margin: 0 auto;
     margin-top: 100px;
 }
-
 .content-headers {
     width: 1170px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-   
-
 }
 
 .content-header {
@@ -251,23 +218,17 @@ section .info p {
     justify-content: center;
     align-items: center;
 }
-
 section .content {
     margin: 0 auto;
     width: 1170px;
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    
+    align-items: center;  
 }
-
 .content article {
 
     margin: 0 auto;
     width: 555px;
-
-
     background-color: white;
     border-radius: 0 0 10px 10px;
 
@@ -275,9 +236,7 @@ section .content {
     flex-direction: column;
 
     align-items: center;
-
 }
-
 .content article h5{
     font-size: 40px;
     color: #2C3D4F;
@@ -285,7 +244,6 @@ section .content {
     text-transform: uppercase;
 
 }
-
 .content article p{
     width: 450px;
     font-size: 20px;
@@ -294,7 +252,6 @@ section .content {
     text-transform: uppercase;
 
 }
-
 .footer-content {
     width: 1170px;
     
@@ -302,7 +259,6 @@ section .content {
     margin-top: 120px;
     
 }
-
 .footer-content h5{
     width: 450px;
     margin: 0 auto;
@@ -317,20 +273,16 @@ section .content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center;  
 }
-
 .clients-block-item {
     margin-bottom: 125px;
 }
-
+/*section id team block*/
 #team {
     width: 1920px;
     background: url(../../tasks/homework-2.0/img/background.fw.png); 
-
 }
-
 #team h5 {
     width: 450px;
     
@@ -342,7 +294,6 @@ section .content {
     text-align: center;
     text-transform: uppercase;
 }
-
 #team p {
     width: 750px;
     margin: 0 auto;
@@ -352,15 +303,14 @@ section .content {
     text-align: center;
     text-transform: uppercase;
 }
-
-.figure-block figure{
+.figure-block figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.figure-block figure h6{
+.figure-block figure h6 {
     width: 300px;
     margin: 0 auto;
     margin-top: 30px;
@@ -369,14 +319,12 @@ section .content {
     text-align: center;
     text-transform: uppercase;
 }
-
 .figure-block figcaption {
     margin-top: 35px;
     margin-bottom: 35px;
     width: 280px;
 
 }
-
 .social-block {
     margin: 0 auto;
     width: 140px;
@@ -384,17 +332,14 @@ section .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-
+/*Foorer*/
 footer {
     width: 1920px;
     
     margin: 0 auto;
     background-color: #2B3D4F;
-
 }
-
 footer .footer-content {
     width: 1170px;
     height: 150px;
@@ -404,7 +349,6 @@ footer .footer-content {
     justify-content: space-between;
     align-items: center;
 }
-
 footer .footer-content nav ul {
     display: flex;
     flex-direction: row;
@@ -415,12 +359,10 @@ footer .footer-content nav ul {
     text-align: center;
     text-transform: uppercase;
 }
-
 footer li {
     margin: 10px;
 }
-
-
+/*add media mobile screen*/
 @media screen and (max-width:1170px) {
     #head {
         width: 1170px;
