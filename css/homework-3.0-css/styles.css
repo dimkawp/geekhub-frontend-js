@@ -16,11 +16,9 @@ section .content-section-block {
 }
 
 .header-block {
-
-
     width: 1170px;
     height: 110px;
-     margin: 0 auto;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: row;
@@ -36,7 +34,10 @@ section .content-section-block {
     text-transform: uppercase;
 }
 
-
+.header-block a, a:hover {
+    text-decoration: none;
+    color: black;
+}
 
 .header-block .logo-title {
     font-size: 25px;
