@@ -11,6 +11,10 @@ button {
     border: none;
 }
 
+section .content-section-block {
+    padding: 0 0 100px 0;
+}
+
 .header-block {
 
 
@@ -32,6 +36,8 @@ button {
     text-transform: uppercase;
 }
 
+
+
 .header-block .logo-title {
     font-size: 25px;
     font-weight: 600;
@@ -49,20 +55,39 @@ button {
 }
 
 .welcome-block {
+    background: url(../../tasks/homework-3.0/img/bg/background-with-shadow.fw.png) no-repeat;
+    background-size: cover;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
-    width: 1170px;
+    width: 100vw;
     margin: 0 auto;
     top: 110px;
 
+
     height: 100vh;
+}
+/*hack add background on mobile*/
+@media screen and (max-width:1170px) {
+    .welcome-block {
+        width: 1170px;
+        -webkit-background-size: 100%; 
+    }
 }
 
 .welcome-block .welcone-block-preview {
     margin-bottom: 20vh;
+    color: white;
+
+}
+.welcome-block .welcone-block-preview h1 {
+    margin: 0;
+    font-size: 65px;
+}
+.welcome-block .welcone-block-preview span {
+    font-size: 30px;
 }
 .welcome-block button {
     margin-bottom: 20vh;
@@ -138,9 +163,24 @@ section .content-item .content-item-description ul li span {
  }
 
  /*practis*/
-#practis .content-section-block {
+#practis {
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:1170px) {
+    #practis {
+        width: 1170px;
+        
+    }
+}
+#practis .content-section-block, .header-section-block {
     display: flex;
     flex-direction: row;
+    width: 1170px;
+    margin: 0 auto;
+
 
  }
 
@@ -213,6 +253,26 @@ section .content-item .content-item-description ul li span {
 }
 
 /*clients*/
+#clients {
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:1170px) {
+    #clients {
+        width: 1170px;
+        
+    }
+}
+
+#clients .content-section-block, .header-section-block {
+    display: flex;
+    flex-direction: row;
+    width: 1170px;
+    margin: 0 auto;
+ }
+
 #clients .content-section-block .content-item-face {
     width: 400px;
     margin: 0 25px 100px 0;
@@ -289,9 +349,34 @@ section .content-item .content-item-description ul li span {
 }
 
 /*question*/
+
+#question {
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:1170px) {
+    #question {
+        width: 1170px;
+        
+    }
+}
+
+#question .content-section-block, .header-section-block {
+    display: flex;
+    flex-direction: row;
+    width: 1170px;
+    margin: 0 auto;
+ }
 #question .content-section-block {
-    width: 500px;
+    padding: 0 0 150px 0;
+}
+#question .content-section-block .content-item {
     background-color: #E7BE5D;
+    width: 500px;
+    align-self: flex-start;
+    color: black;
 
 }
 #question .content-section-block p {
@@ -360,6 +445,10 @@ section .content-item .content-item-description ul li span {
 
 }
 /*footer*/
+footer {
+    background-color: black;
+    color: white;
+}
 footer .footer-block {
     width: 1170px;
     height: 75px;
@@ -372,4 +461,11 @@ footer .footer-block {
 footer .footer-block .footer-social-block {
     display: flex;
     flex-direction: row;
+}
+
+@media screen and (max-width:1170px) {
+    footer {
+        width: 1170px;
+        
+    }
 }
