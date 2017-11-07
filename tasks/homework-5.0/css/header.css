@@ -1,0 +1,91 @@
+/* header */
+/* line 3, ../sass/header.scss */
+header {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/header/header-bg.fw.png) no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+/* line 10, ../sass/header.scss */
+header .header-block {
+  margin: 0 auto;
+  width: 940px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 19, ../sass/header.scss */
+.header-block-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 23, ../sass/header.scss */
+.header-block-logo {
+  height: 50px;
+  width: 127px;
+  background: url(../img/logo.fw.png) no-repeat;
+}
+
+/* line 28, ../sass/header.scss */
+.nav-item {
+  margin-left: 10px;
+  font-weight: 600;
+}
+/* line 31, ../sass/header.scss */
+.nav-item a {
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+}
+/* line 36, ../sass/header.scss */
+.nav-item a:visited {
+  color: white;
+}
+/* line 39, ../sass/header.scss */
+.nav-item a:hover, .nav-item :active {
+  color: #00DFCF;
+}
+
+/* line 43, ../sass/header.scss */
+.header-block-content {
+  width: 780px;
+  height: calc(100vh - 80px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+/* line 53, ../sass/header.scss */
+.header-block-content h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
+/* line 57, ../sass/header.scss */
+.header-block-content p {
+  line-height: 1.7;
+}
+/* line 60, ../sass/header.scss */
+.header-block-content button {
+  margin-top: 45px;
+}
+/* line 64, ../sass/header.scss */
+.header-block-content .slider-decor {
+  display: flex;
+  flex-direction: row;
+  height: calc(30vh - 80px);
+}
+/* line 68, ../sass/header.scss */
+.header-block-content .slider-decor .slider-block {
+  height: 10px;
+  width: 55px;
+  background: url(../img/header/slider-bg.fw.png) no-repeat;
+  align-self: flex-end;
+}

@@ -1,0 +1,22 @@
+/*OUR-STORY*/
+#our-story .content-block{
+    display: flex;
+    flex-direction: row;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    color: #403C4B;
+    img {
+        margin: 0 60px 0 60px;
+    }
+    h2 {
+        font-size: 22px;
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+    p {
+        line-height: 1.7;
+    }
+    button {
+        margin-top: 30px;
+    }
+}

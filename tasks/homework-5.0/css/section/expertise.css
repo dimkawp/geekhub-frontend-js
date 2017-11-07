@@ -1,0 +1,45 @@
+/*EXPERTISE*/
+/* line 2, ../../sass/section/expertise.scss */
+#expertise .content-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+/* line 7, ../../sass/section/expertise.scss */
+#expertise .content-block .content-block-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+/* line 14, ../../sass/section/expertise.scss */
+#expertise .content-block .content-block-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* line 18, ../../sass/section/expertise.scss */
+#expertise .content-block .content-block-items .content-block-item {
+  width: 310px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* line 23, ../../sass/section/expertise.scss */
+#expertise .content-block .content-block-items .content-block-item img {
+  margin-top: 40px;
+}
+/* line 26, ../../sass/section/expertise.scss */
+#expertise .content-block .content-block-items .content-block-item h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #413D4B;
+}
+/* line 32, ../../sass/section/expertise.scss */
+#expertise .content-block .content-block-items .content-block-item p {
+  color: #333333;
+  line-height: 1.7;
+}

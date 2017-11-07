@@ -1,0 +1,40 @@
+/*WATCH-OUR-STORY*/
+#watch-our-story {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/watch-our-story/bg.fw.png) no-repeat;
+    background-size: cover; 
+    color: white;
+    .watch-player {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+            margin-top: 35px;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+        }
+        .button-element {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #09052F;
+            border-radius: 50px 50px 50px 50px;
+            button {
+                width: 100px;
+                height: 100px;
+                background: url(../img/watch-our-story/btn-bg-2.fw.png) no-repeat;
+                background-size: cover;
+                margin: 0;
+                padding: 0;
+            }
+        }       
+    }
+}

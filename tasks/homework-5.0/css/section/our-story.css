@@ -1,0 +1,27 @@
+/*OUR-STORY*/
+/* line 2, ../../sass/section/our-story.scss */
+#our-story .content-block {
+  display: flex;
+  flex-direction: row;
+  margin-top: 65px;
+  margin-bottom: 65px;
+  color: #403C4B;
+}
+/* line 8, ../../sass/section/our-story.scss */
+#our-story .content-block img {
+  margin: 0 60px 0 60px;
+}
+/* line 11, ../../sass/section/our-story.scss */
+#our-story .content-block h2 {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+/* line 16, ../../sass/section/our-story.scss */
+#our-story .content-block p {
+  line-height: 1.7;
+}
+/* line 19, ../../sass/section/our-story.scss */
+#our-story .content-block button {
+  margin-top: 30px;
+}

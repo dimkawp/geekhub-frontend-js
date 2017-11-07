@@ -1,4 +1,28 @@
-/* line 1, ../sass/main.scss */
-body {
-  background-color: red;
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* line 3, ../sass/main.scss */
+body h1, h2, h3, h4, h5, h6 {
+  font-size: 22px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* line 7, ../sass/main.scss */
+body p {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 12, ../sass/main.scss */
+section .content-block {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* line 16, ../sass/main.scss */
+button {
+  height: 40px;
+  width: 120px;
+  background-color: #00DFCF;
+  border-radius: 5px 5px 5px 5px;
+  border: none;
 }

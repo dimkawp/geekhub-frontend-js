@@ -1,0 +1,40 @@
+/*EXPERTISE*/
+#expertise .content-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    .content-block-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .content-block-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .content-block-item {
+            width: 310px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            img {
+                margin-top: 40px;
+            }
+            h3 {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                font-size: 14px;
+                color: #413D4B;               
+            }
+            p {
+                color: #333333;
+                line-height: 1.7;
+            }
+        }
+
+    }
+}
+

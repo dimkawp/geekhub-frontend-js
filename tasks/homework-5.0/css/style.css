@@ -2,6 +2,100 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* header */
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* line 3, ../sass/header.scss */
+header {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/header/header-bg.fw.png) no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+/* line 10, ../sass/header.scss */
+header .header-block {
+  margin: 0 auto;
+  width: 940px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 19, ../sass/header.scss */
+.header-block-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 23, ../sass/header.scss */
+.header-block-logo {
+  height: 50px;
+  width: 127px;
+  background: url(../img/logo.fw.png) no-repeat;
+}
+
+/* line 28, ../sass/header.scss */
+.nav-item {
+  margin-left: 10px;
+  font-weight: 600;
+}
+/* line 31, ../sass/header.scss */
+.nav-item a {
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+}
+/* line 36, ../sass/header.scss */
+.nav-item a:visited {
+  color: white;
+}
+/* line 39, ../sass/header.scss */
+.nav-item a:hover, .nav-item :active {
+  color: #00DFCF;
+}
+
+/* line 43, ../sass/header.scss */
+.header-block-content {
+  width: 780px;
+  height: calc(100vh - 80px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+/* line 53, ../sass/header.scss */
+.header-block-content h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
+/* line 57, ../sass/header.scss */
+.header-block-content p {
+  line-height: 1.7;
+}
+/* line 60, ../sass/header.scss */
+.header-block-content button {
+  margin-top: 45px;
+}
+/* line 64, ../sass/header.scss */
+.header-block-content .slider-decor {
+  display: flex;
+  flex-direction: row;
+  height: calc(30vh - 80px);
+}
+/* line 68, ../sass/header.scss */
+.header-block-content .slider-decor .slider-block {
+  height: 10px;
+  width: 55px;
+  background: url(../img/header/slider-bg.fw.png) no-repeat;
+  align-self: flex-end;
+}
+
 /* line 5, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,7 +161,149 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 1, ../sass/main.scss */
-body {
-  background-color: red;
+/* line 3, ../sass/main.scss */
+body h1, h2, h3, h4, h5, h6 {
+  font-size: 22px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* line 7, ../sass/main.scss */
+body p {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 12, ../sass/main.scss */
+section .content-block {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* line 16, ../sass/main.scss */
+button {
+  height: 40px;
+  width: 120px;
+  background-color: #00DFCF;
+  border-radius: 5px 5px 5px 5px;
+  border: none;
+}
+
+/*EXPERTISE*/
+/* line 2, ../sass/section/expertise.scss */
+#expertise .content-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+/* line 7, ../sass/section/expertise.scss */
+#expertise .content-block .content-block-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+/* line 14, ../sass/section/expertise.scss */
+#expertise .content-block .content-block-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* line 18, ../sass/section/expertise.scss */
+#expertise .content-block .content-block-items .content-block-item {
+  width: 310px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* line 23, ../sass/section/expertise.scss */
+#expertise .content-block .content-block-items .content-block-item img {
+  margin-top: 40px;
+}
+/* line 26, ../sass/section/expertise.scss */
+#expertise .content-block .content-block-items .content-block-item h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #413D4B;
+}
+/* line 32, ../sass/section/expertise.scss */
+#expertise .content-block .content-block-items .content-block-item p {
+  color: #333333;
+  line-height: 1.7;
+}
+
+/*OUR-STORY*/
+/* line 2, ../sass/section/our-story.scss */
+#our-story .content-block {
+  display: flex;
+  flex-direction: row;
+  margin-top: 65px;
+  margin-bottom: 65px;
+  color: #403C4B;
+}
+/* line 8, ../sass/section/our-story.scss */
+#our-story .content-block img {
+  margin: 0 60px 0 60px;
+}
+/* line 11, ../sass/section/our-story.scss */
+#our-story .content-block h2 {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+/* line 16, ../sass/section/our-story.scss */
+#our-story .content-block p {
+  line-height: 1.7;
+}
+/* line 19, ../sass/section/our-story.scss */
+#our-story .content-block button {
+  margin-top: 30px;
+}
+
+/*WATCH-OUR-STORY*/
+/* line 2, ../sass/section/watch-our-story.scss */
+#watch-our-story {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/watch-our-story/bg.fw.png) no-repeat;
+  background-size: cover;
+  color: white;
+}
+/* line 11, ../sass/section/watch-our-story.scss */
+#watch-our-story .watch-player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 16, ../sass/section/watch-our-story.scss */
+#watch-our-story .watch-player span {
+  margin-top: 35px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+/* line 22, ../sass/section/watch-our-story.scss */
+#watch-our-story .watch-player .button-element {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #09052F;
+  border-radius: 50px 50px 50px 50px;
+}
+/* line 30, ../sass/section/watch-our-story.scss */
+#watch-our-story .watch-player .button-element button {
+  width: 100px;
+  height: 100px;
+  background: url(../img/watch-our-story/btn-bg-2.fw.png) no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
