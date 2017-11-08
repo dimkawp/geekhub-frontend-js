@@ -1,0 +1,82 @@
+/*OUR-TEAM*/
+#our-team {
+    background: url(../img/watch-our-story/bg.fw.png) no-repeat;
+    background-size: cover; 
+    color: white;
+}
+#our-team .content-block {
+    display: flex;
+    flex-direction: column;
+    .content-block-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        font-family: 'Playfair Display', serif;
+        h2 {
+            margin-top: 60px;
+            color: #D6D6D6;
+            font-weight: 600;          
+        }
+        p {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    .content-block-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        font-family: 'Roboto', sans-serif;
+        .content-block-item {
+            width: 220px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .preview-img {
+                width: 220px;
+                height: 230px;
+                background-color: white;
+            }
+            .footer-item {
+                height: 80px;
+                background-color: #E7E7E7;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            h3 {
+                font-size: 14px;
+            }
+            span {
+                color: #F9F9F9;
+                font-size: 13px;
+            }
+        }
+    }
+}
+.content-block-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    .button-block {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+        span {
+            font-size: 16px;
+            color: #00DFCF;
+            width: 160px;
+            text-align: center;
+        }
+    }
+}

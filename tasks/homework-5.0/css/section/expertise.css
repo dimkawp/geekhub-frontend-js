@@ -14,32 +14,47 @@
   align-items: center;
   margin-bottom: 30px;
 }
-/* line 14, ../../sass/section/expertise.scss */
+/* line 13, ../../sass/section/expertise.scss */
+#expertise .content-block .content-block-header p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 18, ../../sass/section/expertise.scss */
 #expertise .content-block .content-block-items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-/* line 18, ../../sass/section/expertise.scss */
+/* line 22, ../../sass/section/expertise.scss */
 #expertise .content-block .content-block-items .content-block-item {
   width: 310px;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-/* line 23, ../../sass/section/expertise.scss */
+/* line 27, ../../sass/section/expertise.scss */
 #expertise .content-block .content-block-items .content-block-item img {
   margin-top: 40px;
 }
-/* line 26, ../../sass/section/expertise.scss */
+/* line 30, ../../sass/section/expertise.scss */
 #expertise .content-block .content-block-items .content-block-item h3 {
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 14px;
+  font-weight: 600;
   color: #413D4B;
 }
-/* line 32, ../../sass/section/expertise.scss */
+/* line 37, ../../sass/section/expertise.scss */
 #expertise .content-block .content-block-items .content-block-item p {
   color: #333333;
   line-height: 1.7;
+}
+/* line 43, ../../sass/section/expertise.scss */
+#expertise .content-block .content-block-items .content-block-item:nth-child(3n+2) {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+/* line 47, ../../sass/section/expertise.scss */
+#expertise .content-block .content-block-items .content-block-item:nth-child(n+4) {
+  border-top: 1px solid;
 }

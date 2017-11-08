@@ -1,0 +1,65 @@
+/*OUR-FORM*/
+/* line 2, ../../sass/section/our-form.scss */
+#our-form .content-block {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 6, ../../sass/section/our-form.scss */
+#our-form .content-block h3 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-family: 900;
+  color: #413D4B;
+}
+/* line 13, ../../sass/section/our-form.scss */
+#our-form .content-block .content-block-form {
+  display: flex;
+  flex-direction: column;
+}
+/* line 16, ../../sass/section/our-form.scss */
+#our-form .content-block .content-block-form form {
+  display: flex;
+  flex-direction: column;
+}
+/* line 19, ../../sass/section/our-form.scss */
+#our-form .content-block .content-block-form form input {
+  margin-left: 20px;
+  height: 50px;
+  border: none;
+  outline: none;
+  flex-direction: column;
+}
+/* line 26, ../../sass/section/our-form.scss */
+#our-form .content-block .content-block-form form textarea {
+  margin-left: 20px;
+  margin-top: 50px;
+  border: none;
+  outline: none;
+}
+/* line 32, ../../sass/section/our-form.scss */
+#our-form .content-block .content-block-form form ::-webkit-input-placeholder {
+  color: #C6C5CE;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+/* line 37, ../../sass/section/our-form.scss */
+#our-form .content-block .content-block-form form input[placeholder], #our-form .content-block .content-block-form form textarea[placeholder] {
+  color: #C6C5CE;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+/* line 44, ../../sass/section/our-form.scss */
+#our-form .content-block .content-block-clients {
+  width: 380px;
+}
+/* line 46, ../../sass/section/our-form.scss */
+#our-form .content-block .content-block-clients .clients-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 50, ../../sass/section/our-form.scss */
+#our-form .content-block .content-block-clients .clients-items .clients-item {
+  width: 160px;
+  margin: 25px 25px 25px 0;
+}

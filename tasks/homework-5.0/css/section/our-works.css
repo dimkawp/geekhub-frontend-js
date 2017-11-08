@@ -1,0 +1,29 @@
+/*OUR-WORKS*/
+/* line 3, ../../sass/section/our-works.scss */
+#our-works .content-block-header {
+  width: 940px;
+  height: 140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #413D4B;
+}
+/* line 11, ../../sass/section/our-works.scss */
+#our-works .content-block-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+/* line 15, ../../sass/section/our-works.scss */
+#our-works .content-block-header span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+/* line 21, ../../sass/section/our-works.scss */
+#our-works .content-block-elements {
+  height: 50vh;
+  width: 100vw;
+  margin: 0;
+  background: url(../img/our-work/main-bg.fw.png) no-repeat;
+  background-size: cover;
+}

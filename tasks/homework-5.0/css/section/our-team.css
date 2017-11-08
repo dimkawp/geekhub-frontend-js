@@ -1,0 +1,98 @@
+/*OUR-TEAM*/
+/* line 2, ../../sass/section/our-team.scss */
+#our-team {
+  background: url(../img/watch-our-story/bg.fw.png) no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+/* line 7, ../../sass/section/our-team.scss */
+#our-team .content-block {
+  display: flex;
+  flex-direction: column;
+}
+/* line 10, ../../sass/section/our-team.scss */
+#our-team .content-block .content-block-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+}
+/* line 17, ../../sass/section/our-team.scss */
+#our-team .content-block .content-block-header h2 {
+  margin-top: 60px;
+  color: #D6D6D6;
+  font-weight: 600;
+}
+/* line 22, ../../sass/section/our-team.scss */
+#our-team .content-block .content-block-header p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+/* line 27, ../../sass/section/our-team.scss */
+#our-team .content-block .content-block-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+/* line 35, ../../sass/section/our-team.scss */
+#our-team .content-block .content-block-items .content-block-item {
+  width: 220px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* line 40, ../../sass/section/our-team.scss */
+#our-team .content-block .content-block-items .content-block-item .preview-img {
+  width: 220px;
+  height: 230px;
+  background-color: white;
+}
+/* line 45, ../../sass/section/our-team.scss */
+#our-team .content-block .content-block-items .content-block-item .footer-item {
+  height: 80px;
+  background-color: #E7E7E7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 53, ../../sass/section/our-team.scss */
+#our-team .content-block .content-block-items .content-block-item h3 {
+  font-size: 14px;
+}
+/* line 56, ../../sass/section/our-team.scss */
+#our-team .content-block .content-block-items .content-block-item span {
+  color: #F9F9F9;
+  font-size: 13px;
+}
+
+/* line 63, ../../sass/section/our-team.scss */
+.content-block-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+/* line 70, ../../sass/section/our-team.scss */
+.content-block-footer .button-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+/* line 75, ../../sass/section/our-team.scss */
+.content-block-footer .button-block span {
+  font-size: 16px;
+  color: #00DFCF;
+  width: 160px;
+  text-align: center;
+}

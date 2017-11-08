@@ -1,0 +1,41 @@
+/*COMMENTS*/
+/* line 2, ../../sass/section/comments.scss */
+#comments {
+  background: url(../img/comments/main-bg.fw.png) no-repeat;
+  background-size: cover;
+}
+
+/* line 7, ../../sass/section/comments.scss */
+#comments .content-block {
+  display: flex;
+  flex-direction: column;
+}
+/* line 10, ../../sass/section/comments.scss */
+#comments .content-block .slider-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #C6C5CE;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+/* line 21, ../../sass/section/comments.scss */
+#comments .content-block img {
+  margin: 60px 0 70px 0;
+}
+/* line 24, ../../sass/section/comments.scss */
+#comments .content-block h5 {
+  margin-top: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+/* line 31, ../../sass/section/comments.scss */
+#comments .content-block span {
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+}

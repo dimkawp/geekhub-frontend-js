@@ -1,0 +1,99 @@
+/*FOOTER*/
+footer .preview-logo {
+    height: 50px;
+    width: 127px;
+    background: url(../img/logo.fw.png) no-repeat;
+    margin-bottom: 30px;
+}
+footer {
+    background: url(../img/footer/main-bg.fw.png) no-repeat;
+    background-size: cover; 
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    h6 {
+        font-size: 15px;
+    }
+    p {
+        line-height: 1.7;
+    }
+    button {
+        width: 70px;
+        height: 45px;
+        background: url(../img/footer/button-bg.fw.png) no-repeat;
+        background-size: cover; 
+        border-radius: 0;
+    }
+    .footer-item-subscribe {
+        display: flex;
+        display: row;
+    }
+    .footer-item-social-block {
+        margin-top: 30px;
+        display: flex;
+        display: row;
+        justify-content: space-between;
+    }
+    input {
+        width: 200px;
+        height: 45px;
+        border: none;
+        outline:none;
+        flex-direction: column;
+        background: url(../img/footer/input-bg.fw.png) no-repeat;
+        background-size: cover; 
+    }
+    ::-webkit-input-placeholder {
+        color: #C6C5CE;;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        text-align: center;
+      }
+    input[placeholder] {
+        color: #C6C5CE;;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }  
+    .footer-block {
+        width: 940px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .footer-block-items {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 90px;
+            .footer-block-item {
+                .footer-item-title {
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .footer-nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 70px 0 70px 0;
+            .nav-elements {
+                width: 300px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            a {
+                font-size: 13px;
+                color: white;
+                text-decoration: none;
+            }
+            a:visited {
+                color: white;
+            }
+            a:hover,:active {
+                color: #00DFCF;
+            }
+        }
+    }
+}
