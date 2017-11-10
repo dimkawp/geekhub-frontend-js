@@ -1,0 +1,52 @@
+/*WELCOME*/
+/* line 2, ../../sass/section/welcome.scss */
+#welcome {
+  height: 100vh;
+  width: 100vw;
+  background: url(../img/welcome/main-bg.fw.png) no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+/* line 11, ../../sass/section/welcome.scss */
+#welcome .welcome-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 16, ../../sass/section/welcome.scss */
+#welcome .welcome-block .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* line 22, ../../sass/section/welcome.scss */
+#welcome .welcome-block .title span {
+  font-size: 30px;
+  font-weight: bold;
+}
+/* line 28, ../../sass/section/welcome.scss */
+#welcome .welcome-block button {
+  width: 210px;
+  height: 55px;
+  background-color: white;
+  border-radius: 25px;
+  border: none;
+  color: #612315;
+  font-size: 18px;
+  margin-bottom: 130px;
+}
+
+@media screen and (max-width: 1170px) {
+  /* line 43, ../../sass/section/welcome.scss */
+  #welcome {
+    background-size: auto;
+    height: auto;
+    width: auto;
+  }
+}

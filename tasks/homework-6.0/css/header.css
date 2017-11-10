@@ -1,0 +1,68 @@
+/* HEADER */
+/* line 4, ../sass/header.scss */
+.header-block {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto Slab', serif;
+}
+/* line 11, ../sass/header.scss */
+.header-block .title {
+  font-size: 36px;
+  color: #31353D;
+  font-weight: bold;
+}
+/* line 16, ../sass/header.scss */
+.header-block span {
+  font-size: 16px;
+  color: #DD4B2B;
+  letter-spacing: 1.2px;
+}
+/* line 22, ../sass/header.scss */
+.header-block .nav {
+  font-size: 18px;
+  color: #31353D;
+}
+/* line 25, ../sass/header.scss */
+.header-block .nav a {
+  text-align: left;
+  text-decoration: none;
+  color: #31353D;
+}
+/* line 29, ../sass/header.scss */
+.header-block .nav a a:visited {
+  color: #31353D;
+}
+/* line 32, ../sass/header.scss */
+.header-block .nav a a:active {
+  color: #31353D;
+}
+/* line 35, ../sass/header.scss */
+.header-block .nav a a:hover {
+  color: #31353D;
+}
+/* line 41, ../sass/header.scss */
+.header-block .nav .nav-item {
+  height: 50px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 48, ../sass/header.scss */
+.header-block .nav .nav-item:hover {
+  height: 50px;
+  width: 150px;
+  background-color: #DD4B2B;
+  border-radius: 25px;
+  color: white;
+}
+
+@media screen and (max-width: 1170px) {
+  /* line 63, ../sass/header.scss */
+  a {
+    display: none;
+  }
+}

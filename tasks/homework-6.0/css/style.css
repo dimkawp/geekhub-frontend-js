@@ -1,0 +1,263 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
+/* line 5, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/main.scss */
+body h1, body h2, body h3, body h4, body h5 {
+  font-family: 'Roboto Slab', serif;
+}
+/* line 7, ../sass/main.scss */
+body p {
+  font-family: 'Roboto', serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2.0;
+}
+/* line 13, ../sass/main.scss */
+body h1 {
+  font-size: 72px;
+  font-weight: 300;
+}
+/* line 17, ../sass/main.scss */
+body .items {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 23, ../sass/main.scss */
+body .items .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+
+@media screen and (max-width: 360px) {
+  /* line 34, ../sass/main.scss */
+  a {
+    display: none;
+  }
+
+  /* line 40, ../sass/main.scss */
+  .item img {
+    width: 100vw;
+  }
+}
+/* HEADER */
+/* line 4, ../sass/header.scss */
+.header-block {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto Slab', serif;
+}
+/* line 11, ../sass/header.scss */
+.header-block .title {
+  font-size: 36px;
+  color: #31353D;
+  font-weight: bold;
+}
+/* line 16, ../sass/header.scss */
+.header-block span {
+  font-size: 16px;
+  color: #DD4B2B;
+  letter-spacing: 1.2px;
+}
+/* line 22, ../sass/header.scss */
+.header-block .nav {
+  font-size: 18px;
+  color: #31353D;
+}
+/* line 25, ../sass/header.scss */
+.header-block .nav a {
+  text-align: left;
+  text-decoration: none;
+  color: #31353D;
+}
+/* line 29, ../sass/header.scss */
+.header-block .nav a a:visited {
+  color: #31353D;
+}
+/* line 32, ../sass/header.scss */
+.header-block .nav a a:active {
+  color: #31353D;
+}
+/* line 35, ../sass/header.scss */
+.header-block .nav a a:hover {
+  color: #31353D;
+}
+/* line 41, ../sass/header.scss */
+.header-block .nav .nav-item {
+  height: 50px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 48, ../sass/header.scss */
+.header-block .nav .nav-item:hover {
+  height: 50px;
+  width: 150px;
+  background-color: #DD4B2B;
+  border-radius: 25px;
+  color: white;
+}
+
+@media screen and (max-width: 1170px) {
+  /* line 63, ../sass/header.scss */
+  a {
+    display: none;
+  }
+}
+/*WELCOME*/
+/* line 2, ../sass/section/welcome.scss */
+#welcome {
+  height: 100vh;
+  width: 100vw;
+  background: url(../img/welcome/main-bg.fw.png) no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+/* line 11, ../sass/section/welcome.scss */
+#welcome .welcome-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 16, ../sass/section/welcome.scss */
+#welcome .welcome-block .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* line 22, ../sass/section/welcome.scss */
+#welcome .welcome-block .title span {
+  font-size: 30px;
+  font-weight: bold;
+}
+/* line 28, ../sass/section/welcome.scss */
+#welcome .welcome-block button {
+  width: 210px;
+  height: 55px;
+  background-color: white;
+  border-radius: 25px;
+  border: none;
+  color: #612315;
+  font-size: 18px;
+  margin-bottom: 130px;
+}
+
+@media screen and (max-width: 1170px) {
+  /* line 43, ../sass/section/welcome.scss */
+  #welcome {
+    background-size: auto;
+    height: auto;
+    width: auto;
+  }
+}
+/*OUR-NEWS*/
+/* line 2, ../sass/section/our-news.scss */
+#our-news {
+  background-color: #c8c8c8;
+  width: 100vw;
+}
+/* line 5, ../sass/section/our-news.scss */
+#our-news .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* line 10, ../sass/section/our-news.scss */
+#our-news .title h2 {
+  margin: 80px 0 80px 0;
+}
+/* line 14, ../sass/section/our-news.scss */
+#our-news button {
+  width: 180px;
+  height: 55px;
+  border-radius: 25px;
+  border: none;
+  color: #4D5158;
+  background-color: white;
+  margin-bottom: 140px;
+}

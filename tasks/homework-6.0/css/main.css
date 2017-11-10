@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
+/* line 4, ../sass/main.scss */
+body h1, body h2, body h3, body h4, body h5 {
+  font-family: 'Roboto Slab', serif;
+}
+/* line 7, ../sass/main.scss */
+body p {
+  font-family: 'Roboto', serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2.0;
+}
+/* line 13, ../sass/main.scss */
+body h1 {
+  font-size: 72px;
+  font-weight: 300;
+}
+/* line 17, ../sass/main.scss */
+body .items {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 23, ../sass/main.scss */
+body .items .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+
+@media screen and (max-width: 360px) {
+  /* line 34, ../sass/main.scss */
+  a {
+    display: none;
+  }
+
+  /* line 40, ../sass/main.scss */
+  .item img {
+    width: 100vw;
+  }
+}

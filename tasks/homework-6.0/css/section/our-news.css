@@ -1,0 +1,27 @@
+/*OUR-NEWS*/
+/* line 2, ../../sass/section/our-news.scss */
+#our-news {
+  background-color: #c8c8c8;
+  width: 100vw;
+}
+/* line 5, ../../sass/section/our-news.scss */
+#our-news .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* line 10, ../../sass/section/our-news.scss */
+#our-news .title h2 {
+  margin: 80px 0 80px 0;
+}
+/* line 14, ../../sass/section/our-news.scss */
+#our-news button {
+  width: 180px;
+  height: 55px;
+  border-radius: 25px;
+  border: none;
+  color: #4D5158;
+  background-color: white;
+  margin-bottom: 140px;
+}
