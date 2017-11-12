@@ -1,0 +1,30 @@
+/*FOOTER*/
+/* line 2, ../../sass/section/footer-nav.scss */
+#footer-nav {
+  background-color: #D75D0D;
+  color: white;
+  font-size: 18px;
+}
+
+/* line 7, ../../sass/section/footer-nav.scss */
+.column {
+  text-align: center;
+  margin: 60px 0 60px 0;
+}
+/* line 10, ../../sass/section/footer-nav.scss */
+.column ul li {
+  margin: 10px;
+}
+
+/* line 14, ../../sass/section/footer-nav.scss */
+#footer-span {
+  margin: 0 auto;
+  align-self: center;
+}
+
+@media screen and (max-width: 1170px) {
+  /* line 19, ../../sass/section/footer-nav.scss */
+  ul li {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,28 @@
+/*FOOTER*/
+/* line 2, ../sass/footer.scss */
+footer {
+  height: 370px;
+  background: url(../img/newsletter/main-bg.png) no-repeat;
+  background-size: cover;
+  color: white;
+}
+/* line 7, ../sass/footer.scss */
+footer div {
+  margin: 0 auto;
+  padding-top: 90px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1170px) {
+  /* line 15, ../sass/footer.scss */
+  span {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* line 20, ../sass/footer.scss */
+  footer {
+    width: 500px;
+    margin: 0 auto;
+  }
+}

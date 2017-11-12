@@ -28,19 +28,18 @@ body .items {
 body .items .item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   padding: 0;
 }
 
 @media screen and (max-width: 360px) {
-  /* line 34, ../sass/main.scss */
+  /* line 33, ../sass/main.scss */
   a {
     display: none;
   }
 
-  /* line 40, ../sass/main.scss */
+  /* line 39, ../sass/main.scss */
   .item img {
     width: 100vw;
   }

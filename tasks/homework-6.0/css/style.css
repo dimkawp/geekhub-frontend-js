@@ -97,19 +97,18 @@ body .items {
 body .items .item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   padding: 0;
 }
 
 @media screen and (max-width: 360px) {
-  /* line 34, ../sass/main.scss */
+  /* line 33, ../sass/main.scss */
   a {
     display: none;
   }
 
-  /* line 40, ../sass/main.scss */
+  /* line 39, ../sass/main.scss */
   .item img {
     width: 100vw;
   }
@@ -198,7 +197,6 @@ body .items .item {
 #welcome .welcome-block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 /* line 16, ../sass/section/welcome.scss */
@@ -208,13 +206,14 @@ body .items .item {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 50px;
 }
-/* line 22, ../sass/section/welcome.scss */
+/* line 23, ../sass/section/welcome.scss */
 #welcome .welcome-block .title span {
   font-size: 30px;
   font-weight: bold;
 }
-/* line 28, ../sass/section/welcome.scss */
+/* line 29, ../sass/section/welcome.scss */
 #welcome .welcome-block button {
   width: 210px;
   height: 55px;
@@ -227,11 +226,29 @@ body .items .item {
 }
 
 @media screen and (max-width: 1170px) {
-  /* line 43, ../sass/section/welcome.scss */
+  /* line 44, ../sass/section/welcome.scss */
   #welcome {
-    background-size: auto;
     height: auto;
     width: auto;
+  }
+  /* line 48, ../sass/section/welcome.scss */
+  #welcome img {
+    width: 80vw;
+  }
+  /* line 51, ../sass/section/welcome.scss */
+  #welcome h3 {
+    font-size: 40px;
+  }
+  /* line 54, ../sass/section/welcome.scss */
+  #welcome p {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* line 63, ../sass/section/welcome.scss */
+  #welcome, #content, #footer-nav, #our-news, #newsletter {
+    width: 500px;
+    margin: 0 auto;
   }
 }
 /*OUR-NEWS*/
@@ -260,4 +277,172 @@ body .items .item {
   color: #4D5158;
   background-color: white;
   margin-bottom: 140px;
+}
+
+@media screen and (max-width: 1170px) {
+  /* line 26, ../sass/section/our-news.scss */
+  #our-news img {
+    width: 90vw;
+  }
+  /* line 29, ../sass/section/our-news.scss */
+  #our-news h3 {
+    font-size: 40px;
+  }
+  /* line 32, ../sass/section/our-news.scss */
+  #our-news p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* line 40, ../sass/section/our-news.scss */
+  #our-news {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+/*NEWSLATTER*/
+/* line 2, ../sass/section/newsletter.scss */
+#newsletter {
+  background: url(../img/newsletter/main-bg.png) no-repeat;
+  background-size: cover;
+  color: white;
+}
+/* line 7, ../sass/section/newsletter.scss */
+#newsletter .newsletter-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+}
+/* line 14, ../sass/section/newsletter.scss */
+#newsletter .newsletter-block .input {
+  position: relative;
+  margin-bottom: 110px;
+}
+/* line 17, ../sass/section/newsletter.scss */
+#newsletter .newsletter-block .input ::-webkit-input-placeholder {
+  color: #F2F3F5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+/* line 22, ../sass/section/newsletter.scss */
+#newsletter .newsletter-block .input input[placeholder] {
+  color: #F2F3F5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+/* line 27, ../sass/section/newsletter.scss */
+#newsletter .newsletter-block .input input {
+  width: 500px;
+  height: 55px;
+  border: none;
+  border-radius: 25px;
+}
+/* line 34, ../sass/section/newsletter.scss */
+#newsletter .newsletter-block .input button {
+  border: none;
+  background-color: white;
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  font-size: 18px;
+  color: #612315;
+}
+
+/*CONTENT*/
+/* line 4, ../sass/section/content.scss */
+#content .content-block .items {
+  display: flex;
+  color: #191B29;
+}
+/* line 8, ../sass/section/content.scss */
+#content .content-block .items .item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 50px 0 50px 0;
+}
+/* line 13, ../sass/section/content.scss */
+#content .content-block .items .item .description {
+  text-align: left;
+}
+/* line 16, ../sass/section/content.scss */
+#content .content-block .items .item button {
+  width: 210px;
+  height: 55px;
+  border: none;
+  border-radius: 25px;
+  background-color: #DD4B2B;
+  color: white;
+  font-size: 18px;
+}
+/* line 26, ../sass/section/content.scss */
+#content .content-block .items .item:nth-child(2n+1) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+/* line 29, ../sass/section/content.scss */
+#content .content-block .items .item:nth-child(2n+1) button {
+  background-color: #4B4D73;
+}
+
+/*FOOTER*/
+/* line 2, ../sass/section/footer-nav.scss */
+#footer-nav {
+  background-color: #D75D0D;
+  color: white;
+  font-size: 18px;
+}
+
+/* line 7, ../sass/section/footer-nav.scss */
+.column {
+  text-align: center;
+  margin: 60px 0 60px 0;
+}
+/* line 10, ../sass/section/footer-nav.scss */
+.column ul li {
+  margin: 10px;
+}
+
+/* line 14, ../sass/section/footer-nav.scss */
+#footer-span {
+  margin: 0 auto;
+  align-self: center;
+}
+
+@media screen and (max-width: 1170px) {
+  /* line 19, ../sass/section/footer-nav.scss */
+  ul li {
+    font-size: 30px;
+  }
+}
+/*FOOTER*/
+/* line 2, ../sass/footer.scss */
+footer {
+  height: 370px;
+  background: url(../img/newsletter/main-bg.png) no-repeat;
+  background-size: cover;
+  color: white;
+}
+/* line 7, ../sass/footer.scss */
+footer div {
+  margin: 0 auto;
+  padding-top: 90px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1170px) {
+  /* line 15, ../sass/footer.scss */
+  span {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* line 20, ../sass/footer.scss */
+  footer {
+    width: 500px;
+    margin: 0 auto;
+  }
 }

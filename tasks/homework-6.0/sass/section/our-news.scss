@@ -21,3 +21,25 @@
         margin-bottom: 140px;
     }
 }
+@media screen and (max-width:1170px) {
+    #our-news {
+        img {
+            width: 90vw;
+        }
+        h3 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+    
+        #our-news {
+            width: 500px;
+            margin: 0 auto;
+
+        }  
+}

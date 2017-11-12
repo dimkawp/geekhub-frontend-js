@@ -14,7 +14,6 @@
 #welcome .welcome-block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 /* line 16, ../../sass/section/welcome.scss */
@@ -24,13 +23,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 50px;
 }
-/* line 22, ../../sass/section/welcome.scss */
+/* line 23, ../../sass/section/welcome.scss */
 #welcome .welcome-block .title span {
   font-size: 30px;
   font-weight: bold;
 }
-/* line 28, ../../sass/section/welcome.scss */
+/* line 29, ../../sass/section/welcome.scss */
 #welcome .welcome-block button {
   width: 210px;
   height: 55px;
@@ -43,10 +43,28 @@
 }
 
 @media screen and (max-width: 1170px) {
-  /* line 43, ../../sass/section/welcome.scss */
+  /* line 44, ../../sass/section/welcome.scss */
   #welcome {
-    background-size: auto;
     height: auto;
     width: auto;
+  }
+  /* line 48, ../../sass/section/welcome.scss */
+  #welcome img {
+    width: 80vw;
+  }
+  /* line 51, ../../sass/section/welcome.scss */
+  #welcome h3 {
+    font-size: 40px;
+  }
+  /* line 54, ../../sass/section/welcome.scss */
+  #welcome p {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* line 63, ../../sass/section/welcome.scss */
+  #welcome, #content, #footer-nav, #our-news, #newsletter {
+    width: 500px;
+    margin: 0 auto;
   }
 }

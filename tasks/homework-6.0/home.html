@@ -34,16 +34,16 @@
                     <h1>Integer at tortor ut magna</h1>
                     <span>finibus lobortis sed quis tellus.</span>
                 </div>
-                <div class="items col-sm-12 col-xl-12">
+                <div class="container items">
                     <!-- 1 -->
-                    <div class="item col-sm-12 col-xl-4">
+                    <div class="item col-sm-12 col-xl-3">
                         <img src="img/welcome/1.fw.png" alt="">
                         <h3>Tincidunt</h3>
                         <p>Phasellus arcu justo, ullamcorper non diam sit amet,
                         luctus condimentum metus. Nullam tempus egestas efficitur. Sed quam dolor.</p>
                     </div>
                     <!-- 2 -->
-                    <div class="item col-sm-12 col-xl-4">
+                    <div class="item col-sm-12 col-xl-3">
                         <img src="img/welcome/2.fw.png" alt="">
                         <h3>Duis bibendum</h3>
                         <p>Ut arcu arcu, faucibus eu risus blandit, pulvinar viverra justo. 
@@ -51,7 +51,7 @@
                         In hac habitasse platea dictumst. </p>
                     </div>
                     <!-- 3 -->
-                    <div class="item col-sm-12 col-xl-4">
+                    <div class="item col-sm-12 col-xl-3">
                         <img src="img/welcome/3.fw.png" alt="">
                         <h3>Donec ligula</h3>
                         <p>Nullam tempus egestas efficitur. Sed quam dolor, vulputate sed mattis et,
@@ -108,21 +108,23 @@
                 </div>
                 <div class="input">
                     <input type="text" placeholder="email adress">
+                    <button>Sign up</button>
                 </div>
             </div>
 
         </section>
         <section id="content">
             <div class="container content-block">
-                <div class="items">
+                <div class="items col-xl-12">
                     <!-- 1 -->
                     <div class="item">
-                        <img src="img/content/picture.fw.png" alt="">
-                        <div class="description">
+                        <img class="col-xl-6" src="img/content/picture.fw.png" alt="">
+                        <div class="description col-xl-6">
                             <h3>Ipsum dolor sit amet</h3>
                             <p>Nam accumsan nunc sit amet elementum sollicitudin.
                             Integer vel lacus eget tortor lobortis tincidunt sed eu dolor.
                             Phasellus cursus augue ac pulvinar cursus.
+                            <br><br>
                             Quisque ut erat ornare, feugiat turpis a, fringilla felis.
                             Nulla molestie lorem et orci sagittis, et accumsan ex porta.</p>
                             <button>Sign up</button>
@@ -130,12 +132,13 @@
                     </div>
                     <!-- 2 -->
                     <div class="item">
-                        <img src="img/content/picture.fw.png" alt="">
-                        <div class="description">
+                        <img class="col-xl-6" src="img/content/picture.fw.png" alt="">
+                        <div class="description col-xl-6">
                             <h3>Ipsum dolor sit amet</h3>
                             <p>Nam accumsan nunc sit amet elementum sollicitudin.
                             Integer vel lacus eget tortor lobortis tincidunt sed eu dolor.
                             Phasellus cursus augue ac pulvinar cursus.
+                            <br><br>
                             Quisque ut erat ornare, feugiat turpis a, fringilla felis.
                             Nulla molestie lorem et orci sagittis, et accumsan ex porta.</p>
                             <button>Sign up</button>
@@ -144,10 +147,11 @@
                 </div>
             </div>
         </section>
-        <footer>
+
+        <section id="footer-nav">
             <div class="container footer-block">
-                <div class="category">
-                    <div class="column">
+                <div class="category row col-xl-12">
+                    <div class="column col-xl-4">
                         <ul>
                             <li>Nostra</li>
                             <li>Per inceptos</li>
@@ -157,7 +161,7 @@
                             <li>Tincidunt</li>                           
                         </ul>
                     </div>
-                    <div class="column">
+                    <div class="column col-xl-4">
                         <ul>
                             <li>Ad litora torquent</li>  
                             <li>Per conubia</li>  
@@ -167,7 +171,7 @@
                             <li>In consectetur</li>                        
                         </ul>
                     </div>
-                    <div class="column">
+                    <div class="column col-xl-4">
                         <ul>
                             <li>Taciti sociosqu</li>
                             <li>Ad litora torquent</li>
@@ -179,9 +183,16 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="col-xl-4">
                 <span>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                 Try awsome tool for desgners symu.co</span>
             </div>
+
         </footer>
 
      

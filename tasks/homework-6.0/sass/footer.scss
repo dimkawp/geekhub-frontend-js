@@ -1,0 +1,25 @@
+/*FOOTER*/
+footer {
+    height: 370px;
+    background: url(../img/newsletter/main-bg.png) no-repeat;
+    background-size: cover;
+    color: white;
+    div {
+        margin: 0 auto;
+        padding-top: 90px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1170px) {
+    span {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:360px) {   
+        footer {
+            width: 500px;
+            margin: 0 auto;
+
+        }  
+}

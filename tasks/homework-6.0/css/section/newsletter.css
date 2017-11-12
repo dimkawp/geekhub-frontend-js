@@ -1,0 +1,50 @@
+/*NEWSLATTER*/
+/* line 2, ../../sass/section/newsletter.scss */
+#newsletter {
+  background: url(../img/newsletter/main-bg.png) no-repeat;
+  background-size: cover;
+  color: white;
+}
+/* line 7, ../../sass/section/newsletter.scss */
+#newsletter .newsletter-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50vh;
+}
+/* line 14, ../../sass/section/newsletter.scss */
+#newsletter .newsletter-block .input {
+  position: relative;
+  margin-bottom: 110px;
+}
+/* line 17, ../../sass/section/newsletter.scss */
+#newsletter .newsletter-block .input ::-webkit-input-placeholder {
+  color: #F2F3F5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+/* line 22, ../../sass/section/newsletter.scss */
+#newsletter .newsletter-block .input input[placeholder] {
+  color: #F2F3F5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+/* line 27, ../../sass/section/newsletter.scss */
+#newsletter .newsletter-block .input input {
+  width: 500px;
+  height: 55px;
+  border: none;
+  border-radius: 25px;
+}
+/* line 34, ../../sass/section/newsletter.scss */
+#newsletter .newsletter-block .input button {
+  border: none;
+  background-color: white;
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  font-size: 18px;
+  color: #612315;
+}

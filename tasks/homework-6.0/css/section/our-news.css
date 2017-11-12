@@ -25,3 +25,25 @@
   background-color: white;
   margin-bottom: 140px;
 }
+
+@media screen and (max-width: 1170px) {
+  /* line 26, ../../sass/section/our-news.scss */
+  #our-news img {
+    width: 90vw;
+  }
+  /* line 29, ../../sass/section/our-news.scss */
+  #our-news h3 {
+    font-size: 40px;
+  }
+  /* line 32, ../../sass/section/our-news.scss */
+  #our-news p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 360px) {
+  /* line 40, ../../sass/section/our-news.scss */
+  #our-news {
+    width: 500px;
+    margin: 0 auto;
+  }
+}

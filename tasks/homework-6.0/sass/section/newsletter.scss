@@ -1,0 +1,48 @@
+/*NEWSLATTER*/
+#newsletter {
+    background: url(../img/newsletter/main-bg.png) no-repeat;
+    background-size: cover;
+    
+    color: white; 
+    .newsletter-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 50vh;
+        .input {
+            position: relative;
+            margin-bottom: 110px;
+            ::-webkit-input-placeholder {
+                color: #F2F3F5;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+              }
+            input[placeholder] {               
+                color: #F2F3F5;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+            } 
+            input {
+                width: 500px;
+                height: 55px;
+                border: none;
+                border-radius: 25px;
+ 
+            }
+            button {
+                border: none;
+                background-color: white;
+                position: absolute;
+                right: 50px;
+                top: 15px;
+                font-size: 18px;
+                color: #612315;
+            }
+        }
+        input {
+            
+        }
+    }
+}
