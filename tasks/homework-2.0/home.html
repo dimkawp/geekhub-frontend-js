@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../../css/homework-2.0-css/styles.css">
+        <!-- included ajax fore slow event nav bar -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>      
         <title>Homework-2.0</title>
     </head>
     <body>
@@ -13,7 +15,14 @@
                         <img src="img/logo.fw.png" alt="Logo">
                     </div>
                     <div class="menu">
-                        <img src="img/menu.fw.png" alt="menu">
+                        <div class="nav">
+                            <ul>
+                                <li><a href="#about">ABOUT</a></li>
+                                <li><a href="#recent">RECENT</a></li>
+                                <li><a href="#article">ARTICLE</a></li>
+                                <li><a href="#team">TEAM</a></li>                               
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="welcome-block">
@@ -171,14 +180,25 @@
                     </div>
                     <nav>
                         <ul>
-                            <li>HOME</li>
-                            <li>SERVICES</li>
-                            <li>OUR WOORKS</li>
-                            <li>CONTACT</li>
+                            <li><a href="#head">HOME</a></li>
+                            <li><a href=""></a>SERVICES</li>
+                            <li><a href=""></a>OUR WOORKS</li>
+                            <li><a href=""></a>CONTACT</li>
                         </ul>
                     </nav>
             </div>
-
         </footer>
+        <!-- JS Ajax -->
+        <script type="text/javascript">
+            //add slover event in nav
+            $(document).ready(function(){
+               $(".nav").on("click","a", function (event) {
+                   event.preventDefault();
+                   var id  = $(this).attr('href'),
+                       top = $(id).offset().top;
+                   $('body,html').animate({scrollTop: top}, 1500);
+               });
+           });
+           </script>
     </body> 
 </html>

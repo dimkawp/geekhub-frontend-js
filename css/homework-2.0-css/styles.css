@@ -22,6 +22,81 @@ header .head {
     justify-content: space-between;
     align-items: center;
 }
+/*work on nav bar*/
+
+    .nav {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	}	
+	.nav ul {
+        height: 25px;
+        width: 25px;
+
+		border: none;
+		background: url(../../tasks/homework-2.0/img/menu.fw.png) no-repeat;
+	}
+	.nav li {
+		display: none;
+		margin: 0;
+	}
+
+	.nav a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+	}
+
+	/* navigation */
+	.nav ul:hover {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;     
+        align-items: center;
+        text-align: center;
+        background-image: none;
+        background: url(../../tasks/homework-2.0/img/background.fw.png); 
+        opacity: 0.95;      
+	}
+	.nav ul:hover li {
+        opacity: 1;
+        color: red;
+        font-size: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 960px;
+        margin: 0 auto;
+    }
+    .nav ul:hover a {
+        color: black;
+        text-decoration: none;
+        text-shadow: 11px 11px 15px rgba(149, 150, 150, 1);
+    }
+    .nav ul:hover a:visited {
+        color: black;
+        text-decoration: none;
+    }
+    .nav ul:hover a:active {
+        color: black;
+        text-decoration: none;
+    }
+    .nav ul:hover a:hover {
+        color: rgb(117, 117, 117);
+        text-decoration: none;
+        text-shadow: 11px 11px 15px rgba(149, 150, 150, 1);
+        transform: 2s;
+    }
+    /*navigation-end*/
 header .welcome-block {
     margin-top: 230px;
     margin-bottom: 175px;
@@ -362,8 +437,16 @@ footer .footer-content nav ul {
 footer li {
     margin: 10px;
 }
+footer a {
+    color: white;
+    text-decoration: none;
+}
 /*add media mobile screen*/
 @media screen and (max-width:1170px) {
+    .nav ul:hover {
+        width: 1170px;
+        font-size: 120px;
+    }
     #head {
         width: 1170px;
     }
