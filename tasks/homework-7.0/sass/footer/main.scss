@@ -1,0 +1,17 @@
+/* footer */
+footer {
+    background-color: #1f2a32;
+    color: white;
+    .footer-block {
+        display: flex;
+        flex-direction: column;
+        .footer-down {
+            display: flex;
+            justify-content: space-between;
+            .coperations {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

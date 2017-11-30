@@ -1,0 +1,30 @@
+/* coments */
+/* line 2, ../sass/coments.scss */
+#coments {
+  background-color: #005c55;
+}
+/* line 4, ../sass/coments.scss */
+#coments .block {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* line 11, ../sass/coments.scss */
+#coments .block p {
+  font-size: 24px;
+  color: white;
+}
+/* line 18, ../sass/coments.scss */
+#coments .block span {
+  color: #01B9AB;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 25, ../sass/coments.scss */
+#coments .slider-items {
+  margin-top: 30px;
+}

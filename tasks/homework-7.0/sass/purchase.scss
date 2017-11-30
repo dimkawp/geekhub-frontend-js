@@ -1,0 +1,21 @@
+/* PURCHASE */
+#purchase {
+    .block {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #3B4953;
+        h3 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.67;
+            margin: 0;
+        }
+    }
+    
+}

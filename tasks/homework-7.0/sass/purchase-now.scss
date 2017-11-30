@@ -1,0 +1,14 @@
+/* purchase-now */
+#purchase-now {
+    background-color: #02baab;
+    .block {
+        height: 140px;
+        display: flex;
+        align-items:  center;
+        
+        color: white;
+        span {
+            font-size: 24px;
+        }
+    }
+}

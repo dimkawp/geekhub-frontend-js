@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Oxygen:300,400,700');
+
+body h1,h2,h3,h4,h5,h5,p,span {
+    font-family: 'Oxygen', sans-serif;
+
+}
+
+section .title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

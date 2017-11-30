@@ -1,0 +1,37 @@
+/* features */
+#features {
+    color: #3B4953;
+    h3 {
+        font-size: 36px;
+        text-align: center;
+        margin-top: 80px;
+
+    }
+    h4 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 14px;
+        text-align: left;
+        line-height: 1.71;
+        margin: 0;
+    }
+
+    .items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            width: 450px;
+            margin-bottom: 25px;
+            img {
+                margin: 5px 30px 5px 5px;
+            }
+        }
+
+    }
+
+}

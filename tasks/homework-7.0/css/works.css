@@ -1,0 +1,126 @@
+/* WORKS */
+/* line 2, ../sass/works.scss */
+#works {
+  background-color: #043951;
+  color: white;
+}
+/* line 5, ../sass/works.scss */
+#works .block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /*slider*/
+}
+/* line 12, ../sass/works.scss */
+#works .block h3 {
+  font-size: 36px;
+  font-weight: 300;
+  margin-top: 10vh;
+}
+/* line 17, ../sass/works.scss */
+#works .block p {
+  font-size: 18px;
+  margin: 0;
+}
+/* line 22, ../sass/works.scss */
+#works .block .content .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+/* line 27, ../sass/works.scss */
+#works .block .content .items .item {
+  width: 290px;
+}
+/* line 29, ../sass/works.scss */
+#works .block .content .items .item .title {
+  text-align: left;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 5px 0 15px;
+}
+/* line 38, ../sass/works.scss */
+#works .block .content .items .item .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 15px 0 5px;
+}
+/* line 45, ../sass/works.scss */
+#works .block .content .items .item h5 {
+  font-size: 14px;
+  margin: 0;
+}
+/* line 49, ../sass/works.scss */
+#works .block .content .items .item span {
+  font-size: 11px;
+  color: #01B9AB;
+}
+/* line 53, ../sass/works.scss */
+#works .block .content .items .item .social-nav {
+  height: 290px;
+  background-color: #0c3f57;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 62, ../sass/works.scss */
+#works .block .content .items .img {
+  height: 220px;
+  width: 290px;
+  background-color: #187faf;
+}
+/* line 67, ../sass/works.scss */
+#works .block .content .items figcaption {
+  background-color: #072634;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* line 78, ../sass/works.scss */
+#works .block .slider-items {
+  margin-top: 25px;
+  margin-bottom: 95px;
+}
+
+@media screen and (max-width: 650px) {
+  /* line 91, ../sass/works.scss */
+  #works .block .content .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 95, ../sass/works.scss */
+  #works .block .content .items .item {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+  /* line 96, ../sass/works.scss */
+  #works .block .content .items .item .social-nav {
+    width: 100vw;
+    background-color: #0c3f57;
+  }
+  /* line 110, ../sass/works.scss */
+  #works .block .content .items .item .img {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* line 117, ../sass/works.scss */
+  #works .block .content .items .item figcaption {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

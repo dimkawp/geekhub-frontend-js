@@ -1,0 +1,66 @@
+/* buttons */
+
+#welcome {
+    button {
+        width: 135px;
+        height: 40px;
+        text-align: center;
+        border: none;
+        background-color: #01b9ab;
+
+        font-size: 12px;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        
+    }
+    button:hover {
+        background-color: #ffad00;
+        border: 2px solid #01b9ab;
+    }
+
+}
+
+#purchase,#team, footer {
+    button {
+        margin-top: 20px;
+        width: 135px;
+        height: 40px;
+        text-align: center;
+        border: 2px solid #01b9ab;
+        background-color: white;
+
+        font-size: 12px;
+
+    }
+    button:hover {
+        background-color: #ffad00;
+    }
+}
+#purchase-now {
+    button {
+        width: 170px;
+        height: 40px;
+        text-align: center;
+        border: 2px solid white;
+        background-color: #01b9ab;
+        margin-left: 50px;
+    
+        font-size: 14px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button:hover {
+        background-color: #ffad00;
+    }
+
+
+}
+footer {
+    button {
+        display: flex;
+        align-items: center;
+    }
+}

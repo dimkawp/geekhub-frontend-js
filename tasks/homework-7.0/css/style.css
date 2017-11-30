@@ -1,0 +1,722 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Oxygen:300,400,700");
+/* line 5, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Program Files/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/main.scss */
+body h1, h2, h3, h4, h5, h5, p, span {
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* line 8, ../sass/main.scss */
+section .title {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+/* line 2, ../sass/header/main.scss */
+header {
+  /*nav*/
+}
+/* line 3, ../sass/header/main.scss */
+header .head {
+  /*profile*/
+}
+/* line 5, ../sass/header/main.scss */
+header .head .profile {
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-content: center;
+}
+/* line 12, ../sass/header/main.scss */
+header .head .profile .container {
+  display: flex;
+  justify-content: space-between;
+  color: #85939f;
+  font-size: 10px;
+}
+/* line 19, ../sass/header/main.scss */
+header .head .search {
+  display: flex;
+  align-items: center;
+}
+/* line 22, ../sass/header/main.scss */
+header .head .search input {
+  height: 25px;
+  width: 200px;
+  border: 1px solid #85939f;
+  flex-direction: column;
+  background-color: black;
+}
+/* line 29, ../sass/header/main.scss */
+header .head .search ::-webkit-input-placeholder {
+  color: #85939f;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 10px;
+  padding: 10px;
+}
+/* line 36, ../sass/header/main.scss */
+header .head .user-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* line 42, ../sass/header/main.scss */
+header .head .user-block .login, header .head .user-block .register {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-left: 30px;
+}
+/* line 48, ../sass/header/main.scss */
+header .head .user-block .login a, header .head .user-block .register a {
+  align-self: center;
+  color: #85939f;
+}
+/* line 56, ../sass/header/main.scss */
+header .nav {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  background-color: #595959;
+}
+/* line 61, ../sass/header/main.scss */
+header .nav .block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* line 66, ../sass/header/main.scss */
+header .nav .block .nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* line 70, ../sass/header/main.scss */
+header .nav .block .nav-items .nav-item {
+  margin-left: 30px;
+  color: white;
+  display: flex;
+}
+
+@media screen and (max-width: 650px) {
+  /* line 86, ../sass/header/main.scss */
+  header .head .search {
+    width: 50vw;
+  }
+  /* line 89, ../sass/header/main.scss */
+  header .head .block {
+    width: 100vw;
+  }
+  /* line 92, ../sass/header/main.scss */
+  header .head .block .user-block .login, header .head .block .user-block .register {
+    margin: 0;
+  }
+}
+/* welcome */
+/* line 4, ../sass/welcome.scss */
+#welcome {
+  background-color: #b2b2b2;
+}
+/* line 6, ../sass/welcome.scss */
+#welcome .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  height: calc(100vh - 120px);
+  width: 100vw;
+}
+/* line 15, ../sass/welcome.scss */
+#welcome .block .title h1, #welcome .block .title h2 {
+  font-size: 60px;
+}
+/* line 18, ../sass/welcome.scss */
+#welcome .block .title h1 {
+  color: #01B9AB;
+}
+/* line 21, ../sass/welcome.scss */
+#welcome .block .title h2 {
+  color: white;
+}
+/* line 25, ../sass/welcome.scss */
+#welcome .block .buttons {
+  margin-top: 10vh;
+}
+/* line 28, ../sass/welcome.scss */
+#welcome .block .slider {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* PURCHASE */
+/* line 3, ../sass/purchase.scss */
+#purchase .block {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #3B4953;
+}
+/* line 11, ../sass/purchase.scss */
+#purchase .block h3 {
+  font-size: 36px;
+}
+/* line 14, ../sass/purchase.scss */
+#purchase .block p {
+  font-size: 18px;
+  line-height: 1.67;
+  margin: 0;
+}
+
+/* WORKS */
+/* line 2, ../sass/works.scss */
+#works {
+  background-color: #043951;
+  color: white;
+}
+/* line 5, ../sass/works.scss */
+#works .block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /*slider*/
+}
+/* line 12, ../sass/works.scss */
+#works .block h3 {
+  font-size: 36px;
+  font-weight: 300;
+  margin-top: 10vh;
+}
+/* line 17, ../sass/works.scss */
+#works .block p {
+  font-size: 18px;
+  margin: 0;
+}
+/* line 22, ../sass/works.scss */
+#works .block .content .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+/* line 27, ../sass/works.scss */
+#works .block .content .items .item {
+  width: 290px;
+}
+/* line 29, ../sass/works.scss */
+#works .block .content .items .item .title {
+  text-align: left;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 5px 0 15px;
+}
+/* line 38, ../sass/works.scss */
+#works .block .content .items .item .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 15px 0 5px;
+}
+/* line 45, ../sass/works.scss */
+#works .block .content .items .item h5 {
+  font-size: 14px;
+  margin: 0;
+}
+/* line 49, ../sass/works.scss */
+#works .block .content .items .item span {
+  font-size: 11px;
+  color: #01B9AB;
+}
+/* line 53, ../sass/works.scss */
+#works .block .content .items .item .social-nav {
+  height: 290px;
+  background-color: #0c3f57;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 62, ../sass/works.scss */
+#works .block .content .items .img {
+  height: 220px;
+  width: 290px;
+  background-color: #187faf;
+}
+/* line 67, ../sass/works.scss */
+#works .block .content .items figcaption {
+  background-color: #072634;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* line 78, ../sass/works.scss */
+#works .block .slider-items {
+  margin-top: 25px;
+  margin-bottom: 95px;
+}
+
+@media screen and (max-width: 650px) {
+  /* line 91, ../sass/works.scss */
+  #works .block .content .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 95, ../sass/works.scss */
+  #works .block .content .items .item {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+  /* line 96, ../sass/works.scss */
+  #works .block .content .items .item .social-nav {
+    width: 100vw;
+    background-color: #0c3f57;
+  }
+  /* line 110, ../sass/works.scss */
+  #works .block .content .items .item .img {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* line 117, ../sass/works.scss */
+  #works .block .content .items .item figcaption {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+/* purchase-now */
+/* line 2, ../sass/purchase-now.scss */
+#purchase-now {
+  background-color: #02baab;
+}
+/* line 4, ../sass/purchase-now.scss */
+#purchase-now .block {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+/* line 10, ../sass/purchase-now.scss */
+#purchase-now .block span {
+  font-size: 24px;
+}
+
+/* features */
+/* line 2, ../sass/features.scss */
+#features {
+  color: #3B4953;
+}
+/* line 4, ../sass/features.scss */
+#features h3 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 80px;
+}
+/* line 10, ../sass/features.scss */
+#features h4 {
+  font-size: 24px;
+}
+/* line 13, ../sass/features.scss */
+#features p {
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.71;
+  margin: 0;
+}
+/* line 20, ../sass/features.scss */
+#features .items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 24, ../sass/features.scss */
+#features .items .item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 450px;
+  margin-bottom: 25px;
+}
+/* line 30, ../sass/features.scss */
+#features .items .item img {
+  margin: 5px 30px 5px 5px;
+}
+
+/* coments */
+/* line 2, ../sass/coments.scss */
+#coments {
+  background-color: #005c55;
+}
+/* line 4, ../sass/coments.scss */
+#coments .block {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* line 11, ../sass/coments.scss */
+#coments .block p {
+  font-size: 24px;
+  color: white;
+}
+/* line 18, ../sass/coments.scss */
+#coments .block span {
+  color: #01B9AB;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 25, ../sass/coments.scss */
+#coments .slider-items {
+  margin-top: 30px;
+}
+
+/* posts */
+/* line 3, ../sass/posts.scss */
+#posts h3 {
+  margin-top: 80px;
+  color: #3B4953;
+  font-size: 36px;
+}
+/* line 8, ../sass/posts.scss */
+#posts .title {
+  text-align: center;
+}
+/* line 11, ../sass/posts.scss */
+#posts .items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* line 15, ../sass/posts.scss */
+#posts .items .item {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 19, ../sass/posts.scss */
+#posts .items .item h4 {
+  font-size: 24px;
+  color: #01B9AB;
+}
+/* line 23, ../sass/posts.scss */
+#posts .items .item p {
+  color: #555555;
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* line 28, ../sass/posts.scss */
+#posts .items .item .footer {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 31, ../sass/posts.scss */
+#posts .items .item .footer .like-block {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  /* line 42, ../sass/posts.scss */
+  #posts .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 46, ../sass/posts.scss */
+  #posts .items .item {
+    display: flex;
+    width: 100vw;
+    align-self: center;
+  }
+  /* line 47, ../sass/posts.scss */
+  #posts .items .item img {
+    width: 100vw;
+  }
+}
+/* expirians */
+/* line 2, ../sass/expirians.scss */
+#expirians {
+  background-color: #01b9ab;
+  color: white;
+}
+/* line 6, ../sass/expirians.scss */
+#expirians .title h3 {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+}
+/* line 13, ../sass/expirians.scss */
+#expirians .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 19, ../sass/expirians.scss */
+#expirians .block .items {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+/* line 23, ../sass/expirians.scss */
+#expirians .block .items .item {
+  text-align: center;
+}
+/* line 25, ../sass/expirians.scss */
+#expirians .block .items .item span {
+  font-size: 48px;
+}
+/* line 28, ../sass/expirians.scss */
+#expirians .block .items .item p {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 450px) {
+  /* line 41, ../sass/expirians.scss */
+  #expirians .block .img img {
+    width: 100vw;
+  }
+  /* line 45, ../sass/expirians.scss */
+  #expirians .block .items {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* line 49, ../sass/expirians.scss */
+  #expirians .block .items .item span {
+    font-size: 24px;
+  }
+}
+/* TEAM */
+/* line 3, ../sass/team.scss */
+#team h3 {
+  text-align: center;
+}
+/* line 6, ../sass/team.scss */
+#team .block {
+  display: flex;
+  flex-direction: column;
+}
+/* line 9, ../sass/team.scss */
+#team .block .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 130px;
+}
+/* line 14, ../sass/team.scss */
+#team .block .items .item {
+  height: 380px;
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+/* line 21, ../sass/team.scss */
+#team .block .items .item .header-block {
+  /*border: 0.5px solid #C4C4C4;*/
+  text-align: center;
+}
+/* line 24, ../sass/team.scss */
+#team .block .items .item .header-block h6 {
+  color: #01B9AB;
+  font-size: 14px;
+}
+/* line 28, ../sass/team.scss */
+#team .block .items .item .header-block span {
+  font-size: 12px;
+  color: #C4C4C4;
+}
+/* line 35, ../sass/team.scss */
+#team .block .items .item .description p {
+  font-size: 12px;
+  color: #3B4953;
+}
+
+@media screen and (max-width: 450px) {
+  /* line 49, ../sass/team.scss */
+  #team .block .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 53, ../sass/team.scss */
+  #team .block .items .item {
+    display: flex;
+    width: 100vw;
+    align-self: center;
+    text-align: center;
+  }
+}
+/* footer */
+/* line 2, ../sass/footer/main.scss */
+footer {
+  background-color: #1f2a32;
+  color: white;
+}
+/* line 5, ../sass/footer/main.scss */
+footer .footer-block {
+  display: flex;
+  flex-direction: column;
+}
+/* line 8, ../sass/footer/main.scss */
+footer .footer-block .footer-down {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 11, ../sass/footer/main.scss */
+footer .footer-block .footer-down .coperations {
+  display: flex;
+  flex-direction: column;
+}
+
+/*buttons*/
+/* buttons */
+/* line 4, ../sass/buttons/main.scss */
+#welcome button {
+  width: 135px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  background-color: #01b9ab;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 17, ../sass/buttons/main.scss */
+#welcome button:hover {
+  background-color: #ffad00;
+  border: 2px solid #01b9ab;
+}
+
+/* line 25, ../sass/buttons/main.scss */
+#purchase button, #team button, footer button {
+  margin-top: 20px;
+  width: 135px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid #01b9ab;
+  background-color: white;
+  font-size: 12px;
+}
+/* line 36, ../sass/buttons/main.scss */
+#purchase button:hover, #team button:hover, footer button:hover {
+  background-color: #ffad00;
+}
+
+/* line 41, ../sass/buttons/main.scss */
+#purchase-now button {
+  width: 170px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid white;
+  background-color: #01b9ab;
+  margin-left: 50px;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 55, ../sass/buttons/main.scss */
+#purchase-now button:hover {
+  background-color: #ffad00;
+}
+
+/* line 62, ../sass/buttons/main.scss */
+footer button {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,43 @@
+/* welcome */
+$heighy: calc(100vh - 120px); 
+$width: 100vw;
+#welcome {
+    background-color: #b2b2b2;
+    .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        height: $heighy;
+        width: $width;
+        .title {
+            h1,h2 {
+                font-size: 60px;
+            }
+            h1 {
+                color: #01B9AB;                
+            }
+            h2 {
+                color: white;
+            }
+        }
+        .buttons {
+            margin-top: 10vh;
+        }
+        .slider {
+
+            height: 30vh;
+            
+            display: flex;
+            flex-direction: column;
+
+            justify-content: flex-end;
+
+
+
+        }
+    }
+
+
+}

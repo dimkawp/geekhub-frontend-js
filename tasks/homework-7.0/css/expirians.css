@@ -1,0 +1,54 @@
+/* expirians */
+/* line 2, ../sass/expirians.scss */
+#expirians {
+  background-color: #01b9ab;
+  color: white;
+}
+/* line 6, ../sass/expirians.scss */
+#expirians .title h3 {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+}
+/* line 13, ../sass/expirians.scss */
+#expirians .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* line 19, ../sass/expirians.scss */
+#expirians .block .items {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+/* line 23, ../sass/expirians.scss */
+#expirians .block .items .item {
+  text-align: center;
+}
+/* line 25, ../sass/expirians.scss */
+#expirians .block .items .item span {
+  font-size: 48px;
+}
+/* line 28, ../sass/expirians.scss */
+#expirians .block .items .item p {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 450px) {
+  /* line 41, ../sass/expirians.scss */
+  #expirians .block .img img {
+    width: 100vw;
+  }
+  /* line 45, ../sass/expirians.scss */
+  #expirians .block .items {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* line 49, ../sass/expirians.scss */
+  #expirians .block .items .item span {
+    font-size: 24px;
+  }
+}

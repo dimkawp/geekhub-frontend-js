@@ -1,0 +1,21 @@
+/* PURCHASE */
+/* line 3, ../sass/purchase.scss */
+#purchase .block {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #3B4953;
+}
+/* line 11, ../sass/purchase.scss */
+#purchase .block h3 {
+  font-size: 36px;
+}
+/* line 14, ../sass/purchase.scss */
+#purchase .block p {
+  font-size: 18px;
+  line-height: 1.67;
+  margin: 0;
+}

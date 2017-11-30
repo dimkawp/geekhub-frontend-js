@@ -1,0 +1,56 @@
+/* expirians */
+#expirians {
+    background-color: #01b9ab;
+    color: white;
+    .title {
+        h3 {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 36px; 
+            font-weight: 300;          
+        }
+    }
+    .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .items {
+            display: flex;
+            justify-content: space-around;
+            align-self: center;
+            .item {
+                text-align: center;
+                span {
+                    font-size: 48px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:450px) {
+    #expirians {
+        .block {
+            .img {
+                img {
+                    width: 100vw;
+                }                
+            }
+            .items {
+                display: flex;
+                justify-content: space-between;
+                .item {
+                    span {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

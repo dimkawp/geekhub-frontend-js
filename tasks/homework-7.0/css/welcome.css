@@ -1,0 +1,38 @@
+/* welcome */
+/* line 4, ../sass/welcome.scss */
+#welcome {
+  background-color: #b2b2b2;
+}
+/* line 6, ../sass/welcome.scss */
+#welcome .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  height: calc(100vh - 120px);
+  width: 100vw;
+}
+/* line 15, ../sass/welcome.scss */
+#welcome .block .title h1, #welcome .block .title h2 {
+  font-size: 60px;
+}
+/* line 18, ../sass/welcome.scss */
+#welcome .block .title h1 {
+  color: #01B9AB;
+}
+/* line 21, ../sass/welcome.scss */
+#welcome .block .title h2 {
+  color: white;
+}
+/* line 25, ../sass/welcome.scss */
+#welcome .block .buttons {
+  margin-top: 10vh;
+}
+/* line 28, ../sass/welcome.scss */
+#welcome .block .slider {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

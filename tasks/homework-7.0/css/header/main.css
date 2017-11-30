@@ -1,0 +1,102 @@
+/* HEADER */
+/* line 2, ../../sass/header/main.scss */
+header {
+  /*nav*/
+}
+/* line 3, ../../sass/header/main.scss */
+header .head {
+  /*profile*/
+}
+/* line 5, ../../sass/header/main.scss */
+header .head .profile {
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-content: center;
+}
+/* line 12, ../../sass/header/main.scss */
+header .head .profile .container {
+  display: flex;
+  justify-content: space-between;
+  color: #85939f;
+  font-size: 10px;
+}
+/* line 19, ../../sass/header/main.scss */
+header .head .search {
+  display: flex;
+  align-items: center;
+}
+/* line 22, ../../sass/header/main.scss */
+header .head .search input {
+  height: 25px;
+  width: 200px;
+  border: 1px solid #85939f;
+  flex-direction: column;
+  background-color: black;
+}
+/* line 29, ../../sass/header/main.scss */
+header .head .search ::-webkit-input-placeholder {
+  color: #85939f;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 10px;
+  padding: 10px;
+}
+/* line 36, ../../sass/header/main.scss */
+header .head .user-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* line 42, ../../sass/header/main.scss */
+header .head .user-block .login, header .head .user-block .register {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-left: 30px;
+}
+/* line 48, ../../sass/header/main.scss */
+header .head .user-block .login a, header .head .user-block .register a {
+  align-self: center;
+  color: #85939f;
+}
+/* line 56, ../../sass/header/main.scss */
+header .nav {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  background-color: #595959;
+}
+/* line 61, ../../sass/header/main.scss */
+header .nav .block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* line 66, ../../sass/header/main.scss */
+header .nav .block .nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* line 70, ../../sass/header/main.scss */
+header .nav .block .nav-items .nav-item {
+  margin-left: 30px;
+  color: white;
+  display: flex;
+}
+
+@media screen and (max-width: 650px) {
+  /* line 86, ../../sass/header/main.scss */
+  header .head .search {
+    width: 50vw;
+  }
+  /* line 89, ../../sass/header/main.scss */
+  header .head .block {
+    width: 100vw;
+  }
+  /* line 92, ../../sass/header/main.scss */
+  header .head .block .user-block .login, header .head .block .user-block .register {
+    margin: 0;
+  }
+}

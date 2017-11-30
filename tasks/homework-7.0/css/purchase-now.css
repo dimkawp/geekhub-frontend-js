@@ -1,0 +1,16 @@
+/* purchase-now */
+/* line 2, ../sass/purchase-now.scss */
+#purchase-now {
+  background-color: #02baab;
+}
+/* line 4, ../sass/purchase-now.scss */
+#purchase-now .block {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+/* line 10, ../sass/purchase-now.scss */
+#purchase-now .block span {
+  font-size: 24px;
+}

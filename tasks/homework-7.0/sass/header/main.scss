@@ -1,0 +1,100 @@
+/* HEADER */
+header {
+    .head {
+        /*profile*/
+        .profile {
+            height: 100px;
+            background-color: black;
+
+            display: flex;
+            align-content: center;
+
+            .container {
+                display: flex;
+                justify-content: space-between;
+                color: #85939f;
+                font-size: 10px;
+            }      
+        }
+        .search {
+            display: flex;
+            align-items: center;
+            input {
+                height: 25px;
+                width: 200px;
+                border: 1px solid #85939f;
+                flex-direction: column;
+                background-color: black;
+            }
+            ::-webkit-input-placeholder {
+                color: #85939f;;
+                font-family: 'Oxygen', sans-serif;
+                font-size: 10px;
+                padding: 10px;
+              }
+        }
+        .user-block {
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            .login, .register {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;
+                margin-left: 30px;
+                a {
+                    align-self: center;
+                    color: #85939f;
+                }
+            }
+        }
+    } 
+    /*nav*/
+    .nav {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        background-color: #595959;
+        .block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            .nav-items {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                .nav-item {
+                    margin-left:30px;
+                    color: white;
+                    display: flex;
+                   
+                }
+
+            }
+
+        }
+
+    }
+}
+@media screen and (max-width:650px) {
+    header {
+        .head {
+            .search {
+                width: 50vw;
+            }
+            .block {
+                width: 100vw;
+                .user-block {
+                    .login,.register {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}

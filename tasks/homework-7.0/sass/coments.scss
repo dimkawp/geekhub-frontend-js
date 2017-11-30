@@ -1,0 +1,28 @@
+/* coments */
+#coments {
+    background-color: #005c55;
+    .block {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        p {
+            font-size: 24px;
+            color: white;
+
+        }
+
+
+        span {
+            color: #01B9AB;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+    .slider-items {
+        margin-top: 30px;
+    }
+}
