@@ -5,12 +5,12 @@
 }
 /* line 4, ../sass/purchase-now.scss */
 #purchase-now .block {
-  height: 140px;
   display: flex;
   align-items: center;
   color: white;
 }
-/* line 10, ../sass/purchase-now.scss */
+/* line 9, ../sass/purchase-now.scss */
 #purchase-now .block span {
+  margin: 50px 0 50px 0;
   font-size: 24px;
 }

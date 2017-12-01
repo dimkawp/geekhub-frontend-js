@@ -55,4 +55,6 @@
 footer button {
   display: flex;
   align-items: center;
+  background-color: #1f2a32;
+  color: white;
 }

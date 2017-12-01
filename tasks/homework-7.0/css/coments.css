@@ -28,3 +28,10 @@
 #coments .slider-items {
   margin-top: 30px;
 }
+
+@media screen and (max-width: 650px) {
+  /* line 32, ../sass/coments.scss */
+  #coments .block {
+    height: 500px;
+  }
+}

@@ -1,9 +1,9 @@
 /* welcome */
-/* line 4, ../sass/welcome.scss */
+/* line 5, ../sass/welcome.scss */
 #welcome {
   background-color: #b2b2b2;
 }
-/* line 6, ../sass/welcome.scss */
+/* line 7, ../sass/welcome.scss */
 #welcome .block {
   display: flex;
   flex-direction: column;
@@ -13,26 +13,33 @@
   height: calc(100vh - 120px);
   width: 100vw;
 }
-/* line 15, ../sass/welcome.scss */
+/* line 16, ../sass/welcome.scss */
 #welcome .block .title h1, #welcome .block .title h2 {
   font-size: 60px;
 }
-/* line 18, ../sass/welcome.scss */
+/* line 19, ../sass/welcome.scss */
 #welcome .block .title h1 {
   color: #01B9AB;
 }
-/* line 21, ../sass/welcome.scss */
+/* line 22, ../sass/welcome.scss */
 #welcome .block .title h2 {
   color: white;
 }
-/* line 25, ../sass/welcome.scss */
+/* line 26, ../sass/welcome.scss */
 #welcome .block .buttons {
   margin-top: 10vh;
 }
-/* line 28, ../sass/welcome.scss */
+/* line 29, ../sass/welcome.scss */
 #welcome .block .slider {
   height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 650px) {
+  /* line 48, ../sass/welcome.scss */
+  #welcome .block {
+    height: 700px;
+  }
 }

@@ -1,5 +1,6 @@
 /* welcome */
 $heighy: calc(100vh - 120px); 
+$heighy-defoult: 700px;
 $width: 100vw;
 #welcome {
     background-color: #b2b2b2;
@@ -40,4 +41,12 @@ $width: 100vw;
     }
 
 
+}
+
+@media screen and (max-width:650px) {
+    #welcome {
+        .block {
+            height: $heighy-defoult;
+        }
+    }
 }

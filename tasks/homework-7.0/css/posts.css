@@ -1,62 +1,61 @@
 /* posts */
 /* line 3, ../sass/posts.scss */
 #posts h3 {
-  margin-top: 80px;
   color: #3B4953;
   font-size: 36px;
 }
-/* line 8, ../sass/posts.scss */
+/* line 7, ../sass/posts.scss */
 #posts .title {
   text-align: center;
 }
-/* line 11, ../sass/posts.scss */
+/* line 10, ../sass/posts.scss */
 #posts .items {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 15, ../sass/posts.scss */
+/* line 14, ../sass/posts.scss */
 #posts .items .item {
   width: 290px;
   display: flex;
   flex-direction: column;
 }
-/* line 19, ../sass/posts.scss */
+/* line 18, ../sass/posts.scss */
 #posts .items .item h4 {
   font-size: 24px;
   color: #01B9AB;
 }
-/* line 23, ../sass/posts.scss */
+/* line 22, ../sass/posts.scss */
 #posts .items .item p {
   color: #555555;
   font-size: 14px;
   line-height: 1.71;
 }
-/* line 28, ../sass/posts.scss */
+/* line 27, ../sass/posts.scss */
 #posts .items .item .footer {
   display: flex;
   justify-content: space-between;
 }
-/* line 31, ../sass/posts.scss */
+/* line 30, ../sass/posts.scss */
 #posts .items .item .footer .like-block {
   display: flex;
   align-items: center;
 }
 
 @media screen and (max-width: 450px) {
-  /* line 42, ../sass/posts.scss */
+  /* line 41, ../sass/posts.scss */
   #posts .items {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  /* line 46, ../sass/posts.scss */
+  /* line 45, ../sass/posts.scss */
   #posts .items .item {
     display: flex;
     width: 100vw;
     align-self: center;
   }
-  /* line 47, ../sass/posts.scss */
+  /* line 46, ../sass/posts.scss */
   #posts .items .item img {
     width: 100vw;
   }

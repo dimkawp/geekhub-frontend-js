@@ -5,7 +5,81 @@ footer {
     .footer-block {
         display: flex;
         flex-direction: column;
+        .row {
+            .col {
+                .title {
+                    font-size: 20px;
+                    margin: 50px 0 50px 0;
+                }
+                .contacts {
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        margin: 15px 0;
+
+                        font-size: 12px;
+                        p {
+                            margin: 0;
+                            color: #b2b2b2;
+                            margin: 5px;
+                            span {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+                .twitters {
+                    font-size: 12px;
+                    .twit {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                    }               
+                    i {
+                        margin: 5px;
+                    }
+                    p {
+                        margin: 5px;
+                        span {
+                            color: #02baab;
+                        }
+                    }
+                }
+                .social {
+                    div {
+                        img {
+                            margin: 5px;
+                            height: 50px;
+                            width: 50px;
+                        }
+                        span {
+                            font-size: 12px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .posts {
+                    .post {
+                        font-size: 12px;
+                        .title {
+                            margin: 0;
+                            font-size: 12px;
+                        }
+                        .description {
+                            p {
+                                color: #02baab;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .footer-down {
+            margin-top: 70px;
+            font-size: 12px;
             display: flex;
             justify-content: space-between;
             .coperations {

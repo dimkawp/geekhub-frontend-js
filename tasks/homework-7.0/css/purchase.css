@@ -19,3 +19,10 @@
   line-height: 1.67;
   margin: 0;
 }
+
+@media screen and (max-width: 650px) {
+  /* line 25, ../sass/purchase.scss */
+  #purchase .block {
+    height: 500px;
+  }
+}

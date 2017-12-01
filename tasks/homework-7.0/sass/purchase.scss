@@ -19,3 +19,11 @@
     }
     
 }
+
+@media screen and (max-width:650px) {
+    #purchase {
+        .block {
+            height: 500px;
+        }
+    }
+}

@@ -1,4 +1,12 @@
 /* HEADER */
+
+$nav-color-1: #ffae00;
+$nav-color-2: #fc7100;
+$nav-color-3: #e51c5e;
+$nav-color-4: #ae0f8d;
+$nav-color-5: #6d0fae;
+$nav-color-6: #33227a;
+$nav-color-7: #0c8fcc;
 header {
     .head {
         /*profile*/
@@ -24,7 +32,8 @@ header {
                 width: 200px;
                 border: 1px solid #85939f;
                 flex-direction: column;
-                background-color: black;
+                background: url(../img/header/search/search-bg.png) no-repeat;
+                background-position: right;
             }
             ::-webkit-input-placeholder {
                 color: #85939f;;
@@ -62,23 +71,99 @@ header {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            .logo {
+                height: 75px;
+                display: flex;
+                align-items: center;
+            }
             
             .nav-items {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
                 .nav-item {
-                    margin-left:30px;
+                    width: 100px;
+                    height: 75px;
+                    
                     color: white;
                     display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    svg {
+                        height: 12px;
+                        width: 100px;
+                        display: flex;
+                        justify-content: flex-start;
+
+                    }
+                    a {
+                        text-align: left;
+                        text-decoration: none;
+                        color: white;
+                        margin-top: 15px;
+                    }
+                    a:visited {
+                        color: white;
+                    }
+                    a:active {
+                        color: white;
+                    }
+                    a:hover {
+                        color: #9E9D9D;
+                    }
                    
                 }
-
+                .nav-item:hover:nth-child(1) {
+                    background-color: $nav-color-1;
+                    transition: 1s;
+                }
+                .nav-item:hover:nth-child(2) {
+                    background-color: $nav-color-2;
+                    transition: 1s;
+                }
+                .nav-item:hover:nth-child(3) {
+                    background-color: $nav-color-3;
+                    transition: 1s;
+                }
+                .nav-item:hover:nth-child(4) {
+                    background-color: $nav-color-4;
+                    transition: 1s;
+                }
+                .nav-item:hover:nth-child(5) {
+                    background-color: $nav-color-5;
+                    transition: 1s;
+                }
+                .nav-item:hover:nth-child(6) {
+                    background-color: $nav-color-6;
+                    transition: 1s;
+                }
+                .nav-item:hover:nth-child(7) {
+                    background-color: $nav-color-7;
+                    transition: 1s;
+                }
             }
-
         }
-
     }
+}
+/* media styles */
+@media screen and (max-width:990px) {
+    header {
+        .nav {
+            display: none;
+            .block {
+                .nav-items {
+                    .nav-item {
+                        width: 75px;
+                        svg {
+                            width: 75px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 @media screen and (max-width:650px) {
     header {
@@ -94,6 +179,9 @@ header {
                     }
                 }
             }
+        }
+        .nav {
+            display: none;
         }
     }
 

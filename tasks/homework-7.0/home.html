@@ -11,6 +11,18 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <!-- icons -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <!-- add google map -->
+        <script type="text/javascript">
+            function myMap() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(51.5, -0.12),
+                    zoom: 10,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            }
+        </script>
     
         <title>Homework-7.0</title>
     </head>
@@ -21,7 +33,7 @@
                     <div class="profile">
                         <div class="block container">
                             <div class="search">
-                                <input type="text" placeholder="Search">
+                                <input type="text" placeholder="Search" aria-label="Search">
                             </div>
                             <div class="user-block">
                                 <div class="login">
@@ -42,13 +54,49 @@
                             <img src="img/logo.png" alt="logo">
                         </div>
                         <div class="nav-items">
-                            <div class="nav-item">HOME</div>
-                            <div class="nav-item">TYPOGRAPHY</div>
-                            <div class="nav-item">BLOG</div>
-                            <div class="nav-item">PAGES</div>
-                            <div class="nav-item">ELEMENTS</div>
-                            <div class="nav-item">ECOMMERSE</div>
-                            <div class="nav-item">MEGA MENU</div>
+                            
+                            <div class="nav-item">
+                                <svg>
+                                    <line x1="100" y1="0" x2="0" y2="0" style="stroke:#ffae00;stroke-width:12" />
+                                </svg>                              
+                                <a href="" id="HOME">HOME</a>
+                            </div>
+                            <div class="nav-item">
+                                <svg>
+                                    <line x1="100" y1="0" x2="0" y2="0" style="stroke:#fc7100;stroke-width:12" />
+                                </svg>    
+                                <a href="" id="TYPOGRAPHY">TYPOGRAPHY</a>
+                            </div>
+                            <div class="nav-item">
+                                <svg>
+                                    <line x1="100" y1="0" x2="0" y2="0" style="stroke:#e51c5e;stroke-width:12" />
+                                </svg>                                   
+                                <a href="" id="BLOG">BLOG</a>
+                            </div>
+                            <div class="nav-item">
+                                <svg>
+                                    <line x1="100" y1="0" x2="0" y2="0" style="stroke:#ae0f8d;stroke-width:12" />
+                                </svg>   
+                                <a href="" id="PAGES">PAGES</a>
+                            </div>
+                            <div class="nav-item">
+                                <svg>
+                                    <line x1="100" y1="0" x2="0" y2="0" style="stroke:#6d0fae;stroke-width:12" />
+                                </svg>   
+                                <a href="" id="ELEMENTS">ELEMENTS</a>
+                            </div>
+                            <div class="nav-item">
+                                <svg>
+                                    <line x1="100" y1="0" x2="0" y2="0" style="stroke:#33227a;stroke-width:12" />
+                                </svg>   
+                                <a href="" id="ECOMMERSE">ECOMMERSE</a>
+                            </div>
+                            <div class="nav-item">
+                                <svg>
+                                    <line x1="100" y1="0" x2="0" y2="0" style="stroke:#0c8fcc;stroke-width:12" />
+                                </svg>   
+                                <a href="" id="MEGA MENU">MEGA MENU</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,13 +165,32 @@
                                         <span>257</span>
                                     </div>
                                 </figcaption>
-                            </div>
-                            <div class="item">
-                                <div class="social-nav">
-                                    <img src="img/icons/mid-icons.fw.png" alt="">
-
+                                <div class="item-hover">
+                                    <div class="social-nav">
+                                        <img src="img/icons/mid-icons.fw.png" alt="">        
+                                    </div>
                                 </div>
                             </div>
+                            <!-- 2 -->
+                            <div class="item">
+                                <div class="img"></div>
+                                <figcaption>
+                                    <div class="title">
+                                        <h5>Lindemans Wine</h5>
+                                        <span>Art Direction, Web Design</span>
+                                    </div>
+                                    <div class="social">
+                                        <i class="material-icons">remove_red_eye</i>
+                                        <span>257</span>
+                                    </div>
+                                </figcaption>
+                                <div class="item-hover">
+                                    <div class="social-nav">
+                                        <img src="img/icons/mid-icons.fw.png" alt="">        
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="item">
                                 <!-- 2 -->
                                 <div class="img"></div>
@@ -138,6 +205,11 @@
                                         
                                     </div>
                                 </figcaption>
+                                <div class="item-hover">
+                                    <div class="social-nav">
+                                        <img src="img/icons/mid-icons.fw.png" alt="">        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="slider-items">
@@ -301,21 +373,41 @@
                     <div class="title">
                         <h3>Company expirience</h3>
                     </div>
-                    <!-- js-object-inform -->
-                    <div class="img">
-                        <img src="img/expirians/js-object.fw.png" alt="">
-                    </div>
-                    
+
                     <div class="items container">
+
                         <div class="item">
+                            <div class="hover-border">
+                                <div class="img">
+                                    <div class="black-order">
+                                        <img src="img/expirians/1.fw.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
                             <span>500</span>
                             <p>years of web development</p>
                         </div>
+                        <div class="dots"></div>
                         <div class="item">
+                            <div class="hover-border">
+                                <div class="img">
+                                    <div class="black-order">
+                                        <img src="img/expirians/2.fw.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
                             <span>25 000</span>
                             <p>results of the last winter year</p>
                         </div>
+                        <div class="dots"></div>
                         <div class="item">
+                            <div class="hover-border">
+                                <div class="img">
+                                    <div class="black-order">
+                                        <img src="img/expirians/3.fw.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
                             <span>100 000</span>
                             <p>euros of the military budget</p>
                         </div>
@@ -386,109 +478,138 @@
                         <div class="col">
                             <div class="title">
                                 <span>Get in touch</span>
-                                <div class="contacts">
-                                    <div>
-                                        <i></i>
-                                        <span>Address:</span>
-                                        <p>321 Street Name, Jnited Kingdom, London</p>
-                                    </div>
-                                    <div>
-                                        <i></i>
-                                        <span>Phone:</span>
-                                        <p>+7 998 71 150 30 20</p>
-                                    </div>
-                                    <div>
-                                        <i></i>
-                                        <span>Email:</span>
-                                        <p>info@ambertheme.com</p>
+                            </div>
+                            <div class="contacts">
+                                <div>
+                                    <i class="material-icons">place</i>
+                                    
+                                    <p><span>Address: </span> 321 Street Name, Jnited Kingdom, London</p>
+                                </div>
+                                <div>
+                                    <i class="material-icons">local_phone</i>
+                                    
+                                    <p><span>Phone: </span> +7 998 71 150 30 20</p>
+                                </div>
+                                <div>
+                                    <i class="material-icons">local_post_office</i>
+                                    
+                                    <p><span>Email: </span> info@ambertheme.com</p>
+                                </div>
+                                <div>
+                                    <div id="map" style="width:200px;height:150px"></div>
+                                </div>
+                            </div>
+                        </div>       
+                        <div class="col">
+                            <div class="title">
+                                <span>Latest tweets</span>
+                            </div>   
+                            <div class="twitters">
+                                <div class="twit">
+                                    <i class="material-icons">chat</i>
+                                    <div class="content">    
+                                        <p>CMS Masters And Their best Web Design Tools <span>#bestwrbdesigntools #webdesign</span></p>
+                                        <div class="time">
+                                            <span> - about 12 min ago</span>
+                                        </div>                                      
                                     </div>
                                 </div>
-                                <div class="map">
-                                    google map
+                                <div class="twit">
+                                    <i class="material-icons">chat</i>
+                                    <div class="content">    
+                                        <p>CMS Masters And Their best Web Design Tools <span>#bestwrbdesigntools #webdesign</span></p>
+                                        <div class="time">
+                                            <span> - about 12 min ago</span>
+                                        </div>                                      
+                                    </div>
+                                </div>
+                                <div class="twit">
+                                    <i class="material-icons">chat</i>
+                                    <div class="content">    
+                                        <p>CMS Masters And Their best Web Design Tools <span>#bestwrbdesigntools #webdesign</span></p>
+                                        <div class="time">
+                                            <span> - about 12 min ago</span>
+                                        </div>                                      
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <span>Latest tweets</span>
-                            <div class="twiters">
-                                <div class="twit">
-                                    twit1
-                                </div>
-                                <div class="twit">
-                                    twit2
-                                </div>
-                                <div class="twit">
-                                    twit3
-                                </div>
+                            <div class="title">
+                                <span>Follow us</span>
                             </div>
-                        </div>
-                        <div class="col">
-                            <span>Follow us</span>
+                            
                             <div class="social">
                                 <div>
-                                    <img src="" alt="">
-                                    <span>F</span>
+                                    <img src="img/footer/social/f.fw.png" alt="f">
+                                    <span>Like us on Facebook</span>
                                 </div>
                                 <div>
-                                    <img src="" alt="">
-                                    <span>F</span>
+                                    <img src="img/footer/social/t.fw.png" alt="t">
+                                    <span>Follow us on Twitter</span>
                                 </div>
                                 <div>
-                                    <img src="" alt="">
-                                    <span>F</span>
+                                    <img src="img/footer/social/y.fw.png" alt="y">
+                                    <span>Watch videos on YouTube</span>
                                 </div>
                                 <div>
-                                    <img src="" alt="">
-                                    <span>F</span>
+                                    <img src="img/footer/social/i.fw.png" alt="i">
+                                    <span>Frend us on Instagram</span>
                                 </div>
                                 <div>
-                                    <img src="" alt="">
-                                    <span>F</span>
+                                    <img src="img/footer/social/p.fw.png" alt="p">
+                                    <span>Repin on Pinterest</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <span>Popular posts</span>
-                            <div class="p-posts">
+                            <div class="title">
+                                <span>Popular posts</span>
+                            </div>
+
+                            <div class="posts">
                                 <!-- 1 -->
                                 <div class="post">
                                     <div class="title">
-                                        title
+                                       <span>September, 30</span>
                                     </div>
                                     <div class="description">
-                                        description
+                                        <p>Candy vanes dragee pudding. Donut cheesecake I love chocolate icing</p>
                                     </div>
                                 </div>
                                 <!-- 2 -->
                                 <div class="post">
                                     <div class="title">
-                                        title
+                                        <span>September, 30</span>
                                     </div>
                                     <div class="description">
-                                        description
+                                        <p>Candy vanes dragee pudding. Donut cheesecake I love chocolate icing</p>
                                     </div>
                                 </div>
                                 <!-- 3 -->
                                 <div class="post">
                                     <div class="title">
-                                        title
+                                        <span>September, 30</span>
                                     </div>
                                     <div class="description">
-                                        description
+                                        <p>Candy vanes dragee pudding. Donut cheesecake I love chocolate icing</p>
                                     </div>
-                                </div>                                                                    
+                                </div>                                                                
                             </div>
                         </div>
                     </div>
                     <div class="footer-down">
                         <div class="coperations">
-                            <span>@2014</span>
+                            <span>@2017 dimkawp@gmail.com themes all. rights reserved.</span>
                             <span>Powered by WordPress</span>
                         </div>
                         <button>Back to top page<i class="material-icons">vertical_align_top</i></button>
                     </div>
                 </div>
             </footer>
+
+        <!-- google map -->
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
             
         </body>
 </html>

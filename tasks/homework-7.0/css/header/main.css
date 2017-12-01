@@ -1,53 +1,54 @@
 /* HEADER */
-/* line 2, ../../sass/header/main.scss */
+/* line 10, ../../sass/header/main.scss */
 header {
   /*nav*/
 }
-/* line 3, ../../sass/header/main.scss */
+/* line 11, ../../sass/header/main.scss */
 header .head {
   /*profile*/
 }
-/* line 5, ../../sass/header/main.scss */
+/* line 13, ../../sass/header/main.scss */
 header .head .profile {
   height: 100px;
   background-color: black;
   display: flex;
   align-content: center;
 }
-/* line 12, ../../sass/header/main.scss */
+/* line 20, ../../sass/header/main.scss */
 header .head .profile .container {
   display: flex;
   justify-content: space-between;
   color: #85939f;
   font-size: 10px;
 }
-/* line 19, ../../sass/header/main.scss */
+/* line 27, ../../sass/header/main.scss */
 header .head .search {
   display: flex;
   align-items: center;
 }
-/* line 22, ../../sass/header/main.scss */
+/* line 30, ../../sass/header/main.scss */
 header .head .search input {
   height: 25px;
   width: 200px;
   border: 1px solid #85939f;
   flex-direction: column;
-  background-color: black;
+  background: url(../img/header/search/search-bg.png) no-repeat;
+  background-position: right;
 }
-/* line 29, ../../sass/header/main.scss */
+/* line 38, ../../sass/header/main.scss */
 header .head .search ::-webkit-input-placeholder {
   color: #85939f;
   font-family: 'Oxygen', sans-serif;
   font-size: 10px;
   padding: 10px;
 }
-/* line 36, ../../sass/header/main.scss */
+/* line 45, ../../sass/header/main.scss */
 header .head .user-block {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-/* line 42, ../../sass/header/main.scss */
+/* line 51, ../../sass/header/main.scss */
 header .head .user-block .login, header .head .user-block .register {
   display: flex;
   flex-direction: row;
@@ -55,48 +56,138 @@ header .head .user-block .login, header .head .user-block .register {
   align-content: center;
   margin-left: 30px;
 }
-/* line 48, ../../sass/header/main.scss */
+/* line 57, ../../sass/header/main.scss */
 header .head .user-block .login a, header .head .user-block .register a {
   align-self: center;
   color: #85939f;
 }
-/* line 56, ../../sass/header/main.scss */
+/* line 65, ../../sass/header/main.scss */
 header .nav {
   height: 75px;
   display: flex;
   align-items: center;
   background-color: #595959;
 }
-/* line 61, ../../sass/header/main.scss */
+/* line 70, ../../sass/header/main.scss */
 header .nav .block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-/* line 66, ../../sass/header/main.scss */
+/* line 74, ../../sass/header/main.scss */
+header .nav .block .logo {
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+/* line 80, ../../sass/header/main.scss */
 header .nav .block .nav-items {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-/* line 70, ../../sass/header/main.scss */
+/* line 84, ../../sass/header/main.scss */
 header .nav .block .nav-items .nav-item {
-  margin-left: 30px;
+  width: 100px;
+  height: 75px;
   color: white;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 93, ../../sass/header/main.scss */
+header .nav .block .nav-items .nav-item svg {
+  height: 12px;
+  width: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
+/* line 100, ../../sass/header/main.scss */
+header .nav .block .nav-items .nav-item a {
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  margin-top: 15px;
+}
+/* line 106, ../../sass/header/main.scss */
+header .nav .block .nav-items .nav-item a:visited {
+  color: white;
+}
+/* line 109, ../../sass/header/main.scss */
+header .nav .block .nav-items .nav-item a:active {
+  color: white;
+}
+/* line 112, ../../sass/header/main.scss */
+header .nav .block .nav-items .nav-item a:hover {
+  color: #9E9D9D;
+}
+/* line 117, ../../sass/header/main.scss */
+header .nav .block .nav-items .nav-item:hover:nth-child(1) {
+  background-color: #ffae00;
+  transition: 1s;
+}
+/* line 121, ../../sass/header/main.scss */
+header .nav .block .nav-items .nav-item:hover:nth-child(2) {
+  background-color: #fc7100;
+  transition: 1s;
+}
+/* line 125, ../../sass/header/main.scss */
+header .nav .block .nav-items .nav-item:hover:nth-child(3) {
+  background-color: #e51c5e;
+  transition: 1s;
+}
+/* line 129, ../../sass/header/main.scss */
+header .nav .block .nav-items .nav-item:hover:nth-child(4) {
+  background-color: #ae0f8d;
+  transition: 1s;
+}
+/* line 133, ../../sass/header/main.scss */
+header .nav .block .nav-items .nav-item:hover:nth-child(5) {
+  background-color: #6d0fae;
+  transition: 1s;
+}
+/* line 137, ../../sass/header/main.scss */
+header .nav .block .nav-items .nav-item:hover:nth-child(6) {
+  background-color: #33227a;
+  transition: 1s;
+}
+/* line 141, ../../sass/header/main.scss */
+header .nav .block .nav-items .nav-item:hover:nth-child(7) {
+  background-color: #0c8fcc;
+  transition: 1s;
 }
 
+/* media styles */
+@media screen and (max-width: 990px) {
+  /* line 152, ../../sass/header/main.scss */
+  header .nav {
+    display: none;
+  }
+  /* line 156, ../../sass/header/main.scss */
+  header .nav .block .nav-items .nav-item {
+    width: 75px;
+  }
+  /* line 158, ../../sass/header/main.scss */
+  header .nav .block .nav-items .nav-item svg {
+    width: 75px;
+  }
+}
 @media screen and (max-width: 650px) {
-  /* line 86, ../../sass/header/main.scss */
+  /* line 171, ../../sass/header/main.scss */
   header .head .search {
     width: 50vw;
   }
-  /* line 89, ../../sass/header/main.scss */
+  /* line 174, ../../sass/header/main.scss */
   header .head .block {
     width: 100vw;
   }
-  /* line 92, ../../sass/header/main.scss */
+  /* line 177, ../../sass/header/main.scss */
   header .head .block .user-block .login, header .head .block .user-block .register {
     margin: 0;
+  }
+  /* line 183, ../../sass/header/main.scss */
+  header .nav {
+    display: none;
   }
 }

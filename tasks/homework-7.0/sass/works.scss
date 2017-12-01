@@ -12,7 +12,7 @@
         h3 {
             font-size: 36px;
             font-weight: 300;
-            margin-top: 10vh;
+            
         }
         p {
             font-size: 18px;
@@ -49,15 +49,31 @@
                     span {
                         font-size: 11px;
                         color: #01B9AB;
+                    }               
+                }
+                .item-hover {
+                    display: none;
+                }
+                .item:hover {
+                    .img {
+                        display: none;
                     }
-                    .social-nav {
-                        height: 290px;
-                        background-color: #0c3f57;
+                    figcaption {
+                        display: none;
+                    }
+                    .item-hover {
                         display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        .social-nav {
+                            height: 290px;
+                            width: 290px;
+                            background-color: #0c3f57;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
                     }
-                   
+
                 }
                 .img {
                     height: 220px;
