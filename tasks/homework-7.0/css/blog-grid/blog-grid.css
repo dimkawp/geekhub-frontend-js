@@ -1,0 +1,80 @@
+/* main blog grid */
+/* line 2, ../../sass/blog-grid/blog-grid.scss */
+#blog-grid {
+  background-color: #666666;
+}
+/* line 5, ../../sass/blog-grid/blog-grid.scss */
+#blog-grid .block {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+/* line 11, ../../sass/blog-grid/blog-grid.scss */
+#blog-grid .block .title {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+}
+/* line 16, ../../sass/blog-grid/blog-grid.scss */
+#blog-grid .block .title h3 {
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: left;
+}
+/* line 23, ../../sass/blog-grid/blog-grid.scss */
+#blog-grid .block .nav {
+  font-size: 12px;
+  color: #85939f;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+/* line 30, ../../sass/blog-grid/blog-grid.scss */
+#blog-grid .block .nav .info-block {
+  display: flex;
+  flex-direction: row;
+}
+/* line 33, ../../sass/blog-grid/blog-grid.scss */
+#blog-grid .block .nav .info-block div {
+  width: 100px;
+  margin: 5px;
+}
+/* line 40, ../../sass/blog-grid/blog-grid.scss */
+#blog-grid .block .nav .nav-block .items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* line 45, ../../sass/blog-grid/blog-grid.scss */
+#blog-grid .block .nav .nav-block .items .item {
+  margin: 10px;
+  color: #85939f;
+}
+/* line 48, ../../sass/blog-grid/blog-grid.scss */
+#blog-grid .block .nav .nav-block .items .item a {
+  text-decoration: none;
+  color: #85939f;
+}
+/* line 52, ../../sass/blog-grid/blog-grid.scss */
+#blog-grid .block .nav .nav-block .items .item a:visited {
+  color: #85939f;
+}
+/* line 55, ../../sass/blog-grid/blog-grid.scss */
+#blog-grid .block .nav .nav-block .items .item a:active {
+  color: #85939f;
+}
+/* line 58, ../../sass/blog-grid/blog-grid.scss */
+#blog-grid .block .nav .nav-block .items .item a:hover {
+  color: #85939f;
+}
+
+@media screen and (max-width: 750px) {
+  /* line 75, ../../sass/blog-grid/blog-grid.scss */
+  #blog-grid .block .nav .nav-block {
+    display: none;
+  }
+}

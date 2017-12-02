@@ -10,53 +10,60 @@
 }
 /* line 10, ../sass/posts.scss */
 #posts .items {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 14, ../sass/posts.scss */
+/* line 15, ../sass/posts.scss */
 #posts .items .item {
   width: 290px;
   display: flex;
   flex-direction: column;
 }
-/* line 18, ../sass/posts.scss */
+/* line 19, ../sass/posts.scss */
 #posts .items .item h4 {
   font-size: 24px;
   color: #01B9AB;
 }
-/* line 22, ../sass/posts.scss */
+/* line 23, ../sass/posts.scss */
 #posts .items .item p {
   color: #555555;
   font-size: 14px;
   line-height: 1.71;
 }
-/* line 27, ../sass/posts.scss */
+/* line 28, ../sass/posts.scss */
 #posts .items .item .footer {
   display: flex;
   justify-content: space-between;
 }
-/* line 30, ../sass/posts.scss */
+/* line 31, ../sass/posts.scss */
 #posts .items .item .footer .like-block {
   display: flex;
   align-items: center;
 }
 
 @media screen and (max-width: 450px) {
-  /* line 41, ../sass/posts.scss */
+  /* line 42, ../sass/posts.scss */
   #posts .items {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  /* line 45, ../sass/posts.scss */
+  /* line 46, ../sass/posts.scss */
   #posts .items .item {
     display: flex;
     width: 100vw;
     align-self: center;
   }
-  /* line 46, ../sass/posts.scss */
+  /* line 47, ../sass/posts.scss */
   #posts .items .item img {
     width: 100vw;
+  }
+}
+@media screen and (max-width: 780px) {
+  /* line 60, ../sass/posts.scss */
+  #posts .items {
+    justify-content: center;
   }
 }
