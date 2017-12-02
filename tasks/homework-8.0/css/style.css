@@ -1,0 +1,20 @@
+.block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.block button {
+    width: 250px;
+    margin: 10px;
+}
+.newClass {
+    font-size: 20px;
+    display: flex;   
+    color: red;
+}
+.bg {
+    background-color: seagreen;
+}
+#fade {
+    text-align: center;
+    display: none;
+}

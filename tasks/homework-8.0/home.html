@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <!-- icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <!-- jquery 3.2.1 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+
+    
+        <title>Homework-8.0</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="fade">fade</div>
+            <hr>
+            <div class="block container">
+                <!-- addClass - добавление класса по клику -->
+                <button id="addClass" type="button" class="">addClass</button>
+                <!-- removeClass - удаление класса по клику -->
+                <button id="removeClass" type="button" class="btn btn-primary">removeClass</button>
+                <!-- toggleClass - переключение класса по клику -->
+                <button id="toggleClass" type="button" class="btn btn-primary">toggleClass</button>
+                <!--  getAttr - получение какого-то атрибута кнопки по клику -->
+                <button id="getAttr" type="button" class="btn btn-primary">getAttr</button>
+                <!-- setAttr - присвоение какого-то атрибута кнопке по клику -->
+                <button id="setAttr" type="button" class="btn btn-primary">setAttr</button>
+                <!-- alertOnClick - вызов всплывающего окна по клику -->
+                <button id="alertOnClick" type="button" class="btn btn-primary">alertOnClick</button>
+                <!-- triggerAlert - тригер alertOnClick кнопки по клику -->
+                <button id="triggerAlert" type="button" class="btn btn-primary">triggerAlert</button>
+                <!-- cloneThis - по клику склонировать кнопку, дописать текст "(cloned)" и вставить её сразу после этой кнопки -->
+                <button id="cloneThis" type="button" class="btn btn-primary" value="cloneThis">cloneThis</button>
+                <!-- closestElement - по клику вывести в консоль ближайшего родителя. -->
+                <button id="closestElement" type="button" class="btn btn-primary">closestElement</button>
+                <!-- eachBtnText - по клику циклом пройтись по всем кнопкам и собрать массив текста этих кнопок.
+                То есть, в итоге, вывести в консоль массив текста кнопок.
+                Будет это выглядеть примерно так - ["addClass", "removeClass", "toggleClass", ... ] -->
+                <button id="eachBtnText" type="button" class="btn btn-primary">eachBtnText</button>
+                <!-- findMe - по клику найти эту кнопку в теге body и вывести в консоль результат поиска -->
+                <button id="findMe" type="button" class="btn btn-primary">findMe</button>
+                <!--  fadeInText - расположить скрытый текст рядом с кнопкой, по клику на кнопку показать этот текст через fadeIn. -->
+                <button id="fadeInText" type="button" class="btn btn-primary">fadeInText</button>
+                <!-- fadeOutText - расположить текст рядом с кнопкой, по клику на кнопку скрыть этот текст через fadeOut. -->
+                <button id="fadeOutText" type="button" class="btn btn-primary">fadeOutText</button>
+                <!-- hideText - расположить текст рядом с кнопкой, по клику на кнопку скрыть этот текст через hide. -->
+                <button id="hideText" type="button" class="btn btn-primary">hideText</button>
+                <!-- showText - расположить скрытый текст рядом с кнопкой, по клику на кнопку показать этот текст через show. -->
+                <button id="showText" type="button" class="btn btn-primary">showText</button>
+                <!-- dataAboutMe - по клику вывести следующие данные через запятые в консоль:
+                высота кнопки, ширина кнопки, абсолютную позиция по обеим осям, значение всех атрибутов,
+                родительский элемент, соседние кнопки сверху и снизу, текст кнопки. -->
+                <button id="dataAboutMe" type="button" class="btn btn-primary">dataAboutMe</button>
+            </div>
+            <hr>
+        </div>
+    </body>
+</html>
