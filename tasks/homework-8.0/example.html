@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <!-- icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <!-- jquery 3.2.1 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/example.js"></script>
+
+    
+        <title>Homework-8.0</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <form>
+                    <div class="form-group">
+                        <lable>Lable: </lable>
+                        <input id="input-1" type="text" class="form-control" value="input-1">
+                        <input id="input-2" type="text" class="form-control" value="input-2">
+                    </div>
+                    <div class="form-group">
+                    <label>Example select</label>
+                    <!-- add "multiple" fore select close multiple select -->
+                        <select class="form-control" id="select-1">
+                            <option>select-1</option>
+                            <option>select-2</option>
+                            <option>select-3</option>
+                            <option>select-4</option>
+                            <option>select-5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Example textarea</label>
+                        <textarea class="form-control" id="textarea" rows="3"></textarea>
+                    </div>
+                    <fieldset class="form-group">
+                    <legend>Radio buttons</legend>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="radios-1" value="option-1" checked>
+                            Option one is this
+                        </label>
+                        </div>
+                        <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="radios-2" value="option-2">
+                            Option two can be something
+                        </label>
+                        </div>
+                        <!--class disabled radio -->
+                        <div class="form-check disabled">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="radios-3" value="option-3" disabled>
+                            Option three is disabled
+                        </label>
+                        </div>
+                    </fieldset>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" id="checkbox-1" value="checkbox-1">
+                            Check - 1
+                            <input type="checkbox" class="form-check-input" id="checkbox-2" value="checkbox-2">
+                            Check - 2
+                            <input type="checkbox" class="form-check-input" id="checkbox-3" value="checkbox-3">
+                            Check - 3
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>         
+                </form>
+            </div>
+        </div>
+        
+
+    </body>
+</html>
