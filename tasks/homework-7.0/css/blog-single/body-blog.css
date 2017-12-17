@@ -1,0 +1,162 @@
+/*SINGLE BLOG*/
+/* line 2, ../../sass/blog-single/body-blog.scss */
+#body-blog {
+  /*categories*/
+}
+/* line 5, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article img {
+  padding: 0;
+}
+/* line 8, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .text {
+  color: #3B4953;
+}
+/* line 10, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .text h2 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+/* line 17, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .text p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+/* line 24, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .quote {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* line 28, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .quote svg {
+  margin: 0 10px 0 25px;
+}
+/* line 31, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .quote .quote-mesage {
+  color: #C59C6D;
+}
+/* line 33, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .quote .quote-mesage p {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 1.5;
+}
+/* line 41, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .quote .quote-mesage span {
+  font-size: 14px;
+  font-style: italic;
+}
+/* line 48, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .footer {
+  display: flex;
+  flex-direction: column;
+}
+/* line 51, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .footer .tags {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+}
+/* line 55, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .footer .tags ul {
+  display: flex;
+  flex-direction: row;
+}
+/* line 58, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .footer .tags ul a {
+  color: #01B9AB;
+  font-size: 12px;
+  margin: 0 5px 0 5px;
+}
+/* line 66, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .footer .social {
+  display: flex;
+  flex-direction: row;
+}
+/* line 69, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .footer .social .item {
+  margin: 5px 5px 5px 0;
+}
+/* line 74, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .footer .related-posts {
+  display: flex;
+  flex-direction: column;
+}
+/* line 77, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .footer .related-posts span {
+  font-size: 18px;
+  color: #3B4953;
+  font-weight: 900;
+}
+/* line 82, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .footer .related-posts .items {
+  display: flex;
+  flex-direction: row;
+}
+/* line 86, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .footer .related-posts .items .item span {
+  font-size: 12px;
+  color: #3B4953;
+}
+/* line 91, ../../sass/blog-single/body-blog.scss */
+#body-blog .blog-body article .footer .related-posts .items .item p {
+  font-size: 12px;
+  color: #01B9AB;
+}
+/* line 107, ../../sass/blog-single/body-blog.scss */
+#body-blog .item span {
+  font-size: 18px;
+  color: #3B4953;
+  font-weight: 900;
+}
+/* line 114, ../../sass/blog-single/body-blog.scss */
+#body-blog .categories a {
+  font-size: 12px;
+  color: #01B9AB;
+}
+/* line 119, ../../sass/blog-single/body-blog.scss */
+#body-blog .comments {
+  font-size: 12px;
+}
+/* line 123, ../../sass/blog-single/body-blog.scss */
+#body-blog .comments ul li span {
+  font-size: 12px;
+  color: #3B4953;
+}
+/* line 128, ../../sass/blog-single/body-blog.scss */
+#body-blog .comments ul li p {
+  color: #01B9AB;
+}
+/* line 136, ../../sass/blog-single/body-blog.scss */
+#body-blog .tags .tags-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+/* line 140, ../../sass/blog-single/body-blog.scss */
+#body-blog .tags .tags-cloud span {
+  border: 1px solid #EDEDED;
+  padding: 5px;
+  margin: 5px;
+}
+/* line 144, ../../sass/blog-single/body-blog.scss */
+#body-blog .tags .tags-cloud span a {
+  font-size: 12px;
+  color: #01B9AB;
+  font-weight: 400;
+  line-height: 3;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 154, ../../sass/blog-single/body-blog.scss */
+#body-blog .tags .tags-cloud span:hover {
+  background-color: #01B9AB;
+}
+/* line 156, ../../sass/blog-single/body-blog.scss */
+#body-blog .tags .tags-cloud span:hover a {
+  color: white;
+}

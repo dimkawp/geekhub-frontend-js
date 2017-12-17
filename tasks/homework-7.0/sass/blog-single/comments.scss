@@ -1,0 +1,41 @@
+#comments {
+    background-color: #EBF0F3;
+    .form {
+        .inputs {
+            display: flex;
+            flex-direction: row;
+            .input {
+                display: flex;
+                flex-direction: column;
+                input {
+                    border: none;
+                }
+
+            }
+
+
+        }
+        .textarea {
+            textarea {
+                border: none;
+            }
+        }
+        .submit-btn {
+            float: right;
+            width: 135px;
+            height: 40px;
+            text-align: center;
+            border: 3px solid #01b9ab;
+            background-color: white;
+    
+            font-size: 12px;
+            font-weight: 900;
+            color: #01b9ab;
+            text-transform: uppercase;
+        }
+        .submit-btn:hover {
+            background-color: #ffad00;
+            border: 2px solid #01b9ab;
+        }
+    }
+}

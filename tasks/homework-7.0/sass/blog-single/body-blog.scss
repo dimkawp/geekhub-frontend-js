@@ -1,0 +1,166 @@
+/*SINGLE BLOG*/
+#body-blog {
+    .blog-body {
+        article {
+            img {
+                padding: 0;
+            }
+            .text {
+                color: #3B4953;
+                h2 {
+                    
+                    font-size: 18px;
+                    margin: 0;
+                    padding: 0;
+                    text-align: left;
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.71;
+                }
+    
+            }
+            .quote {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                svg {
+                    margin: 0 10px 0 25px;
+                }
+                .quote-mesage {
+                    color: #C59C6D;
+                    p {
+                        margin: 0;
+                        padding: 0;
+                        
+                        font-size: 24px;
+                        line-height: 1.5;
+    
+                    }
+                    span {
+                        font-size: 14px;
+                        font-style: italic;
+    
+                    }
+                }
+            } 
+            .footer {
+                display: flex;
+                flex-direction: column;
+                .tags {
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 12px;
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        a {
+                            color: #01B9AB;
+                            font-size: 12px;
+                            margin: 0 5px 0 5px;
+                        }
+
+                    }
+                }
+                .social {
+                    display: flex;
+                    flex-direction: row;
+                    .item {
+                        margin: 5px 5px 5px 0;
+                    }
+
+                }
+                .related-posts {
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        font-size: 18px;
+                        color: #3B4953;
+                        font-weight: 900;
+                    }
+                    .items {
+                        display: flex;
+                        flex-direction: row;
+                        .item {
+                            span {
+                                font-size: 12px;
+                                color: #3B4953;
+
+                            }
+                            p {
+                                font-size: 12px;
+                                color: #01B9AB;
+
+                            }
+                        }
+ 
+                    }
+                }
+            }  
+        }
+
+    }
+
+    /*categories*/
+    .item {
+        span {
+            font-size: 18px;
+            color: #3B4953;
+            font-weight: 900;
+        }
+    }
+    .categories {
+        a {
+            font-size: 12px;
+            color: #01B9AB;
+        }
+    }
+    .comments {
+        font-size: 12px;
+        ul {
+            li {
+                span {
+                    font-size: 12px;
+                    color: #3B4953;
+
+                }
+                p {
+                    color: #01B9AB;
+
+                }
+            }
+        }
+    }
+    .tags {
+        .tags-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            span {
+                border: 1px solid #EDEDED;
+                padding: 5px;
+                margin: 5px;
+                a {
+                    font-size: 12px;
+                    color: #01B9AB;
+                    font-weight: 400;
+                    line-height: 3;
+                    
+                    text-align: center;
+                    text-decoration: none;
+                }
+            }
+            span:hover {
+                background-color: #01B9AB;
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+

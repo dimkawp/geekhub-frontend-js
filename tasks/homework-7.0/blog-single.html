@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <!-- icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- add google map -->
+        <script type="text/javascript">
+            function myMap() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(51.5, -0.12),
+                    zoom: 10,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            }
+        </script>
+
+        <title>Homework-7.0 blog-single</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <div class="head">
+                <div class="profile">
+                    <div class="block container">
+                        <div class="search">
+                            <input type="text" placeholder="Search" aria-label="Search">
+                        </div>
+                        <div class="user-block">
+                            <div class="login">
+                                <i class="material-icons">face</i>
+                                <a href="">Login</a>
+                            </div>
+                            <div class="register">
+                                <i class="material-icons">create</i>
+                                <a href="">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="block container">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <div class="nav-items">
+                        
+                        <div class="nav-item">
+                            <svg>
+                                <line x1="100" y1="0" x2="0" y2="0" style="stroke:#ffae00;stroke-width:12" />
+                            </svg>                              
+                            <a href="home.html" id="HOME">HOME</a>
+                        </div>
+                        <div class="nav-item">
+                            <svg>
+                                <line x1="100" y1="0" x2="0" y2="0" style="stroke:#fc7100;stroke-width:12" />
+                            </svg>    
+                            <a href="" id="TYPOGRAPHY">TYPOGRAPHY</a>
+                        </div>
+                        <div class="nav-item">
+                            <svg>
+                                <line x1="100" y1="0" x2="0" y2="0" style="stroke:#e51c5e;stroke-width:12" />
+                            </svg>                                   
+                            <a href="blog-grid.html" id="BLOG">BLOG</a>
+                        </div>
+                        <div class="nav-item">
+                            <svg>
+                                <line x1="100" y1="0" x2="0" y2="0" style="stroke:#ae0f8d;stroke-width:12" />
+                            </svg>   
+                            <a href="" id="PAGES">PAGES</a>
+                        </div>
+                        <div class="nav-item">
+                            <svg>
+                                <line x1="100" y1="0" x2="0" y2="0" style="stroke:#6d0fae;stroke-width:12" />
+                            </svg>   
+                            <a href="" id="ELEMENTS">ELEMENTS</a>
+                        </div>
+                        <div class="nav-item">
+                            <svg>
+                                <line x1="100" y1="0" x2="0" y2="0" style="stroke:#33227a;stroke-width:12" />
+                            </svg>   
+                            <a href="" id="ECOMMERSE">ECOMMERSE</a>
+                        </div>
+                        <div class="nav-item">
+                            <svg>
+                                <line x1="100" y1="0" x2="0" y2="0" style="stroke:#0c8fcc;stroke-width:12" />
+                            </svg>   
+                            <a href="" id="MEGA MENU">MEGA MENU</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>        
+        <!--Blog grid -->
+        <section id="blog-grid">
+            <div class="block container">
+                <div class="title">
+                    <h3>Blog grid view</h3>
+                </div>
+                <div class="nav">
+                    <div class="info-block">
+                        <div class="user-name">
+                            <i></i>
+                            <span>by Alex Poushkin</span>
+                        </div>
+                        <div class="user-data">
+                            <i></i>
+                            <span>September 31</span>
+                        </div>
+                        <div class="user-comments">
+                            <i></i>
+                            <span>12 Comments</span>
+                        </div>
+                    </div>
+                    <div class="nav-block">
+                        <div class="items">
+                            <div class="item">
+                                <a href="">Home</a>
+                            </div>
+                            <span>/</span>
+                            <div class="item">
+                                <a href="">Shortcodes</a>
+                            </div>
+                            <span>/</span>
+                            <div class="item">
+                                <a href="">Typography</a>
+                            </div>
+                            <span>/</span>
+                            <div class="item">
+                                <a href="">Blog</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- BODY SECTION -->
+        <section id="body-blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="blog-body container">
+                            <article>
+                                <img src="img/blog-single/header-img.fw.png" class="col-12 col-sm-12" alt="blue-img">
+                                <div class="text">
+                                    <h2>These are the Americans that I know</h2>
+                                    <p>No health care? The market will fix it.
+                                        I have come here to seek a new beginning
+                                        between the United States and Muslims around the world;
+                                        one based upon mutual interest and mutual respect;
+                                        and one based upon the truth that America 
+                                        and Islam are not exclusive, and need not be in competition.
+                                        On economic development, we will create a new corps
+                                        of business volunteers to partner with counterparts
+                                        in Muslim-majority countries. </p>
+                                </div>
+                                <div class="quote">
+                                        <svg width="5" height="120">
+                                            <line x1="0" y1="0" x2="0" y2="120" style="stroke:#EDEDED;stroke-width:10" />
+                                        </svg>
+                                        <div class="quote-mesage">
+                                            <p>
+                                            Thereby, the whale commanders are enabled to recognise each other upon the ocean,
+                                            even at considerable distances and with no small facility.</p>
+                                            <span>— Moby-Dick, Herman Melville</span>
+                                        </div>
+
+                                </div>
+                                <div class="text">
+                                    <p>Tell that to the proud auto workers at a Michigan plant who, after they found out it was closing, kept showing up every day and working as hard as ever,
+                                    because they knew there were people who counted on the brakes that they made. </p>
+                                </div>
+                                <div class="text">
+                                    <h2>Michigan plant who, after they found</h2>
+                                    <p>It was closing, kept showing up every day and working
+                                        as hard as ever, because they knew there were people
+                                        who counted on the brakes that they made. Michigan plant who,
+                                        after they found out it was closing, kept showing up every
+                                        day and working as hard as ever, because. Tell that to the
+                                        proud auto workers at a Michigan plant who, after they
+                                        found out it was closing, kept showing up every day
+                                        and working as hard as ever, because they knew there 
+                                        were people who counted on the brakes that they made. </p>
+                                        <br>
+                                        <p>Michigan plant who, after they found out it was closing,
+                                        kept showing up every day and working as hard as ever,
+                                        because they knew there were people who counted on
+                                        the brakes that they made. Michigan plant who,
+                                        after they found out it was closing,
+                                        kept showing up every day and working as hard as ever, because.</p>
+                                </div>
+                                <div class="img-block">
+                                    <figure>
+                                        <img src="" alt="">
+                                        <figurecaption></figurecaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="" alt="">
+                                        <figurecaption></figurecaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="" alt="">
+                                        <figurecaption></figurecaption>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <p>Because they knew there were people who counted on
+                                        the brakes that they made. Michigan plant who,
+                                        after they found out it was closing, kept showing up
+                                        every day and working as hard as ever, because they
+                                        knew there were people who counted on the brakes 
+                                        that they made. Michigan plant who, after they found 
+                                        out it was closing, kept showing up every day and
+                                        working as hard as ever, because.</p>
+                                        <br>
+                                        <p>Tell that to the proud auto workers at a Michigan plant who,
+                                        after they found out it was closing, kept showing up every
+                                        day and working as hard as ever, because they knew there
+                                        were people who counted on the brakes that they made.</p>
+                                </div>
+                                <div class="footer">
+                                    <div class="tags">
+                                        <i></i>
+                                        <span>Tags:</span>
+                                        <ul>
+                                            <li><a href="">amber, </a>          </li>
+                                            <li><a href="">darce, </a>          </li>
+                                            <li><a href="">fashion,</a>         </li>
+                                            <li><a href="">sultan,  </a>        </li>
+                                            <li><a href="">onmouseover tag  </a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="social">
+                                        <div class="item">f</div>
+                                        <div class="item">t</div>
+                                        <div class="item">m</div>
+                                        <div class="item">p</div>
+                                        <div class="item">+</div>
+                                        <div class="item">2.3m</div>
+                                    </div>
+                                    <dib class="related-posts">
+                                        <span>Related posts</span>
+                                        <div class="items">
+                                            <div class="item">
+                                                <i></i>
+                                                <span class="data">June 24</span>
+                                                <p>The hope of a young naval lieutenant bravely patrolling</p>
+                                            </div>
+                                            <div class="item">
+                                                <i></i>
+                                                <span class="data">August 8</span>
+                                                <p>Politicians routinely exploited fears of crime Christian Coalition</p>
+                                            </div>
+                                            <div class="item">
+                                                <i></i>
+                                                <span class="data">August 13</span>
+                                                <p>There was even a time when the Christian Coalition determined that its number one </p>
+                                            </div>
+                                        </div>
+
+                                    </dib>
+                                </div>
+                            </article>
+                        
+                        </div>
+                    </div>
+                    <div class="col-4">                       
+                        <!-- categories -->
+                        <div class="item categories">
+                            <span>Categories</span>
+                            <ul>
+                                <li><a href="">Creative portfolio  </a></li>
+                                <li><a href="">Onmouseover category</a></li>
+                                <li><a href="">Amber golden        </a></li>
+                                <li><a href="">Amsterdam fight gear</a></li>
+                                <li><a href="">Creamy cucumber     </a></li>
+                            </ul>
+                        </div>
+                        <!-- Recent comments -->
+                        <div class="item comments">
+                            <span>Recent comments</span>
+                            <ul>
+                                <li>
+                                    <span>Igor Ligay on</span>
+                                    <p>The hope of a young naval lieutenant bravely patrolling</p>
+                                </li>
+                                <li>
+                                    <span>Igor Ligay on</span>
+                                    <p>The hope of a young naval lieutenant bravely patrolling</p>
+                                </li>
+                                <li>
+                                    <span>Igor Ligay on</span>
+                                    <p>The hope of a young naval lieutenant bravely patrolling</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Latest works -->
+                        <div class="item works">
+                            <img src="" alt="">
+                        </div>
+                        <!-- Tags -->
+                        <div class="item tags">
+                            <span>Tag cloud</span>
+                            <div class="tags-cloud">
+                                <span><a href="">bad boy  </a></span>
+                                <span><a href="">winter   </a></span>
+                                <span><a href="">is coming</a></span>
+                                <span><a href="">south    </a></span>
+                                <span><a href="">mouseover</a></span>
+                                <span><a href="">asia     </a></span>
+                                <span><a href="">surfing  </a></span>
+                                <span><a href="">iceland  </a></span>
+                                <span><a href="">she      </a></span>
+                                <span><a href="">china    </a></span>
+                                <span><a href="">daytona  </a></span>
+                            </div>
+                        </div>                 
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- COMMENTS -->
+        <section id="comments">
+            <div class="container">
+                <div class="title">
+                    <span>Add comments</span>
+                </div>
+                <form class="form col-9" action="">
+                    <div class="inputs">
+                        <div class="input col-4">
+                            <label for="name">Name</label>
+                            <input name="name" type="text">
+                        </div>
+                        <div class="input col-4">
+                            <label for="Email">Email</label>
+                            <input name="Email" type="text">
+                        </div>
+                        <div class="input col-4">
+                            <label for="Website">Website<span>(optional)</span></label>
+                            <input name="Website" type="text">
+                        </div>
+                    </div>
+
+                    <div class="textarea col-12">
+                        <label for="Message">Message</label>
+                        <textarea name="Message" id="" cols="95" rows="10"></textarea>
+
+                    </div>
+                    
+                    <button class="submit-btn" type="submit">ADD COMMENT</button>
+                </form>
+                <div class="title">
+                    <span>24 comments</span>
+                </div>
+    
+                <div class="message-block">
+                    <div class="header">
+                            <div class="title">
+                                <span>Administrator</span>
+                                <div class="data">September 17, 2013 @ 1:33 pm</div>
+                            </div>
+                            <a href="">Reply</a>
+                    </div>
+                    <div class="body">
+                        <p>Text message.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-block container">
+                <div class="row">
+                    <div class="col">
+                        <div class="title">
+                            <span>Get in touch</span>
+                        </div>
+                        <div class="contacts">
+                            <div>
+                                <i class="material-icons">place</i>
+                                
+                                <p><span>Address: </span> 321 Street Name, Jnited Kingdom, London</p>
+                            </div>
+                            <div>
+                                <i class="material-icons">local_phone</i>
+                                
+                                <p><span>Phone: </span> +7 998 71 150 30 20</p>
+                            </div>
+                            <div>
+                                <i class="material-icons">local_post_office</i>
+                                
+                                <p><span>Email: </span> info@ambertheme.com</p>
+                            </div>
+                            <div>
+                                <div id="map" style="width:200px;height:150px"></div>
+                            </div>
+                        </div>
+                    </div>       
+                    <div class="col">
+                        <div class="title">
+                            <span>Latest tweets</span>
+                        </div>   
+                        <div class="twitters">
+                            <div class="twit">
+                                <i class="material-icons">chat</i>
+                                <div class="content">    
+                                    <p>CMS Masters And Their best Web Design Tools <span>#bestwrbdesigntools #webdesign</span></p>
+                                    <div class="time">
+                                        <span> - about 12 min ago</span>
+                                    </div>                                      
+                                </div>
+                            </div>
+                            <div class="twit">
+                                <i class="material-icons">chat</i>
+                                <div class="content">    
+                                    <p>CMS Masters And Their best Web Design Tools <span>#bestwrbdesigntools #webdesign</span></p>
+                                    <div class="time">
+                                        <span> - about 12 min ago</span>
+                                    </div>                                      
+                                </div>
+                            </div>
+                            <div class="twit">
+                                <i class="material-icons">chat</i>
+                                <div class="content">    
+                                    <p>CMS Masters And Their best Web Design Tools <span>#bestwrbdesigntools #webdesign</span></p>
+                                    <div class="time">
+                                        <span> - about 12 min ago</span>
+                                    </div>                                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="title">
+                            <span>Follow us</span>
+                        </div>
+                        
+                        <div class="social">
+                            <div>
+                                <img src="img/footer/social/f.fw.png" alt="f">
+                                <span>Like us on Facebook</span>
+                            </div>
+                            <div>
+                                <img src="img/footer/social/t.fw.png" alt="t">
+                                <span>Follow us on Twitter</span>
+                            </div>
+                            <div>
+                                <img src="img/footer/social/y.fw.png" alt="y">
+                                <span>Watch videos on YouTube</span>
+                            </div>
+                            <div>
+                                <img src="img/footer/social/i.fw.png" alt="i">
+                                <span>Frend us on Instagram</span>
+                            </div>
+                            <div>
+                                <img src="img/footer/social/p.fw.png" alt="p">
+                                <span>Repin on Pinterest</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="title">
+                            <span>Popular posts</span>
+                        </div>
+
+                        <div class="posts">
+                            <!-- 1 -->
+                            <div class="post">
+                                <div class="title">
+                                    <span>September, 30</span>
+                                </div>
+                                <div class="description">
+                                    <p>Candy vanes dragee pudding. Donut cheesecake I love chocolate icing</p>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="post">
+                                <div class="title">
+                                    <span>September, 30</span>
+                                </div>
+                                <div class="description">
+                                    <p>Candy vanes dragee pudding. Donut cheesecake I love chocolate icing</p>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="post">
+                                <div class="title">
+                                    <span>September, 30</span>
+                                </div>
+                                <div class="description">
+                                    <p>Candy vanes dragee pudding. Donut cheesecake I love chocolate icing</p>
+                                </div>
+                            </div>                                                                
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-down">
+                    <div class="coperations">
+                        <span>@2017 dimkawp@gmail.com themes all. rights reserved.</span>
+                        <span>Powered by WordPress</span>
+                    </div>
+                    <button>Back to top page<i class="material-icons">vertical_align_top</i></button>
+                </div>
+            </div>
+        </footer>   
+        <!-- google map -->
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+    </body>
+</html>
