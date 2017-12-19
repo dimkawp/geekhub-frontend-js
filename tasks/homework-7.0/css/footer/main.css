@@ -3,18 +3,19 @@
 footer {
   background-color: #1f2a32;
   color: white;
+  padding-bottom: 50px;
 }
-/* line 5, ../../sass/footer/main.scss */
+/* line 6, ../../sass/footer/main.scss */
 footer .footer-block {
   display: flex;
   flex-direction: column;
 }
-/* line 10, ../../sass/footer/main.scss */
+/* line 11, ../../sass/footer/main.scss */
 footer .footer-block .row .col .title {
   font-size: 20px;
   margin: 50px 0 50px 0;
 }
-/* line 15, ../../sass/footer/main.scss */
+/* line 16, ../../sass/footer/main.scss */
 footer .footer-block .row .col .contacts div {
   display: flex;
   flex-direction: row;
@@ -23,71 +24,71 @@ footer .footer-block .row .col .contacts div {
   margin: 15px 0;
   font-size: 12px;
 }
-/* line 23, ../../sass/footer/main.scss */
+/* line 24, ../../sass/footer/main.scss */
 footer .footer-block .row .col .contacts div p {
   margin: 0;
   color: #b2b2b2;
   margin: 5px;
 }
-/* line 27, ../../sass/footer/main.scss */
+/* line 28, ../../sass/footer/main.scss */
 footer .footer-block .row .col .contacts div p span {
   color: white;
 }
-/* line 33, ../../sass/footer/main.scss */
+/* line 34, ../../sass/footer/main.scss */
 footer .footer-block .row .col .twitters {
   font-size: 12px;
 }
-/* line 35, ../../sass/footer/main.scss */
+/* line 36, ../../sass/footer/main.scss */
 footer .footer-block .row .col .twitters .twit {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
 }
-/* line 41, ../../sass/footer/main.scss */
+/* line 42, ../../sass/footer/main.scss */
 footer .footer-block .row .col .twitters i {
   margin: 5px;
 }
-/* line 44, ../../sass/footer/main.scss */
+/* line 45, ../../sass/footer/main.scss */
 footer .footer-block .row .col .twitters p {
   margin: 5px;
 }
-/* line 46, ../../sass/footer/main.scss */
+/* line 47, ../../sass/footer/main.scss */
 footer .footer-block .row .col .twitters p span {
   color: #02baab;
 }
-/* line 53, ../../sass/footer/main.scss */
+/* line 54, ../../sass/footer/main.scss */
 footer .footer-block .row .col .social div img {
   margin: 5px;
   height: 50px;
   width: 50px;
 }
-/* line 58, ../../sass/footer/main.scss */
+/* line 59, ../../sass/footer/main.scss */
 footer .footer-block .row .col .social div span {
   font-size: 12px;
   margin-left: 10px;
 }
-/* line 65, ../../sass/footer/main.scss */
+/* line 66, ../../sass/footer/main.scss */
 footer .footer-block .row .col .posts .post {
   font-size: 12px;
 }
-/* line 67, ../../sass/footer/main.scss */
+/* line 68, ../../sass/footer/main.scss */
 footer .footer-block .row .col .posts .post .title {
   margin: 0;
   font-size: 12px;
 }
-/* line 72, ../../sass/footer/main.scss */
+/* line 73, ../../sass/footer/main.scss */
 footer .footer-block .row .col .posts .post .description p {
   color: #02baab;
 }
-/* line 80, ../../sass/footer/main.scss */
+/* line 81, ../../sass/footer/main.scss */
 footer .footer-block .footer-down {
   margin-top: 70px;
   font-size: 12px;
   display: flex;
   justify-content: space-between;
 }
-/* line 85, ../../sass/footer/main.scss */
+/* line 86, ../../sass/footer/main.scss */
 footer .footer-block .footer-down .coperations {
   display: flex;
   flex-direction: column;

@@ -229,7 +229,7 @@
                                 </div>
                                 <div class="footer">
                                     <div class="tags">
-                                        <i></i>
+                                        <i class="material-icons">bookmark</i>
                                         <span>Tags:</span>
                                         <ul>
                                             <li><a href="">amber, </a>          </li>
@@ -240,12 +240,12 @@
                                         </ul>
                                     </div>
                                     <div class="social">
-                                        <div class="item">f</div>
-                                        <div class="item">t</div>
-                                        <div class="item">m</div>
-                                        <div class="item">p</div>
-                                        <div class="item">+</div>
-                                        <div class="item">2.3m</div>
+                                        <div class="item"><img src="img/blog-single/social/f.fw.png" alt=""></div>
+                                        <div class="item"><img src="img/blog-single/social/t.fw.png" alt=""></div>
+                                        <div class="item"><img src="img/blog-single/social/e.fw.png" alt=""></div>
+                                        <div class="item"><img src="img/blog-single/social/p.fw.png" alt=""></div>
+                                        <div class="item"><img src="img/blog-single/social/pl.fw.png" alt=""></div>
+                                        <div class="item"></div>
                                     </div>
                                     <dib class="related-posts">
                                         <span>Related posts</span>
@@ -278,11 +278,15 @@
                         <div class="item categories">
                             <span>Categories</span>
                             <ul>
-                                <li><a href="">Creative portfolio  </a></li>
-                                <li><a href="">Onmouseover category</a></li>
-                                <li><a href="">Amber golden        </a></li>
-                                <li><a href="">Amsterdam fight gear</a></li>
-                                <li><a href="">Creamy cucumber     </a></li>
+                                <li><i class="material-icons">label_outline</i><a href="">Creative portfolio  </a></li>
+                                <hr>
+                                <li><i class="material-icons">label_outline</i><a href="">Onmouseover category</a></li>
+                                <hr>
+                                <li><i class="material-icons">label_outline</i><a href="">Amber golden        </a></li>
+                                <hr>
+                                <li><i class="material-icons">label_outline</i><a href="">Amsterdam fight gear</a></li>
+                                <hr>
+                                <li><i class="material-icons">label_outline</i><a href="">Creamy cucumber     </a></li>
                             </ul>
                         </div>
                         <!-- Recent comments -->
@@ -290,15 +294,15 @@
                             <span>Recent comments</span>
                             <ul>
                                 <li>
-                                    <span>Igor Ligay on</span>
+                                    <span><i class="material-icons">format_quote</i>Igor Ligay on</span>
                                     <p>The hope of a young naval lieutenant bravely patrolling</p>
                                 </li>
                                 <li>
-                                    <span>Igor Ligay on</span>
+                                    <span><i class="material-icons">format_quote</i>Igor Ligay on</span>
                                     <p>The hope of a young naval lieutenant bravely patrolling</p>
                                 </li>
                                 <li>
-                                    <span>Igor Ligay on</span>
+                                    <span><i class="material-icons">format_quote</i>Igor Ligay on</span>
                                     <p>The hope of a young naval lieutenant bravely patrolling</p>
                                 </li>
                             </ul>
@@ -332,9 +336,7 @@
         <!-- COMMENTS -->
         <section id="comments">
             <div class="container">
-                <div class="title">
-                    <span>Add comments</span>
-                </div>
+                <div class="head"><span>Add comments</span></div>
                 <form class="form col-9" action="">
                     <div class="inputs">
                         <div class="input col-4">
@@ -353,24 +355,54 @@
 
                     <div class="textarea col-12">
                         <label for="Message">Message</label>
-                        <textarea name="Message" id="" cols="95" rows="10"></textarea>
+                        <textarea class="col-12" name="Message" id="" cols="95" rows="10"></textarea>
 
                     </div>
                     
                     <button class="submit-btn" type="submit">ADD COMMENT</button>
                 </form>
-                <div class="title">
-                    <span>24 comments</span>
-                </div>
-    
-                <div class="message-block">
+
+                <div class="head"><span>24 comments</span></div>
+
+                <!-- Message -->
+                <!-- 1 -->    
+                <div class="message-block col-9">
                     <div class="header">
-                            <div class="title">
-                                <span>Administrator</span>
-                                <div class="data">September 17, 2013 @ 1:33 pm</div>
-                            </div>
-                            <a href="">Reply</a>
+                        <div>
+                            <span>Administrator</span>
+                            <div class="data">September 17, 2013 @ 1:33 pm</div>
+                        </div>
+                        <a href="">Reply</a>
                     </div>
+                    <hr>
+                    <div class="body">
+                        <p>Text message.</p>
+                    </div>
+                </div>
+                <!-- 2 -->    
+                <div class="message-block answer col-8">
+                    <div class="header">
+                        <div>
+                            <span>Administrator</span>
+                            <div class="data">September 17, 2013 @ 1:33 pm</div>
+                        </div>
+                        <a href="">Reply</a>
+                    </div>
+                    <hr>
+                    <div class="body">
+                        <p>Text message.</p>
+                    </div>
+                </div>
+                <!-- 3 -->    
+                <div class="message-block col-9">
+                    <div class="header">
+                        <div>
+                            <span>Administrator</span>
+                            <div class="data">September 17, 2013 @ 1:33 pm</div>
+                        </div>
+                        <a href="">Reply</a>
+                    </div>
+                    <hr>
                     <div class="body">
                         <p>Text message.</p>
                     </div>

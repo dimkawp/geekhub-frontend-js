@@ -1,26 +1,37 @@
 /* line 1, ../../sass/blog-single/comments.scss */
 #comments {
   background-color: #EBF0F3;
+  padding-bottom: 15px;
 }
 /* line 4, ../../sass/blog-single/comments.scss */
+#comments .head {
+  padding-top: 50px;
+}
+/* line 6, ../../sass/blog-single/comments.scss */
+#comments .head span {
+  font-size: 18px;
+  color: #3B4953;
+  font-weight: 900;
+}
+/* line 13, ../../sass/blog-single/comments.scss */
 #comments .form .inputs {
   display: flex;
   flex-direction: row;
 }
-/* line 7, ../../sass/blog-single/comments.scss */
+/* line 16, ../../sass/blog-single/comments.scss */
 #comments .form .inputs .input {
   display: flex;
   flex-direction: column;
 }
-/* line 10, ../../sass/blog-single/comments.scss */
+/* line 19, ../../sass/blog-single/comments.scss */
 #comments .form .inputs .input input {
   border: none;
 }
-/* line 19, ../../sass/blog-single/comments.scss */
+/* line 25, ../../sass/blog-single/comments.scss */
 #comments .form .textarea textarea {
   border: none;
 }
-/* line 23, ../../sass/blog-single/comments.scss */
+/* line 29, ../../sass/blog-single/comments.scss */
 #comments .form .submit-btn {
   float: right;
   width: 135px;
@@ -33,8 +44,57 @@
   color: #01b9ab;
   text-transform: uppercase;
 }
-/* line 36, ../../sass/blog-single/comments.scss */
+/* line 42, ../../sass/blog-single/comments.scss */
 #comments .form .submit-btn:hover {
   background-color: #ffad00;
   border: 2px solid #01b9ab;
+}
+/* line 47, ../../sass/blog-single/comments.scss */
+#comments .message-block {
+  margin-top: 15px;
+  padding: 25px;
+  background-color: white;
+}
+/* line 52, ../../sass/blog-single/comments.scss */
+#comments .message-block .header {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 55, ../../sass/blog-single/comments.scss */
+#comments .message-block .header span {
+  color: #01b9ab;
+  font-size: 18px;
+  font-weight: 900;
+}
+/* line 61, ../../sass/blog-single/comments.scss */
+#comments .message-block .header div .data {
+  font-size: 14px;
+  font-weight: 400;
+  color: #B6BEC5;
+}
+/* line 68, ../../sass/blog-single/comments.scss */
+#comments .message-block .header a {
+  display: none;
+  color: #01b9ab;
+  font-size: 18px;
+  font-weight: 600;
+}
+/* line 77, ../../sass/blog-single/comments.scss */
+#comments .message-block .body p {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+/* line 84, ../../sass/blog-single/comments.scss */
+#comments .message-block:hover {
+  outline: 4px solid #DEE7ED;
+}
+/* line 87, ../../sass/blog-single/comments.scss */
+#comments .message-block:hover .header a {
+  display: flex;
+  text-decoration: none;
+}
+/* line 94, ../../sass/blog-single/comments.scss */
+#comments .answer {
+  margin-left: 8.3%;
 }

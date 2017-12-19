@@ -39,6 +39,15 @@
                     }
                 }
             }
+            .item:hover {
+                .header-block {
+                    display: none;
+                }
+                .description {
+                    display: none;
+                }
+
+            }
         }
     }
 }

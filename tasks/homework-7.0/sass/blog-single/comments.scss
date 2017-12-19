@@ -1,5 +1,14 @@
 #comments {
     background-color: #EBF0F3;
+    padding-bottom: 15px;
+    .head {
+        padding-top: 50px;
+        span {
+            font-size: 18px;
+            color: #3B4953;
+            font-weight: 900;
+        }
+    }
     .form {
         .inputs {
             display: flex;
@@ -10,10 +19,7 @@
                 input {
                     border: none;
                 }
-
             }
-
-
         }
         .textarea {
             textarea {
@@ -37,5 +43,55 @@
             background-color: #ffad00;
             border: 2px solid #01b9ab;
         }
+    }
+    .message-block {
+        margin-top: 15px;
+
+        padding: 25px;
+        background-color: white;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            span {
+                color: #01b9ab;
+                font-size: 18px;
+                font-weight: 900;
+            }
+            div {
+                .data {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #B6BEC5;
+                }
+
+            }
+            a {
+                display: none;
+                color: #01b9ab;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+        }
+        .body {
+            p {
+                font-size: 14px;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+    .message-block:hover {
+        outline: 4px solid #DEE7ED;
+        .header {
+            a {
+                display: flex;
+                text-decoration: none;
+            }
+
+        }
+    }
+    .answer {
+        margin-left: 8.3%;
     }
 }

@@ -44,15 +44,23 @@
   font-size: 12px;
   color: #3B4953;
 }
+/* line 43, ../sass/team.scss */
+#team .block .items .item:hover .header-block {
+  display: none;
+}
+/* line 46, ../sass/team.scss */
+#team .block .items .item:hover .description {
+  display: none;
+}
 
 @media screen and (max-width: 450px) {
-  /* line 49, ../sass/team.scss */
+  /* line 58, ../sass/team.scss */
   #team .block .items {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  /* line 53, ../sass/team.scss */
+  /* line 62, ../sass/team.scss */
   #team .block .items .item {
     display: flex;
     width: 100vw;

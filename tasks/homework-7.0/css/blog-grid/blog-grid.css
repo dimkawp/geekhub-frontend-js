@@ -35,45 +35,46 @@
 /* line 30, ../../sass/blog-grid/blog-grid.scss */
 #blog-grid .block .nav .info-block {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
 }
-/* line 33, ../../sass/blog-grid/blog-grid.scss */
+/* line 34, ../../sass/blog-grid/blog-grid.scss */
 #blog-grid .block .nav .info-block div {
   width: 100px;
   margin: 5px;
 }
-/* line 40, ../../sass/blog-grid/blog-grid.scss */
+/* line 41, ../../sass/blog-grid/blog-grid.scss */
 #blog-grid .block .nav .nav-block .items {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-/* line 45, ../../sass/blog-grid/blog-grid.scss */
+/* line 46, ../../sass/blog-grid/blog-grid.scss */
 #blog-grid .block .nav .nav-block .items .item {
   margin: 10px;
   color: #85939f;
 }
-/* line 48, ../../sass/blog-grid/blog-grid.scss */
+/* line 49, ../../sass/blog-grid/blog-grid.scss */
 #blog-grid .block .nav .nav-block .items .item a {
   text-decoration: none;
   color: #85939f;
 }
-/* line 52, ../../sass/blog-grid/blog-grid.scss */
+/* line 53, ../../sass/blog-grid/blog-grid.scss */
 #blog-grid .block .nav .nav-block .items .item a:visited {
   color: #85939f;
 }
-/* line 55, ../../sass/blog-grid/blog-grid.scss */
+/* line 56, ../../sass/blog-grid/blog-grid.scss */
 #blog-grid .block .nav .nav-block .items .item a:active {
   color: #85939f;
 }
-/* line 58, ../../sass/blog-grid/blog-grid.scss */
+/* line 59, ../../sass/blog-grid/blog-grid.scss */
 #blog-grid .block .nav .nav-block .items .item a:hover {
   color: #85939f;
 }
 
 @media screen and (max-width: 750px) {
-  /* line 75, ../../sass/blog-grid/blog-grid.scss */
+  /* line 76, ../../sass/blog-grid/blog-grid.scss */
   #blog-grid .block .nav .nav-block {
     display: none;
   }
