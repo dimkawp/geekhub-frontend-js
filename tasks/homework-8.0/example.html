@@ -22,7 +22,7 @@
     <body>
         <div class="wrapper">
             <div class="container">
-                <form>
+                <form id="form">
                     <div class="form-group">
                         <lable>Lable: </lable>
                         <input id="input-1" type="text" class="form-control" value="input-1">
@@ -43,7 +43,7 @@
                         <label>Example textarea</label>
                         <textarea class="form-control" id="textarea" rows="3"></textarea>
                     </div>
-                    <fieldset class="form-group">
+                    <fieldset id="fieldset" class="form-group">
                     <legend>Radio buttons</legend>
                         <div class="form-check">
                             <label class="form-check-label">
@@ -65,17 +65,18 @@
                         </label>
                         </div>
                     </fieldset>
-                    <div class="form-check">
+                    <div id="checkbox" class="form-check">
                         <label class="form-check-label">
                             <input type="checkbox" class="form-check-input" id="checkbox-1" value="checkbox-1">
-                            Check - 1
+                            <p>Check - 1</p> 
                             <input type="checkbox" class="form-check-input" id="checkbox-2" value="checkbox-2">
-                            Check - 2
+                            <p>Check - 2</p> 
                             <input type="checkbox" class="form-check-input" id="checkbox-3" value="checkbox-3">
-                            Check - 3
+                            <p>Check - 3</p> 
                         </label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>         
+                
+                    <input type="submit" value="submit" class="btn btn-primary" />        
                 </form>
             </div>
         </div>
