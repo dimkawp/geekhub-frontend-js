@@ -109,19 +109,14 @@ font-family: 'Raleway', sans-serif;
 }
 
 /* SERVICES */
-/* line 6, ../sass/section/services.scss */
+/* line 5, ../sass/section/services.scss */
 #services .items .item p {
   text-align: center;
 }
 
 /* PROJECTS */
-/* line 5, ../sass/section/projects.scss */
-#projects .items .item {
-  width: 300px;
-}
-
 /* TEAM */
-/* line 5, ../sass/section/team.scss */
+/* line 4, ../sass/section/team.scss */
 #team .items .item {
   width: 270px;
 }
