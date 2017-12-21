@@ -1,0 +1,23 @@
+/* FOOTER */
+#footer {
+    footer {
+        .footer-block {
+            display: flex;
+            flex-wrap: wrap;
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .copyright {
+                display: flex;
+                align-items: center;
+                div {
+                    p {
+                        text-align: center;
+                    }
+                }
+        }
+    }
+}

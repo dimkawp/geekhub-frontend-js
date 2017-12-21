@@ -4,3 +4,15 @@ font-family: 'Cardo', serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
+#services, #team, #projects {
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

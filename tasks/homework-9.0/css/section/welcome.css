@@ -1,0 +1,7 @@
+/* WELCOME */
+/* line 3, ../../sass/section/welcome.scss */
+#welcome .welcome-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

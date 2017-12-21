@@ -1,0 +1,13 @@
+/* HEAD */
+#head {
+    header {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
