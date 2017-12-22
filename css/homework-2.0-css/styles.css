@@ -23,7 +23,6 @@ header .head {
     align-items: center;
 }
 /*work on nav bar*/
-
     .nav {
 
         display: flex;
@@ -469,9 +468,3 @@ footer a {
         width: 1170px;
     }
 }
-
-
-
-
-
-

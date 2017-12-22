@@ -2,4 +2,73 @@
 /* line 4, ../../sass/section/team.scss */
 #team .items .item {
   width: 270px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+/* line 8, ../../sass/section/team.scss */
+#team .items .item .header {
+  width: 270px;
+}
+/* line 10, ../../sass/section/team.scss */
+#team .items .item .header h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  color: #2D3033;
+  text-align: left;
+  margin-top: 35px;
+}
+/* line 17, ../../sass/section/team.scss */
+#team .items .item .header span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #E74545;
+}
+/* line 24, ../../sass/section/team.scss */
+#team .items .item .description {
+  width: 270px;
+}
+/* line 26, ../../sass/section/team.scss */
+#team .items .item .description p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #6C7279;
+  margin-top: 30px;
+}
+/* line 33, ../../sass/section/team.scss */
+#team .items .item .share {
+  width: 270px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 38, ../../sass/section/team.scss */
+#team .items .item .share div {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border: solid 0.5px #C5C9CB;
+  border-radius: 1px;
+}
+/* line 45, ../../sass/section/team.scss */
+#team .items .item .share div:hover {
+  background-color: #E74545;
+}
+/* line 48, ../../sass/section/team.scss */
+#team .items .item .share div:nth-child(1) {
+  background-image: url(../img/team/share/f.bg.fw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 53, ../../sass/section/team.scss */
+#team .items .item .share div:nth-child(2) {
+  background-image: url(../img/team/share/t.bg.fw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 58, ../../sass/section/team.scss */
+#team .items .item .share div:nth-child(3) {
+  background-image: url(../img/team/share/in.bg.fw.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }

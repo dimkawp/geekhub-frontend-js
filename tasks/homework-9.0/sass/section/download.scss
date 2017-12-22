@@ -5,5 +5,25 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        h5 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            font-size: 28px;
+            color: #2D3033;
+            line-height: 0.75;
+            margin-top: 100px;
+        }
+        span {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            font-size: 13px;
+            color: #2D3033;
+            text-transform: uppercase;
+            line-height: 1.62;
+        }
+        button {
+            margin-top: 40px;
+            margin-bottom: 100px;
+        }
     }
 }

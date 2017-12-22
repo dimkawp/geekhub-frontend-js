@@ -6,3 +6,26 @@
   align-items: center;
   text-align: center;
 }
+/* line 8, ../../sass/section/download.scss */
+#download .download-block h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  color: #2D3033;
+  line-height: 0.75;
+  margin-top: 100px;
+}
+/* line 16, ../../sass/section/download.scss */
+#download .download-block span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #2D3033;
+  text-transform: uppercase;
+  line-height: 1.62;
+}
+/* line 24, ../../sass/section/download.scss */
+#download .download-block button {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}

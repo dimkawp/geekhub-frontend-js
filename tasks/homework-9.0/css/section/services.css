@@ -1,5 +1,24 @@
 /* SERVICES */
-/* line 5, ../../sass/section/services.scss */
+/* line 4, ../../sass/section/services.scss */
+#services .items .item {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+/* line 7, ../../sass/section/services.scss */
+#services .items .item h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #2D2F33;
+  text-transform: uppercase;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+/* line 18, ../../sass/section/services.scss */
 #services .items .item p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #6B7179;
+  line-height: 1.5;
   text-align: center;
 }

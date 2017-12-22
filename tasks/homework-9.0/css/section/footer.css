@@ -1,21 +1,96 @@
 /* FOOTER */
-/* line 4, ../../sass/section/footer.scss */
+/* line 3, ../../sass/section/footer.scss */
+#footer footer {
+  background-color: #393D63;
+}
+/* line 5, ../../sass/section/footer.scss */
 #footer footer .footer-block {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 7, ../../sass/section/footer.scss */
+/* line 10, ../../sass/section/footer.scss */
+#footer footer .footer-block .about, #footer footer .footer-block .location, #footer footer .footer-block .share {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+/* line 15, ../../sass/section/footer.scss */
 #footer footer .footer-block div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  color: white;
 }
-/* line 13, ../../sass/section/footer.scss */
+/* line 22, ../../sass/section/footer.scss */
+#footer footer .footer-block div span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+}
+/* line 28, ../../sass/section/footer.scss */
+#footer footer .footer-block div p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 1.61;
+  margin-top: 20px;
+}
+/* line 34, ../../sass/section/footer.scss */
+#footer footer .footer-block div .share-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 38, ../../sass/section/footer.scss */
+#footer footer .footer-block div .share-block div {
+  width: 40px;
+  height: 40px;
+  margin: 20px 5px 0 5px;
+  border: solid 0.5px #C5C9CB;
+  border-radius: 1px;
+}
+/* line 45, ../../sass/section/footer.scss */
+#footer footer .footer-block div .share-block div:hover {
+  background-color: #E74545;
+}
+/* line 48, ../../sass/section/footer.scss */
+#footer footer .footer-block div .share-block div:nth-child(1) {
+  background-image: url(../img/team/share/f.bg.fw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 53, ../../sass/section/footer.scss */
+#footer footer .footer-block div .share-block div:nth-child(2) {
+  background-image: url(../img/team/share/t.bg.fw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 58, ../../sass/section/footer.scss */
+#footer footer .footer-block div .share-block div:nth-child(3) {
+  background-image: url(../img/team/share/in.bg.fw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 66, ../../sass/section/footer.scss */
 #footer footer .copyright {
+  background-color: #313353;
   display: flex;
   align-items: center;
 }
-/* line 17, ../../sass/section/footer.scss */
+/* line 70, ../../sass/section/footer.scss */
+#footer footer .copyright div {
+  margin: 30px 0 30px 0;
+}
+/* line 72, ../../sass/section/footer.scss */
 #footer footer .copyright div p {
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 14px;
+  line-height: 1.61;
+  color: #7F7F7F;
+  margin: 0;
   text-align: center;
+}
+/* line 79, ../../sass/section/footer.scss */
+#footer footer .copyright div p span {
+  color: white;
 }

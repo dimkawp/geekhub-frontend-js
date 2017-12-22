@@ -72,14 +72,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 font-family: 'Cardo', serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
+100	Thin (Hairline)
+200	Extra Light (Ultra Light)
+300	Light
+400	Normal
+500	Medium
+600	Semi Bold (Demi Bold)
+700	Bold
+800	Extra Bold (Ultra Bold)
+900	Black (Heavy)
 */
-/* line 8, ../sass/main.scss */
+/* line 17, ../sass/main.scss */
 #services .items, #team .items, #projects .items {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-/* line 12, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
 #services .items .item, #team .items .item, #projects .items .item {
   display: flex;
   flex-direction: column;
@@ -87,38 +96,214 @@ font-family: 'Raleway', sans-serif;
 }
 
 /* HEAD */
-/* line 3, ../sass/section/head.scss */
+/* line 2, ../sass/section/head.scss */
+#head {
+  background-color: #393D63;
+}
+/* line 4, ../sass/section/head.scss */
 #head header {
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/* line 8, ../sass/section/head.scss */
+/* line 9, ../sass/section/head.scss */
+#head header .logo {
+  color: #C5C9CB;
+  font-weight: 600;
+}
+/* line 13, ../sass/section/head.scss */
 #head header .nav {
   display: flex;
   flex-wrap: wrap;
 }
+/* line 16, ../sass/section/head.scss */
+#head header .nav .item {
+  margin: 5px;
+}
+/* line 18, ../sass/section/head.scss */
+#head header .nav .item a {
+  color: #C5C9CB;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 24, ../sass/section/head.scss */
+#head header .nav .item a:hover {
+  color: white;
+}
+/* line 29, ../sass/section/head.scss */
+#head header .m-nav ul {
+  display: none;
+}
 
+@media screen and (max-width: 700px) {
+  /* line 38, ../sass/section/head.scss */
+  #head header .nav {
+    display: none;
+  }
+  /* line 41, ../sass/section/head.scss */
+  #head header .m-nav {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: paleturquoise;
+  }
+  /* line 49, ../sass/section/head.scss */
+  #head header .m-nav:hover ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    background-color: black;
+    color: white;
+  }
+}
 /* WELCOME */
 /* line 3, ../sass/section/welcome.scss */
 #welcome .welcome-block {
+  height: 100vh;
+  width: 45vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
+/* line 10, ../sass/section/welcome.scss */
+#welcome .welcome-block h1 {
+  font-size: 65px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 35px;
+}
+/* line 17, ../sass/section/welcome.scss */
+#welcome .welcome-block p {
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-bottom: 75px;
+}
 
+@media screen and (max-width: 1050px) {
+  /* line 30, ../sass/section/welcome.scss */
+  #welcome .welcome-block h1 {
+    font-size: 35px;
+  }
+  /* line 33, ../sass/section/welcome.scss */
+  #welcome .welcome-block p {
+    font-size: 11px;
+  }
+}
 /* SERVICES */
-/* line 5, ../sass/section/services.scss */
+/* line 4, ../sass/section/services.scss */
+#services .items .item {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+/* line 7, ../sass/section/services.scss */
+#services .items .item h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #2D2F33;
+  text-transform: uppercase;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+/* line 18, ../sass/section/services.scss */
 #services .items .item p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #6B7179;
+  line-height: 1.5;
   text-align: center;
 }
 
 /* PROJECTS */
+/* line 2, ../sass/section/projects.scss */
+#projects {
+  background-color: #2B2D49;
+}
+
 /* TEAM */
 /* line 4, ../sass/section/team.scss */
 #team .items .item {
   width: 270px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+/* line 8, ../sass/section/team.scss */
+#team .items .item .header {
+  width: 270px;
+}
+/* line 10, ../sass/section/team.scss */
+#team .items .item .header h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  color: #2D3033;
+  text-align: left;
+  margin-top: 35px;
+}
+/* line 17, ../sass/section/team.scss */
+#team .items .item .header span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #E74545;
+}
+/* line 24, ../sass/section/team.scss */
+#team .items .item .description {
+  width: 270px;
+}
+/* line 26, ../sass/section/team.scss */
+#team .items .item .description p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #6C7279;
+  margin-top: 30px;
+}
+/* line 33, ../sass/section/team.scss */
+#team .items .item .share {
+  width: 270px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 38, ../sass/section/team.scss */
+#team .items .item .share div {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border: solid 0.5px #C5C9CB;
+  border-radius: 1px;
+}
+/* line 45, ../sass/section/team.scss */
+#team .items .item .share div:hover {
+  background-color: #E74545;
+}
+/* line 48, ../sass/section/team.scss */
+#team .items .item .share div:nth-child(1) {
+  background-image: url(../img/team/share/f.bg.fw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 53, ../sass/section/team.scss */
+#team .items .item .share div:nth-child(2) {
+  background-image: url(../img/team/share/t.bg.fw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 58, ../sass/section/team.scss */
+#team .items .item .share div:nth-child(3) {
+  background-image: url(../img/team/share/in.bg.fw.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* COMMENTS */
@@ -130,25 +315,154 @@ font-family: 'Raleway', sans-serif;
   align-items: center;
   text-align: center;
 }
+/* line 8, ../sass/section/download.scss */
+#download .download-block h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  color: #2D3033;
+  line-height: 0.75;
+  margin-top: 100px;
+}
+/* line 16, ../sass/section/download.scss */
+#download .download-block span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #2D3033;
+  text-transform: uppercase;
+  line-height: 1.62;
+}
+/* line 24, ../sass/section/download.scss */
+#download .download-block button {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
 
 /* FOOTER */
-/* line 4, ../sass/section/footer.scss */
+/* line 3, ../sass/section/footer.scss */
+#footer footer {
+  background-color: #393D63;
+}
+/* line 5, ../sass/section/footer.scss */
 #footer footer .footer-block {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 7, ../sass/section/footer.scss */
+/* line 10, ../sass/section/footer.scss */
+#footer footer .footer-block .about, #footer footer .footer-block .location, #footer footer .footer-block .share {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+/* line 15, ../sass/section/footer.scss */
 #footer footer .footer-block div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  color: white;
 }
-/* line 13, ../sass/section/footer.scss */
+/* line 22, ../sass/section/footer.scss */
+#footer footer .footer-block div span {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+}
+/* line 28, ../sass/section/footer.scss */
+#footer footer .footer-block div p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 1.61;
+  margin-top: 20px;
+}
+/* line 34, ../sass/section/footer.scss */
+#footer footer .footer-block div .share-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 38, ../sass/section/footer.scss */
+#footer footer .footer-block div .share-block div {
+  width: 40px;
+  height: 40px;
+  margin: 20px 5px 0 5px;
+  border: solid 0.5px #C5C9CB;
+  border-radius: 1px;
+}
+/* line 45, ../sass/section/footer.scss */
+#footer footer .footer-block div .share-block div:hover {
+  background-color: #E74545;
+}
+/* line 48, ../sass/section/footer.scss */
+#footer footer .footer-block div .share-block div:nth-child(1) {
+  background-image: url(../img/team/share/f.bg.fw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 53, ../sass/section/footer.scss */
+#footer footer .footer-block div .share-block div:nth-child(2) {
+  background-image: url(../img/team/share/t.bg.fw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 58, ../sass/section/footer.scss */
+#footer footer .footer-block div .share-block div:nth-child(3) {
+  background-image: url(../img/team/share/in.bg.fw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 66, ../sass/section/footer.scss */
 #footer footer .copyright {
+  background-color: #313353;
   display: flex;
   align-items: center;
 }
-/* line 17, ../sass/section/footer.scss */
+/* line 70, ../sass/section/footer.scss */
+#footer footer .copyright div {
+  margin: 30px 0 30px 0;
+}
+/* line 72, ../sass/section/footer.scss */
 #footer footer .copyright div p {
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 14px;
+  line-height: 1.61;
+  color: #7F7F7F;
+  margin: 0;
   text-align: center;
+}
+/* line 79, ../sass/section/footer.scss */
+#footer footer .copyright div p span {
+  color: white;
+}
+
+/* BUTTONS */
+/* line 2, ../sass/buttons.scss */
+#welcome-button {
+  height: 45px;
+  width: 200px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: white;
+  background-color: #E74545;
+  border: none;
+  border-radius: 3px;
+  line-height: 1.62;
+  text-transform: uppercase;
+}
+
+/* line 16, ../sass/buttons.scss */
+#download-button {
+  width: 280px;
+  height: 45px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: white;
+  background-color: #E74545;
+  border: none;
+  border-radius: 3px;
+  line-height: 1.62;
+  text-transform: uppercase;
 }

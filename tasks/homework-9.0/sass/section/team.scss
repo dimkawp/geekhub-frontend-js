@@ -3,6 +3,64 @@
     .items {
         .item {
             width: 270px;
+            margin-top: 35px;
+            margin-bottom: 35px;
+            .header {
+                width: 270px;
+                h4 {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 22px;
+                    color: #2D3033;
+                    text-align: left;
+                    margin-top: 35px;           
+                }
+                span {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    color: #E74545;
+                }
+            }
+            .description {
+                width: 270px;
+                p {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 14px;
+                    color: #6C7279;
+                    margin-top: 30px;
+                }
+            }
+            .share {
+                width: 270px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                div {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 5px;
+                    border: solid 0.5px #C5C9CB;
+                    border-radius: 1px;
+                }
+                div:hover {
+                    background-color: #E74545;
+                }
+                div:nth-child(1) {
+                    background-image: url(../img/team/share/f.bg.fw.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                div:nth-child(2) {
+                    background-image: url(../img/team/share/t.bg.fw.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                div:nth-child(3) {
+                    background-image: url(../img/team/share/in.bg.fw.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
         }
     }
 }
