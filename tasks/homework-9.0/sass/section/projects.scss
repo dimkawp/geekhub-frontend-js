@@ -3,7 +3,45 @@
     background-color: #2B2D49;
     .items {
         .item {
+            overflow: hidden;
+            padding: 0;
+            img {
+                opacity: .1;
+                z-index: -1;
+                height: 180px;
+                width: 100%;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;  
+            }
+            }
+
+            .description {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: center;
+                text-align: center;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                opacity: .99;
+                z-index: 2;
+                color: #E74545;
+                font-weight: 600;
+            }
 
         }
-    }
+        .item:hover {
+            .description {
+                transition: 2s;
+                font-weight: 900;
+            }
+            img {  
+            opacity: .99;
+            -webkit-transform:rotate(10deg) scale(1.4);
+            transform:rotate(10deg) scale(1.4);
+            }
+        }
 }

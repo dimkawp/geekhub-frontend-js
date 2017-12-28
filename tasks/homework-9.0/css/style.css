@@ -281,6 +281,48 @@ font-family: 'Raleway', sans-serif;
 #projects {
   background-color: #2B2D49;
 }
+/* line 5, ../sass/section/projects.scss */
+#projects .items .item {
+  overflow: hidden;
+  padding: 0;
+}
+/* line 8, ../sass/section/projects.scss */
+#projects .items .item img {
+  opacity: .1;
+  z-index: -1;
+  height: 180px;
+  width: 100%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+/* line 20, ../sass/section/projects.scss */
+#projects .items .description {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  opacity: .99;
+  z-index: 2;
+  color: #E74545;
+  font-weight: 600;
+}
+/* line 37, ../sass/section/projects.scss */
+#projects .item:hover .description {
+  transition: 2s;
+  font-weight: 900;
+}
+/* line 41, ../sass/section/projects.scss */
+#projects .item:hover img {
+  opacity: .99;
+  -webkit-transform: rotate(10deg) scale(1.4);
+  transform: rotate(10deg) scale(1.4);
+}
 
 /* TEAM */
 /* line 4, ../sass/section/team.scss */
