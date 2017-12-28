@@ -19,10 +19,10 @@
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
-/* line 20, ../../sass/section/projects.scss */
+/* line 19, ../../sass/section/projects.scss */
 #projects .items .description {
   position: absolute;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   align-content: center;
@@ -34,14 +34,22 @@
   color: #E74545;
   font-weight: 600;
 }
-/* line 37, ../../sass/section/projects.scss */
-#projects .item:hover .description {
-  transition: 2s;
-  font-weight: 900;
+/* line 34, ../../sass/section/projects.scss */
+#projects .item:hover {
+  transition: 1s;
+  background: #E74545;
+  opacity: .95;
 }
-/* line 41, ../../sass/section/projects.scss */
+/* line 39, ../../sass/section/projects.scss */
+#projects .item:hover .description {
+  display: flex;
+  font-weight: 900;
+  color: white;
+}
+/* line 44, ../../sass/section/projects.scss */
 #projects .item:hover img {
-  opacity: .99;
+  opacity: .1;
+  transition: 1s;
   -webkit-transform: rotate(10deg) scale(1.4);
   transform: rotate(10deg) scale(1.4);
 }

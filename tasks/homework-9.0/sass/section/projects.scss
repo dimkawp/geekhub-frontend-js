@@ -5,21 +5,20 @@
         .item {
             overflow: hidden;
             padding: 0;
-            img {
-                opacity: .1;
-                z-index: -1;
-                height: 180px;
-                width: 100%;
-                -webkit-transform: scale(1);
-                transform: scale(1);
-                -webkit-transition: .3s ease-in-out;
-                transition: .3s ease-in-out;  
+                img {
+                    opacity: .1;
+                    z-index: -1;
+                    height: 180px;
+                    width: 100%;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;  
+                }
             }
-            }
-
             .description {
                 position: absolute;
-                display: flex;
+                display: none;
                 flex-direction: column;
                 align-items: center;
                 align-content: center;
@@ -31,15 +30,21 @@
                 color: #E74545;
                 font-weight: 600;
             }
-
         }
         .item:hover {
+            transition: 1s;
+            background: #E74545;
+            opacity: .95;
+            
             .description {
-                transition: 2s;
+                display: flex;           
                 font-weight: 900;
+                color: white;
             }
             img {  
-            opacity: .99;
+            opacity: .1;
+            transition: 1s;
+            
             -webkit-transform:rotate(10deg) scale(1.4);
             transform:rotate(10deg) scale(1.4);
             }
