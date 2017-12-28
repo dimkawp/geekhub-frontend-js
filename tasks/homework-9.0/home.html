@@ -15,6 +15,9 @@
         <!-- jquery 3.2.1 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="js/slider.js"></script>
+        <script src="js/mNav.js"></script>
+        <script src="js/navAnchor.js"></script>
+        <script src="js/navScroll.js"></script>
 
         <title>Homework-9.0</title>
     </head>
@@ -23,22 +26,28 @@
             <section id="head">
                 <header class="container">
                     <div class="logo">LOGO</div>
-                    <div class="m-nav">
-                        <ul>
-                            <li><a href="#about">ABOUT</a></li>
-                            <li><a href="#recent">RECENT</a></li>
-                            <li><a href="#article">ARTICLE</a></li>
-                            <li><a href="#team">TEAM</a></li>                               
-                        </ul>
-                    </div>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                          <a href="#welcome">HOME       </a>
+                          <a href="#services">WORK      </a>
+                          <a href="#projects">OUR TEAM  </a>
+                          <a href="#team">TESTIMONIALS  </a>
+                          <a href="#download">DOWNLOAD  </a>
+                        </div>
+                      </div>
+                    <span id="mNav" onclick="openNav()">&#9776;</span>
                     <div class="nav">
-                        <div class="item"><a href="">HOME        </a></div>
-                        <div class="item"><a href="">WORK        </a></div>
-                        <div class="item"><a href="">OUR TEAM    </a></div>
-                        <div class="item"><a href="">TESTIMONIALS</a></div>
-                        <div class="item"><a href="">DOWNLOAD    </a></div>
-                    </div>
+                        <div class="item"><a href="#welcome">HOME         </a></div>
+                        <div class="item"><a href="#services">WORK        </a></div>
+                        <div class="item"><a href="#projects">OUR TEAM    </a></div>
+                        <div class="item"><a href="#team">TESTIMONIALS    </a></div>
+                        <div class="item"><a href="#download">DOWNLOAD    </a></div>
+                    </div>       
                 </header>
+                <div class="container hr">
+                    <hr>
+                </div>
             </section>
             <!-- WELCOME -->
             <section id="welcome">

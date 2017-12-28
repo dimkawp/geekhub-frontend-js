@@ -13,13 +13,23 @@ font-family: 'Raleway', sans-serif;
 800	Extra Bold (Ultra Bold)
 900	Black (Heavy)
 */
-/* line 17, ../sass/main.scss */
+/* line 16, ../sass/main.scss */
+#head {
+  z-index: 1;
+}
+
+/* line 19, ../sass/main.scss */
+#services, #team, #projects {
+  opacity: .99;
+  z-index: -1;
+}
+/* line 22, ../sass/main.scss */
 #services .items, #team .items, #projects .items {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-/* line 21, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
 #services .items .item, #team .items .item, #projects .items .item {
   display: flex;
   flex-direction: column;

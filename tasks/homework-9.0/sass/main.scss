@@ -13,7 +13,12 @@ font-family: 'Raleway', sans-serif;
 800	Extra Bold (Ultra Bold)
 900	Black (Heavy)
 */
+#head {
+    z-index: 1;
+}
 #services, #team, #projects {
+    opacity: .99;
+    z-index: -1;
     .items {
         display: flex;
         flex-wrap: wrap;
