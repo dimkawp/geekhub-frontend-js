@@ -89,6 +89,14 @@
   }
   /* line 87, ../sass/expirians.scss */
   #expirians .block .items .dots {
+    display: none;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 99, ../sass/expirians.scss */
+  #expirians .block .items .dots {
+    display: none;
     margin: 5px;
   }
 }

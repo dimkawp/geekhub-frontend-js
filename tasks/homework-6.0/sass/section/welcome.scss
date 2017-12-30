@@ -1,6 +1,5 @@
 /*WELCOME*/
 #welcome {
-    height: 100vh;
     width: 100vw;
     background: url(../img/welcome/main-bg.fw.png) no-repeat;
     background-size: cover; 
@@ -11,7 +10,6 @@
     .welcome-block {
         display: flex;
         flex-direction: column;
-        
         align-items: center;
         .title {
             display: flex;
@@ -19,13 +17,13 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            margin-top: 50px;
             margin-bottom: 50px;
             span {
                 font-size: 30px;
                 font-weight: bold;
             }
         }
-
         button {
             width: 210px;
             height: 55px;
@@ -38,11 +36,8 @@
         }
     }
 }
-
 @media screen and (max-width:1170px) {
-
     #welcome {
-
         height: auto;
         width: auto;
         img {
@@ -53,17 +48,12 @@
         }
         p {
             font-size: 30px;
-
         }
     }
-
 }
-@media screen and (max-width:360px) {
-    
+@media screen and (max-width:360px) { 
         #welcome, #content, #footer-nav, #our-news, #newsletter {
             width: 500px;
             margin: 0 auto;
-
-        }
-    
+        }  
     }

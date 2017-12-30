@@ -184,7 +184,6 @@ body .items .item {
 /*WELCOME*/
 /* line 2, ../sass/section/welcome.scss */
 #welcome {
-  height: 100vh;
   width: 100vw;
   background: url(../img/welcome/main-bg.fw.png) no-repeat;
   background-size: cover;
@@ -193,27 +192,28 @@ body .items .item {
   justify-content: center;
   align-items: flex-end;
 }
-/* line 11, ../sass/section/welcome.scss */
+/* line 10, ../sass/section/welcome.scss */
 #welcome .welcome-block {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* line 16, ../sass/section/welcome.scss */
+/* line 14, ../sass/section/welcome.scss */
 #welcome .welcome-block .title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
-/* line 23, ../sass/section/welcome.scss */
+/* line 22, ../sass/section/welcome.scss */
 #welcome .welcome-block .title span {
   font-size: 30px;
   font-weight: bold;
 }
-/* line 29, ../sass/section/welcome.scss */
+/* line 27, ../sass/section/welcome.scss */
 #welcome .welcome-block button {
   width: 210px;
   height: 55px;
@@ -226,26 +226,26 @@ body .items .item {
 }
 
 @media screen and (max-width: 1170px) {
-  /* line 44, ../sass/section/welcome.scss */
+  /* line 40, ../sass/section/welcome.scss */
   #welcome {
     height: auto;
     width: auto;
   }
-  /* line 48, ../sass/section/welcome.scss */
+  /* line 43, ../sass/section/welcome.scss */
   #welcome img {
     width: 80vw;
   }
-  /* line 51, ../sass/section/welcome.scss */
+  /* line 46, ../sass/section/welcome.scss */
   #welcome h3 {
     font-size: 40px;
   }
-  /* line 54, ../sass/section/welcome.scss */
+  /* line 49, ../sass/section/welcome.scss */
   #welcome p {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 360px) {
-  /* line 63, ../sass/section/welcome.scss */
+  /* line 55, ../sass/section/welcome.scss */
   #welcome, #content, #footer-nav, #our-news, #newsletter {
     width: 500px;
     margin: 0 auto;
@@ -340,7 +340,7 @@ body .items .item {
   border: none;
   border-radius: 25px;
 }
-/* line 34, ../sass/section/newsletter.scss */
+/* line 33, ../sass/section/newsletter.scss */
 #newsletter .newsletter-block .input button {
   border: none;
   background-color: white;
@@ -351,6 +351,12 @@ body .items .item {
   color: #612315;
 }
 
+@media screen and (max-width: 600px) {
+  /* line 49, ../sass/section/newsletter.scss */
+  #newsletter .newsletter-block .input input {
+    width: 300px;
+  }
+}
 /*CONTENT*/
 /* line 4, ../sass/section/content.scss */
 #content .content-block .items {

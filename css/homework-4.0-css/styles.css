@@ -1,6 +1,6 @@
 body {
     font-family: 'Playfair Display', serif;
-    color: #616161;    
+    color: #616161;      
 }
 /*HEADER*/
 .header-block {
@@ -104,6 +104,8 @@ section {
 /*FOOTER*/
 footer {
     background-color: #EFEFEF;
+    width: 100vw;
+    margin: 0 auto;
 }
     .footer-block {
         width: 1060px;
@@ -112,6 +114,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        background-color: #EFEFEF;
     }
     .signature {
         display: flex;

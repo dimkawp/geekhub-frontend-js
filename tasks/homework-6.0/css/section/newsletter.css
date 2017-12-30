@@ -38,7 +38,7 @@
   border: none;
   border-radius: 25px;
 }
-/* line 34, ../../sass/section/newsletter.scss */
+/* line 33, ../../sass/section/newsletter.scss */
 #newsletter .newsletter-block .input button {
   border: none;
   background-color: white;
@@ -47,4 +47,11 @@
   top: 15px;
   font-size: 18px;
   color: #612315;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 49, ../../sass/section/newsletter.scss */
+  #newsletter .newsletter-block .input input {
+    width: 300px;
+  }
 }

@@ -29,7 +29,6 @@
                 height: 55px;
                 border: none;
                 border-radius: 25px;
- 
             }
             button {
                 border: none;
@@ -41,8 +40,16 @@
                 color: #612315;
             }
         }
-        input {
-            
+    }
+}
+@media screen and (max-width:600px) {   
+    #newsletter {
+        .newsletter-block {
+            .input {
+                input {
+                    width: 300px;
+                } 
+            }
         }
     }
 }

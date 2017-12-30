@@ -85,6 +85,19 @@
                     }
                 }
                 .dots {
+                    display: none;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1000px) {
+    #expirians {
+        .block {
+            .items {
+                .dots {
+                    display: none;
                     margin: 5px;
                 }
             }

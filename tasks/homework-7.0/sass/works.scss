@@ -20,6 +20,7 @@
         }
         .content {
             .items {
+                width: 1140px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
@@ -92,6 +93,7 @@
         }
         /*slider*/
         .slider-items {
+            margin: 0 auto;
             margin-top: 25px;
             margin-bottom: 95px;
 
@@ -140,6 +142,19 @@
                     }
                 }
 
+            }
+        }
+    }
+}
+@media screen and (max-width:1150px) {
+    #works {
+        .block {
+            .content {
+                .items {
+                    width: 100%;
+                    justify-content: space-around;
+
+                }
             }
         }
     }

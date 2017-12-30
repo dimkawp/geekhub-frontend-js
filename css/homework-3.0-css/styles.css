@@ -1,7 +1,6 @@
 body {
     font-family: Myriad Pro;
 }
-
 /* button*/
 button {
     width: 170px;
@@ -10,55 +9,50 @@ button {
     border-radius: 25px 25px 25px 25px;
     border: none;
 }
-
 section .content-section-block {
     padding: 0 0 100px 0;
 }
-
 .header-block {
     width: 1170px;
     height: 110px;
     margin: 0 auto;
-
+    z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     position: fixed; 
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-
     text-transform: uppercase;
 }
-
 .header-block a, a:hover {
+    text-shadow: 1px 1px #E7BE5D;
     text-decoration: none;
     color: black;
 }
-
+.header-block a:hover {
+    color: #E7BE5D;
+}
 .header-block .logo-title {
     font-size: 25px;
     font-weight: 600;
 }
-
 .header-block .nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
-
 .header-block .nav .nav-item {
     margin: 0 15px 0 15px;
 }
-
 .welcome-block {
     background: url(../../tasks/homework-3.0/img/bg/background-with-shadow.fw.png) no-repeat;
     background-size: cover;
     position: relative;
+    z-index: -1;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -66,8 +60,6 @@ section .content-section-block {
     width: 100vw;
     margin: 0 auto;
     top: 110px;
-
-
     height: 100vh;
 }
 /*hack add background on mobile*/
@@ -77,11 +69,9 @@ section .content-section-block {
         -webkit-background-size: 100%; 
     }
 }
-
 .welcome-block .welcone-block-preview {
     margin-bottom: 20vh;
     color: white;
-
 }
 .welcome-block .welcone-block-preview h1 {
     margin: 0;
@@ -93,87 +83,66 @@ section .content-section-block {
 .welcome-block button {
     margin-bottom: 20vh;
 }
-
 section {
     width: 1170px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
-
 section .header-section-block {
     display: flex;
     flex-direction: column;
 }
-
 section .header-section-block h2 {
     margin: 125px 0 0 25px;
     padding: 0;
 }
-
 section .header-section-block p {
     margin: 0 0 90px 25px;
     padding: 0;
     width: 775px;
     color: #656565;
-
 }
-
 section .content-section-block {
     display: flex;
     flex-direction: row;
 }
-
-
 section .content-item {
     width: 550px;
     display: flex;
     flex-direction: column;
 }
-
 section .content-item h3 {
     font-size: 21px;
 }
-
 section .content-item .content-item-description ul {
     margin: 0;
     padding: 0;
-
 }
-
 section .content-item .content-item-description {
     font-size: 14px;
     line-height: 1.8;
 }
-
 section .content-item .content-item-description ul li {
-
     display: flex;
     flex-direction: row;
     align-items: center;
     line-height: 1;
-
-
     font-size: 16px;
-
 }
-
 section .content-item .content-item-description ul li span {
     font-weight: 600;
     width: 100px;
  }
-
- /*practis*/
+/*practis*/
 #practis {
     width: 100vw;
     background-color: black;
     color: white;
 }
-
 @media screen and (max-width:1170px) {
     #practis {
         width: 1170px;
-        
     }
 }
 #practis .content-section-block, .header-section-block {
@@ -181,39 +150,28 @@ section .content-item .content-item-description ul li span {
     flex-direction: row;
     width: 1170px;
     margin: 0 auto;
-
-
  }
-
-
  #practis .content-section-block .content-item {
      display: flex;
      flex-direction: row;
  }
-
  #practis .content-section-block {
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;
-
  }
-
  #practis .content-section-block .content-item .content-item-block {
      width: 550px;
      display: flex;
      flex-direction: column;
  }
-
 #practis .content-section-block .content-item .content-item-block h3 {
      padding: 0;
      margin: 0;
-
  }
 #practis .content-section-block .content-item .content-item-block p {
     font-size: 14px;
-
 }
-
 #practis .content-section-block .content-item .content-item-logo-1 {
     margin: 0 30px 0 100px;
     width: 100px;
@@ -238,9 +196,7 @@ section .content-item .content-item-description ul li span {
     height: 100px;
     background: url(../../tasks/homework-3.0/img/practis/4.fw.png) no-repeat; 
 }
-
- /*attorney*/
-
+/*attorney*/
 #attorney .content-item h4{
     margin: 25px 0 0 0;
     font-size: 21px;
@@ -250,30 +206,24 @@ section .content-item .content-item-description ul li span {
     margin: 0;
     font-size: 14px;
     color: #656565;
-
 }
-
 /*clients*/
 #clients {
     width: 100vw;
     background-color: black;
     color: white;
 }
-
 @media screen and (max-width:1170px) {
     #clients {
         width: 1170px;
-        
     }
 }
-
 #clients .content-section-block, .header-section-block {
     display: flex;
     flex-direction: row;
     width: 1170px;
     margin: 0 auto;
  }
-
 #clients .content-section-block .content-item-face {
     width: 400px;
     margin: 0 25px 100px 0;
@@ -282,7 +232,6 @@ section .content-item .content-item-description ul li span {
     width: 630px;
     display: flex;
     flex-direction: column;
-    
 }
 #clients .content-section-block .content-item-face-descriprion p {
     font-size: 14px;
@@ -296,27 +245,19 @@ section .content-item .content-item-description ul li span {
     width: 370px;
     height: 305px;
     box-shadow: 20px 20px #E7BE5D;
-
-
 }
 #clients .content-section-block .content-item-element {
     width: 40px;
     height: 210px;
     margin: 5px;
     background: url(../../tasks/homework-3.0/img/clients/element.fw.png) no-repeat; 
-
-
     align-self: center;
 }
-
 #clients .content-section-block {
     display: flex;
     flex-direction: row;
-    
-
 }
 /*publications*/
-
 #publications .content-section-block {
     flex-wrap: wrap;
     display: flex;
@@ -325,42 +266,31 @@ section .content-item .content-item-description ul li span {
 #publications .content-section-block .content-item {
     width: 370px;
 }
-
 #publications .content-item-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 #publications .content-item-header .content-item-head h3 {
     margin: 0;
 }
 #publications .content-item-header .content-item-data {
     align-self: flex-end;
 }
-
 #publications .content-item-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
-#publications .content-item-footer .content-item-footer-share {
-
-}
-
 /*question*/
-
 #question {
     width: 100vw;
     background-color: black;
     color: white;
 }
-
 @media screen and (max-width:1170px) {
     #question {
         width: 1170px;
-        
     }
 }
 
@@ -378,16 +308,13 @@ section .content-item .content-item-description ul li span {
     width: 500px;
     align-self: flex-start;
     color: black;
-
 }
 #question .content-section-block p {
     width: 420px;
     margin: 45px;
     font-size: 14px;
     line-height: 1.8;
-
     background-color: #E7BE5D;
-
 }
 /*contact*/
 #contact .content-section-block {
@@ -401,15 +328,8 @@ section .content-item .content-item-description ul li span {
     width: 360px;
     height: 360px;
     background-color: #2F3B87;
-    box-shadow: 20px 20px #E7BE5D;
-    
+    box-shadow: 20px 20px #E7BE5D;   
 }
-
-#contact .content-section-block .content-item .content-item-form form {
-    
-    
-}
-
 #contact .content-section-block .content-item .content-item-form {
     width: 360px;
 }
@@ -427,7 +347,6 @@ section .content-item .content-item-description ul li span {
     width: 360px;
     border: none;
     outline:none;
-
 }
 #contact .content-section-block .content-item .content-item-form form textarea[placeholder] {
     color: #B8B8B8;
@@ -443,7 +362,6 @@ section .content-item .content-item-description ul li span {
 
 #contact .content-section-block .content-item .content-item-form form input :active{
     border: none;
-
 }
 /*footer*/
 footer {
@@ -458,12 +376,44 @@ footer .footer-block {
     justify-content: space-between;
     align-items: center;
 }
-
 footer .footer-block .footer-social-block {
     display: flex;
     flex-direction: row;
 }
-
+.footer-social-block {
+  	text-align: center;
+}
+/* buttons */
+.footer-social-block a {
+	width: 50px;
+  	height: 50px;
+  	display: inline-block;
+  	margin: 8px;
+  	border-radius: 50%;
+  	font-size: 24px;
+  	color: #fff;
+	opacity: 0.75;
+	transition: opacity 0.15s linear;
+}
+.footer-social-block a:hover {
+	opacity: 1;
+}
+/* icons */
+.footer-social-block i {
+  	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+/* colors */
+.facebook {
+    background: #3b5998;
+}
+.twitter {
+     background: #55acee;
+}
+.googleplus {
+     background: #dd4b39;
+}
 @media screen and (max-width:1170px) {
     footer {
         width: 1170px;

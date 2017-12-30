@@ -35,7 +35,6 @@
                 </div>  
             </header>
         </section>
-
         <section id="about">
             <section>
                 <div class="about-description">
@@ -49,8 +48,7 @@
                     </p>
                     <div class="button-block">
                         <button>READ MORE</button>
-                    </div>
-                    
+                    </div>   
                 </div>
                 <div class="figure-block">
                     <figure>
@@ -68,26 +66,21 @@
                 </div>
             </section>
         </section>
-
         <section id="recent">
-
-                <article>
-                    <header>
-                        <h3>RECENT PROJECTS</h3>
-                        <p>
-                            eritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                        </p>
-                    </header>
-                </article>
-                <div class="slider">
-                    <img src="img/slider/slider-bar.fw.png" alt="">
-                </div>
-                <div class="slider-footer"></div>
-
+            <article>
+                <header>
+                    <h3>RECENT PROJECTS</h3>
+                    <p>
+                        eritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    </p>
+                </header>
+            </article>
+            <div class="slider">
+                <img src="img/slider/slider-bar.fw.png" alt="">
+            </div>
+            <div class="slider-footer"></div>
         </section>
-
-
         <section id="article">
             <div class="info">
                 <p>
@@ -130,8 +123,7 @@
                     <div class="clients-block-item"><img src="img/clients-block/ibm.fw.png" alt=""></div>
                     <div class="clients-block-item"><img src="img/clients-block/samsung.fw.png" alt=""></div>
                 </div>
-            </div>
-            
+            </div>      
         </section>
         <section id="team">
             <article>
@@ -175,30 +167,30 @@
         </section>
         <footer>
             <div class="footer-content">
-                    <div class="logo">
-                        <img src="img/logo.fw.png" alt="Logo">
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="#head">HOME</a></li>
-                            <li><a href=""></a>SERVICES</li>
-                            <li><a href=""></a>OUR WOORKS</li>
-                            <li><a href=""></a>CONTACT</li>
-                        </ul>
-                    </nav>
+                <div class="logo">
+                    <img src="img/logo.fw.png" alt="Logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#head">HOME</a></li>
+                        <li><a href=""></a>SERVICES</li>
+                        <li><a href=""></a>OUR WOORKS</li>
+                        <li><a href=""></a>CONTACT</li>
+                    </ul>
+                </nav>
             </div>
         </footer>
         <!-- JS Ajax -->
         <script type="text/javascript">
-            //add slover event in nav
-            $(document).ready(function(){
-               $(".nav").on("click","a", function (event) {
-                   event.preventDefault();
-                   var id  = $(this).attr('href'),
-                       top = $(id).offset().top;
-                   $('body,html').animate({scrollTop: top}, 1500);
-               });
-           });
-           </script>
+        //add slover event in nav
+        $(document).ready(function(){
+            $(".nav").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+        });
+        </script>
     </body> 
 </html>

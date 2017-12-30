@@ -281,12 +281,16 @@ font-family: 'Raleway', sans-serif;
 #projects {
   background-color: #2B2D49;
 }
-/* line 5, ../sass/section/projects.scss */
+/* line 4, ../sass/section/projects.scss */
+#projects .items {
+  padding: 0;
+}
+/* line 6, ../sass/section/projects.scss */
 #projects .items .item {
   overflow: hidden;
   padding: 0;
 }
-/* line 8, ../sass/section/projects.scss */
+/* line 9, ../sass/section/projects.scss */
 #projects .items .item img {
   opacity: .1;
   z-index: -1;
@@ -297,7 +301,7 @@ font-family: 'Raleway', sans-serif;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
-/* line 19, ../sass/section/projects.scss */
+/* line 20, ../sass/section/projects.scss */
 #projects .items .description {
   position: absolute;
   display: none;
@@ -312,19 +316,19 @@ font-family: 'Raleway', sans-serif;
   color: #E74545;
   font-weight: 600;
 }
-/* line 34, ../sass/section/projects.scss */
+/* line 35, ../sass/section/projects.scss */
 #projects .item:hover {
   transition: 1s;
   background: #E74545;
   opacity: .95;
 }
-/* line 39, ../sass/section/projects.scss */
+/* line 40, ../sass/section/projects.scss */
 #projects .item:hover .description {
   display: flex;
   font-weight: 900;
   color: white;
 }
-/* line 44, ../sass/section/projects.scss */
+/* line 45, ../sass/section/projects.scss */
 #projects .item:hover img {
   opacity: .1;
   transition: 1s;
