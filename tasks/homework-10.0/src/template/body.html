@@ -1,14 +1,21 @@
 <body>
     <!-- HEADER -->
     <section id="header">
-        <div class="header-block">
-            <div class="template">Currency : GBP</div>
+        <div class="header-block container">
+            <div class="template">
+                <select name="" id="">
+                    <option value="">Currency : GBP</option>
+                    <option value="">Currency : GBP - 2</option>
+                    <option value="">Currency : GBP - 3</option>
+                </select>
+            </div>
             <div class="user-block">
-                <span>Register</span>
-                <span>Sign In</span>
+                <div><a href="">Register</a></div>
+                <div><a href="">Sign In</a></div>
                 <div class="basket">
-                    <i></i>
+                    <i class="material-icons">add_shopping_cart</i>
                     <span>empty</span>
+                    <i class="material-icons">keyboard_arrow_down</i>
                 </div>
             </div>
         </div>
@@ -16,19 +23,75 @@
     <!-- WELCOME -->
     <section id="welcome">
         <div class="head">
-            <div class="logo"></div>
+            <div class="logo">
+                <h1><b>avenue</b>fashion</h1>
+            </div>
             <div class="nav">
-                <div class="item"><a href="">mens</a></div>
-                <div class="item"><a href="">womens</a></div>
+                <div class="dropdown">
+                    <div class="item"><a href="">mens</a></div>
+                    <div class="dropdown-content">
+                        <div class="dropdown-block">
+                            <div class="col-6">
+                            <h3>casuals</h3>
+                            <a href="#">Jackets</a>
+                            <a href="#">Hoodies & Sweatshirts</a>
+                            <a href="#">Polo Shirts</a>
+                            <a href="#">Sportswear</a>
+                            <a href="#">Trousers & Chinos</a>
+                            <a href="#">T-Shirts</a>
+                            </div>
+                            <div class="col-6">
+                            <h3>Formal</h3>
+                            <a href="#">Jackets</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Suits</a>
+                            <a href="#">Trousers</a>
+                            </div>
+                        </div>
+                        <div class="advertise container">
+                            <p><b>Autumn sale!</b></p>
+                            <p>up to 50% off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="item"><a href="">womens</a></div>
+                    <div class="dropdown-content">
+                        <div class="dropdown-block">
+                            <div class="col-6">
+                            <h3>casuals</h3>
+                            <a href="#">Jackets</a>
+                            <a href="#">Hoodies & Sweatshirts</a>
+                            <a href="#">Polo Shirts</a>
+                            <a href="#">Sportswear</a>
+                            <a href="#">Trousers & Chinos</a>
+                            <a href="#">T-Shirts</a>
+                            </div>
+                            <div class="col-6">
+                            <h3>Formal</h3>
+                            <a href="#">Jackets</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Suits</a>
+                            <a href="#">Trousers</a>
+                            </div>
+                        </div>
+                        <div class="advertise container">
+                            <p><b>Autumn sale!</b></p>
+                            <p>up to 50% off</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="item"><a href="">the brand</a></div>
                 <div class="item"><a href="">local stores</a></div>
                 <div class="item"><a href="">look book</a></div>
-                <div class="search">SEARCH</div>
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                </div>
             </div>
         </div>
         <div class="main-block">
             <div class="slider">
-                slider
+                <img src="img/head/slider/slider.fw.png" alt="slider-bg">
                 <button>shop men’s collection</button>
             </div>
         </div>
@@ -36,6 +99,7 @@
     <!-- PRODUCTS -->
     <section id="products">
         <div class="head">
+            <hr>
             <div class="nav">
                 <div class="item"><a href="">opular</a></div>
                 <div class="item"><a href="">new arrivals</a></div>
@@ -43,33 +107,27 @@
                 <div class="item"><a href="">special offers</a></div>
                 <div class="item"><a href="">coming soon</a></div>
             </div>
-        </div>
-            <div class="product-items">
-                <!-- 1 -->
-                <div class="item">
-                    product item
-                </div>
-                <!-- 2 -->
-                <div class="item">
-                    product item
-                </div>
-                <!-- 3 -->
-                <div class="item">
-                    product item
-                </div>
-                <!-- 4 -->
-                <div class="item">
-                    product item
-                </div>
-                <!-- 5 -->
-                <div class="item">
-                    product item
-                </div>
-                <!-- 6 -->
-                <div class="item">
-                    product item
-                </div>
+        </div>           
+        <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
+            <div class="grid-item">
+                    <img src="img/products/low-img.fw.png" alt="">
             </div>
+            <div class="grid-item">
+                    <img src="img/products/low-img.fw.png" alt="">
+            </div>
+            <div class="grid-item">
+                    <img src="img/products/large-img.fw.png" alt="">
+            </div>
+            <div class="grid-item">
+                    <img src="img/products/large-img.fw.png" alt="">
+            </div>
+            <div class="grid-item">
+                    <img src="img/products/low-img.fw.png" alt="">
+            </div>
+            <div class="grid-item">
+                    <img src="img/products/low-img.fw.png" alt="">
+            </div>
+        </div>
     </section>
     <!-- advertising -->
     <section id="advertising">

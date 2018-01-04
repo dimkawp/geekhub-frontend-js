@@ -1,0 +1,57 @@
+/* SECTION */
+#header {
+    background-color: $header-bg;
+    .header-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        line-height: 1.62;
+        color: $header-font;
+        .template {
+            select {
+                height: 45px;
+
+                border: none;
+                background-color: $header-bg;
+                color: $header-font;
+            }
+            select:hover {
+                background-color: $light;
+                color: white;          
+            }
+        }
+        .user-block {
+            display: flex;
+            div {
+                height: 45px;
+                padding: 0 17px 0 17px;
+                display: flex;
+                align-items: center;
+                a {
+                    color: $header-font;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: white;
+                }
+            }
+            div:hover {
+                background-color: $light;
+                color: white;     
+            }
+            .basket {
+                display: flex;
+                align-items: center;
+                margin-left: 65px;
+                span {
+                    margin: 0 10px 0 15px;
+                    align-items: center;
+                    align-self: center;
+                }
+            }           
+        }
+    }
+}

@@ -1,3 +1,24 @@
-body div {
-    
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+100	Thin (Hairline)
+200	Extra Light (Ultra Light)
+300	Light
+400	Normal
+500	Medium
+600	Semi Bold (Demi Bold)
+700	Bold
+800	Extra Bold (Ultra Bold)
+900	Black (Heavy)
+*/
+/* COLORS */
+$header-bg: #333333;
+$header-font: #999999;
+$light: #00C7C7;
+$sloder: #575153;
+$button-bg: #737373;
+$button-hv: #00C7C7;
+$button-font: #454647;
+$body-bg: #F7F7F7;
+$body-font: #717171;
