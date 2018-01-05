@@ -28,11 +28,79 @@
         flex-direction: row;
         flex-wrap: wrap;
         .grid-item {
+            margin: 5px;
                 img {
                     max-width: 850px;
-                    margin: 5px;
+                    
+                }
+                figcaption {
+                    width: 420px;
+                    display: none;
+                    position: absolute;
+                    background-color: white;
+                    z-index: 1;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    color: #727272;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    span {
+                        margin-top: 20px;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                    }
+                    p {
+                        margin-top: 20px;
+                        font-size: 15px;
+
+                    }
+                    .social-block {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        div {
+                            height: 30px;
+                            width: 30px;
+                            border-radius: 15px;
+                            margin: 5px;
+                        }
+                        div:nth-child(1) {
+                            
+                            background: url(../img/products/social-block/b.fw.png) no-repeat;
+                            background-position: center;
+                            background-color: #717171;
+                        }
+                        div:nth-child(2) {
+                            background: url(../img/products/social-block/l.fw.png) no-repeat;
+                            background-position: center;
+                            background-color: #717171;
+                        }
+                        div:nth-child(3) {
+                            background: url(../img/products/social-block/s.fw.png) no-repeat;
+                            background-position: center;
+                            background-color: #717171;
+                        }
+                        div:hover {
+                            background-color: $light;
+                        }
+                    }
                 }
         }
+        .grid-item:hover {
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            figcaption {
+                display: flex;
+            }
+
+        }
+        .grid-item:nth-child(n+3):nth-child(-n+4) {
+            figcaption {
+                width: 850px;
+
+            }
+
+        }
+
     }
 }
 
@@ -43,6 +111,16 @@
                 img {
                     max-width: 100%;
                 }
+                figcaption {
+                    max-width: 100%;
+                }
+            }
+            .grid-item:nth-child(3n+3) {
+                figcaption {
+                    width: 100%;
+    
+                }
+    
             }
         }
     }

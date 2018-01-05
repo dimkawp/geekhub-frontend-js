@@ -1,0 +1,69 @@
+/* advertising */
+#advertising {
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .item {
+            width: 30vw;
+            margin: 5px;
+            display: flex;
+            text-align: right;
+            align-items: flex-end;
+            flex-direction: column;
+            background-color: #F7F7F7;
+            
+            h3,span {
+                font-size: 48px;
+                font-weight: 700;
+                color: #575153;
+                text-transform: uppercase;
+                margin: 0;
+            }
+            h3 {
+                padding-top: 100px;
+                padding-right: 25px;
+            }
+            span {
+                font-weight: 300;
+                padding-right: 25px;
+            }
+            p {
+                font-size: 15px;
+                color: #717171;
+                padding-right: 25px;
+            }
+
+            button {
+                width: 180px;
+                height: 60px;
+                align-self: flex-end;
+                margin-right: 25px;
+                margin-bottom: 140px;
+                background-color: #737373;
+                color: #454647;
+                font-size: 14px;
+                text-transform: uppercase;
+                border: none;
+            }
+            button:hover {
+                background-color: $light;
+                color: white;
+            }
+            
+
+        }
+    }
+}
+
+@media screen and (max-width:950px) {
+    #advertising {
+        .items {
+            .item {
+                width: 100%;
+
+            }
+        }
+
+    }
+}

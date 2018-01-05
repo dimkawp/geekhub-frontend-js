@@ -1,6 +1,13 @@
-footer div{
-    
-    a {
-        
+/* footer */
+footer {
+    background-color: #333333;
+    .footer-block {
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        color: #999999;
+        font-size: 13px;
+        align-items: center;
     }
+
 }
