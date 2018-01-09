@@ -1,6 +1,7 @@
 /* SECTION */
 #header {
     background-color: $header-bg;
+    width: 100vw;
     .header-block {
         display: flex;
         flex-wrap: wrap;
@@ -54,4 +55,23 @@
             }           
         }
     }
+}
+@media screen and (max-width:850px) {
+    #header {
+        .header-block {
+            
+            .user-block {
+                justify-content: flex-end;
+                width: 100vw;
+                padding: 0;
+                display: flex;
+                .basket {
+                    margin: 0;
+                    
+                }
+            }
+    
+        }
+    }
+
 }

@@ -121,20 +121,20 @@
     <section id="products">
         <div class="head">
             <hr>
-            <div class="nav">
-                <div class="item"><a href="">opular</a></div>
-                <div class="item"><a href="">new arrivals</a></div>
-                <div class="item"><a href="">best sellers</a></div>
-                <div class="item"><a href="">special offers</a></div>
-                <div class="item"><a href="">coming soon</a></div>
+            <div class="nav options">
+                <div class="item"><a class="clear" href="#products">popular</a></div>
+                <div class="item"><a class="filter" href="#products">new arrivals</a></div>
+                <div class="item"><a class="filter" href="#products">best sellers</a></div>
+                <div class="item"><a class="filter" href="#products">special offers</a></div>
+                <div class="item"><a class="filter" href="#products">coming soon</a></div>
             </div>
         </div>           
-        <div class="grid" data-masonry='{ "itemSelector": ".grid-item" }'>
-            <div class="grid-item">
-                    <img src="img/products/low-img.fw.png" alt="">
+        <div class="grid sorting_list" data-masonry='{ "itemSelector": ".grid-item" }'>
+            <div class="grid-item portfolio-item">
+                    <img class="img-responsive" src="img/products/low-img.fw.png" alt="">
                     <figcaption>
-                        <span>Womens burnt orange casual tee  £29.95</span>
-                        <p>Classic casual t-shirt for women on the move. <br>
+                        <span>Womens id-1 burnt orange casual tee  £29.95</span>
+                        <p>Classic casual t-shirt for women on the move. new arrivals. <br>
                         100% cotton.</p>
                         <div class="social-block">
                             <div></div>
@@ -143,11 +143,24 @@
                         </div>
                     </figcaption>
             </div>
-            <div class="grid-item">
+            <div class="grid-item portfolio-item">
                     <img src="img/products/low-img.fw.png" alt="">
                     <figcaption>
-                        <span>Womens burnt orange casual tee  £29.95</span>
-                        <p>Classic casual t-shirt for women on the move. <br>
+                        <span>Womens best sellers burnt orange casual tee  £29.95</span>
+                        <p>Classic casual t-shirt for women coming soon on the move. <br>
+                        100% cotton.</p>
+                        <div class="social-block">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </figcaption>
+            </div>
+            <div class="grid-item portfolio-item">
+                    <img src="img/products/large-img.fw.png" alt="">
+                    <figcaption>
+                        <span>Womens id-3 burnt orange casual tee  £29.95</span>
+                        <p>Classic casual t-shirt for women coming soon on the move. <br>
                         100% cotton.</p>
                         <div class="social-block">
                             <div></div>
@@ -159,20 +172,7 @@
             <div class="grid-item">
                     <img src="img/products/large-img.fw.png" alt="">
                     <figcaption>
-                        <span>Womens burnt orange casual tee  £29.95</span>
-                        <p>Classic casual t-shirt for women on the move. <br>
-                        100% cotton.</p>
-                        <div class="social-block">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </figcaption>
-            </div>
-            <div class="grid-item">
-                    <img src="img/products/large-img.fw.png" alt="">
-                    <figcaption>
-                        <span>Womens burnt orange casual tee  £29.95</span>
+                        <span>Womens id-4 burnt orange casual tee  £29.95</span>
                         <p>Classic casual t-shirt for women on the move. <br>
                         100% cotton.</p>
                         <div class="social-block">
@@ -185,8 +185,8 @@
             <div class="grid-item">
                     <img src="img/products/low-img.fw.png" alt="">
                     <figcaption>
-                        <span>Womens burnt orange casual tee  £29.95</span>
-                        <p>Classic casual t-shirt for women on the move. <br>
+                        <span>Womens id-5 id-6 burnt orange casual tee  £29.95</span>
+                        <p>Classic casual t-shirt for women coming soon on the move. <br>
                         100% cotton.</p>
                         <div class="social-block">
                             <div></div>
@@ -195,11 +195,11 @@
                         </div>
                     </figcaption>
             </div>
-            <div class="grid-item">
+            <div class="grid-item w c m">
                     <img src="img/products/low-img.fw.png" alt="">
                     <figcaption>
-                        <span>Womens burnt orange casual tee  £29.95</span>
-                        <p>Classic casual t-shirt for women on the move. <br>
+                        <span>Womens best sellers burnt orange casual tee  £29.95</span>
+                        <p>Classic casual t-shirt for special offers women on the move. <br>
                         100% cotton.</p>
                         <div class="social-block">
                             <div></div>
@@ -307,14 +307,101 @@
                 </div>
                 <div class="banner">
                     <div class="social-block">
-                        <div class="f">f</div>
-                        <div class="t">t</div>
-                        <div class="y">y</div>
-                        <div class="p">p</div>
+                        <img src="img/info/share/main.fw.png" alt="share">
                     </div>
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+                <div class="search-sort">
+                        <!-- Search and Sort -->
+                        <div class="row">
+                            
+                            <div class="search">
+                                <span class="search-icon">
+                                    <img src="img/search_icon.png">
+                                </span>
+                                <input id="search" name="search" placeholder="Start typing here" type="text" data-list=".sorting_list" autocomplete="off">
+                            </div>
+                            
+                            <ul class="options">
+                                <li><a class="clear" href="#rows">View all</a></li>
+                                <li><a class="filter" href="#rows">women</a></li>
+                                <li><a class="filter" href="#rows">Nerdy Cat</a></li>
+                                <li><a  class="filter" href="#rows">Wonder Cow</a></li>
+                                <li><a href="#">Hairy Dog</a></li>
+                                <li><a href="#">Boss Frog</a></li>
+                                <li><a href="#">Grumpy Duck</a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Projects Row -->
+                    <div class="row">
+                        <ul class="sorting_list">
+                            <li>
+                                <div class="col-md-4 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="img/cow-fw.png" alt="">
+                                    </a>
+                                    
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Women Nam viverra euismod odio, gravida pellentesque urna varius wonder cow.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-md-4 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="img/duck.png" alt="">
+                                    </a>
+                                    
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae grumpy duck.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-md-4 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="img/bird-s.png" alt="">
+                                    </a>
+                                    
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae mighty bird.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-md-4 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="img/dog.png" alt="">
+                                    </a>
+                                    
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae hairy dog.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-md-4 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="img/cat.png" alt="">
+                                    </a>
+                                    
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae nerdy cat.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-md-4 portfolio-item">
+                                    <a href="#">
+                                        <img class="img-responsive" src="img/frog.png" alt="">
+                                    </a>
+                                    
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae boss frog.</p>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        
+                    </div>
         </div>
     </section>
 
@@ -335,6 +422,23 @@
 <!-- masonry -->
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <!-- filter -->
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="js/hideseek.js"></script>
+<script>
+
+$(document).ready(function() {
+$('#search').hideseek();
+});
+$(document).ready(function() {
+jQuery('a.clear ').on('click', function(event) {
+
+$('input#search').val('').trigger('keyup');
+});
+
+jQuery('a.filter ').on('click', function(event) {
+jQuery('input[name="search"]').val($(this).text().trim());
+jQuery('input[name="search"]').keyup();
+});
+});
+</script>
 </body>
 </html>

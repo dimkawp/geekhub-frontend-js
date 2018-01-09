@@ -1,1 +1,2 @@
 //= filter.js
+//= hideseek.js

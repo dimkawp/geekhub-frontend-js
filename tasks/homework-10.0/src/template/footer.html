@@ -14,6 +14,23 @@
 <!-- masonry -->
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <!-- filter -->
-<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="js/hideseek.js"></script>
+<script>
+
+$(document).ready(function() {
+$('#search').hideseek();
+});
+$(document).ready(function() {
+jQuery('a.clear ').on('click', function(event) {
+
+$('input#search').val('').trigger('keyup');
+});
+
+jQuery('a.filter ').on('click', function(event) {
+jQuery('input[name="search"]').val($(this).text().trim());
+jQuery('input[name="search"]').keyup();
+});
+});
+</script>
 </body>
 </html>
