@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700|Montserrat:300,400,700');
+/*
+font-family: 'Domine', serif;
+font-family: 'Montserrat', sans-serif;
+100	Thin (Hairline)
+200	Extra Light (Ultra Light)
+300	Light
+400	Normal
+500	Medium
+600	Semi Bold (Demi Bold)
+700	Bold
+800	Extra Bold (Ultra Bold)
+900	Black (Heavy)
+*/
+/*COLORS*/
+$nav-font: #E1E1E1;
+$nav-font-hover: #FFAB55;
+/* welcome */
+$item-bg: #03B5E7;
+$item-bg-hover: #F5951B;
+/* about */
+$h-font: #33393B;
+$p-font: #828A8C;
+/* features */
+$features-bg: #E7EFF1;
+$h-font: #33393B;
+$p-font: #828A8C;
+$features-footer-bg: #565C5C;
+/* projects */
+$h-font: #33393B;
+$p-font: #828A8C;
+/* services */
+$services-bg: #FFF9F2;
+$h-font: #33393B;
+$p-font: #828A8C;
+/* testimonials */
+$testimonials-bg: #03B5E7;
+$testimonials-p-font: #DDF7FF;
+/* blog */
+$h-font: #33393B;
+$p-font: #828A8C;
+/* contact */
+$contact-font: #33393B;
+/* footer */
+$footer-h: #E0E0E0;
+$footer-p: #828A8C;
+/* button */
+$button-bg: #15D327;
+
+@import 'sections/header.scss';
+@import 'sections/welcome.scss';
+@import 'sections/about.scss';
+@import 'sections/features.scss';
+@import 'sections/projects.scss';
+@import 'sections/services.scss';
+@import 'sections/testimonials.scss';
+@import 'sections/blog.scss';
+@import 'sections/contact.scss';
+@import 'sections/footer.scss';
+@import 'buttons.scss';
