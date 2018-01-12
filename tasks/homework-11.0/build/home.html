@@ -7,6 +7,7 @@
 
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <!-- icons -->
@@ -21,9 +22,95 @@
         <title>Homework-11.0</title>
     </head>
     <body>
-        <div>HEADER</div>
-        <div>WElCOME</div>
-        <div>about</div>
+        <header>
+            <div class="header-block container">
+                <div class="logo">
+                    <img src="img/logo.fw.png" alt="logo">
+                </div>
+                <div class="nav">
+                    <div class="item"><a href="">home</a></div>
+                    <div class="item"><a href="">about us</a></div>
+                    <div class="item"><a href="">industry</a></div>
+                    <div class="item"><a href="">services</a></div>
+                    <div class="item"><a href="">pages</a></div>
+                    <div class="item"><a href="">Contact us</a></div>
+                    <div class="item">
+                        <i class="icon-call-out"></i>
+                        <span>+91 5685 6664 555</span>
+                        <div class="circle">
+                            <i class="icon-envelope-open"></i>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- welcome -->
+        <section id="welcome">
+                <div class="welcome-block container">
+                    <h2>We are leading consulting company</h2>
+                    <h1>Choose your industry</h1>
+                    <div class="items container">
+                        <div class="item">
+                            <img src="img/welcome/1.fw.png" alt="">
+                            <span>Education</span>
+                        </div>
+                        <div class="item">
+                            <img src="img/welcome/2.fw.png" alt="">
+                            <span>Business</span>
+                        </div>
+                        <div class="item">
+                            <img src="img/welcome/3.fw.png" alt="">
+                            <span>Technology</span>
+                        </div>
+                        <div class="item">
+                            <img src="img/welcome/4.fw.png" alt="">
+                            <span>Education</span>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <!-- Indicators -->
+                        <div class="indicators">
+                            <div data-target="#demo" data-slide-to="0" class="active"></div>
+                            <div data-target="#demo" data-slide-to="1"></div>
+                            <div data-target="#demo" data-slide-to="2"></div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        </section>
+        <!-- about -->
+        <section id="about">
+            <header>
+                <h3>About us</h3>
+            </header>
+            <article>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum <br>
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer <br>
+                took a galley of type and scrambled.</p>
+            </article>
+            <button>Read More</button>
+            <hr>
+            <footer>
+                <div class="footer-block container">
+                    
+                    <div class="siema items">
+                        <div class="item"><img src="img/about/slider/1.fw.png" alt="slider-img"> </div>
+                        <div class="item"><img src="img/about/slider/2.fw.png" alt="slider-img"> </div>
+                        <div class="item"><img src="img/about/slider/3.fw.png" alt="slider-img"> </div>
+                        <div class="item"><img src="img/about/slider/4.fw.png" alt="slider-img"> </div>
+                        <div class="item"><img src="img/about/slider/5.fw.png" alt="slider-img"> </div>
+                        <div class="item"><img src="img/about/slider/1.fw.png" alt="slider-img"> </div>
+                        <div class="item"><img src="img/about/slider/2.fw.png" alt="slider-img"> </div>
+                        <div class="item"><img src="img/about/slider/3.fw.png" alt="slider-img"> </div>
+                        <div class="item"><img src="img/about/slider/4.fw.png" alt="slider-img"> </div>
+                        <div class="item"><img src="img/about/slider/5.fw.png" alt="slider-img"> </div>
+                    </div>
+                    <div class="prev"></div>
+                    <div class="next"></div>
+                </div>
+            </footer>
+        </section>
         <div>features</div>
         <div>PROJECTS</div>
         <div>services</div>
@@ -31,5 +118,8 @@
         <div>blog</div>
         <div>contact</div>
         <div>footer</div>
+        <script src='https://pawelgrzybek.com/siema/assets/siema.min.js'></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
+    
 </html>

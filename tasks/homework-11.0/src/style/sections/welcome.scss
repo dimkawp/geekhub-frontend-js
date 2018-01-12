@@ -1,1 +1,52 @@
 /* welcome */
+#welcome {
+        .welcome-block {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            .items {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0;
+                .item {
+                    width: 260px;
+                    height: 280px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                
+                    background-color: $item-bg-hover;
+                    padding: 0;     
+                }
+            }
+        }
+
+        .indicators {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+
+                div {
+                background-color: red;
+                height: 10px;
+                width: 10px;
+                margin: 5px;
+                border-radius: 5px;
+
+            }
+            .active {
+                background-color: aquamarine;
+            }
+
+        }
+
+
+    
+
+}

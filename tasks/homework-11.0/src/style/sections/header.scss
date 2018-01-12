@@ -1,1 +1,16 @@
 /* header */
+header {
+    .header-block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .logo {
+
+        }
+        .nav {
+            .item {
+
+            }
+        }
+    }
+}
