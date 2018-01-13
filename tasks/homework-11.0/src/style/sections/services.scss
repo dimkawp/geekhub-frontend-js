@@ -1,1 +1,22 @@
 /* sevices */
+#services {
+    background-color: $services-bg;
+    header {
+        h3 {
+            margin-top: 90px;
+            margin-bottom: 50px;
+        }
+    }
+    .services-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .content {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    button {
+        margin-bottom: 90px;
+    }
+}

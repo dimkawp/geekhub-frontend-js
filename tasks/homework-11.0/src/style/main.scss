@@ -47,6 +47,30 @@ $footer-p: #828A8C;
 /* button */
 $button-bg: #15D327;
 
+section {
+    h3,h4 {
+        font-family: 'Montserrat', sans-serif;
+        color: $h-font;
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    p,span {
+        font-family: 'Domine', serif;
+        color: $p-font;
+        font-size: 15px;
+        line-height: 1.87;
+    }
+    button {
+        border-radius: 20px;
+        text-transform: uppercase;
+ 
+    }
+}
+
 @import 'sections/header.scss';
 @import 'sections/welcome.scss';
 @import 'sections/about.scss';

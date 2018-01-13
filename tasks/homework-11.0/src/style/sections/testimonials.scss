@@ -1,1 +1,16 @@
 /* testimonials */
+#testimonials {
+    background-color: $testimonials-bg;
+    text-align: center;
+    
+    header {
+        h3 {
+            color: white;
+            padding-top: 90px;
+        }
+    }
+    p {
+        color: white;
+        padding-bottom: 90px;
+    }
+}

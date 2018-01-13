@@ -1,1 +1,87 @@
 /* features */
+#features {
+    background-color: $features-bg;
+    header {
+       h3 {
+           padding-top: 90px;
+           padding-bottom: 60px;
+       }
+        text-align: center;
+    }
+    .features-block {
+        margin-bottom: 60px;
+
+        .items {
+            display: flex;
+            flex-direction: row;
+            .item {
+                article {
+                    display: flex;
+                    flex-direction: row;    
+                    height: 150px;           
+                }
+            }
+            .item:nth-child(1) {
+                text-align: right;
+                header {
+                    text-align: right;
+                }
+                article:nth-child(1)::after {
+                    margin-left: 30px;
+                    content:url('../img/features/1.fw.png');
+                }
+                article:nth-child(2)::after {
+                    margin-left: 30px;
+                    content:url('../img/features/2.fw.png');
+                }
+            }
+            .item:nth-child(2) {
+            
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .logo-block {
+                    width: 130px;
+                    height: 130px;
+      
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: url(../img/features/logo-2.fw.png) no-repeat;
+                    background-position: center;
+
+                }
+            }
+            .item:nth-child(3) {
+                text-align: left;
+                header {
+                    text-align: left;
+                }
+                article:nth-child(1)::before {
+                    margin-right: 30px;
+                    content:url('../img/features/3.fw.png');
+                }
+                article:nth-child(2)::before {
+                    margin-right: 30px;
+                    content:url('../img/features/4.fw.png');
+                }
+            }
+
+        }
+
+    }
+    footer {
+        .footer-block {
+            span {
+                color: white;
+                font-size: 20px;
+                padding: 25px 0 25px 0;
+            }
+            background-color: $features-footer-bg;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
