@@ -3,7 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: $blog-bg;
     header {
+        .data {
+            color: $h-font;
+            text-transform: none;
+        }
         h3 {
             margin-top: 90px;
             text-align: center;
@@ -14,6 +19,78 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            div {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                article {
+                    background-color: white;
+                    box-shadow: 31px 0px 43px -42px #000000 inset;
+                    .description {
+                        display: flex;
+                        flex-direction: row;
+                        .img {
+                            visibility: hidden;
+                            -webkit-transition: all 2.3s ease;;
+                            -moz-transition: all 2.3s ease;;
+                            -o-transition: all 2.3s ease;;
+                            transition: all 2.3s ease;                         
+                        }
+                        .text {
+                            display: flex;
+                            flex-direction: column;
+                            height: 295px;
+                            
+                            header,p {
+                                margin: 30px;
+                            }
+                        }
+                    }
+                }
+                #green-line {
+                    height: 3px;
+                    width: 100%;
+                    background-color: #15D327;
+                }
+                #yellow-line {
+                    height: 3px;
+                    width: 100%;
+                    background-color: #FFAB55;
+                }
+            }
         }
+        .content {
+            div:first-child:hover {
+                article {
+                    .description {
+                        .img {
+                            visibility: visible;
+                            opacity: 1;
+                            width: 20vw;
+                            display: flex;
+                            background-color: #E6E2E2;
+
+                        }
+                    }
+                }
+            }   
+            div:last-child:hover {
+                article {
+                    .description {
+                        .img {
+                            visibility: visible;
+                            opacity: 1;
+                            width: 20vw;
+                            display: flex;
+                            background-color: #E6E2E2;
+                        }
+                    }
+                }
+            }            
+        }
+    }
+    button {
+        margin-top: 50px;
+        margin-bottom: 90px;
     }
 }

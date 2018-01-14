@@ -5,6 +5,7 @@
         h3 {
             margin-top: 90px;
             margin-bottom: 50px;
+            
         }
     }
     .services-block {
@@ -14,6 +15,40 @@
         .content {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article {
+                text-align: left;
+                img {
+                    height: 30px;
+                }
+            }
+
+            article:nth-child(1) {
+                header::before {
+                    height: 75px;
+                    display: flex;
+                    flex-direction: column;
+                    content:url('../img/services/1.fw.png');                    
+                }    
+            }
+            article:nth-child(2) {
+                header::before {
+                    height: 75px;
+                    display: flex;
+                    flex-direction: column;
+                    content:url('../img/services/2.fw.png');                    
+                }   
+            }
+            article:nth-child(3) {
+                header::before {
+                    height: 75px;
+                    display: flex;
+                    flex-direction: column;
+                    content:url('../img/services/3.fw.png');                    
+                }   
+            }
+            
         }
     }
     button {

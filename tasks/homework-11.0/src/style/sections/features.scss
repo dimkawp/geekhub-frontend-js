@@ -69,14 +69,19 @@
             }
 
         }
-
     }
     footer {
         .footer-block {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
             span {
                 color: white;
                 font-size: 20px;
-                padding: 25px 0 25px 0;
+                padding: 25px 0 25px 20px;
+            }
+            button {
+                margin-right: 20px;
             }
             background-color: $features-footer-bg;
             display: flex;
