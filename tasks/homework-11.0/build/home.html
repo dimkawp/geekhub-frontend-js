@@ -18,6 +18,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        <!-- slider -->
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
         
         <title>Homework-11.0</title>
     </head>
@@ -110,9 +115,9 @@
             <div class="container">
                 <hr>
             </div>  
-            <footer> 
-                <div class="footer-block container">        
-                    <div class="siema items">
+             
+            <div class="container">
+                <div class="slider-slick" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
                         <div class="item"><img src="img/about/slider/1.fw.png" alt="slider-img"> </div>
                         <div class="item"><img src="img/about/slider/2.fw.png" alt="slider-img"> </div>
                         <div class="item"><img src="img/about/slider/3.fw.png" alt="slider-img"> </div>
@@ -124,10 +129,10 @@
                         <div class="item"><img src="img/about/slider/4.fw.png" alt="slider-img"> </div>
                         <div class="item"><img src="img/about/slider/5.fw.png" alt="slider-img"> </div>
                     </div>
-                    <div class="prev"></div>
-                    <div class="next"></div>
                 </div>
-            </footer>
+            </div>
+        
+        
         </section>
         <!-- features -->
         <section id="features">
@@ -136,7 +141,7 @@
             </header>
             <div class="features-block container">
                 <div class="items">
-                    <div class="item col-5">
+                    <div class="item col-sm-12 col-xl-5">
                         <article>
                             <div class="description">
                                 <header>
@@ -157,12 +162,12 @@
                             </div>
                         </article>
                     </div>
-                    <div class="item col-2">
+                    <div class="item col-sm-12 col-xl-2">
                         <div class="logo-block">
                             
                         </div>
                     </div>
-                    <div class="item col-5">
+                    <div class="item col-sm-12 col-xl-5">
                         <article>
                             <div class="description">
                                 <header>
@@ -197,7 +202,7 @@
                 <h3>Projects</h3>
             </header>
             <div class="project-block container">
-                <div class="col-4">
+                <div class="col-sm-12 col-xl-4">
                     <div class="content">
                         <div class="preview">
                             <button>Banking</button>
@@ -211,7 +216,7 @@
                         </article>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-sm-12 col-xl-8">
                     <div class="content">
                         <div class="slider">
                             <div id="demo-2" class="carousel slide" data-ride="carousel">
@@ -261,14 +266,14 @@
                     <h3>Services</h3>
                 </header>
                 <div class="content container">
-                    <article class="col-4">
+                    <article class="col-ms-12 col-xl-4">
                         <header><h4>business consultation</h4></header>        
                         <p>Many variations of passages of Lorem <br>
                         available, but the majority have suffered <br>
                         alteration in some form, by injected humour, or randomised.
                         words which don't look</p>
                     </article>
-                    <article class="col-4">
+                    <article class="col-ms-12 col-xl-4">
                         <header><h4>boost local business</h4></header>
                         <p>There are many variations of passages of <br>
                         Lorem Ipsum available, but the majority <br>
@@ -276,7 +281,7 @@
                         form, by injected humour, or randomised.
                         words which don't look</p>
                     </article>
-                    <article class="col-4">
+                    <article class="col-ms-12 col-xl-4">
                         <header><h4>accounting</h4></header>        
                         <p>professor at Hampden-Sydney College in <br>
                         Virginia, looked up one of the more obscure <br>
@@ -317,8 +322,7 @@
             </header>
             <div class="blog-block container">
                 <div class="content">
-                    <div class="col-6">
-                        
+                    <div class="col-sm-12 col-xl-6">    
                         <article>
                             <div id="green-line"></div>
                             <div class="description">
@@ -333,7 +337,7 @@
                             </div>
                         </article>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-12 col-xl-6">
                         <article>
                             <div id="yellow-line"></div>
                             <div class="description">
@@ -358,7 +362,7 @@
                     <h3>Quick contact</h3>
                 </header>
                 <div class="items container">
-                    <div class="item col-4">
+                    <div class="item col-sm-12 col-xl-4">
                         <img src="img/contact/1.fw.png" alt="">
                         <div class="description">
                             <span class="titlte">Email</span>
@@ -366,14 +370,14 @@
                         </div>
         
                     </div> 
-                    <div class="item col-4"> 
+                    <div class="item col-sm-12 col-xl-4"> 
                         <img src="img/contact/2.fw.png" alt="">
                         <div class="description">
                             <span class="titlte">Call Us</span>
                             <span class="email">+91 8879 8767 990</span>
                         </div>
                     </div>
-                    <div class="item col-4">
+                    <div class="item col-sm-12 col-xl-4">
                         <img src="img/contact/3.fw.png" alt="">
                             <div class="description">
                                 <span class="titlte">Career</span>
@@ -386,12 +390,12 @@
         <footer>
             <div class="footer-block container">
                 <div class="items">
-                    <div class="item col-4">
+                    <div class="item col-sm-12 col-xl-4">
                         <div class="footer-logo">
                             <img src="img/logo.fw.png" alt="footer logo">
                         </div>
                     </div>
-                    <div class="item col-2">
+                    <div class="item col-sm-12 col-xl-2">
                         <span>navigation</span>
                         <ul>
                             <li>
@@ -414,7 +418,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="item col-2">
+                    <div class="item col-sm-12 col-xl-2">
                         <span>Industary</span>
                         <ul>
                             <li>
@@ -440,13 +444,16 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="item col-4">
+                    <div class="item col-sm-12 col-xl-4">
                         <span>News letter</span>
                         <div class="subscribe-block">
                             <div class="description">
                                 <p>Enter your email address to subscribe our <br>notification of our new post & features by email.</p>
                             </div>
-                            <input type="text" style="width: 100%;">
+                            <form action="">
+                                <input type="text" placeholder="Email Address">
+                                <button type="submit">Subscribe</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -465,8 +472,13 @@
                 </div>
             </div>
         </footer>
-        <script src='https://pawelgrzybek.com/siema/assets/siema.min.js'></script>
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript">
+
+          </script>
     </body>
     
 </html>

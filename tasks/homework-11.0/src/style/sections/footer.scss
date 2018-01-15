@@ -28,6 +28,34 @@ footer {
                     color: #E0E0E0;
                     text-transform: uppercase;
                 }
+                .subscribe-block {
+                    form {
+                        input {
+                            height: 50px;
+                            width: 90%;
+                            
+                            background-color: #313333;
+                            border: none;
+                            border-radius: 30px;
+    
+                        }
+                        ::-webkit-input-placeholder { 
+                            padding-left: 30px;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                            color: #5D5D5E;
+                        }
+                        button {
+                            height: 50px;
+                            position: absolute;
+                            border-radius: 30px;
+                            right: 30px;
+                            
+                        }
+
+                    }
+
+                }
             }
             .item:first-child {
                 display: flex;
@@ -39,6 +67,61 @@ footer {
             display: flex;
             justify-content: space-between;
             color: #828A8C;
+            .items {
+                display: flex;
+                flex-wrap: wrap;
+                .item {
+                    margin: 20px;
+                    a {
+                        text-transform: uppercase;
+                    }
+                }
+                .item:nth-child(1) {
+                    a {
+                        color: #375DA5;
+                    } 
+                }
+                .item:nth-child(2) {
+                    a {
+                        color: #00B5D9;
+                    } 
+                }
+                .item:nth-child(3) {
+                    a {
+                        color: #D3C5A7;
+                    } 
+                }
+                .item:nth-child(4) {
+                    a {
+                        color: #1883BB;
+                    } 
+                }
+                .item:nth-child(5) {
+                    a {
+                        color: #E3463B;
+                    } 
+                }
+            }
         }
     }
+}
+@media screen and (max-width:1200px) {
+    footer {
+        .footer-block {
+            .items {
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    ul {
+                        
+                    }
+                }
+
+            }
+
+        }
+    }
+
 }

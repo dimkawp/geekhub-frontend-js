@@ -14,6 +14,7 @@
         .items {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             .item {
                 article {
                     display: flex;
@@ -22,6 +23,11 @@
                 }
             }
             .item:nth-child(1) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
                 text-align: right;
                 header {
                     text-align: right;
@@ -81,6 +87,8 @@
                 padding: 25px 0 25px 20px;
             }
             button {
+                height: 100%;
+                padding: 15px 30px;
                 margin-right: 20px;
             }
             background-color: $features-footer-bg;
@@ -89,4 +97,34 @@
             align-items: center;
         }
     }
+}
+@media screen and (max-width:1200px) {
+    #features {
+        .features-block {
+            .items {
+                flex-direction: column;
+                align-items: center;
+                .item:nth-child(1) {
+                    article { 
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    
+                }
+                .item:nth-child(2) {
+                    article { 
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: flex-start;
+                    }    
+                }
+            }
+
+        }
+
+    }
+
 }
