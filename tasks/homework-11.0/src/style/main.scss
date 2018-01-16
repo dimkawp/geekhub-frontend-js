@@ -83,6 +83,10 @@ section {
 @import 'sections/contact.scss';
 @import 'sections/footer.scss';
 @import 'buttons.scss';
-@import 'page/about.scss';
-@import 'page/sections/information.scss';
-@import 'page/sections/detail.scss';
+/* page about */
+@import 'page/about/about.scss';
+@import 'page/about/sections/information.scss';
+@import 'page/about/sections/detail.scss';
+/* page post */
+@import 'page/blog/blog.scss';
+@import 'page/blog/sections/posts.scss';

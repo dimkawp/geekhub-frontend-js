@@ -7,11 +7,9 @@
         flex-wrap: wrap;
         padding: 90px 0 90px 0;
         .item {
-            text-align: center;
-            
-            
+            text-align: center;  
             .img {
-                height: 150px;
+                height: 170px;
                 background-color: #D98E8E;
             }
             article {
@@ -31,6 +29,5 @@
                 }
             }
         }
-
     }
 }
