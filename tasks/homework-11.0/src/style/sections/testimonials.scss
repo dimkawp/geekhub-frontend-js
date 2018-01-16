@@ -3,7 +3,10 @@
     background-color: $testimonials-bg;
     text-align: center;
     display: flex;
-    
+    .testimonials-block {
+        background: url(../img/testimonials/bg.fw.png) no-repeat,
+                    url(../img/testimonials/2-bg.fw.png) no-repeat bottom right;
+    }
     article {
         display: flex;
         flex-direction: column;
@@ -25,7 +28,6 @@
             color: white;
             
         }
-
     }
     div {
         display: flex;
@@ -37,18 +39,14 @@
             font-weight: 700;
             text-transform: uppercase;
             color: white;
-    
         }
         .design {
             font-family: 'Domine', serif;
             font-size: 15px;
             color: #DDF7FF;
-    
         }
     }
-
     span {
-
 
     }
 }

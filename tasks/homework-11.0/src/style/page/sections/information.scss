@@ -1,0 +1,64 @@
+/* information */
+#information {
+    .information-block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 90px 0;
+        .content {
+            h2 {
+                font-weight: 700;
+            }
+            .player {
+                img {
+                    width: 100%;
+
+                }
+            }
+            form {
+                width: 100%;
+                background-color: #03B5E7;
+                margin-top: 35px;
+                span {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: white;
+                    text-transform: uppercase;
+                    
+                    margin: 0 35px;
+                }
+                .inputs {
+                    margin: 35px;
+                    input {
+                        width: 45%;
+                        border: none;
+                        background-color: #03B5E7;
+                        outline: 0;
+                        border-bottom: 1px solid #7BDCF6;
+                    }
+                    textarea {
+                        width: 90%;
+                        border: none;
+                        background-color: #03B5E7;
+                        outline: 0;
+                        border-bottom: 1px solid #7BDCF6;
+    
+                    }
+                    ::-webkit-input-placeholder {
+                        font-family: 'Montserrat', sans-serif;
+                        color: #D5F5FF;
+                        font-size: 13px;
+                        line-height: 2.31;
+                        text-transform: uppercase;
+                    }
+                }
+                button {
+                    margin: 35px;
+                    
+                }
+            }
+
+        }
+    }
+}
