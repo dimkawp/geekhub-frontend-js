@@ -1,0 +1,92 @@
+/* post */
+#post {
+    .post-block {
+        header {
+            h2 {
+                
+            }
+        }
+        .post-content {
+            border: none;
+            .preview {
+                .img {
+                    height: 355px;
+                    width: 100%;
+                    background-color: #05B7E7;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            article {
+                display: flex;
+                flex-direction: column;
+                header {
+                    h3 {
+                        margin-left: 15px;
+                    }
+                }
+                .text-block {
+                    display: flex;
+                    flex-direction: row;
+                    
+                    margin: 10px 0;
+                    img {
+                        width: 100%;
+                        margin: 15px;
+                    }
+                    p {
+                        
+                        margin: 15px;
+                    }
+                }
+                .ul-block {
+                    margin: 10px 0;
+                    ul {
+                        list-style-type: none;
+                        margin-left: 30px;
+                        li {
+                            display: flex;
+                            align-items: center;
+                        }
+                        li:before {
+                            content: url(../img/posts/post/li-i.fw.png);
+                            padding-right: 25px;
+                        }
+
+                    }
+                }
+                footer {
+                    display: flex;
+                    justify-content: space-between;
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+    
+                }
+            }
+        }
+
+    }
+}
+@media screen and (max-width:1200px) {
+    #post {
+        .post-block {
+            .post-content {
+                article {
+                    .text-block {
+                        flex-direction: column;
+                    }
+
+                }
+
+            }
+
+        }
+    }
+}

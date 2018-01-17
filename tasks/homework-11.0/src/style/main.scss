@@ -59,13 +59,14 @@ section {
     h4 {
         font-size: 18px;
     }
-    p,span {
+    p,span,ul {
         font-family: 'Domine', serif;
         color: $p-font;
         font-size: 15px;
         line-height: 1.87;
     }
     button {
+        font-family: 'Montserrat', sans-serif;
         border-radius: 20px;
         text-transform: uppercase;
  
@@ -90,8 +91,15 @@ section {
 /* page post */
 @import 'page/blog/blog.scss';
 @import 'page/blog/sections/posts.scss';
-/* page post */
+@import 'page/blog/sections/post.scss';
+@import 'page/blog/sections/related-post.scss';
+@import 'page/blog/sections/comments.scss';
+/* page industry */
 @import 'page/industry/industary.scss';
 @import 'page/industry/sections/industary.scss';
 /* page contact */
 @import 'page/contact/contact.scss';
+/* page career */
+@import 'page/career/sections/jobs.scss';
+/* testimonials */
+@import 'page/testimonials/sections/happy-clients.scss';

@@ -1,8 +1,8 @@
 /* section posts */
-#posts {
+#posts,#post {
     background-color: #FFFFFF;
 
-    .posts-block {
+    .posts-block,.post-block {
         padding: 90px 0;
         header {
             margin-bottom: 30px;
@@ -18,8 +18,7 @@
         }
         
         
-        .item { /* Masonry bricks or child elements */
-            
+        .item,.post-content { /* Masonry bricks or child elements */     
             display: inline-block;
             margin: 0 0 1em;
             width: 100%;

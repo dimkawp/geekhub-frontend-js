@@ -1,0 +1,162 @@
+/* jobs */
+#jobs {
+    .jobs-block {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        .information {
+            ul {
+                list-style-type: none;
+                margin-left: 0;
+                padding-left: 0;
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin-top: 25px;
+                    padding-bottom: 25px;
+                    border-bottom: 1px solid #E2EBED;
+                    
+                    div:first-child {
+                        display: flex;
+                        flex-direction: column;
+
+
+                        span:first-child {
+                            font-family: 'Montserrat', sans-serif;
+                            text-transform: uppercase;
+                            font-size: 14px;
+                            line-height: 1.5;
+                            color: #33393B;
+                        }
+                    }
+                    div:last-child {
+                        display: flex;
+                        
+                        justify-content: space-between;
+                        .location {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            align-items: flex-start;
+                            span:nth-child(2) {
+                                font-family: 'Montserrat', sans-serif;
+                                text-transform: uppercase;
+                                font-size: 14px;
+                                line-height: 1.5;
+                                color: #33393B;
+                            }
+                            span:nth-child(3) {
+                                line-height: 1.5;
+                                font-size: 14px;
+
+                            }
+                            i {
+                                color: #15D327;
+                                margin-right: 15px;
+                            }
+                        }
+                        button {
+                            font-size: 13px;
+                            
+                            
+                        }
+                        button:hover {
+                            color: #33393B;
+                            background-color: white;
+                            border: 2px solid #15D327;
+
+                        }
+
+                    }
+
+                }
+                li:last-child {
+                    border-bottom: none;
+                }
+
+            }
+        }
+        .form {
+            form {
+                input {
+                    margin: 30px 0 30px 0;
+                    width: 100%;
+                    border: none;
+                    
+                    outline: 0;
+                    border-bottom: 1px solid #CCDADD;
+                }
+                textarea {
+                    margin-top: 20px;
+                    width: 100%;
+                    border: none;
+                    
+                    
+                    outline: 0;
+                    border-bottom: 1px solid #CCDADD;
+                    resize: none;
+
+                }
+                ::-webkit-input-placeholder {
+                    font-family: 'Montserrat', sans-serif;
+                    color: #33393B;
+                    font-size: 12px;
+                    line-height: 2.5;
+                    text-transform: uppercase;
+                }
+                button {
+                    
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+#partners {
+    background-color: #E7EFF1;
+    padding: 90px 0;
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 50px;
+        span {
+            font-family: 'Montserrat', sans-serif;
+        }
+        span:first-child {
+            font-size: 32px;
+            font-weight: 700;
+            color: #33393B;
+
+        }
+        span:last-child {
+            font-size: 13px;
+            color: #7D8687;
+        }
+    }
+    .slider-slick {
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 50px 0 50px;
+            width: 150px;
+        }
+
+    }
+
+}
+@media screen and (max-width:770px) {
+    #jobs {
+        .jobs-block {
+            .information {
+                ul {
+                    li {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}
