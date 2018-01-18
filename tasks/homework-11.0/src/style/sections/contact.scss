@@ -14,8 +14,7 @@
             justify-content: space-between;
             flex-wrap: wrap;
             margin-bottom: 100px;
-            .item {
-                
+            .item {   
                 background-color: black;
                 padding: 0;
                 outline: 15px solid white;
@@ -27,8 +26,7 @@
                     padding: 40px 0 40px 0;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
-                    
+                    justify-content: center; 
                 }
             }
         }
@@ -40,12 +38,7 @@
         .contact-block {
             .items {
                 flex-direction: column;
-                .item {
-
-                }
-
             }
-
         }
     }
 }

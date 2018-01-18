@@ -49,7 +49,6 @@
                             span:nth-child(3) {
                                 line-height: 1.5;
                                 font-size: 14px;
-
                             }
                             i {
                                 color: #15D327;
@@ -57,24 +56,18 @@
                             }
                         }
                         button {
-                            font-size: 13px;
-                            
-                            
+                            font-size: 13px;              
                         }
                         button:hover {
                             color: #33393B;
                             background-color: white;
                             border: 2px solid #15D327;
-
                         }
-
                     }
-
                 }
                 li:last-child {
                     border-bottom: none;
                 }
-
             }
         }
         .form {
@@ -105,8 +98,7 @@
                     line-height: 2.5;
                     text-transform: uppercase;
                 }
-                button {
-                    
+                button {           
                     font-size: 13px;
                 }
             }
@@ -143,9 +135,7 @@
             margin: 0 50px 0 50px;
             width: 150px;
         }
-
     }
-
 }
 @media screen and (max-width:770px) {
     #jobs {
