@@ -43,6 +43,7 @@ gulp.task('clean', function (cb) {
 
 gulp.task('html:build', function () {
     gulp.src(path.src.html) 
+        .pipe(plumber())
         .pipe(rigger())
         .pipe(gulp.dest(path.build.html))
         .pipe(reload({stream: true}));
