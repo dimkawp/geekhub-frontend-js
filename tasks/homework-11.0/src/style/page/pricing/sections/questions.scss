@@ -1,0 +1,35 @@
+/* questions */
+#questions {
+    background-color: #E7EFF1;
+    .questions-block {
+        padding: 90px 0;
+        header {
+            h2,h6 {
+                color: #33393B;
+                font-weight: 700;
+            }
+
+        }
+        .items {
+            .item {
+                border-bottom: 1px solid #DFE6E8;
+                padding: 25px 0;
+                article {
+                    header {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+
+            }
+
+        }
+            .item:last-child {
+                border-bottom: none;
+            }
+        
+    }
+}

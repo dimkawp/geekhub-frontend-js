@@ -94,11 +94,13 @@ section {
 @import 'page/blog/sections/related-post.scss';
 @import 'page/blog/sections/comments.scss';
 /* page industry */
-@import 'page/industry/industary.scss';
-@import 'page/industry/sections/industary.scss';
+@import 'page/industry/sections/industry.scss';
 /* page contact */
 @import 'page/contact/contact.scss';
 /* page career */
 @import 'page/career/sections/jobs.scss';
 /* testimonials */
 @import 'page/testimonials/sections/happy-clients.scss';
+/* pricing */
+@import 'page/pricing/sections/pricing.scss';
+@import 'page/pricing/sections/questions.scss';

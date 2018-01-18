@@ -14,6 +14,9 @@ footer {
                 a,p {
                     color: #828A8C;
                 }
+                a:hover {
+                    color: $nav-font-hover;
+                }
                 ul {
                     list-style-type: none;
                     margin-left: 0;
