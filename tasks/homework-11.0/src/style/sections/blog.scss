@@ -30,11 +30,12 @@
                         display: flex;
                         flex-direction: row;
                         .img {
+                            opacity: 0;
                             visibility: hidden;
-                            -webkit-transition: all 2.3s ease;;
-                            -moz-transition: all 2.3s ease;;
-                            -o-transition: all 2.3s ease;;
-                            transition: all 2.3s ease;                         
+                            -webkit-transition: opacity 0.5s, visibility 1s linear 1.3s;
+                            -moz-transition: opacity 0.5s, visibility 1s linear 1.3s;
+                            -o-transition: opacity 0.5s, visibility 1s linear 1.3s;
+                            transition: opacity 0.5s, visibility 1s linear 1.3s;                      
                         }
                         .text {
                             display: flex;
@@ -60,25 +61,15 @@
             }
         }
         .content {
-            div:first-child:hover {
+            div:hover {
                 article {
                     .description {
                         .img {
                             visibility: visible;
-                            opacity: 1;
-                            width: 100%;
-                            display: flex;
-                            background-color: #E6E2E2;
-
-                        }
-                    }
-                }
-            }   
-            div:last-child:hover {
-                article {
-                    .description {
-                        .img {
-                            visibility: visible;
+                            -webkit-transition-delay: 0s;
+                            -moz-transition-delay: 0s;
+                            -o-transition-delay: 0s;
+                            transition-delay: 0s;
                             opacity: 1;
                             width: 100%;
                             display: flex;
@@ -86,7 +77,7 @@
                         }
                     }
                 }
-            }            
+            }             
         }
     }
     button {

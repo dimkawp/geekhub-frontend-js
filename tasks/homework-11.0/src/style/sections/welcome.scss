@@ -86,6 +86,7 @@
                     }
                 }
                 .item:hover {
+                    transition: 1s;
                     background-color: $item-bg-hover;
                 }
             }

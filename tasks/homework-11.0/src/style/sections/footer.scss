@@ -52,8 +52,10 @@ footer {
                             height: 50px;
                             position: absolute;
                             border-radius: 30px;
-                            right: 30px;
-                            
+                            right: 30px;    
+                        }
+                        button:focus {
+                            outline: none;
                         }
 
                     }

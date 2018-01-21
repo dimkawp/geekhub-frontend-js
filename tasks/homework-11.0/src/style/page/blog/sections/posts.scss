@@ -1,7 +1,6 @@
 /* section posts */
 #posts,#post {
     background-color: #FFFFFF;
-
     .posts-block,.post-block {
         padding: 90px 0;
         header {
@@ -15,9 +14,7 @@
             column-count: 3;
             column-gap: 1em;
             padding-bottom: 50px;
-        }
-        
-        
+        }  
         .item,.post-content { /* Masonry bricks or child elements */     
             display: inline-block;
             margin: 0 0 1em;
