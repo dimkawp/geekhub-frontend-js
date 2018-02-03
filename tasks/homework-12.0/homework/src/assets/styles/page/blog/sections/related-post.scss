@@ -1,0 +1,37 @@
+/* related */
+#related-post {
+    padding-bottom: 90px;
+    .related-post-block {
+        header {
+            h3 {
+                margin-left: 15px;
+            }
+        }
+        .items {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .item {
+
+                .img {
+                    height: 165px;
+                    background-color: #ADBFC3;
+                }
+                .content {
+                    margin-top: 25px;
+                    h4 {
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                    span {
+                        color: #FFAB55;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                    }
+                    
+                }
+
+            }
+        }
+    }
+}

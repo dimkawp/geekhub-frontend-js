@@ -1,0 +1,23 @@
+/* page about */
+#title {
+  background-color: #000000; }
+  #title .title-block h1 {
+    padding: 150px 0;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 48px;
+    font-weight: 700; }
+
+@media screen and (max-width: 991px) {
+  #title div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #title div:first-child header .logo {
+      margin: 0 auto; }
+    #title div:first-child nav {
+      flex-direction: column; }
+      #title div:first-child nav .item:last-child {
+        margin: 0; } }

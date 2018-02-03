@@ -1,0 +1,81 @@
+/* welcome */
+#welcome {
+  font-family: 'Montserrat', sans-serif; }
+  #welcome h1, #welcome h2 {
+    color: white;
+    text-transform: uppercase; }
+  #welcome #demo .carousel-indicators {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0; }
+    #welcome #demo .carousel-indicators div {
+      height: 10px;
+      width: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      border: 2px solid white;
+      background-color: #03B5E7; }
+    #welcome #demo .carousel-indicators .active {
+      background-color: black;
+      border: 2px solid green; }
+  #welcome #demo .carousel-inner .carousel-item {
+    width: 100vw;
+    height: 840px;
+    background-color: #000000; }
+  #welcome #demo .carousel-inner .carousel-item:nth-child(2) {
+    background-color: #222222; }
+  #welcome #demo .carousel-inner .carousel-item:nth-child(3) {
+    background-color: #444444; }
+  #welcome .welcome-block {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    #welcome .welcome-block h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 55px; }
+    #welcome .welcome-block h2 {
+      font-size: 16px;
+      margin-top: 120px; }
+    #welcome .welcome-block .items {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: white; }
+      #welcome .welcome-block .items .item {
+        width: 260px;
+        height: 280px;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #03B5E7;
+        padding: 0; }
+        #welcome .welcome-block .items .item span {
+          margin-top: 25px; }
+      #welcome .welcome-block .items .item:hover {
+        transition: 1s;
+        background-color: #F5951B; }
+
+@media screen and (max-width: 1200px) {
+  #welcome #demo .carousel-inner .carousel-item {
+    height: 1200px; } }
+
+@media screen and (max-width: 556px) {
+  #welcome #demo .carousel-inner .carousel-item {
+    height: 1800px; }
+  #welcome .welcome-block .items .item {
+    width: 100%; } }

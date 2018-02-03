@@ -1,0 +1,94 @@
+/* about */
+$h-font: #33393B;
+$p-font: #828A8C;
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 90px;
+    header {
+        margin-top: 90px;
+        margin-bottom: 40px;
+    }
+    article {
+        p {
+            text-align: center;
+        }
+    }
+    button {
+        margin-bottom: 65px;
+    }
+    .slider-slick {
+         /*
+        .slick-prev {
+            position: absolute;
+            
+            left: -40px;
+            top: 15px;
+            bottom: 0;
+            height: 31px;
+            width: 31px;
+            background: url(../img/about/slider/l.fw.png) no-repeat;
+            background-position: center;
+        }
+        .slick-prev:hover {
+            
+            background: url(../img/about/slider/l-hv.fw.png) no-repeat;
+            background-position: center;
+        }
+         */
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 50px 0 50px;
+            width: 150px;
+        }
+        .item:focus {
+            outline: none;
+        }
+        .item:hover {
+            cursor: pointer;
+        }
+    }
+    footer {
+        margin-top: 50px;
+        margin-bottom: 90px;
+        background-color: white;
+        .footer-block {
+            .prev {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 31px;
+                width: 31px;
+                background: url(../img/about/slider/l.fw.png) no-repeat;
+                background-position: center;
+            }
+            .prev:hover {
+                background: url(../img/about/slider/l-hv.fw.png) no-repeat;
+                background-position: center;
+            }
+            .next {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 31px;
+                width: 31px;
+                background: url(../img/about/slider/r.fw.png) no-repeat;
+                background-position: center;
+            }
+            .next:hover {
+                background: url(../img/about/slider/r-hv.fw.png) no-repeat;
+                background-position: center;
+            }
+            .items {
+                .item {
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

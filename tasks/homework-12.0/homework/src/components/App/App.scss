@@ -1,6 +1,4 @@
-$color: #a12e00;
-@import url('https://fonts.googleapis.com/css?family=Domine:400,700|Montserrat:300,400,700');
+@import '../../assets/styles/main.scss';
 p {
-    color: $color;
-    font-weight: 900;
+    color: $button-bg;
 }

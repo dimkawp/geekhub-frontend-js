@@ -1,0 +1,23 @@
+/* detail */
+#detail {
+  background-color: #E7EFF1; }
+  #detail .detail-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 90px 0 90px 0; }
+    #detail .detail-block .item {
+      text-align: center; }
+      #detail .detail-block .item .img {
+        height: 170px;
+        background-color: #D98E8E; }
+      #detail .detail-block .item article {
+        background-color: white; }
+        #detail .detail-block .item article header h3 {
+          font-size: 24px;
+          padding: 40px 0 25px 0; }
+        #detail .detail-block .item article p {
+          line-height: 1.87;
+          margin: 25px; }
+        #detail .detail-block .item article button {
+          margin: 25px; }

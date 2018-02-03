@@ -1,0 +1,60 @@
+/* blog */
+#blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E7EFF1; }
+  #blog header .data {
+    color: #33393B;
+    text-transform: none; }
+  #blog header h3 {
+    margin-top: 90px;
+    text-align: center; }
+  #blog .blog-block .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    #blog .blog-block .content div {
+      display: flex;
+      flex-direction: column;
+      padding: 0; }
+      #blog .blog-block .content div article {
+        background-color: white;
+        box-shadow: 31px 0px 43px -42px #000000 inset; }
+        #blog .blog-block .content div article .description {
+          display: flex;
+          flex-direction: row; }
+          #blog .blog-block .content div article .description .img {
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: opacity 0.5s, visibility 1s linear 1.3s;
+            -moz-transition: opacity 0.5s, visibility 1s linear 1.3s;
+            -o-transition: opacity 0.5s, visibility 1s linear 1.3s;
+            transition: opacity 0.5s, visibility 1s linear 1.3s; }
+          #blog .blog-block .content div article .description .text {
+            display: flex;
+            flex-direction: column;
+            height: 295px; }
+            #blog .blog-block .content div article .description .text header, #blog .blog-block .content div article .description .text p {
+              margin: 30px; }
+      #blog .blog-block .content div #green-line {
+        height: 3px;
+        width: 100%;
+        background-color: #15D327; }
+      #blog .blog-block .content div #yellow-line {
+        height: 3px;
+        width: 100%;
+        background-color: #FFAB55; }
+  #blog .blog-block .content div:hover article .description .img {
+    visibility: visible;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+    opacity: 1;
+    width: 100%;
+    display: flex;
+    background-color: #E6E2E2; }
+  #blog button {
+    margin-top: 50px;
+    margin-bottom: 90px; }

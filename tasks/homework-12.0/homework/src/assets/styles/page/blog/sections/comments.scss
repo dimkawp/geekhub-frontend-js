@@ -1,0 +1,148 @@
+/* comments */
+#comments {
+    background: url(../img/posts/post/comments-bg.fw.png) no-repeat center;
+    background-size: 100% 100%; 
+
+    .comments-block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 90px;
+        .item {
+            
+            header {
+                margin-top: 90px;
+                margin-left: 5%;
+                span {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 32px;
+                    font-weight: 700;
+                    color: #33393B;
+
+                }
+            }
+
+            article {
+
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    .name {
+                         
+                            font-size: 14px;
+                        
+                    }
+                }
+            }
+        }
+        .item:first-child {
+            header {
+                button {
+                    width: 80px;
+                    height: 28px;
+                    font-size: 13px;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                    line-height: 2.31;
+                }
+            }
+           
+            .mesages {
+                display: flex;
+                flex-direction: column;
+                
+                .mesage {
+                    display: flex;
+                    flex-direction: row;
+                    
+                    .mesage-block {
+                        display: flex;
+                        flex-direction: row;
+                        .face-img {
+                            height: 100px;
+                            width: 100px;
+                            border-radius: 50%;
+                            background-color: #15D327;
+                            margin: 0 10px;
+                        }
+                        article {
+                            width: 80%;
+                        }
+
+                    }
+                    
+                }
+                .answer {
+                    margin-left: 50px;
+                    .mesage-block {
+                        .face-img {
+                            background-color: #B7B5B1;
+                        }
+                    }
+                }
+
+            }
+        }
+        .item:last-child {
+            .form {
+                margin-left: 5%;
+                form {
+                    width: 100%;
+                    margin-top: 35px;
+                    .inputs {
+                        
+                        input {
+                            width: 45%;
+                            border: none;
+                            background-color: #E7EFF1;
+                            outline: 0;
+                            border-bottom: 1px solid #CCDADD;
+                        }
+                        textarea {
+                            width: 90%;
+                            border: none;
+                            background-color: #E7EFF1;
+                            
+                            outline: 0;
+                            border-bottom: 1px solid #CCDADD;
+                            resize: none;
+        
+                        }
+                        ::-webkit-input-placeholder {
+                            font-family: 'Montserrat', sans-serif;
+                            color: #33393B;
+                            font-size: 12px;
+                            line-height: 2.5;
+                            text-transform: uppercase;
+                        }
+                    }
+                    button {
+                        font-size: 13px;
+                        margin-bottom: 90px;
+                        
+                    }
+                }
+            }
+           
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    #comments {
+        background: none;
+        .comments-block {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            .item:first-child {
+                background-color: #FAF4EF;
+            }
+            .item:last-child {
+                background-color: #E7EFF1;
+            }
+
+
+        }
+    }
+}

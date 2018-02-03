@@ -1,0 +1,42 @@
+/* services */
+#services {
+  background-color: #FFF9F2; }
+  #services header h3 {
+    margin-top: 90px;
+    margin-bottom: 50px; }
+  #services .services-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #services .services-block .content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #services .services-block .content .article {
+        text-align: left; }
+        #services .services-block .content .article img {
+          height: 30px; }
+      #services .services-block .content article:nth-child(1) header::before {
+        height: 75px;
+        display: flex;
+        flex-direction: column;
+        content: url("../img/services/1.fw.png"); }
+      #services .services-block .content article:nth-child(2) header::before {
+        height: 75px;
+        display: flex;
+        flex-direction: column;
+        content: url("../img/services/2.fw.png"); }
+      #services .services-block .content article:nth-child(3) header::before {
+        height: 75px;
+        display: flex;
+        flex-direction: column;
+        content: url("../img/services/3.fw.png"); }
+  #services button {
+    margin-bottom: 90px; }
+
+@media screen and (max-width: 1200px) {
+  #services .services-block .content article {
+    display: flex;
+    flex-direction: column;
+    text-align: center; } }

@@ -1,0 +1,78 @@
+/* pricing */
+#pricing {
+    .pricing-block {
+        padding: 90px 0;
+        header {
+            margin-bottom: 35px;
+            h2 {
+                font-size: 32px;
+                font-weight: 700;
+            }
+        }
+        .items {
+            .item {
+                display: flex;
+                flex-direction: column;
+                .title {          
+                    height: 120px;          
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    span {
+                        font-family: 'Montserrat', sans-serif;      
+                    }
+                    .price-info {
+                        margin-left: 35px;
+                        display: flex;
+                        flex-direction: column;          
+                        .price {
+                            font-size: 36px;
+                            
+                            color: white;
+                        }
+                        .name {
+                            color: #F9E0C5;
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 1.17;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                .description {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    border: .5px solid #ADC5CA;
+                    height: 300px;
+                    padding-bottom: 50px;
+                    ul {
+                        height: 60%;
+                        
+                    }
+                    button {
+                        margin-top: 50px;
+                        margin-left: 35px;
+                        padding: 0 25px;
+                        font-size: 13px;                             
+                    }
+                }
+            }
+            .item:nth-child(1) {
+                .title {
+                    background-color: #FFAB55;
+                }
+            }
+            .item:nth-child(2) {
+                .title {
+                    background-color: #03B5E7;
+                }
+            }
+            .item:nth-child(3) {
+                .title {
+                    background-color: #55BD77;
+                }
+            }
+        }
+    }
+}

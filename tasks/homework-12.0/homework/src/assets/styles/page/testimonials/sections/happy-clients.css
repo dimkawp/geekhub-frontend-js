@@ -1,0 +1,90 @@
+#happy-clients .happy-clients-block {
+  padding-top: 90px; }
+  #happy-clients .happy-clients-block header {
+    text-align: center; }
+  #happy-clients .happy-clients-block .items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    #happy-clients .happy-clients-block .items .item {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 80px; }
+      #happy-clients .happy-clients-block .items .item .img {
+        margin-right: 35px; }
+      #happy-clients .happy-clients-block .items .item .description p {
+        background: url(../img/testimonials/comment-bg.fw.png) no-repeat right bottom; }
+      #happy-clients .happy-clients-block .items .item .description .name {
+        display: flex;
+        flex-direction: column; }
+        #happy-clients .happy-clients-block .items .item .description .name span:first-child {
+          font-family: 'Montserrat', sans-serif;
+          text-transform: uppercase;
+          font-size: 14px;
+          line-height: 1.5;
+          color: #33393B; }
+        #happy-clients .happy-clients-block .items .item .description .name span:last-child {
+          font-size: 13px; }
+
+#myCarousel .carousel-indicators {
+  margin: 0 auto;
+  position: absolute;
+  bottom: -50px;
+  display: flex;
+  flex-direction: row; }
+  #myCarousel .carousel-indicators .idicator {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: #C2CFD2;
+    border-radius: 50%;
+    border: 3px solid white; }
+  #myCarousel .carousel-indicators .idicator:hover {
+    background-color: #606F72;
+    transition: 0.5s; }
+  #myCarousel .carousel-indicators .active {
+    background-color: #606F72;
+    border: 3px solid #FFC488;
+    box-shadow: 10px 0px 0px 0px #F1D4B3;
+    box-shadow: 0px 10px 0px 0px #F1D4B3;
+    box-shadow: 0px 0px 10px 0px #F1D4B3;
+    box-shadow: 0px 0px 0px 10px #F1D4B3; }
+
+#myCarousel .carousel-inner .carousel-item {
+  width: 100vw;
+  height: 550px;
+  background-color: #000000; }
+  #myCarousel .carousel-inner .carousel-item .carousel-caption {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    text-align: left; }
+    #myCarousel .carousel-inner .carousel-item .carousel-caption p {
+      font-size: 18px;
+      padding: 35px;
+      background: url(../img/testimonials/slider/bg-1.fw.png) no-repeat left top, url(../img/testimonials/slider/bg-2.fw.png) no-repeat right bottom; }
+    #myCarousel .carousel-inner .carousel-item .carousel-caption h5 {
+      padding-left: 35px;
+      text-align: left;
+      font-size: 20px; }
+    #myCarousel .carousel-inner .carousel-item .carousel-caption span {
+      padding-left: 35px;
+      font-size: 14px;
+      color: #C9CBCD; }
+
+#myCarousel .carousel-inner .carousel-item:nth-child(2) {
+  background-color: #222222; }
+
+#myCarousel .carousel-inner .carousel-item:nth-child(3) {
+  background-color: #444444; }
+
+@media screen and (max-width: 1200px) {
+  #myCarousel .carousel-inner .carousel-item .carousel-caption {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }

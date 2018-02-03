@@ -1,0 +1,21 @@
+/* related */
+#related-post {
+  padding-bottom: 90px; }
+  #related-post .related-post-block header h3 {
+    margin-left: 15px; }
+  #related-post .related-post-block .items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    #related-post .related-post-block .items .item .img {
+      height: 165px;
+      background-color: #ADBFC3; }
+    #related-post .related-post-block .items .item .content {
+      margin-top: 25px; }
+      #related-post .related-post-block .items .item .content h4 {
+        font-weight: 400;
+        font-size: 14px; }
+      #related-post .related-post-block .items .item .content span {
+        color: #FFAB55;
+        font-size: 13px;
+        text-transform: uppercase; }

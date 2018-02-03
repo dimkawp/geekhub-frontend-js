@@ -1,0 +1,102 @@
+/* jobs */
+#jobs .jobs-block {
+  padding-top: 90px;
+  padding-bottom: 90px; }
+  #jobs .jobs-block .information ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0; }
+    #jobs .jobs-block .information ul li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 25px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #E2EBED; }
+      #jobs .jobs-block .information ul li div:first-child {
+        display: flex;
+        flex-direction: column; }
+        #jobs .jobs-block .information ul li div:first-child span:first-child {
+          font-family: 'Montserrat', sans-serif;
+          text-transform: uppercase;
+          font-size: 14px;
+          line-height: 1.5;
+          color: #33393B; }
+      #jobs .jobs-block .information ul li div:last-child {
+        display: flex;
+        justify-content: space-between; }
+        #jobs .jobs-block .information ul li div:last-child .location {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: flex-start; }
+          #jobs .jobs-block .information ul li div:last-child .location span:nth-child(2) {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #33393B; }
+          #jobs .jobs-block .information ul li div:last-child .location span:nth-child(3) {
+            line-height: 1.5;
+            font-size: 14px; }
+          #jobs .jobs-block .information ul li div:last-child .location i {
+            color: #15D327;
+            margin-right: 15px; }
+        #jobs .jobs-block .information ul li div:last-child button {
+          font-size: 13px; }
+        #jobs .jobs-block .information ul li div:last-child button:hover {
+          color: #33393B;
+          background-color: white;
+          border: 2px solid #15D327; }
+    #jobs .jobs-block .information ul li:last-child {
+      border-bottom: none; }
+  #jobs .jobs-block .form form input {
+    margin: 30px 0 30px 0;
+    width: 100%;
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #CCDADD; }
+  #jobs .jobs-block .form form textarea {
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #CCDADD;
+    resize: none; }
+  #jobs .jobs-block .form form ::-webkit-input-placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: #33393B;
+    font-size: 12px;
+    line-height: 2.5;
+    text-transform: uppercase; }
+  #jobs .jobs-block .form form button {
+    font-size: 13px; }
+
+#partners {
+  background-color: #E7EFF1;
+  padding: 90px 0; }
+  #partners header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 50px; }
+    #partners header span {
+      font-family: 'Montserrat', sans-serif; }
+    #partners header span:first-child {
+      font-size: 32px;
+      font-weight: 700;
+      color: #33393B; }
+    #partners header span:last-child {
+      font-size: 13px;
+      color: #7D8687; }
+  #partners .slider-slick .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px 0 50px;
+    width: 150px; }
+
+@media screen and (max-width: 770px) {
+  #jobs .jobs-block .information ul li {
+    flex-direction: column; } }

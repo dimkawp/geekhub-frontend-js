@@ -1,0 +1,18 @@
+/* questions */
+#questions {
+  background-color: #E7EFF1; }
+  #questions .questions-block {
+    padding: 90px 0; }
+    #questions .questions-block header h2, #questions .questions-block header h6 {
+      color: #33393B;
+      font-weight: 700; }
+    #questions .questions-block .items .item {
+      border-bottom: 1px solid #DFE6E8;
+      padding: 25px 0; }
+      #questions .questions-block .items .item article header {
+        display: flex;
+        justify-content: space-between; }
+      #questions .questions-block .items .item article p {
+        margin: 0; }
+    #questions .questions-block .item:last-child {
+      border-bottom: none; }

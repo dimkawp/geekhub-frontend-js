@@ -1,0 +1,43 @@
+/* information */
+#information .information-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 90px 0; }
+  #information .information-block .content h2 {
+    font-weight: 700; }
+  #information .information-block .content .player img {
+    width: 100%; }
+  #information .information-block .content form {
+    width: 100%;
+    background-color: #03B5E7;
+    margin-top: 35px; }
+    #information .information-block .content form span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: white;
+      text-transform: uppercase;
+      margin: 0 35px; }
+    #information .information-block .content form .inputs {
+      margin: 35px; }
+      #information .information-block .content form .inputs input {
+        width: 45%;
+        border: none;
+        background-color: #03B5E7;
+        outline: 0;
+        border-bottom: 1px solid #7BDCF6; }
+      #information .information-block .content form .inputs textarea {
+        width: 90%;
+        border: none;
+        background-color: #03B5E7;
+        outline: 0;
+        border-bottom: 1px solid #7BDCF6; }
+      #information .information-block .content form .inputs ::-webkit-input-placeholder {
+        font-family: 'Montserrat', sans-serif;
+        color: #D5F5FF;
+        font-size: 13px;
+        line-height: 2.31;
+        text-transform: uppercase; }
+    #information .information-block .content form button {
+      margin: 35px; }

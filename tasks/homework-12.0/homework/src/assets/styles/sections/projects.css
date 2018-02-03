@@ -1,0 +1,88 @@
+/* projects */
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #projects header h3 {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 30px; }
+  #projects .project-block {
+    padding: 0;
+    display: flex;
+    flex-direction: row; }
+    #projects .project-block .preview {
+      width: 100%;
+      height: 300px;
+      background-color: #222222; }
+      #projects .project-block .preview button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        margin: 0;
+        background-color: #FFAB55;
+        font-size: 12px; }
+    #projects .project-block div:first-child {
+      padding-left: 0; }
+      #projects .project-block div:first-child .content article {
+        background-color: #F5951B; }
+        #projects .project-block div:first-child .content article h4, #projects .project-block div:first-child .content article p {
+          color: white; }
+    #projects .project-block div:last-child {
+      padding-right: 0; }
+      #projects .project-block div:last-child hr {
+        margin: 0; }
+    #projects .project-block .content header {
+      padding-top: 40px;
+      padding-left: 30px; }
+    #projects .project-block .content p {
+      padding-left: 30px;
+      padding-bottom: 50px;
+      margin: 0; }
+    #projects .project-block .content .slider #demo-2 .carousel-indicators {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0; }
+      #projects .project-block .content .slider #demo-2 .carousel-indicators div {
+        height: 10px;
+        width: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        border: 2px solid white;
+        background-color: #03B5E7; }
+      #projects .project-block .content .slider #demo-2 .carousel-indicators div:last-child {
+        margin-right: 30px; }
+      #projects .project-block .content .slider #demo-2 .carousel-indicators .active {
+        background-color: black;
+        border: 2px solid green; }
+    #projects .project-block .content .slider #demo-2 .carousel-inner .carousel-item {
+      width: 100%;
+      height: 300px;
+      background-color: #000000; }
+      #projects .project-block .content .slider #demo-2 .carousel-inner .carousel-item .carousel-caption {
+        position: absolute;
+        top: 0;
+        left: 0; }
+        #projects .project-block .content .slider #demo-2 .carousel-inner .carousel-item .carousel-caption button {
+          margin: 0;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          background-color: #FFAB55;
+          font-size: 12px; }
+    #projects .project-block .content .slider #demo-2 .carousel-inner .carousel-item:nth-child(2) {
+      background-color: #222222; }
+    #projects .project-block .content .slider #demo-2 .carousel-inner .carousel-item:nth-child(3) {
+      background-color: #444444; }
+  #projects button {
+    margin-top: 45px;
+    margin-bottom: 90px; }
+
+@media screen and (max-width: 1200px) {
+  #projects .project-block {
+    flex-direction: column; }
+    #projects .project-block div {
+      padding: 0; } }

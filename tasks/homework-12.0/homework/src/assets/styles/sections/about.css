@@ -1,0 +1,72 @@
+/* about */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 90px; }
+  #about header {
+    margin-top: 90px;
+    margin-bottom: 40px; }
+  #about article p {
+    text-align: center; }
+  #about button {
+    margin-bottom: 65px; }
+  #about .slider-slick {
+    /*
+        .slick-prev {
+            position: absolute;
+            
+            left: -40px;
+            top: 15px;
+            bottom: 0;
+            height: 31px;
+            width: 31px;
+            background: url(../img/about/slider/l.fw.png) no-repeat;
+            background-position: center;
+        }
+        .slick-prev:hover {
+            
+            background: url(../img/about/slider/l-hv.fw.png) no-repeat;
+            background-position: center;
+        }
+         */ }
+    #about .slider-slick .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 50px 0 50px;
+      width: 150px; }
+    #about .slider-slick .item:focus {
+      outline: none; }
+    #about .slider-slick .item:hover {
+      cursor: pointer; }
+  #about footer {
+    margin-top: 50px;
+    margin-bottom: 90px;
+    background-color: white; }
+    #about footer .footer-block .prev {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 31px;
+      width: 31px;
+      background: url(../img/about/slider/l.fw.png) no-repeat;
+      background-position: center; }
+    #about footer .footer-block .prev:hover {
+      background: url(../img/about/slider/l-hv.fw.png) no-repeat;
+      background-position: center; }
+    #about footer .footer-block .next {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 31px;
+      width: 31px;
+      background: url(../img/about/slider/r.fw.png) no-repeat;
+      background-position: center; }
+    #about footer .footer-block .next:hover {
+      background: url(../img/about/slider/r-hv.fw.png) no-repeat;
+      background-position: center; }
+    #about footer .footer-block .items .item {
+      display: flex;
+      text-align: center;
+      justify-content: center; }

@@ -1,0 +1,33 @@
+/* detail */
+#detail {
+    background-color: #E7EFF1;
+    .detail-block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 90px 0 90px 0;
+        .item {
+            text-align: center;  
+            .img {
+                height: 170px;
+                background-color: #D98E8E;
+            }
+            article {
+                background-color: white;
+                header {
+                    h3 {
+                        font-size: 24px;
+                        padding: 40px 0 25px 0;
+                    }
+                }
+                p {
+                    line-height: 1.87;
+                    margin: 25px;
+                }
+                button {
+                    margin: 25px;
+                }
+            }
+        }
+    }
+}

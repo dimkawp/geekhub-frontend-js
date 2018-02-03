@@ -1,0 +1,46 @@
+/* css for all page */
+/*COLORS*/
+/* welcome */
+/* about */
+/* features */
+/* projects */
+/* services */
+/* testimonials */
+/* blog */
+/* contact */
+/* footer */
+/* button */
+/* preloader */
+#page-preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 99; }
+
+/* all section */
+section h3, section h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #33393B;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+section h4 {
+  font-size: 18px; }
+
+section p, section span, section ul {
+  font-family: 'Domine', serif;
+  color: #828A8C;
+  font-size: 15px;
+  line-height: 1.87; }
+
+section button {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 20px;
+  text-transform: uppercase; }
+
+section button:focus {
+  outline: none; }

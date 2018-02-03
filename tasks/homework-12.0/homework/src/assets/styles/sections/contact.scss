@@ -1,0 +1,44 @@
+/* contact */
+$contact-font: #33393B;
+#contact {
+    .contact-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        header {
+            margin-top: 90px;
+            margin-bottom: 30px;
+        }
+        .items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 100px;
+            .item {   
+                background-color: black;
+                padding: 0;
+                outline: 15px solid white;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                .description {
+                    padding: 40px 0 40px 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center; 
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    #contact {
+        .contact-block {
+            .items {
+                flex-direction: column;
+            }
+        }
+    }
+}

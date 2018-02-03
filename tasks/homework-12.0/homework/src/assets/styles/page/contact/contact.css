@@ -1,0 +1,72 @@
+/* contact */
+#connect .connect-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 90px;
+  margin-bottom: 90px; }
+  #connect .connect-block .item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px; }
+    #connect .connect-block .item i {
+      color: #15D327;
+      margin-right: 20px; }
+    #connect .connect-block .item div {
+      display: flex;
+      flex-direction: column; }
+      #connect .connect-block .item div span:first-child {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #33393B;
+        line-height: 1.5; }
+      #connect .connect-block .item div span:last-child {
+        font-size: 18px; }
+  #connect .connect-block .google-map img {
+    width: 100%; }
+
+#write {
+  background-color: #E6EEF0; }
+  #write .write-block {
+    padding-top: 90px;
+    padding-bottom: 90px; }
+    #write .write-block header {
+      text-align: center; }
+    #write .write-block .form {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #write .write-block .form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        #write .write-block .form form .inputs {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap; }
+          #write .write-block .form form .inputs input {
+            width: 100%;
+            margin: 30px 0 30px 0;
+            border: none;
+            outline: 0;
+            border-bottom: 1px solid #CCDADD;
+            background-color: #E6EEF0; }
+          #write .write-block .form form .inputs textarea {
+            width: 100%;
+            margin-top: 20px;
+            border: none;
+            background-color: #E6EEF0;
+            outline: 0;
+            border-bottom: 1px solid #CCDADD;
+            resize: none; }
+          #write .write-block .form form .inputs ::-webkit-input-placeholder {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #33393B;
+            font-size: 12px;
+            line-height: 2.5;
+            text-transform: uppercase; }
+        #write .write-block .form form button {
+          margin-top: 45px;
+          font-size: 13px; }

@@ -1,0 +1,130 @@
+/* welcome */
+$item-bg: #03B5E7;
+$item-bg-hover: #F5951B;
+#welcome {
+    font-family: 'Montserrat', sans-serif;
+    h1,h2 {
+        color: white;
+        text-transform: uppercase;
+    }
+    #demo {
+        .carousel-indicators {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            div {   
+                height: 10px;
+                width: 10px;
+                margin: 5px;
+                border-radius: 5px;
+                border: 2px solid white;
+                background-color: $item-bg;
+            }
+            .active {
+                background-color: black;
+                border: 2px solid green;
+            }
+        }
+        .carousel-inner {
+            .carousel-item {
+                width: 100vw;
+                height: 840px;
+                background-color: #000000;
+            }
+            .carousel-item:nth-child(2) {
+                background-color: #222222;
+            }
+            .carousel-item:nth-child(3) {
+                background-color: #444444;
+            }
+        }
+    }
+        .welcome-block {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            h1 {
+                font-size: 48px;
+                font-weight: 700;
+                margin-bottom: 55px;
+
+            }
+            h2 {
+                font-size: 16px;
+                margin-top: 120px;
+
+            }
+            .items {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                
+                padding: 0;
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: white;
+                .item {
+                    width: 260px;
+                    height: 280px;
+                    margin: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                
+                    background-color: $item-bg;
+                    padding: 0;     
+                    span {
+                        margin-top: 25px;
+                    }
+                }
+                .item:hover {
+                    transition: 1s;
+                    background-color: $item-bg-hover;
+                }
+            }
+        }
+}
+
+@media screen and (max-width:1200px) {
+    #welcome {
+        #demo {
+            .carousel-inner {
+                .carousel-item {
+                    height: 1200px;
+                }
+            }
+
+        }
+
+    }
+}
+@media screen and (max-width:556px) {
+    #welcome {
+        #demo {
+            .carousel-inner {
+                .carousel-item {
+                    height: 1800px;
+                }
+            }
+        }
+        .welcome-block {
+            .items {
+                .item {
+                    width: 100%;
+                }
+            }
+
+        }
+
+    }
+}
