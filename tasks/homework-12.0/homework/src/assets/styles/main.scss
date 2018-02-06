@@ -60,4 +60,24 @@ $button-bg: #15D327;
 @import 'sections/contact.scss';
 @import 'sections/footer.scss';
 @import 'buttons.scss';
+/* page about */
+@import 'page/about/about.scss';
+@import 'page/about/sections/information.scss';
+@import 'page/about/sections/detail.scss';
+/* page post */
+@import 'page/blog/sections/posts.scss';
+@import 'page/blog/sections/post.scss';
+@import 'page/blog/sections/related-post.scss';
+@import 'page/blog/sections/comments.scss';
+/* page industry */
+@import 'page/industry/sections/industry.scss';
+/* page contact */
+@import 'page/contact/contact.scss';
+/* page career */
+@import 'page/career/sections/jobs.scss';
+/* testimonials */
+@import 'page/testimonials/sections/happy-clients.scss';
+/* pricing */
+@import 'page/pricing/sections/pricing.scss';
+@import 'page/pricing/sections/questions.scss';
 

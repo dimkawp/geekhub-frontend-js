@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
     render() {
@@ -9,12 +10,12 @@ class Header extends Component {
                     <img src="img/logo.fw.png" alt="logo" />
                 </div>
                 <nav>
-                    <div className="item"><a href="home.html">home</a></div>
-                    <div className="item"><a href="about.html">about us</a></div>
-                    <div className="item"><a href="industary.html">industry</a></div>
-                    <div className="item"><a href="career.html">services</a></div>
-                    <div className="item"><a href="blog.html">pages</a></div>
-                    <div className="item"><a href="contact.html">Contact us</a></div>
+                    <div className="item"><Link to="/">home</Link></div>
+                    <div className="item"><Link to="/about">about us</Link></div>
+                    <div className="item"><Link to="/industry">industry</Link></div>
+                    <div className="item"><Link to="/services">services</Link></div>
+                    <div className="item"><Link to="/pages">pages</Link></div>
+                    <div className="item"><Link to="/contact">Contact us</Link></div>
                     <div className="item">
                         <div className="circle">
                             <i className="icon-call-out"></i>

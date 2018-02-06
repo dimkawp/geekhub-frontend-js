@@ -1,30 +1,27 @@
 import React, { Component } from 'react';
 import '../../assets/styles/main.css';
-import Welcome from '../Main/Sections/Welcome.js';
-import About from '../Main/Sections/About.js';
-import Features from '../Main/Sections/Features.js';
-import Projects from '../Main/Sections/Projects.js';
-import Sevices from '../Main/Sections/Sevices.js';
-import Testimonials from '../Main/Sections/Testimonials.js';
-import Blog from '../Main/Sections/Blog.js';
-import Contact from '../Main/Sections/Contact.js';
-import Footer from '../Footer/Footer.js';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from '../Home.js';
+import LinkAbout from '../LinkAbout.js';
+import LinkIndustary from '../LinkIndustary';
+import LinkCareer from '../LinkCareer';
+import LinkBlog from '../LinkBlog';
+import LinkContact from '../LinkContact';
 
 class App extends Component {
   render() {
+    
     return (
-      <div className="wrapper">
-      <Welcome />
-      <About />
-      <Features />
-      <Projects />
-      <Sevices />
-      <Testimonials />
-      <Blog />
-      <Contact />
-      <Footer />
-      </div>
-      
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route path="/about" component={LinkAbout}/>
+            <Route path="/industry" component={LinkIndustary}/>
+            <Route path="/services" component={LinkCareer}/>
+            <Route path="/pages" component={LinkBlog}/>
+            <Route path="/contact" component={LinkContact}/>
+          </Switch>
+        </Router>
     );
   }
 }
