@@ -1,0 +1,65 @@
+/* Main SASS */
+body {
+  background: url(../img/main-bg.fw.png) no-repeat 100% 100%;
+  height: 100vh; }
+  body .loginBlock .formBlock, body .regBlock .formBlock {
+    background-color: #F5F7F9; }
+    body .loginBlock .formBlock header, body .regBlock .formBlock header {
+      text-align: center;
+      padding: 90px 0; }
+      body .loginBlock .formBlock header h3, body .regBlock .formBlock header h3 {
+        font-size: 48px;
+        font-weight: 400;
+        color: #8391AF; }
+        body .loginBlock .formBlock header h3 a, body .regBlock .formBlock header h3 a {
+          color: #5383FF; }
+        body .loginBlock .formBlock header h3 a:hover, body .regBlock .formBlock header h3 a:hover {
+          text-decoration: none; }
+    body .loginBlock .formBlock .formBlockContent form, body .regBlock .formBlock .formBlockContent form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      body .loginBlock .formBlock .formBlockContent form .input, body .regBlock .formBlock .formBlockContent form .input {
+        height: 100px; }
+        body .loginBlock .formBlock .formBlockContent form .input input, body .regBlock .formBlock .formBlockContent form .input input {
+          width: 570px;
+          border: none;
+          outline: 0;
+          border-bottom: 1px solid #8391AF;
+          background-color: #F5F7F9; }
+        body .loginBlock .formBlock .formBlockContent form .input ::-webkit-input-placeholder, body .regBlock .formBlock .formBlockContent form .input ::-webkit-input-placeholder {
+          height: 100px;
+          margin: 0;
+          color: #8391AF;
+          font-size: 24px; }
+      body .loginBlock .formBlock .formBlockContent form button, body .regBlock .formBlock .formBlockContent form button {
+        width: 370px;
+        height: 70px;
+        text-align: center;
+        border: none;
+        background-color: #5583FF;
+        border-radius: 50px;
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 100px; }
+
+nav {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0D1935; }
+  nav .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 24px; }
+    nav .items .item {
+      margin: 50px; }
+      nav .items .item a {
+        color: white; }
+      nav .items .item a:hover {
+        text-decoration: none; }

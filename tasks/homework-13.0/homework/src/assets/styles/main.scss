@@ -1,0 +1,86 @@
+/* Main SASS */
+body {
+    background: url(../img/main-bg.fw.png) no-repeat 100% 100%;
+    height: 100vh;
+    
+    .loginBlock, .regBlock {
+        .formBlock {
+            background-color: #F5F7F9;
+            header {
+                text-align: center;
+                padding: 90px 0;
+
+                h3 {
+                    font-size: 48px;
+                    font-weight: 400;
+                    color: #8391AF;
+                    a {
+                        color: #5383FF;
+                    }
+                    a:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+            .formBlockContent {
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .input {
+                        height: 100px;
+                        input {
+                            width: 570px;
+                            border: none;
+                            outline: 0;
+                            border-bottom: 1px solid #8391AF;
+                            background-color: #F5F7F9;
+                        }
+                        ::-webkit-input-placeholder {
+                            height: 100px;
+                            margin: 0;
+                            color: #8391AF;
+                            font-size: 24px;
+                        }
+                    }
+                    button {
+                        width: 370px;
+                        height: 70px;
+                        text-align: center;
+                        border: none;
+                        background-color: #5583FF;
+                        border-radius: 50px;
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: white;
+                        margin-bottom: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+nav {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D1935;
+    .items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 24px;
+        .item {
+            margin: 50px;
+            a {
+                color: white;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
