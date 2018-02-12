@@ -8,6 +8,7 @@ import Sevices from './Main/Sections/Sevices.js';
 import Testimonials from './Main/Sections/Testimonials.js';
 import Blog from './Main/Sections/Blog.js';
 import Contact from './Main/Sections/Contact.js';
+import Preloader from './Main/Preloader.js';
 import Footer from './Footer/Footer.js';
 
 class Home extends Component {
@@ -15,6 +16,7 @@ class Home extends Component {
     console.log("HomeComponents");
     return (
       <div className="wrapper">
+      <Preloader />
       <Welcome />
       <About />
       <Features />

@@ -3,6 +3,7 @@ import Title from './Main/Sections/Title.js';
 import Post from './Main/Sections/Blog/Post.js';
 import RelatedPost from './Main/Sections/Blog/RelatedPost.js';
 import Comments from './Main/Sections/Blog/Comments.js';
+import Preloader from './Main/Preloader.js';
 import Footer from './Footer/Footer.js';
 
 class LinkBlogPost extends Component {
@@ -10,6 +11,7 @@ class LinkBlogPost extends Component {
     console.log("LinkBlogPostComponents");
     return (
       <div>
+      <Preloader />
       <Title />
       <Post />
       <RelatedPost />
