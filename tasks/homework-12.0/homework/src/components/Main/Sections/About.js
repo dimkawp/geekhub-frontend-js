@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 
 class About extends Component {
+    componentDidMount() {
+        const $ = window.$;
+        $('.slider-slick').slick({
+            variableWidth: true
+        });
+    }
     render() {
       return (
       <section id="about">
