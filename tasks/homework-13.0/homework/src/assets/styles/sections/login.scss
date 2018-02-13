@@ -1,0 +1,82 @@
+/* login block */
+.loginBlock, .regBlock {
+    .formBlock {
+        background-color: #F5F7F9;
+        header {
+            text-align: center;
+            padding: 90px 0;
+            h3 {
+                font-size: 48px;
+                font-weight: 400;
+                color: #8391AF;
+                font-family: 'Roboto', sans-serif;         
+                a {
+                    color: #5383FF;
+                }
+                a:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        .formBlockContent {
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .input {
+                    margin-top: 50px;
+                    
+                    display: flex;
+                    justify-content: center;
+                    i {
+                        position: absolute;
+                        top: 0;
+                        left: 10px;
+                        z-index: 99;
+                        color: #5583FF;
+                    }
+                    input {      
+                        border: none;
+                        outline: 0;
+                        border-bottom: 1px solid #8391AF;
+                        background-color: #F5F7F9;
+                    }
+                    input[type=text], input[type=password] {
+                        color: #8391AF;
+                        font-size: 24px;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                    ::-webkit-input-placeholder {          
+                        padding-left: 40px;
+                        color: #8391AF;
+                        font-size: 24px;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                    ::-webkit-input-placeholder-shown {
+                        height: 50px;
+                    }
+                }
+                button {
+                    position: relative;
+                    width: 370px;
+                    padding: 25px;
+                    text-align: center;
+                    border: none;
+                    background-color: #5583FF;
+                    border-radius: 50px;
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: white;
+                    margin-top: 120px;
+                    margin-bottom: 100px;
+                    i {
+                        position: absolute;
+                        margin-top: 6px;
+                        right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

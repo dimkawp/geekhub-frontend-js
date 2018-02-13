@@ -7,7 +7,6 @@ class Home extends Component {
     console.log("HomeComponents");
     return (
       <div className="wrapper">
-        Home
         <div className="container">
             <Nav />
         </div>

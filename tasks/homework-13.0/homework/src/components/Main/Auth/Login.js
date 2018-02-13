@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Nav from '../Nav';
 
 class Login extends Component {
@@ -6,7 +7,6 @@ class Login extends Component {
     console.log("LoginComponents");
     return (
       <div className="wrapper">
-        Login
         <div className="container">
             <div className="loginBlock">
                 <div className="header">
@@ -14,13 +14,19 @@ class Login extends Component {
                 </div>
                 <div className="formBlock">
                     <header>
-                        <h3>Welcome <a href="">back!</a></h3>
+                        <h3>Welcome <Link to="/">back!</Link></h3>
                     </header>
-                    <div className="formBlockContent">
+                    <div className="formBlockContent container">
                         <form action="">
-                            <div className="input"><input type="text" placeholder="username"/></div>
-                            <div className="input"><input type="text" placeholder="password"/></div>                            
-                            <button type="submit">Enter</button>
+                            <div className="input col-sm-12 col-xl-6">
+                            <i className="material-icons">face</i>
+                            <input className="col-12" type="text" placeholder="username"/>
+                            </div>
+                            <div className="input col-sm-12 col-xl-6">
+                            <i className="material-icons">https</i>
+                            <input className="col-12" type="password" placeholder="password"/>
+                            </div>                            
+                            <button className="btnLogin" type="submit">Enter<i class="material-icons">keyboard_arrow_right</i></button>
                         </form>
                     </div>
                 </div>

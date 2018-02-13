@@ -1,0 +1,63 @@
+/* login block */
+.loginBlock .formBlock, .regBlock .formBlock {
+  background-color: #F5F7F9; }
+  .loginBlock .formBlock header, .regBlock .formBlock header {
+    text-align: center;
+    padding: 90px 0; }
+    .loginBlock .formBlock header h3, .regBlock .formBlock header h3 {
+      font-size: 48px;
+      font-weight: 400;
+      color: #8391AF;
+      font-family: 'Roboto', sans-serif; }
+      .loginBlock .formBlock header h3 a, .regBlock .formBlock header h3 a {
+        color: #5383FF; }
+      .loginBlock .formBlock header h3 a:hover, .regBlock .formBlock header h3 a:hover {
+        text-decoration: none; }
+  .loginBlock .formBlock .formBlockContent form, .regBlock .formBlock .formBlockContent form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .loginBlock .formBlock .formBlockContent form .input, .regBlock .formBlock .formBlockContent form .input {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center; }
+      .loginBlock .formBlock .formBlockContent form .input i, .regBlock .formBlock .formBlockContent form .input i {
+        position: absolute;
+        top: 0;
+        left: 10px;
+        z-index: 99;
+        color: #5583FF; }
+      .loginBlock .formBlock .formBlockContent form .input input, .regBlock .formBlock .formBlockContent form .input input {
+        border: none;
+        outline: 0;
+        border-bottom: 1px solid #8391AF;
+        background-color: #F5F7F9; }
+      .loginBlock .formBlock .formBlockContent form .input input[type=text], .loginBlock .formBlock .formBlockContent form .input input[type=password], .regBlock .formBlock .formBlockContent form .input input[type=text], .regBlock .formBlock .formBlockContent form .input input[type=password] {
+        color: #8391AF;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif; }
+      .loginBlock .formBlock .formBlockContent form .input ::-webkit-input-placeholder, .regBlock .formBlock .formBlockContent form .input ::-webkit-input-placeholder {
+        padding-left: 40px;
+        color: #8391AF;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif; }
+      .loginBlock .formBlock .formBlockContent form .input ::-webkit-input-placeholder-shown, .regBlock .formBlock .formBlockContent form .input ::-webkit-input-placeholder-shown {
+        height: 50px; }
+    .loginBlock .formBlock .formBlockContent form button, .regBlock .formBlock .formBlockContent form button {
+      position: relative;
+      width: 370px;
+      padding: 25px;
+      text-align: center;
+      border: none;
+      background-color: #5583FF;
+      border-radius: 50px;
+      font-size: 24px;
+      font-weight: 700;
+      color: white;
+      margin-top: 120px;
+      margin-bottom: 100px; }
+      .loginBlock .formBlock .formBlockContent form button i, .regBlock .formBlock .formBlockContent form button i {
+        position: absolute;
+        margin-top: 6px;
+        right: 20px; }
