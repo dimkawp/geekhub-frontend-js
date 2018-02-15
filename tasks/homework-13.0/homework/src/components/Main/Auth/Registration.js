@@ -16,7 +16,7 @@ class Registration extends Component {
                         <h3>Registration</h3>
                     </header>
                     <div className="formBlockContent">
-                        <form action="">
+                        <div className="form">
                             <div className="input col-sm-12 col-xl-6">
                             <i className="material-icons">face</i>
                             <input className="col-12" type="text" placeholder="name"/>
@@ -26,11 +26,11 @@ class Registration extends Component {
                             <input className="col-12" type="text" placeholder="email"/>
                             </div>
                             <div className="input col-sm-12 col-xl-6">
-                            <i class="material-icons">markunread_mailbox</i>
+                            <i className="material-icons">markunread_mailbox</i>
                             <input className="col-12" type="password" placeholder="password"/>
                             </div>
-                            <button className="btnLogin" type="submit">Enter<i class="material-icons">keyboard_arrow_right</i></button>
-                        </form>
+                            <button className="btnLogin" type="submit">Enter<i className="material-icons">keyboard_arrow_right</i></button>
+                        </div>
                     </div>
                 </div>
             </div>

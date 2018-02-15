@@ -19,7 +19,7 @@
             }
         }
         .formBlockContent {
-            form {
+            .form {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -43,12 +43,13 @@
                         background-color: #F5F7F9;
                     }
                     input[type=text], input[type=password] {
+                        padding-left: 40px;
                         color: #8391AF;
                         font-size: 24px;
                         font-family: 'Roboto', sans-serif;
                     }
                     ::-webkit-input-placeholder {          
-                        padding-left: 40px;
+                        
                         color: #8391AF;
                         font-size: 24px;
                         font-family: 'Roboto', sans-serif;
