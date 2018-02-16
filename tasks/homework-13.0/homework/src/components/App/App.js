@@ -15,7 +15,6 @@ class App extends Component {
       <Router>
         <Switch>
           <PrivateLayout exact path="/" component={Home}/>
-          <UserLayout path="/registration" component={Registration}/>
           <UserLayout path="/login" component={Login}/>    
         </Switch>
       </Router>
