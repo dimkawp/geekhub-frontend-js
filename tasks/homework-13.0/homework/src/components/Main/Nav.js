@@ -8,12 +8,12 @@ class Nav extends Component {
     return (
         <nav>
             <div className="logo"><Link to="/"><img src={logo} alt="logo"/></Link></div>
-              <ul class="items" role="tablist">
-                <li class="item">
-                  <a class="nav-link" href="#login" role="tab" data-toggle="tab">Login</a>
+              <ul className="items" role="tablist">
+                <li className="item">
+                  <a className="nav-link" href="#login" role="tab" data-toggle="tab">Login</a>
                 </li>
-                <li class="item">
-                  <a class="nav-link" href="#reg" role="tab" data-toggle="tab">Registration</a>
+                <li className="item">
+                  <a className="nav-link" href="#reg" role="tab" data-toggle="tab">Registration</a>
                 </li>
               </ul>
         </nav>

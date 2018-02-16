@@ -23,7 +23,6 @@ class Login extends Component {
         .then(response => {
             localStorage.setItem('User', response.admin);
             window.location.reload();
-
         })
     }
   render() {
@@ -34,7 +33,7 @@ class Login extends Component {
                 <div className="header">
                 <Nav />
                 </div>
-                <div class="tab-content">
+                <div className="tab-content">
                     <div role="tabpanel" className="loginBlock tab-pane fade in active" id="login">
                         <div className="formBlock">
                             <header>
@@ -80,7 +79,6 @@ class Login extends Component {
                         </div>
                     </div>
                 </div>
-
         </div>
       </div>
     );
