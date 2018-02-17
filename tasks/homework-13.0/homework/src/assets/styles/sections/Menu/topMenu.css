@@ -1,0 +1,46 @@
+/*topMenu*/
+.home {
+  display: flex;
+  flex-direction: row; }
+
+#topMenu {
+  width: 100%; }
+  #topMenu .topMenuBlock {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF; }
+    #topMenu .topMenuBlock .navigation {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      #topMenu .topMenuBlock .navigation .sideMenu {
+        cursor: pointer; }
+      #topMenu .topMenuBlock .navigation i {
+        color: #0E1A35; }
+    #topMenu .topMenuBlock .navigation > * {
+      margin: 25px; }
+    #topMenu .topMenuBlock .userProfile {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center; }
+      #topMenu .topMenuBlock .userProfile i {
+        color: #0E1A35; }
+      #topMenu .topMenuBlock .userProfile .addProject {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 178px;
+        height: 48px;
+        text-align: center;
+        border: none;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+        background-color: #5583FF; }
+        #topMenu .topMenuBlock .userProfile .addProject i {
+          font-size: 16px;
+          color: #80A2FF; }
+    #topMenu .topMenuBlock .userProfile > * {
+      margin: 35px 25px; }

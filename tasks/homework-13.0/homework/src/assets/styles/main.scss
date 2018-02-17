@@ -2,8 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 body {
     background: url(../img/main-bg.fw.png) no-repeat 100% 100%;
+    background-size: cover;
     height: 100%;
 }
 @import './sections/nav.scss';
 @import './sections/login.scss';
+@import './sections/Menu/topMenu.scss';
+@import './sections/Menu/sideMenu.scss';
 @import 'buttons.scss';

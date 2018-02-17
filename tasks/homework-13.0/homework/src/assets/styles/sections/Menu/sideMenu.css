@@ -1,0 +1,29 @@
+/*side menu*/
+#SideMenu .SideMenuBlock {
+  width: 20vw;
+  display: flex;
+  flex-direction: column; }
+  #SideMenu .SideMenuBlock .logo {
+    height: 100px;
+    background-color: #0D1935;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  #SideMenu .SideMenuBlock .item {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #0D1935;
+    font-size: 24px;
+    font-weight: 600;
+    color: white; }
+    #SideMenu .SideMenuBlock .item i {
+      margin-left: 50px;
+      margin-right: 15px;
+      color: #5384FF; }
+  #SideMenu .SideMenuBlock .item:hover {
+    background-color: #112042;
+    border-left: 10px solid #5583FF; }
+    #SideMenu .SideMenuBlock .item:hover i {
+      margin-left: 40px; }

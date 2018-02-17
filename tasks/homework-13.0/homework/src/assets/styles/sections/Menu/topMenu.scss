@@ -1,0 +1,58 @@
+/*topMenu*/
+.home {
+    display: flex;
+    flex-direction: row;
+}
+#topMenu {
+    width: 100%;
+    .topMenuBlock {   
+        display: flex;
+        justify-content: space-between;
+        background-color: #FFFFFF;
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .sideMenu {
+                cursor: pointer;
+            }
+            i {
+                
+                color: #0E1A35;
+            }
+        }
+        .navigation > * {
+            margin: 25px;
+        }
+        .userProfile {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            i {
+                color: #0E1A35;
+            }   
+            .addProject {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 178px;
+                height: 48px;
+                text-align: center;
+                border: none;
+                border-radius: 50px;
+                font-size: 18px;
+                font-weight: 700;
+                color: white;
+                background-color: #5583FF;
+                i {
+                    font-size: 16px;
+                    color: #80A2FF;
+                }
+            }
+        }
+        .userProfile > * {
+            margin: 35px 25px;
+        }
+    }
+}
