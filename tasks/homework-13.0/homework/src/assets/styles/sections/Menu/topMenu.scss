@@ -1,8 +1,4 @@
 /*topMenu*/
-.home {
-    display: flex;
-    flex-direction: row;
-}
 #topMenu {
     width: 100%;
     .topMenuBlock {   
@@ -55,4 +51,8 @@
             margin: 35px 25px;
         }
     }
+}
+
+@media screen and (max-width:1200px) {
+    
 }

@@ -6,8 +6,7 @@ const UserLayout = ({component: Component, ...rest}) => {
         <Route {...rest} render={matchProps => {  
             if (localStorage.getItem('User') === 'false') {
                 return (
-                    <Component {...matchProps} />
-                    
+                    <Component {...matchProps} />                   
                 );
             }
             else {

@@ -1,0 +1,25 @@
+/* sales */
+.sales {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 20px 20px 40px;
+    background-color: white;
+    .header {
+        height: 120px;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .result {
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        img {
+            width: 100%;
+        }
+    }
+}

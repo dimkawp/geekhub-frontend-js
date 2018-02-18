@@ -1,5 +1,6 @@
 /*side menu*/
 #SideMenu {
+    background-color: #0D1935;
     .SideMenuBlock {
         width: 20vw;
         display: flex;
@@ -35,4 +36,18 @@
             }
         }
     }
+}
+@media screen and (max-width:1200px) {
+    #SideMenu {
+        top: 120px;
+        position: absolute;
+        z-index: 999;
+        opacity: 0.99;
+        .SideMenuBlock {
+            width: 100vw;
+           
+
+        }
+    }
+    
 }

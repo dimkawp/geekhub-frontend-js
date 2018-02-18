@@ -1,8 +1,4 @@
 /*topMenu*/
-.home {
-  display: flex;
-  flex-direction: row; }
-
 #topMenu {
   width: 100%; }
   #topMenu .topMenuBlock {

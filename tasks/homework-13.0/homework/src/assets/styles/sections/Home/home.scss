@@ -1,0 +1,59 @@
+/* home */
+$main-bg: #F6F7FA;
+.home {
+    display: flex;
+    #mainContent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .content {
+            display: flex;
+            flex-direction: column;
+            background-color: $main-bg;
+            .title {
+                margin: 45px;
+            }
+            .homeComponents {
+                
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .homeComponentsFooter {
+                    width: 100%;
+                    
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    
+                }
+            }
+        }
+    }
+
+    .messages, .activity, .tasks {
+        width: 30%;
+        background-color: white;
+        margin: 20px 0 20px 40px;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .items {
+            .item {
+                display: flex;
+                flex-direction: row;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .home {
+        .messages, .activity, .tasks {
+            width: 90%;
+
+        }
+    }
+}

@@ -1,0 +1,37 @@
+/* home */
+.home {
+  display: flex; }
+  .home #mainContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .home #mainContent .content {
+      display: flex;
+      flex-direction: column;
+      background-color: #F6F7FA; }
+      .home #mainContent .content .title {
+        margin: 45px; }
+      .home #mainContent .content .homeComponents {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        .home #mainContent .content .homeComponents .homeComponentsFooter {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap; }
+  .home .messages, .home .activity, .home .tasks {
+    width: 30%;
+    background-color: white;
+    margin: 20px 0 20px 40px; }
+    .home .messages .header, .home .activity .header, .home .tasks .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .home .messages .items .item, .home .activity .items .item, .home .tasks .items .item {
+      display: flex;
+      flex-direction: row; }
+
+@media screen and (max-width: 1200px) {
+  .home .messages, .home .activity, .home .tasks {
+    width: 90%; } }
