@@ -2,6 +2,12 @@
 $main-bg: #F6F7FA;
 .home {
     display: flex;
+    .title {
+        h2 {
+            color: #0D1935;
+            font-size: 48px;
+        }
+    }
     #mainContent {
         width: 100%;
         display: flex;
@@ -19,12 +25,7 @@ $main-bg: #F6F7FA;
                 flex-direction: row;
                 flex-wrap: wrap;
                 .homeComponentsFooter {
-                    width: 100%;
-                    
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    
+                    width: 100%;                
                 }
             }
         }
@@ -34,12 +35,16 @@ $main-bg: #F6F7FA;
         width: 30%;
         background-color: white;
         margin: 20px 0 20px 40px;
+        display: flex;
+        flex-direction: column;
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
         .items {
+            display: flex;
+            flex-direction: column;
             .item {
                 display: flex;
                 flex-direction: row;
@@ -51,8 +56,10 @@ $main-bg: #F6F7FA;
 
 @media screen and (max-width:1200px) {
     .home {
-        .messages, .activity, .tasks {
-            width: 90%;
+        .sales, .report, .messages, .activity, .tasks {
+            width: 100%;
+            margin: 0;
+            padding: 0;
 
         }
     }

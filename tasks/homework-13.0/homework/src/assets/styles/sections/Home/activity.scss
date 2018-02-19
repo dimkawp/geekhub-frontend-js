@@ -1,0 +1,71 @@
+/* activity */
+.activity {
+    padding: 0;
+    outline: 1px solid #D4D8E3;
+    .header {
+        margin: 20px;
+        h3 {
+            color: #0D1935;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .activityCount {
+            display: flex;
+            flex-direction: row;
+            .actCount {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background-color: #5383FF;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                color: white;
+                margin: 5px;
+            }
+        }
+    }
+    .items {
+        .item {  
+            border-bottom: 1px solid #D4D8E3;
+            .preview {
+                margin: 25px;
+                height: 45px;
+                width: 45px;
+                border-radius: 50%;
+                background-color: #5383FF;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                color: white;
+            }
+            .description {
+                margin: 17px 0;
+                .activityData {
+                    font-size: 14px;
+                    color: #8391AF;
+                }
+                font-size: 14px;
+                p {
+                    color: #0D1935;
+                    font-weight: 700;
+                }   
+                span {
+                    font-size: 14px;
+                    color: #8391AF;
+                    font-weight: 400;
+                }
+            }
+        }
+        .item:first-child {
+            border-top: 1px solid #D4D8E3;
+        }
+        .item:last-child {
+            border-bottom: none;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+/* message */
+.messages {
+  padding: 0;
+  outline: 1px solid #D4D8E3; }
+  .messages .header {
+    margin: 20px; }
+    .messages .header h3 {
+      color: #0D1935;
+      font-size: 24px;
+      font-weight: 600; }
+    .messages .header .messageCout {
+      display: flex;
+      flex-direction: row; }
+      .messages .header .messageCout .noReadMessage {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: #5383FF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: white;
+        margin: 5px; }
+  .messages .items .item {
+    border-bottom: 1px solid #D4D8E3; }
+    .messages .items .item .preview {
+      margin: 25px;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      background-color: #5383FF;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: white; }
+    .messages .items .item .description {
+      margin: 17px 0;
+      font-size: 14px; }
+      .messages .items .item .description .avtorName {
+        font-weight: 700; }
+        .messages .items .item .description .avtorName .messageData {
+          color: #8391AF; }
+      .messages .items .item .description p {
+        color: #0D1935;
+        font-size: 14px; }
+      .messages .items .item .description .messageControl {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start; }
+  .messages .items .read {
+    background-color: #F4F5F8; }
+  .messages .items .item:first-child {
+    border-top: 1px solid #D4D8E3; }
+  .messages .items .item:last-child {
+    border-bottom: none; }

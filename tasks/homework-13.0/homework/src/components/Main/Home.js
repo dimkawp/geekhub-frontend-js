@@ -21,7 +21,7 @@ class Home extends Component {
           <TopMenu />
           <div className="content">
             <div className="title">
-              <h2>USER NAME</h2>
+              <h2>User Name</h2>
             </div>
             <div className="homeComponents">
               <Sales />

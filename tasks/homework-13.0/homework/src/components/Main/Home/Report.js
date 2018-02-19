@@ -12,7 +12,7 @@ class Report extends Component {
         <button>
           <span>Period:</span>
           Last Year
-          <i></i>
+          <i className="material-icons">expand_more</i>
         </button>
       </div>
       <div className="result">

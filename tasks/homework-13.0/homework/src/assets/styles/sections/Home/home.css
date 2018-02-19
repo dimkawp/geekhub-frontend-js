@@ -1,6 +1,9 @@
 /* home */
 .home {
   display: flex; }
+  .home .title h2 {
+    color: #0D1935;
+    font-size: 48px; }
   .home #mainContent {
     width: 100%;
     display: flex;
@@ -16,22 +19,26 @@
         flex-direction: row;
         flex-wrap: wrap; }
         .home #mainContent .content .homeComponents .homeComponentsFooter {
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap; }
+          width: 100%; }
   .home .messages, .home .activity, .home .tasks {
     width: 30%;
     background-color: white;
-    margin: 20px 0 20px 40px; }
+    margin: 20px 0 20px 40px;
+    display: flex;
+    flex-direction: column; }
     .home .messages .header, .home .activity .header, .home .tasks .header {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-    .home .messages .items .item, .home .activity .items .item, .home .tasks .items .item {
+    .home .messages .items, .home .activity .items, .home .tasks .items {
       display: flex;
-      flex-direction: row; }
+      flex-direction: column; }
+      .home .messages .items .item, .home .activity .items .item, .home .tasks .items .item {
+        display: flex;
+        flex-direction: row; }
 
 @media screen and (max-width: 1200px) {
-  .home .messages, .home .activity, .home .tasks {
-    width: 90%; } }
+  .home .sales, .home .report, .home .messages, .home .activity, .home .tasks {
+    width: 100%;
+    margin: 0;
+    padding: 0; } }

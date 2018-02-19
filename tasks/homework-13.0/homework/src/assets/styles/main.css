@@ -191,6 +191,9 @@ nav {
 /* home */
 .home {
   display: flex; }
+  .home .title h2 {
+    color: #0D1935;
+    font-size: 48px; }
   .home #mainContent {
     width: 100%;
     display: flex;
@@ -206,32 +209,37 @@ nav {
         flex-direction: row;
         flex-wrap: wrap; }
         .home #mainContent .content .homeComponents .homeComponentsFooter {
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap; }
+          width: 100%; }
   .home .messages, .home .activity, .home .tasks {
     width: 30%;
     background-color: white;
-    margin: 20px 0 20px 40px; }
+    margin: 20px 0 20px 40px;
+    display: flex;
+    flex-direction: column; }
     .home .messages .header, .home .activity .header, .home .tasks .header {
       display: flex;
       justify-content: space-between;
       align-items: center; }
-    .home .messages .items .item, .home .activity .items .item, .home .tasks .items .item {
+    .home .messages .items, .home .activity .items, .home .tasks .items {
       display: flex;
-      flex-direction: row; }
+      flex-direction: column; }
+      .home .messages .items .item, .home .activity .items .item, .home .tasks .items .item {
+        display: flex;
+        flex-direction: row; }
 
 @media screen and (max-width: 1200px) {
-  .home .messages, .home .activity, .home .tasks {
-    width: 90%; } }
+  .home .sales, .home .report, .home .messages, .home .activity, .home .tasks {
+    width: 100%;
+    margin: 0;
+    padding: 0; } }
 
 /* sales */
 .sales {
   display: flex;
   flex-direction: column;
   margin: 40px 20px 20px 40px;
-  background-color: white; }
+  background-color: white;
+  outline: 1px solid #D4D8E3; }
   .sales .header {
     height: 120px;
     padding: 30px;
@@ -239,6 +247,27 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
+    .sales .header h3 {
+      font-size: 36px;
+      font-weight: 600;
+      color: #8391AF; }
+    .sales .header button {
+      padding: 15px 25px;
+      background-color: #FF3975;
+      border: none;
+      border-radius: 25px 25px 25px 25px;
+      color: #0D1935;
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .sales .header button span {
+        color: #8391AF;
+        font-size: 14px; }
+      .sales .header button i {
+        margin-left: 40px;
+        color: #8391AF; }
   .sales .result {
     padding: 30px;
     display: flex;
@@ -247,13 +276,134 @@ nav {
     flex-wrap: wrap; }
     .sales .result img {
       width: 100%; }
+    .sales .result ul {
+      font-size: 20px;
+      color: #8391AF; }
+
+/* activity */
+.activity {
+  padding: 0;
+  outline: 1px solid #D4D8E3; }
+  .activity .header {
+    margin: 20px; }
+    .activity .header h3 {
+      color: #0D1935;
+      font-size: 24px;
+      font-weight: 600; }
+    .activity .header .activityCount {
+      display: flex;
+      flex-direction: row; }
+      .activity .header .activityCount .actCount {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: #5383FF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: white;
+        margin: 5px; }
+  .activity .items .item {
+    border-bottom: 1px solid #D4D8E3; }
+    .activity .items .item .preview {
+      margin: 25px;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      background-color: #5383FF;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: white; }
+    .activity .items .item .description {
+      margin: 17px 0;
+      font-size: 14px; }
+      .activity .items .item .description .activityData {
+        font-size: 14px;
+        color: #8391AF; }
+      .activity .items .item .description p {
+        color: #0D1935;
+        font-weight: 700; }
+      .activity .items .item .description span {
+        font-size: 14px;
+        color: #8391AF;
+        font-weight: 400; }
+  .activity .items .item:first-child {
+    border-top: 1px solid #D4D8E3; }
+  .activity .items .item:last-child {
+    border-bottom: none; }
+
+/* tasks */
+.tasks {
+  padding: 0;
+  outline: 1px solid #D4D8E3; }
+  .tasks .header {
+    margin: 20px; }
+    .tasks .header h3 {
+      color: #0D1935;
+      font-size: 24px;
+      font-weight: 600; }
+    .tasks .header .taskCounts {
+      display: flex;
+      flex-direction: row; }
+      .tasks .header .taskCounts .taskFree, .tasks .header .taskCounts .taskDelete {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: #5383FF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: white;
+        margin: 5px; }
+      .tasks .header .taskCounts .taskDelete {
+        background-color: #F73B7B; }
+  .tasks .items .item {
+    border-bottom: 1px solid #D4D8E3; }
+    .tasks .items .item .preview {
+      margin: 25px;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      background-color: #5383FF;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: white; }
+    .tasks .items .item .description {
+      margin: 25px 0;
+      width: 60%;
+      font-size: 14px; }
+      .tasks .items .item .description p {
+        color: #0D1935;
+        font-size: 20px; }
+      .tasks .items .item .description .free {
+        color: #8391AF; }
+      .tasks .items .item .description .delete {
+        color: #F73B7B; }
+    .tasks .items .item .itemControl {
+      margin: 25px;
+      width: 10%; }
+  .tasks .items .item:first-child {
+    border-top: 1px solid #D4D8E3; }
+  .tasks .items .item:last-child {
+    border-bottom: none; }
 
 /* report */
 .report {
   display: flex;
   flex-direction: column;
   margin: 40px 20px 20px 20px;
-  background-color: white; }
+  background-color: white;
+  outline: 1px solid #D4D8E3; }
   .report .header {
     height: 120px;
     padding: 30px;
@@ -261,6 +411,27 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
+    .report .header h3 {
+      font-size: 36px;
+      font-weight: 600;
+      color: #8391AF; }
+    .report .header button {
+      padding: 15px 25px;
+      background-color: #FF3975;
+      border: none;
+      border-radius: 25px 25px 25px 25px;
+      color: #0D1935;
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .report .header button span {
+        color: #8391AF;
+        font-size: 14px; }
+      .report .header button i {
+        margin-left: 40px;
+        color: #8391AF; }
   .report .result {
     display: flex;
     flex-direction: row;
@@ -273,5 +444,65 @@ nav {
 @media screen and (max-width: 1200px) {
   .report {
     margin-left: 40px; } }
+
+/* message */
+.messages {
+  padding: 0;
+  outline: 1px solid #D4D8E3; }
+  .messages .header {
+    margin: 20px; }
+    .messages .header h3 {
+      color: #0D1935;
+      font-size: 24px;
+      font-weight: 600; }
+    .messages .header .messageCout {
+      display: flex;
+      flex-direction: row; }
+      .messages .header .messageCout .noReadMessage {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: #5383FF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: white;
+        margin: 5px; }
+  .messages .items .item {
+    border-bottom: 1px solid #D4D8E3; }
+    .messages .items .item .preview {
+      margin: 25px;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      background-color: #5383FF;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: white; }
+    .messages .items .item .description {
+      margin: 17px 0;
+      font-size: 14px; }
+      .messages .items .item .description .avtorName {
+        font-weight: 700; }
+        .messages .items .item .description .avtorName .messageData {
+          color: #8391AF; }
+      .messages .items .item .description p {
+        color: #0D1935;
+        font-size: 14px; }
+      .messages .items .item .description .messageControl {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start; }
+  .messages .items .read {
+    background-color: #F4F5F8; }
+  .messages .items .item:first-child {
+    border-top: 1px solid #D4D8E3; }
+  .messages .items .item:last-child {
+    border-bottom: none; }
 
 /* all buttons */

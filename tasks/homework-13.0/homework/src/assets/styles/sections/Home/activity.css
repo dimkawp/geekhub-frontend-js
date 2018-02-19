@@ -1,0 +1,56 @@
+/* activity */
+.activity {
+  padding: 0;
+  outline: 1px solid #D4D8E3; }
+  .activity .header {
+    margin: 20px; }
+    .activity .header h3 {
+      color: #0D1935;
+      font-size: 24px;
+      font-weight: 600; }
+    .activity .header .activityCount {
+      display: flex;
+      flex-direction: row; }
+      .activity .header .activityCount .actCount {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: #5383FF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: white;
+        margin: 5px; }
+  .activity .items .item {
+    border-bottom: 1px solid #D4D8E3; }
+    .activity .items .item .preview {
+      margin: 25px;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      background-color: #5383FF;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: white; }
+    .activity .items .item .description {
+      margin: 17px 0;
+      font-size: 14px; }
+      .activity .items .item .description .activityData {
+        font-size: 14px;
+        color: #8391AF; }
+      .activity .items .item .description p {
+        color: #0D1935;
+        font-weight: 700; }
+      .activity .items .item .description span {
+        font-size: 14px;
+        color: #8391AF;
+        font-weight: 400; }
+  .activity .items .item:first-child {
+    border-top: 1px solid #D4D8E3; }
+  .activity .items .item:last-child {
+    border-bottom: none; }
