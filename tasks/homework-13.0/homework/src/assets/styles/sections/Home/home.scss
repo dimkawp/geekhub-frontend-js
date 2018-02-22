@@ -1,5 +1,16 @@
 /* home */
 $main-bg: #F6F7FA;
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 99;
+}
+#page-preloader .spinner {
+}
 .home {
     display: flex;
     .title {

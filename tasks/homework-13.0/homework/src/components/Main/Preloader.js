@@ -6,7 +6,7 @@ class Preloader extends Component {
           var $preloader = $('#page-preloader');
           var $spinner = $preloader.find('.spinner');
           $spinner.fadeOut();
-          $preloader.delay(250).fadeOut('slow');
+          $preloader.delay(550).fadeOut('slow');
     }
     render() {
       return (

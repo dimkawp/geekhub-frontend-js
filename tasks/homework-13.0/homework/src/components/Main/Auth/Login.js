@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Nav from '../Nav';
+import Preloader from '../Preloader';
 import Redirect from 'react-router/Redirect';
-import { Tabs, TabLink, TabContent } from 'react-tabs-redux'
+import { Tabs, TabLink, TabContent } from 'react-tabs-redux';
 
 class Login extends Component {
 
@@ -12,7 +13,7 @@ class Login extends Component {
             login: this.login.value.trim(),
             password: this.password.value.trim()
         };
-        fetch('/api/user', {
+        fetch('/api/user/login', {
             headers: {
                 'Content-type': 'application/json'
             },
@@ -21,14 +22,16 @@ class Login extends Component {
         })
         .then(response => response.json())
         .then(response => {
-            localStorage.setItem('User', response.admin);
-            window.location.reload();
+            localStorage.setItem('User', response.user.admin);
+            console.log('User', response.user.admin);
+            this.props.history.push("/");
         })
     }
   render() {
     console.log("LoginComponents");
     return (
       <div className="wrapper">
+      <Preloader />
         <div className="container">
                 <div className="header">
                 <Nav />

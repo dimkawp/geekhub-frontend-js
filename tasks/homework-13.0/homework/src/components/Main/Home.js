@@ -10,12 +10,14 @@ import Report from './Home/Report';
 import Sales from './Home/Sales';
 import Tasks from './Home/Tasks';
 import Redirect from 'react-router-dom/Redirect';
+import Preloader from './Preloader';
 
 class Home extends Component {
   render() {
     console.log("HomeComponents");
     return (
       <div className="wrapper home">
+        <Preloader />
         <SideMenu />
         <section id="mainContent">
           <TopMenu />
@@ -31,10 +33,8 @@ class Home extends Component {
                 <Messages />
                 <Activity />
               </div>
-            </div>
-            
+            </div>        
           </div>
-
         </section>  
       </div>
     );
