@@ -196,8 +196,15 @@ nav {
   top: 0;
   right: 0;
   bottom: 0;
-  background: #000;
-  z-index: 99; }
+  background: #0D1935;
+  opacity: .99;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#page-preloader .spinner img {
+  opacity: 0.5; }
 
 .home {
   display: flex; }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Gif from '../../assets/img/bold-preloader.gif'
 
 class Preloader extends Component {
     componentDidMount() {
@@ -11,7 +12,9 @@ class Preloader extends Component {
     render() {
       return (
         <div id="page-preloader">
-            <span className="spinner"></span>
+            <span className="spinner">
+              <img src={Gif} alt="Preloader"/>
+            </span>
         </div>
       );
     }

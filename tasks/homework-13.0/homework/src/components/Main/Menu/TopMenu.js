@@ -11,7 +11,7 @@ class TopMenu extends Component {
     logOut = () => {
         console.log(localStorage.getItem('User'));
         localStorage['User'] = 'false';
-        window.location.reload()
+        window.location.reload();
         console.log(localStorage.getItem('User'));
     }
   render() {
