@@ -5,6 +5,8 @@
     width: 20vw;
     display: flex;
     flex-direction: column; }
+    #SideMenu .SideMenuBlock .sideMenu {
+      display: none; }
     #SideMenu .SideMenuBlock .logo {
       height: 100px;
       background-color: #0D1935;
@@ -33,9 +35,27 @@
 
 @media screen and (max-width: 1200px) {
   #SideMenu {
-    top: 120px;
-    position: absolute;
-    z-index: 999;
-    opacity: 0.99; }
+    z-index: 999; }
     #SideMenu .SideMenuBlock {
-      width: 100vw; } }
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh; }
+      #SideMenu .SideMenuBlock .sideMenu {
+        margin: 25px;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+        #SideMenu .SideMenuBlock .sideMenu i {
+          color: white; }
+      #SideMenu .SideMenuBlock .item {
+        width: 100%;
+        justify-content: center; }
+        #SideMenu .SideMenuBlock .item i {
+          margin-left: 0; }
+      #SideMenu .SideMenuBlock .item:hover {
+        background-color: #112042;
+        border-left: none; }
+        #SideMenu .SideMenuBlock .item:hover i {
+          margin-left: 0; } }

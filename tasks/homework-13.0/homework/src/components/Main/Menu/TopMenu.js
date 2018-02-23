@@ -19,6 +19,7 @@ class TopMenu extends Component {
         console.log(localStorage.getItem('User'));
     }
   render() {
+    const UserImg = localStorage.getItem('UserImg');
     console.log("TopMenuComponents");
     return (
         <section id="topMenu">
@@ -35,9 +36,9 @@ class TopMenu extends Component {
                     <button className="addProject"><i className="material-icons">add</i>Add project</button>
                     <i className="material-icons">mail</i>
                     <i className="material-icons">notifications</i>
-                    <img src="" alt="avatat"/>
                     <div className="dropdownMenu">
-                        <button className="dropBtn"> > </button>
+                    <img className="avatar" src={UserImg} alt="avatat"/>
+                        <button className="dropBtn"><i className="material-icons">arrow_drop_down</i></button>
                         <div className="dropdownContent">
                             <button>CONTENT</button>
                             <button onClick={this.logOut}>LOGOUT</button>

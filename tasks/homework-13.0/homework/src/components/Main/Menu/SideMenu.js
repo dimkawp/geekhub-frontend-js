@@ -8,6 +8,9 @@ class SideMenu extends Component {
     return (
         <section id="SideMenu">
             <div className="SideMenuBlock">
+                    <div className="sideMenu">
+                        <i className="material-icons">format_align_justify</i>
+                    </div>
                 <div className="logo"><Link to="/"><img src={logo} alt="logo"/></Link></div>
                 <div className="item">
                     <i className="material-icons">home</i>

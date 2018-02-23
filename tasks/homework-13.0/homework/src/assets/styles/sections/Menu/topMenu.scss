@@ -45,7 +45,19 @@
                     color: #80A2FF;
                 }
             }
+            .avatar {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
             .dropdownMenu {
+                display: flex;
+                justify-content: center;
+                .dropBtn {
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                }
                 .dropdownContent {
                     position: absolute;
                     display: flex;
@@ -54,12 +66,16 @@
                     flex-direction: column;
                     right: 0;
                     margin: 25px;
+                    margin-top: 75px;
                     width: 160px;
                     background-color: white;
                     outline: 1px solid #D4D8E3;
                     button {
                         width: 100px;
                         margin: 15px;
+                        outline: none;
+                        border: none;
+                        background-color: transparent;
                     }
                 }
             }
@@ -67,9 +83,21 @@
         .userProfile > * {
             margin: 35px 25px;
         }
+        
     }
 }
 
 @media screen and (max-width:1200px) {
-    
+    #topMenu {
+        .topMenuBlock {
+            .userProfile {
+                width: 100%;
+                justify-content: flex-end;
+            }
+            .userProfile > * {
+                margin: 0 2%;
+
+            }
+        }
+    }
 }

@@ -73,6 +73,7 @@ $main-bg: #F6F7FA;
 
 @media screen and (max-width:1200px) {
     .home {
+        flex-direction: column;
         .sales, .report, .messages, .activity, .tasks {
             width: 100%;
             margin: 0;

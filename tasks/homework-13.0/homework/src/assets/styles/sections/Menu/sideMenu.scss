@@ -5,6 +5,9 @@
         width: 20vw;
         display: flex;
         flex-direction: column;
+        .sideMenu {
+            display: none;
+        }
         .logo {
             height: 100px;
             background-color: #0D1935;
@@ -42,14 +45,36 @@
 }
 @media screen and (max-width:1200px) {
     #SideMenu {
-        top: 120px;
-        position: absolute;
         z-index: 999;
-        opacity: 0.99;
         .SideMenuBlock {
+            justify-content: center;
+            align-items: center;
             width: 100vw;
-           
-
+            height: 100vh;
+            .sideMenu {
+                margin: 25px;
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                i {
+                    color: white;
+                }
+            }
+            .item {
+                width: 100%;
+                justify-content: center;
+                i {
+                    margin-left: 0;
+                }
+            }
+            .item:hover {
+                background-color: #112042;
+                border-left: none;
+                i {
+                    margin-left: 0;
+                }
+            }
         }
     }
     

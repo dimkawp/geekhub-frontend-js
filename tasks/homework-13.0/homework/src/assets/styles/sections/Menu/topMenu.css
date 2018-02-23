@@ -38,19 +38,41 @@
         #topMenu .topMenuBlock .userProfile .addProject i {
           font-size: 16px;
           color: #80A2FF; }
-      #topMenu .topMenuBlock .userProfile .dropdownMenu .dropdownContent {
-        position: absolute;
+      #topMenu .topMenuBlock .userProfile .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; }
+      #topMenu .topMenuBlock .userProfile .dropdownMenu {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        right: 0;
-        margin: 25px;
-        width: 160px;
-        background-color: white;
-        outline: 1px solid #D4D8E3; }
-        #topMenu .topMenuBlock .userProfile .dropdownMenu .dropdownContent button {
-          width: 100px;
-          margin: 15px; }
+        justify-content: center; }
+        #topMenu .topMenuBlock .userProfile .dropdownMenu .dropBtn {
+          outline: none;
+          border: none;
+          background-color: transparent; }
+        #topMenu .topMenuBlock .userProfile .dropdownMenu .dropdownContent {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          right: 0;
+          margin: 25px;
+          margin-top: 75px;
+          width: 160px;
+          background-color: white;
+          outline: 1px solid #D4D8E3; }
+          #topMenu .topMenuBlock .userProfile .dropdownMenu .dropdownContent button {
+            width: 100px;
+            margin: 15px;
+            outline: none;
+            border: none;
+            background-color: transparent; }
     #topMenu .topMenuBlock .userProfile > * {
       margin: 35px 25px; }
+
+@media screen and (max-width: 1200px) {
+  #topMenu .topMenuBlock .userProfile {
+    width: 100%;
+    justify-content: flex-end; }
+  #topMenu .topMenuBlock .userProfile > * {
+    margin: 0 2%; } }

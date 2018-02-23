@@ -13,7 +13,7 @@ App.post('/api/user/login', (request, response) => {
 
     if (Admin.login === login && Admin.password === password) {
         return response.send(
-            {user: {admin: 'true',link: 'link'}}
+            {user: {admin: 'true',link: 'https://cdn2.iconfinder.com/data/icons/lil-faces/233/lil-face-4-512.png'}}
         );
     }
     else {

@@ -50,7 +50,9 @@
         flex-direction: row; }
 
 @media screen and (max-width: 1200px) {
-  .home .sales, .home .report, .home .messages, .home .activity, .home .tasks {
-    width: 100%;
-    margin: 0;
-    padding: 0; } }
+  .home {
+    flex-direction: column; }
+    .home .sales, .home .report, .home .messages, .home .activity, .home .tasks {
+      width: 100%;
+      margin: 0;
+      padding: 0; } }

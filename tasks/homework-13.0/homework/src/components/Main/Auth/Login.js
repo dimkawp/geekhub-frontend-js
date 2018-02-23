@@ -23,6 +23,7 @@ class Login extends Component {
         .then(response => response.json())
         .then(response => {
             localStorage.setItem('User', response.user.admin);
+            localStorage.setItem('UserImg', response.user.link);
             console.log('User', response.user.admin);
             this.props.history.push("/");
         })
