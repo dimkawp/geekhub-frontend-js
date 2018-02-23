@@ -18,6 +18,19 @@ nav {
         .active {
             border-bottom: 10px solid #5583FF;
             margin-bottom: -10px;
+            animation: 0.1s tremor 0s;
+        }
+        @keyframes tremor {
+            0%, 25% {
+                left: -1px;
+                -webkit-transform: translateX(-4%);
+                transform: translateX(-4%);
+            }
+            100%, 100% {
+                left: 1px;
+                -webkit-transform: translateX(4%);
+                transform: translateX(4%);
+            }
         }
         .item {
            padding: 55px;

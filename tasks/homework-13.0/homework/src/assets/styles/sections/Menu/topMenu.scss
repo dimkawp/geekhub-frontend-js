@@ -12,8 +12,7 @@
             .sideMenu {
                 cursor: pointer;
             }
-            i {
-                
+            i {     
                 color: #0E1A35;
             }
         }
@@ -44,6 +43,24 @@
                 i {
                     font-size: 16px;
                     color: #80A2FF;
+                }
+            }
+            .dropdownMenu {
+                .dropdownContent {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    right: 0;
+                    margin: 25px;
+                    width: 160px;
+                    background-color: white;
+                    outline: 1px solid #D4D8E3;
+                    button {
+                        width: 100px;
+                        margin: 15px;
+                    }
                 }
             }
         }

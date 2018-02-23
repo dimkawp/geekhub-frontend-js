@@ -22,7 +22,18 @@ nav {
     font-size: 24px; }
     nav .items .active {
       border-bottom: 10px solid #5583FF;
-      margin-bottom: -10px; }
+      margin-bottom: -10px;
+      animation: 0.1s tremor 0s; }
+
+@keyframes tremor {
+  0%, 25% {
+    left: -1px;
+    -webkit-transform: translateX(-4%);
+    transform: translateX(-4%); }
+  100%, 100% {
+    left: 1px;
+    -webkit-transform: translateX(4%);
+    transform: translateX(4%); } }
     nav .items .item {
       padding: 55px;
       box-sizing: border-box;
@@ -144,6 +155,20 @@ nav {
         #topMenu .topMenuBlock .userProfile .addProject i {
           font-size: 16px;
           color: #80A2FF; }
+      #topMenu .topMenuBlock .userProfile .dropdownMenu .dropdownContent {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        right: 0;
+        margin: 25px;
+        width: 160px;
+        background-color: white;
+        outline: 1px solid #D4D8E3; }
+        #topMenu .topMenuBlock .userProfile .dropdownMenu .dropdownContent button {
+          width: 100px;
+          margin: 15px; }
     #topMenu .topMenuBlock .userProfile > * {
       margin: 35px 25px; }
 
@@ -197,14 +222,10 @@ nav {
   right: 0;
   bottom: 0;
   background: #0D1935;
-  opacity: .99;
-  z-index: 999;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center; }
-
-#page-preloader .spinner img {
-  opacity: 0.5; }
 
 .home {
   display: flex; }
@@ -251,27 +272,34 @@ nav {
     padding: 0; } }
 
 /* sales */
-.sales {
+.sales, .report {
   display: flex;
   flex-direction: column;
   margin: 40px 20px 20px 40px;
   background-color: white;
   outline: 1px solid #D4D8E3; }
-  .sales .header {
+  .sales .header, .report .header {
     height: 120px;
     padding: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
-    .sales .header h3 {
+    .sales .header h3, .report .header h3 {
       font-size: 36px;
       font-weight: 600;
       color: #8391AF; }
-    .sales .header button {
-      padding: 15px 25px;
-      background-color: #FF3975;
-      border: none;
+    .sales .header div span, .report .header div span {
+      color: #8391AF;
+      font-size: 14px;
+      font-weight: 600;
+      position: absolute;
+      margin: 15px;
+      padding-left: 15px; }
+    .sales .header select, .report .header select {
+      padding: 15px 35px 15px 75px;
+      border: 1px solid #8391AF;
+      outline: 0;
       border-radius: 25px 25px 25px 25px;
       color: #0D1935;
       font-size: 14px;
@@ -279,21 +307,21 @@ nav {
       display: flex;
       align-items: center;
       justify-content: center; }
-      .sales .header button span {
-        color: #8391AF;
-        font-size: 14px; }
-      .sales .header button i {
-        margin-left: 40px;
-        color: #8391AF; }
-  .sales .result {
+    .sales .header select:hover, .report .header select:hover {
+      transition: 1s;
+      background-color: #FF3975; }
+    .sales .header select:focus > option:checked, .report .header select:focus > option:checked {
+      font-weight: 600;
+      background-color: #FF3975; }
+  .sales .result, .report .result {
     padding: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap; }
-    .sales .result img {
+    .sales .result img, .report .result img {
       width: 100%; }
-    .sales .result ul {
+    .sales .result ul, .report .result ul {
       font-size: 20px;
       color: #8391AF; }
 
@@ -421,34 +449,6 @@ nav {
   margin: 40px 20px 20px 20px;
   background-color: white;
   outline: 1px solid #D4D8E3; }
-  .report .header {
-    height: 120px;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-    .report .header h3 {
-      font-size: 36px;
-      font-weight: 600;
-      color: #8391AF; }
-    .report .header button {
-      padding: 15px 25px;
-      background-color: #FF3975;
-      border: none;
-      border-radius: 25px 25px 25px 25px;
-      color: #0D1935;
-      font-size: 14px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .report .header button span {
-        color: #8391AF;
-        font-size: 14px; }
-      .report .header button i {
-        margin-left: 40px;
-        color: #8391AF; }
   .report .result {
     display: flex;
     flex-direction: row;

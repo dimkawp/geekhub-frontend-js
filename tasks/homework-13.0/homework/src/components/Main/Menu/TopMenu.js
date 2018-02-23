@@ -7,6 +7,10 @@ class TopMenu extends Component {
             $(".sideMenu").click(function(){
                 $(".SideMenuBlock").toggle("slow");
             });
+            $(".dropdownContent").hide();
+            $(".dropBtn").click(function(){         
+                $(".dropdownContent").toggle("fast");
+            });
     }
     logOut = () => {
         console.log(localStorage.getItem('User'));
@@ -32,7 +36,13 @@ class TopMenu extends Component {
                     <i className="material-icons">mail</i>
                     <i className="material-icons">notifications</i>
                     <img src="" alt="avatat"/>
-                    <button onClick={this.logOut}>LOGOUT</button>
+                    <div className="dropdownMenu">
+                        <button className="dropBtn"> > </button>
+                        <div className="dropdownContent">
+                            <button>CONTENT</button>
+                            <button onClick={this.logOut}>LOGOUT</button>
+                        </div>
+                    </div>        
                 </div>
             </div>
         </section>

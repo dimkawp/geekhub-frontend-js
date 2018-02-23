@@ -5,34 +5,6 @@
   margin: 40px 20px 20px 20px;
   background-color: white;
   outline: 1px solid #D4D8E3; }
-  .report .header {
-    height: 120px;
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-    .report .header h3 {
-      font-size: 36px;
-      font-weight: 600;
-      color: #8391AF; }
-    .report .header button {
-      padding: 15px 25px;
-      background-color: #FF3975;
-      border: none;
-      border-radius: 25px 25px 25px 25px;
-      color: #0D1935;
-      font-size: 14px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .report .header button span {
-        color: #8391AF;
-        font-size: 14px; }
-      .report .header button i {
-        margin-left: 40px;
-        color: #8391AF; }
   .report .result {
     display: flex;
     flex-direction: row;

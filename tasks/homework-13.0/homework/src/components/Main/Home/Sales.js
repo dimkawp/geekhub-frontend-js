@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 import salesImg from '../../../assets/img/home/sales.fw.png';
+import Select from './Select';
 
 class Sales extends Component {
 
   render() {
+    const SalesSelect = ["Last Yeat","Last Month", "Last Week"];
     console.log("SalesComponents");
     return (
         <div className="sales col-sm-12 col-md-12 col-lg-5">
           <div className="header">
             <h3>Your Sales</h3>
-            <button>
-              <span>Period:</span>
-              Last Year
-              <i className="material-icons">expand_more</i>
-            </button>
+            <Select data={SalesSelect}/>
           </div>
           <div className="result">
             <div>

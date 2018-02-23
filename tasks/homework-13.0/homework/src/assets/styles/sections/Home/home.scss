@@ -7,15 +7,14 @@ $main-bg: #F6F7FA;
     right: 0;
     bottom: 0;
     background: #0D1935;
-    opacity: .99;
-    z-index: 999;
+    z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #page-preloader .spinner {
     img {
-        opacity: 0.5;
+
     }
 }
 .home {
