@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-
+//config
+import SalesChart from '../../../config/pieChart.config';
 
 class Select extends Component {
     onChange = (e) => {
-        console.log(e.target.value);
+        this.props.sendData(100);
     }
-
   render() {
     console.log("SelectComponents");
     return (

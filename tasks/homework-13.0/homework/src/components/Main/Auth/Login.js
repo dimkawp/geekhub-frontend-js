@@ -8,7 +8,6 @@ import { Tabs, TabLink, TabContent } from 'react-tabs-redux';
 class Login extends Component {
 
     handleLogin = () => {
-        console.log(this.login.value);
         const data = {
             login: this.login.value.trim(),
             password: this.password.value.trim()

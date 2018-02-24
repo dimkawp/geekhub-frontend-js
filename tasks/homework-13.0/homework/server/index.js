@@ -18,7 +18,8 @@ App.post('/api/user/login', (request, response) => {
     }
     else {
         return response.json(
-            {admin: 'false'}
+        {user: {admin: 'false'}}
+            
         )
     }
     return response.json();

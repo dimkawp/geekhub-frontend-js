@@ -3,7 +3,8 @@
 body {
   background: url(../img/main-bg.fw.png) no-repeat 100% 100%;
   background-size: cover;
-  height: 100%; }
+  height: 100%;
+  font-family: 'Roboto', sans-serif; }
 
 nav {
   display: flex;
@@ -244,6 +245,7 @@ nav {
         top: 0;
         left: 0; }
         #SideMenu .SideMenuBlock .sideMenu i {
+          cursor: pointer;
           color: white; }
       #SideMenu .SideMenuBlock .item {
         width: 100%;
@@ -357,17 +359,6 @@ nav {
     .sales .header select:focus > option:checked, .report .header select:focus > option:checked {
       font-weight: 600;
       background-color: #FF3975; }
-  .sales .result, .report .result {
-    padding: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-    .sales .result img, .report .result img {
-      width: 100%; }
-    .sales .result ul, .report .result ul {
-      font-size: 20px;
-      color: #8391AF; }
 
 /* activity */
 .activity {
@@ -493,14 +484,6 @@ nav {
   margin: 40px 20px 20px 20px;
   background-color: white;
   outline: 1px solid #D4D8E3; }
-  .report .result {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .report .result .graph {
-      width: 100%; }
-      .report .result .graph img {
-        width: 100%; }
 
 @media screen and (max-width: 1200px) {
   .report {

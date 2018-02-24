@@ -48,6 +48,7 @@
         top: 0;
         left: 0; }
         #SideMenu .SideMenuBlock .sideMenu i {
+          cursor: pointer;
           color: white; }
       #SideMenu .SideMenuBlock .item {
         width: 100%;

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import reportImg from '../../../assets/img/home/report.fw.png';
 import Select from './Select';
-
+import ReactHighcharts from 'react-highcharts';
+//config
+import ReportChart from '../../../config/splineChart.config';
 class Report extends Component {
 
   render() {
@@ -14,9 +16,7 @@ class Report extends Component {
         <Select data={ReportSelect}/>
       </div>
       <div className="result">
-        <div className="graph">
-          <img src={reportImg} alt="reportImg"/>
-        </div>
+        <ReactHighcharts config = {ReportChart}></ReactHighcharts>
       </div>
     </div>
 

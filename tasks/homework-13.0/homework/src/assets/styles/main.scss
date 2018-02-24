@@ -4,6 +4,7 @@ body {
     background: url(../img/main-bg.fw.png) no-repeat 100% 100%;
     background-size: cover;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 @import './sections/nav.scss';
 @import './sections/login.scss';

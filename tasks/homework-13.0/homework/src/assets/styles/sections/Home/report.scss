@@ -5,17 +5,6 @@
     margin: 40px 20px 20px 20px;
     background-color: white;
     outline: 1px solid #D4D8E3;
-    .result {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        .graph {
-            width: 100%;
-            img {
-                width: 100%;
-            }
-        }
-    }
 }
 @media screen and (max-width:1200px) {
     .report {
