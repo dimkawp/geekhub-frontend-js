@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Nav from '../Nav';
 import Preloader from '../Preloader';
 import Redirect from 'react-router/Redirect';
-import { Tabs, TabLink, TabContent } from 'react-tabs-redux';
 
 class Login extends Component {
 
@@ -11,15 +10,21 @@ class Login extends Component {
         const data = {
             login: this.login.value.trim(),
             password: this.password.value.trim()
-        };
-        if (this.login.value.trim() === 'admin' && this.password.value.trim() === 'admin') {
-            localStorage.setItem('User', 'true');
-            localStorage.setItem('UserImg', 'https://cdn2.iconfinder.com/data/icons/lil-faces/233/lil-face-4-512.png');
+        };        
+        fetch('/api/user/login', {
+            headers: {
+                'Content-type': 'application/json'
+            },
+            method: 'post',
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(response => {
+            localStorage.setItem('User', response.user.admin);
+            localStorage.setItem('UserImg', response.user.link);
+            console.log('User', response.user.admin);
             this.props.history.push("/");
-        } 
-        else {
-            this.props.history.push("/");
-        }
+        })
     }
   render() {
     console.log("LoginComponents");
