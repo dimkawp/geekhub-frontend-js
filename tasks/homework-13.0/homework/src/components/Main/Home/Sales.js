@@ -9,14 +9,25 @@ import SalesChart from '../../../config/pieChart.config';
 class Sales extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      fieldVal: []
+    }
   }
   getData = (val) => {
-    console.log(val);
+    this.setState({
+      fieldVal: val
+    })
   };
   render() {
     const SalesSelect = ["Last Yeat","Last Month", "Last Week"];
     console.log("SalesComponents");
-    SalesChart.series[0].data[0][1] = 30;
+    console.log(this.state.fieldVal);
+    if (!this.state.fieldVal) {
+      SalesChart.series[0].data[0][1] = 0;
+    }
+    else {
+      SalesChart.series[0].data = this.state.fieldVal;
+    }
     return (
         <div className="sales col-sm-12 col-md-12 col-lg-5">
           <div className="header">
