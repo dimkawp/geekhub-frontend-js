@@ -3,7 +3,8 @@ const SalesChart = {
     chart: {
         type: 'pie',
         height: '300',
-        defaultSeriesType: 'areaspline'
+        defaultSeriesType: 'areaspline',
+        
     },
     plotOptions: {
         pie: {
@@ -41,6 +42,9 @@ const SalesChart = {
         itemMarginBottom: 5
     },
     series: [{
+        animation: {
+            duration: 2000
+        },
         data: [
           ["Websites",6],["Logo", 4],["Social Media",7],["Adwords", 2], ["E-Commerce", 5]
         ],

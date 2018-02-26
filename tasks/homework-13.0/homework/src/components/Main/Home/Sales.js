@@ -10,7 +10,9 @@ class Sales extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fieldVal: []
+      fieldVal: [],
+      SalesTitleText: '',
+      SalesSubTitle: ''
     }
   }
   getData = (val) => {
@@ -23,7 +25,9 @@ class Sales extends Component {
     console.log("SalesComponents");
     console.log(this.state.fieldVal);
     if (!this.state.fieldVal) {
-      SalesChart.series[0].data[0][1] = 0;
+      SalesChart.series[0].data = 0;
+      SalesChart.title.text = '';
+      SalesChart.subtitle.text = '';
     }
     else {
       SalesChart.series[0].data = this.state.fieldVal;
@@ -32,7 +36,7 @@ class Sales extends Component {
         <div className="sales col-sm-12 col-md-12 col-lg-5">
           <div className="header">
             <h3>Your Sales</h3>
-            <Select data={SalesSelect} sendData={this.getData}/>
+            <Select data={SalesSelect} salesSendData={this.getData}/>
           </div>
           <div className="result">
             <ReactHighcharts config = {SalesChart}></ReactHighcharts>
