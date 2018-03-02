@@ -25,6 +25,7 @@
                 justify-content: center;
                 align-items: center;
                 .input {
+
                     margin-top: 50px;
                     
                     display: flex;
@@ -55,6 +56,21 @@
                     }
                     ::-webkit-input-placeholder-shown {
                         height: 50px;
+                    }
+                }
+                .error {
+                    i {
+                        color: red;
+                    }
+                    input {
+                        border-bottom: 1px solid red;
+                    }
+      
+                    input[type=text], input[type=password] {
+                        color: red;
+                    }
+                    ::-webkit-input-placeholder {          
+                        color: red;
                     }
                 }
                 button {

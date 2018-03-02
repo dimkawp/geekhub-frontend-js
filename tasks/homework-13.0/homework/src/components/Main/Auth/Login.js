@@ -5,6 +5,16 @@ import Preloader from '../Preloader';
 import Redirect from 'react-router/Redirect';
 
 class Login extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            addClass: false,
+            errorClass: false
+        }
+    }
+    toggle() {
+        this.setState({addClass: !this.state.addClass});
+    }
 
     handleLogin = () => {
         const data = {
@@ -20,9 +30,16 @@ class Login extends Component {
         })
         .then(response => response.json())
         .then(response => {
-            localStorage.setItem('User', response.login);
-            console.log(response.login);
-            this.props.history.push("/");
+            if (response.login === 'true') {
+                localStorage.setItem('User', response.login);
+                console.log(response.login);
+                this.props.history.push("/");
+            }
+            else {
+                console.log(response.login);
+                this.setState({errorClass: true});
+            }
+
         })
     }
     handleRegistration = () => {
@@ -46,10 +63,18 @@ class Login extends Component {
             }
             else {
                 console.log(response);
+                this.setState({errorClass: true});
             }
         })
     }
+
   render() {
+
+    let error = [""];
+    if(this.state.errorClass) {
+        error.push("error");
+    }
+
     console.log("LoginComponents");
     return (
       <div className="wrapper">
@@ -66,11 +91,11 @@ class Login extends Component {
                             </header>
                             <div className="formBlockContent container">
                                 <div className="form">
-                                    <div className="input col-sm-12 col-lg-6">
+                                    <div className={"input col-sm-12 col-lg-6" + error.join(' ')}>
                                     <i className="material-icons">face</i>
                                     <input className="col-lg-12" type="text" placeholder="username" ref={el => this.login = el}/>
                                     </div>
-                                    <div className="input col-6 col-sm-12 col-lg-6">
+                                    <div className={"input col-sm-12 col-lg-6" + error.join(' ')}>
                                     <i className="material-icons">https</i>
                                     <input className="col-lg-12" type="password" placeholder="password" ref={el => this.password = el}/>
                                     </div>                            
@@ -86,19 +111,19 @@ class Login extends Component {
                             </header>
                             <div className="formBlockContent">
                                 <div className="form">
-                                    <div className="input col-sm-12 col-lg-6">
+                                    <div className={"input col-sm-12 col-lg-6" + error.join(' ')}>
                                     <i className="material-icons">face</i>
                                     <input className="col-lg-12" type="text" placeholder="name" ref={el => this.name = el}/>
                                     </div>
-                                    <div className="input col-sm-12 col-lg-6">
+                                    <div className={"input col-sm-12 col-lg-6" + error.join(' ')}>
                                     <i className="material-icons">https</i>
                                     <input className="col-lg-12" type="text" placeholder="email" ref={el => this.email = el}/>
                                     </div>
-                                    <div className="input col-sm-12 col-lg-6">
+                                    <div className={"input col-sm-12 col-lg-6" + error.join(' ')}>
                                     <i className="material-icons">markunread_mailbox</i>
                                     <input className="col-lg-12" type="password" placeholder="password" ref={el => this.regPassword = el}/>
                                     </div>
-                                    <button onClick={this.handleRegistration} className="btnLogin" type="submit">Enter<i className="material-icons">keyboard_arrow_right</i></button>
+                                    <button disabled onClick={this.handleRegistration} className="btnLogin" type="submit">Enter<i className="material-icons">keyboard_arrow_right</i></button>
                                 </div>
                             </div>
                         </div>
