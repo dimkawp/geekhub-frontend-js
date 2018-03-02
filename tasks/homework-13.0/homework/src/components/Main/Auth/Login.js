@@ -8,10 +8,10 @@ class Login extends Component {
 
     handleLogin = () => {
         const data = {
-            login: this.login.value.trim(),
+            name: this.login.value.trim(),
             password: this.password.value.trim()
-        };        
-        fetch('/api/user/login', {
+        }
+        fetch('/api/users/authentication', {
             headers: {
                 'Content-type': 'application/json'
             },
@@ -20,9 +20,8 @@ class Login extends Component {
         })
         .then(response => response.json())
         .then(response => {
-            localStorage.setItem('User', response.user.admin);
-            localStorage.setItem('UserImg', response.user.link);
-            console.log('User', response.user.admin);
+            localStorage.setItem('User', response.login);
+            console.log(response.login);
             this.props.history.push("/");
         })
     }
