@@ -62,7 +62,6 @@ class Messages extends Component {
             );
           })
         }
-
         </div>
       </div>
     );

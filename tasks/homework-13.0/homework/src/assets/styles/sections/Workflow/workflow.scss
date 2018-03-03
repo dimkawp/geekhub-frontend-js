@@ -1,0 +1,61 @@
+/* workflow */
+.home {
+    #mainContent {
+        .content {
+            .workFlowComponents {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .toDo, .InProgress, .Completed {
+                    .items {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 15px;
+                        .item {
+                            display: flex;
+                            flex-direction: row;
+                            margin: 10px 0;
+                            background-color: #FFFFFF;
+                            border: 1px solid #D4D8E3;
+                            .preview {
+                                margin: 25px;
+                                height: 45px;
+                                width: 45px;
+                                border-radius: 50%;
+                                background-color: #5383FF;
+                                text-align: center;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 24px;
+                                color: white;
+                            }
+                            .description {
+                                margin: 25px 0;
+                                width: 60%;
+                                font-size: 14px;
+                                p {
+                                    color: #0D1935;
+                                    font-size: 20px;
+                                }   
+                                .free {
+                                    color: #8391AF;
+                                }
+                                .delete {          
+                                    color: #F73B7B;
+                                }
+                            }
+                            .itemControl {
+                                margin: 25px;
+                                width: 10%;
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

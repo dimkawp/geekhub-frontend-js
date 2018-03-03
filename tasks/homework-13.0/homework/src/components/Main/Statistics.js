@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Preloader from './Preloader';
 import TopMenu from './Menu/TopMenu';
 import SideMenu from './Menu/SideMenu';
+import Active from './Statistics/Active';
+import TotalSales from './Statistics/TotalSales';
+
 
 class Statistics extends Component {
 
@@ -17,8 +20,9 @@ class Statistics extends Component {
           <div className="title">
             <h2>User Name</h2>
           </div>
-          <div className="workFlowComponents">
-            <p>StatisticsComponents</p>
+          <div className="statisticsComponents">
+            <Active />
+            <TotalSales />
           </div>        
         </div>
       </section>  
