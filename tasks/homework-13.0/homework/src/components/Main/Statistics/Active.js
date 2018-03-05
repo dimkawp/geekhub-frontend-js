@@ -13,14 +13,25 @@ class Active extends Component {
         <div className="active">
             <div className="header">
                 <h3>Lorem Ipsum Stats</h3>
-                <Select data={ReportSelect}/>
+                <div className="selectBlock">
+                    <Select data={ReportSelect}/>
+                    <Select data={ReportSelect}/>
+                </div>             
             </div>
-            <div className="result">
-                <div className="sales"></div>
-                <div className="views"></div>
-            </div>
-            <div className="activeChart">
-                <ReactHighcharts config = {ReportChart}></ReactHighcharts>
+            <div className="result col-sm-12 col-lg-12">
+                <div className="resultBlock col-sm-12 col-lg-5">
+                    <div className="sale">
+                        <div className="title">1,560</div>
+                        <p>Sales</p>
+                    </div>
+                    <div className="views">
+                        <div className="title">3,230</div>
+                        <p>Views</p>
+                    </div>
+                </div>
+                <div className="activeChart col-sm-12 col-lg-7">
+                    <ReactHighcharts config = {ReportChart}></ReactHighcharts>
+                </div>
             </div>
         </div>
     );

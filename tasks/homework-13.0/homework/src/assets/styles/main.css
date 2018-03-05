@@ -368,6 +368,57 @@ nav {
         margin: 25px;
         width: 10%; }
 
+/* statistics */
+.home #mainContent .content .statisticsComponents .active {
+  display: flex;
+  flex-direction: column;
+  margin: 50px; }
+  .home #mainContent .content .statisticsComponents .active .header {
+    display: flex;
+    justify-content: space-between; }
+    .home #mainContent .content .statisticsComponents .active .header .selectBlock {
+      display: flex; }
+  .home #mainContent .content .statisticsComponents .active .result {
+    display: flex;
+    flex-direction: row;
+    padding: 0; }
+    .home #mainContent .content .statisticsComponents .active .result .resultBlock {
+      background-color: white;
+      border: 1px solid #D4D8E3;
+      padding: 0;
+      margin-right: 40px; }
+      .home #mainContent .content .statisticsComponents .active .result .resultBlock .sale, .home #mainContent .content .statisticsComponents .active .result .resultBlock .views {
+        color: #8391AF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .home #mainContent .content .statisticsComponents .active .result .resultBlock .sale .title, .home #mainContent .content .statisticsComponents .active .result .resultBlock .views .title {
+          font-size: 36px;
+          font-weight: 600;
+          margin: 0;
+          padding-left: 20%; }
+        .home #mainContent .content .statisticsComponents .active .result .resultBlock .sale p, .home #mainContent .content .statisticsComponents .active .result .resultBlock .views p {
+          font-size: 20px;
+          font-weight: 400;
+          padding-left: 20%; }
+      .home #mainContent .content .statisticsComponents .active .result .resultBlock .sale {
+        height: 50%;
+        border-bottom: solid 1px #D4D8E3; }
+      .home #mainContent .content .statisticsComponents .active .result .resultBlock .views {
+        height: 50%; }
+    .home #mainContent .content .statisticsComponents .active .result .activeChart {
+      background-color: white;
+      border: 1px solid #D4D8E3;
+      padding: 0; }
+
+.home #mainContent .content .statisticsComponents .totalSales {
+  margin: 50px;
+  background-color: white;
+  border: 1px solid #D4D8E3; }
+  .home #mainContent .content .statisticsComponents .totalSales .items {
+    display: flex;
+    justify-content: space-between; }
+
 /* sales */
 .sales, .report {
   display: flex;
