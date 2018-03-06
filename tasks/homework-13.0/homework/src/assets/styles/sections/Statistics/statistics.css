@@ -4,10 +4,41 @@
   flex-direction: column;
   margin: 50px; }
   .home #mainContent .content .statisticsComponents .active .header {
+    height: 120px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
+    .home #mainContent .content .statisticsComponents .active .header h3 {
+      color: #0D1935;
+      font-size: 36px; }
     .home #mainContent .content .statisticsComponents .active .header .selectBlock {
       display: flex; }
+      .home #mainContent .content .statisticsComponents .active .header .selectBlock div {
+        margin-left: 10px; }
+        .home #mainContent .content .statisticsComponents .active .header .selectBlock div span {
+          color: #8391AF;
+          font-size: 14px;
+          font-weight: 600;
+          position: absolute;
+          margin: 15px;
+          padding-left: 15px; }
+      .home #mainContent .content .statisticsComponents .active .header .selectBlock select {
+        padding: 15px 35px 15px 75px;
+        border: 1px solid #8391AF;
+        outline: 0;
+        border-radius: 25px 25px 25px 25px;
+        color: #0D1935;
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .home #mainContent .content .statisticsComponents .active .header .selectBlock select:hover {
+        transition: 1s;
+        background-color: #FF3975; }
+      .home #mainContent .content .statisticsComponents .active .header .selectBlock select:focus > option:checked {
+        font-weight: 600;
+        background-color: #FF3975; }
   .home #mainContent .content .statisticsComponents .active .result {
     display: flex;
     flex-direction: row;
@@ -48,3 +79,5 @@
   .home #mainContent .content .statisticsComponents .totalSales .items {
     display: flex;
     justify-content: space-between; }
+    .home #mainContent .content .statisticsComponents .totalSales .items .item svg g .highcharts-pane-group {
+      fill: red; }

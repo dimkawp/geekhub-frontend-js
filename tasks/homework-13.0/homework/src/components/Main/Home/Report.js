@@ -9,7 +9,10 @@ class Report extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      ReportfieldVal: []
+      ReportfieldVal: 
+      [
+        ["Websites",222],["Logo", 2],["Social Media",222],["Adwords", 22], ["E-Commerce", 2222]
+      ]
     }
   }
   ReportgetData = (val) => {

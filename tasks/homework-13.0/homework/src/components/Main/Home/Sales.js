@@ -10,7 +10,10 @@ class Sales extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fieldVal: [],
+      fieldVal:                 
+      [
+        ["Websites",111],["Logo", 1],["Social Media",11],["Adwords", 11], ["E-Commerce", 1111]
+      ],
       SalesTitleText: '',
       SalesSubTitle: ''
     }
@@ -24,14 +27,8 @@ class Sales extends Component {
     const SalesSelect = ["Last Yeat","Last Month", "Last Week"];
     console.log("SalesComponents");
     console.log(this.state.fieldVal);
-    if (!this.state.fieldVal) {
-      SalesChart.series[0].data = 0;
-      SalesChart.title.text = '';
-      SalesChart.subtitle.text = '';
-    }
-    else {
-      SalesChart.series[0].data = this.state.fieldVal;
-    }
+    SalesChart.series[0].data = this.state.fieldVal;
+ 
     return (
         <div className="sales col-sm-12 col-md-12 col-lg-5">
           <div className="header">

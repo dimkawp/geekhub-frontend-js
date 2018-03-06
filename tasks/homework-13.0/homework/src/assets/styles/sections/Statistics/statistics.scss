@@ -8,10 +8,48 @@
                     flex-direction: column;
                     margin: 50px;
                     .header {
+                        height: 120px;
                         display: flex;
                         justify-content: space-between;
+                        align-items: center;
+                        h3 {
+                            color: #0D1935;
+                            font-size: 36px;
+
+                        }
                         .selectBlock {
                             display: flex;
+                            div {
+                                margin-left: 10px;
+                                span {
+                                    color: #8391AF;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    position: absolute;
+                                    margin: 15px;
+                                    padding-left: 15px;
+                                }
+                            }
+                            select {
+                                padding: 15px 35px 15px 75px;
+                                border: 1px solid #8391AF;
+                                outline: 0;
+                                border-radius: 25px 25px 25px 25px;
+                                color: #0D1935;
+                                font-size: 14px;
+                                font-weight: 600;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            select:hover {
+                                transition: 1s;
+                                background-color: #FF3975;
+                            }
+                            select:focus > option:checked { 
+                                font-weight: 600;
+                                background-color: #FF3975;  
+                            }
                         }
                     }
                     .result {
@@ -67,6 +105,19 @@
                     .items {
                         display: flex;
                         justify-content: space-between;
+                        .item {
+                            svg {
+                                g {
+                                    .highcharts-pane-group {
+                                        fill: red;
+                                    }
+
+                                }
+
+
+                            }
+
+                        }
                        
                         
                     }

@@ -1,21 +1,37 @@
 import React, { Component } from 'react';
 import ReactHighcharts from 'react-highcharts';
-import Select from '../Home/Select';
+import ActiveSelect from '../Statistics/ActiveSelect';
 //config
 import ReportChart from '../../../config/splineChart.config';
 
 class Active extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            ActivefieldVal: 
+            [
+                ["Websites",222],["Logo", 2],["Social Media",222],["Adwords", 22], ["E-Commerce", 2222]
+            ]
+        }
+        }
+        ActiveGetData = (val) => {
+        this.setState({
+            ActivefieldVal: val
+        })
+    };
 
   render() {
     console.log("ActiveComponents");
-    const ReportSelect = ["Last Yeat","Last Month", "Last Week"];
+    const ActiveSelectData = ["Last Yeat","Last Month", "Last Week"];
+    const ActiveSelectDataTo = ["Notifications","Modification"];
+    ReportChart.series[0].data = this.state.ActivefieldVal;
     return (
         <div className="active">
             <div className="header">
                 <h3>Lorem Ipsum Stats</h3>
                 <div className="selectBlock">
-                    <Select data={ReportSelect}/>
-                    <Select data={ReportSelect}/>
+                    <ActiveSelect data={ActiveSelectData} activeSendData={this.ActiveGetData}/>
+                    <ActiveSelect data={ActiveSelectDataTo} activeSendData={this.ActiveGetData}/>
                 </div>             
             </div>
             <div className="result col-sm-12 col-lg-12">

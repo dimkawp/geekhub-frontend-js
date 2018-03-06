@@ -1,13 +1,13 @@
 const ReactHighcharts = require("react-highcharts");
 require("highcharts/js/highcharts-more")(ReactHighcharts.Highcharts);
 require("highcharts/js/modules/solid-gauge.js")(ReactHighcharts.Highcharts);
-const SolidChart = {
+const SolidChart2 = {
     chart: {
         type: 'solidgauge',
         height: '300px',
     },
     title: {
-        text: 45 +'%',
+        text: 20 +'%',
         style: {
             fontSize: '44px',
             color: '#5484FF'
@@ -50,8 +50,8 @@ const SolidChart = {
             color: '#5484FF',
             radius: '112%',
             innerRadius: '88%',
-            y: 45
+            y: 20
         }]
     }]
 }
-export default SolidChart;
+export default SolidChart2;
