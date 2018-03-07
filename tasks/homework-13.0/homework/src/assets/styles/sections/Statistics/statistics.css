@@ -76,8 +76,48 @@
   margin: 50px;
   background-color: white;
   border: 1px solid #D4D8E3; }
+  .home #mainContent .content .statisticsComponents .totalSales .header {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .home #mainContent .content .statisticsComponents .totalSales .header h3 {
+      margin: 30px;
+      color: #8391AF;
+      font-size: 36px;
+      font-weight: 700; }
+    .home #mainContent .content .statisticsComponents .totalSales .header .buttonBlock {
+      margin: 30px; }
   .home #mainContent .content .statisticsComponents .totalSales .items {
     display: flex;
-    justify-content: space-between; }
-    .home #mainContent .content .statisticsComponents .totalSales .items .item svg g .highcharts-pane-group {
-      fill: red; }
+    justify-content: space-between;
+    padding-bottom: 60px; }
+    .home #mainContent .content .statisticsComponents .totalSales .items .item {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .home #mainContent .content .statisticsComponents .totalSales .items .item .demo-1 div {
+        color: #5484FF; }
+      .home #mainContent .content .statisticsComponents .totalSales .items .item .demo-2 div {
+        color: #AA5FB9; }
+      .home #mainContent .content .statisticsComponents .totalSales .items .item .demo-3 div {
+        color: #F83C7B; }
+      .home #mainContent .content .statisticsComponents .totalSales .items .item .demo-1, .home #mainContent .content .statisticsComponents .totalSales .items .item .demo-2, .home #mainContent .content .statisticsComponents .totalSales .items .item .demo-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .home #mainContent .content .statisticsComponents .totalSales .items .item .demo-1 div .ab .cir, .home #mainContent .content .statisticsComponents .totalSales .items .item .demo-2 div .ab .cir, .home #mainContent .content .statisticsComponents .totalSales .items .item .demo-3 div .ab .cir {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 0; }
+      .home #mainContent .content .statisticsComponents .totalSales .items .item .resultBlock {
+        margin-left: 40px;
+        color: #8391AF; }
+        .home #mainContent .content .statisticsComponents .totalSales .items .item .resultBlock p {
+          margin: 0;
+          font-size: 36px;
+          font-weight: 700; }
+        .home #mainContent .content .statisticsComponents .totalSales .items .item .resultBlock span {
+          font-size: 20px;
+          font-weight: 400; }

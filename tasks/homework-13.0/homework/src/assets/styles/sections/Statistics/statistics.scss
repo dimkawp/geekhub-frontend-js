@@ -102,28 +102,77 @@
                     margin: 50px;
                     background-color: white;
                     border: 1px solid #D4D8E3;
+                    .header {
+                        height: 120px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        h3 {
+                            margin: 30px;
+                            color: #8391AF;
+                            font-size: 36px;
+                            font-weight: 700;
+                        }
+                        .buttonBlock {
+                            margin: 30px;
+                        }
+                    }
                     .items {
                         display: flex;
                         justify-content: space-between;
+                        padding-bottom: 60px;
                         .item {
-                            svg {
-                                g {
-                                    .highcharts-pane-group {
-                                        fill: red;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .demo-1 {
+                                div {
+                                    color: #5484FF;
+                                }
+                            }
+                            .demo-2 {
+                                div {
+                                    color: #AA5FB9;
+                                }
+                            }
+                            .demo-3 {
+                                div {
+                                    color: #F83C7B;
+                                }
+                            }
+                            .demo-1,.demo-2,.demo-3 {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                div {                            
+                                    .ab {
+                                        .cir {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            margin-right: 0;
+                                        }
                                     }
+                                }                      
+                            }
+                            .resultBlock {
+                                margin-left: 40px;
+                                color: #8391AF;
+                                p {
+                                    margin: 0;
+                                    font-size: 36px;
+                                    font-weight: 700;
+                                }
+                                span {
+                                    font-size: 20px;
+                                    font-weight: 400;
 
                                 }
-
-
                             }
-
                         }
-                       
-                        
                     }
                 }
             }
-
         }
     }
 }
