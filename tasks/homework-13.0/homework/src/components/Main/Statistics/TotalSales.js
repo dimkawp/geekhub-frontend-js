@@ -46,21 +46,21 @@ class TotalSales extends Component {
             </div>
           </div>
           <div className="items">
-            <div className="item col-sm-12 col-lg-4">
+            <div className="item col-xs-12 col-sm-12 col-lg-4">
              <div className="demo-1" data-percent="45"></div>
              <div className="resultBlock">
               <p>2,300$</p>
               <span>Direct Sales</span>
              </div>
             </div>
-            <div className="item col-sm-12 col-lg-4">
+            <div className="item col-xs-12 col-sm-12 col-lg-4">
               <div className="demo-2" data-percent="20"></div>
               <div className="resultBlock">
               <p>2,300$</p>
               <span>Direct Sales</span>
              </div>
             </div>
-            <div className="item col-sm-12 col-lg-4">
+            <div className="item col-xs-12 col-sm-12 col-lg-4">
               <div className="demo-3" data-percent="25"></div>   
               <div className="resultBlock">
               <p>2,300$</p>

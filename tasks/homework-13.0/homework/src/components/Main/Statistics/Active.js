@@ -34,8 +34,8 @@ class Active extends Component {
                     <ActiveSelect data={ActiveSelectDataTo} activeSendData={this.ActiveGetData}/>
                 </div>             
             </div>
-            <div className="result col-sm-12 col-lg-12">
-                <div className="resultBlock col-sm-12 col-lg-5">
+            <div className="result col-xs-12 col-sm-12 col-lg-12">
+                <div className="resultBlock col-xs-12 col-sm-12 col-lg-5">
                     <div className="sale">
                         <div className="title">1,560</div>
                         <p>Sales</p>
@@ -45,7 +45,7 @@ class Active extends Component {
                         <p>Views</p>
                     </div>
                 </div>
-                <div className="activeChart col-sm-12 col-lg-7">
+                <div className="activeChart col-xs-12 col-sm-12 col-lg-7">
                     <ReactHighcharts config = {ReportChart}></ReactHighcharts>
                 </div>
             </div>

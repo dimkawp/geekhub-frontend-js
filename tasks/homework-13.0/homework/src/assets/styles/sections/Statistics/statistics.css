@@ -121,3 +121,40 @@
         .home #mainContent .content .statisticsComponents .totalSales .items .item .resultBlock span {
           font-size: 20px;
           font-weight: 400; }
+
+@media screen and (max-width: 1200px) {
+  .home #mainContent .content .statisticsComponents {
+    width: 100%; }
+    .home #mainContent .content .statisticsComponents .active .header {
+      height: 100%;
+      flex-wrap: wrap; }
+      .home #mainContent .content .statisticsComponents .active .header .selectBlock {
+        flex-wrap: wrap;
+        justify-content: center; }
+        .home #mainContent .content .statisticsComponents .active .header .selectBlock div {
+          margin: 20px 0; }
+    .home #mainContent .content .statisticsComponents .active .result {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0; }
+      .home #mainContent .content .statisticsComponents .active .result .resultBlock {
+        margin-right: 0;
+        margin-bottom: 40px; }
+    .home #mainContent .content .statisticsComponents .totalSales .items {
+      flex-wrap: wrap; }
+      .home #mainContent .content .statisticsComponents .totalSales .items .item {
+        flex-wrap: wrap;
+        margin: 20px 0; }
+        .home #mainContent .content .statisticsComponents .totalSales .items .item .resultBlock {
+          margin-left: 0; } }
+
+@media screen and (max-width: 870px) {
+  .home #mainContent .content .statisticsComponents .active .header {
+    justify-content: center;
+    align-items: center; }
+    .home #mainContent .content .statisticsComponents .active .header h3 {
+      text-align: center; }
+  .home #mainContent .content .statisticsComponents .totalSales .items {
+    flex-wrap: wrap; }
+    .home #mainContent .content .statisticsComponents .totalSales .items .item {
+      flex-direction: column; } }

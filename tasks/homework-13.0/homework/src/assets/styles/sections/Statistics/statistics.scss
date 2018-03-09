@@ -60,7 +60,7 @@
                             background-color: white;
                             border: 1px solid #D4D8E3;
                             padding: 0;
-                            margin-right: 40px;
+                            margin-right: 40px;        
                             .sale, .views {
                                 color: #8391AF;
                                 display: flex;
@@ -90,11 +90,9 @@
 
                         }
                         .activeChart {
-                            
                             background-color: white;
                             border: 1px solid #D4D8E3;
                             padding: 0;
-
                         }
                     }
                 }
@@ -175,4 +173,82 @@
             }
         }
     }
+}
+@media screen and (max-width:1200px) {
+    .home {
+        #mainContent {
+            .content {
+                .statisticsComponents {
+                    width: 100%;
+                    .active {
+                        .header {
+                            height: 100%;
+                            flex-wrap: wrap;
+                            
+                            
+                            .selectBlock {
+                                flex-wrap: wrap;
+                                justify-content: center;
+                                div {
+                                    margin: 20px 0;
+                                }
+                            }
+                        }
+                        .result {
+                            display: flex;
+                            flex-wrap: wrap;
+                            padding: 0;
+                            .resultBlock {
+                                margin-right: 0;
+                                margin-bottom: 40px;
+                            }
+                        }
+                    }
+                    .totalSales {
+                        .items {
+                            flex-wrap: wrap;
+                            .item {
+                                flex-wrap: wrap;
+                                margin: 20px 0;
+                                .resultBlock {
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:870px) {
+    .home {
+        #mainContent {
+            .content {
+                .statisticsComponents {
+                    .active {
+                        .header {     
+                            justify-content: center;
+                            align-items: center;
+                            h3 {
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .totalSales {
+                        .items {
+                            flex-wrap: wrap;
+                            .item {
+                                flex-direction: column;
+                                .resultBlock {
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
