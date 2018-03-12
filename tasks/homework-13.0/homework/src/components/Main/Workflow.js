@@ -17,7 +17,19 @@ class Workflow extends Component {
     //JQ
     componentDidMount() {
         const $ = window.$;
-    }
+        $(".dropdownWorkSet").hide();
+        function handler(event) {
+            var target = $(event.target);
+            if (target.is(".dropWorkBtn")) {
+              console.log(event);
+              target.children().toggle("fast");
+            }
+          }
+          $(".dropWorkBtn").click(handler).find(".dropdownWorkSet").hide("fast");
+          $(".allClose").click(function(){         
+            $(".dropdownWorkSet").hide("fast");
+        });
+        }
   constructor(props) {
     super(props);
     this.state = {
@@ -32,18 +44,7 @@ class Workflow extends Component {
   }
 
   dropWorkBtn = (e) => {
-    let val = e.target.value;
     console.log(e.target.value);
-    if (val === 'Text1') {
-        this.setState({
-            toggleDropWorkSet: !this.state.toggleDropWorkSet
-        })
-        console.log(this.state.toggleDropWorkSet);
-
-    }
-    else {
-        console.log(this.state.toggleDropWorkSet);
-    }
     
   }
 
@@ -56,7 +57,13 @@ render() {
           <span className={val}><i></i>data</span>
         </div>
         <div className="itemControl">   
-        <button className="dropWorkBtn" onClick={this.dropWorkBtn} value={val}></button>
+            <div className="dropWorkBtn">
+                <div className="dropdownWorkSet">
+                    <button>ADD</button>
+                    <button>DEL</button>
+                    <button className="allClose">CLOSE</button>
+                </div>
+            </div>
         </div>
       </div>
     ));
@@ -70,7 +77,13 @@ render() {
             <span className={val}><i></i>data</span>
             </div>
             <div className="itemControl">   
-            <button className="dropWorkBtn" onClick={this.dropWorkBtn} value={val}></button>
+                <div className="dropWorkBtn">
+                    <div className="dropdownWorkSet">
+                        <button>ADD</button>
+                        <button>DEL</button>
+                        <button className="allClose">CLOSE</button>
+                    </div>
+                </div>
             </div>
         </div>
     ));
@@ -84,7 +97,13 @@ render() {
                 <span className={val}><i></i>data</span>
             </div>
             <div className="itemControl">   
-            <button className="dropWorkBtn" onClick={this.dropWorkBtn} value={val}></button>
+                <div className="dropWorkBtn">
+                    <div className="dropdownWorkSet">
+                        <button>ADD</button>
+                        <button>DEL</button>
+                        <button className="allClose">CLOSE</button>
+                    </div>
+                </div>
             </div>
       </div>
     ));

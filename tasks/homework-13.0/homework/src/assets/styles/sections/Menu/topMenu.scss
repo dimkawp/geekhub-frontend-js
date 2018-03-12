@@ -59,6 +59,7 @@
                     background-color: transparent;
                 }
                 .dropdownContent {
+                    z-index: 99;
                     position: absolute;
                     display: flex;
                     align-items: center;
@@ -76,6 +77,10 @@
                         outline: none;
                         border: none;
                         background-color: transparent;
+                    }
+                    button:hover {
+                        transition: 1s;
+                        box-shadow: 1px 1px 30px 0px rgba(50, 50, 50, 0.75);
                     }
                 }
             }

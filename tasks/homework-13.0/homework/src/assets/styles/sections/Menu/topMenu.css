@@ -50,6 +50,7 @@
           border: none;
           background-color: transparent; }
         #topMenu .topMenuBlock .userProfile .dropdownMenu .dropdownContent {
+          z-index: 99;
           position: absolute;
           display: flex;
           align-items: center;
@@ -67,6 +68,9 @@
             outline: none;
             border: none;
             background-color: transparent; }
+          #topMenu .topMenuBlock .userProfile .dropdownMenu .dropdownContent button:hover {
+            transition: 1s;
+            box-shadow: 1px 1px 30px 0px rgba(50, 50, 50, 0.75); }
     #topMenu .topMenuBlock .userProfile > * {
       margin: 35px 25px; }
 
