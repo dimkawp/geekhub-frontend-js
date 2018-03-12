@@ -19,6 +19,7 @@ $main-bg: #F6F7FA;
 }
 .home {
     display: flex;
+    min-height: 100vh;
     .title {
         h2 {
             color: #0D1935;

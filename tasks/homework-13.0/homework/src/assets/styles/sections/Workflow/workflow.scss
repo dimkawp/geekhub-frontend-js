@@ -8,16 +8,45 @@
                 flex-wrap: wrap;
                 justify-content: space-between;
                 .toDo, .InProgress, .Completed {
+                    .header {
+                        margin: 15px;
+                        span {
+                            color: #8391AF;
+                        }
+                    }
+                    .addItem {
+                        z-index: 1;
+                        height: 110px;
+                        width: 110px;
+                        background: url(../img/workflow/add-icon.png);
+                        background-size: 100% 100%;
+                        position: absolute;
+                        left: 40%;
+                        border: 1px solid #D4D8E3;
+                        margin: 10px 0;
+                    }
+                    .addItem:hover {
+                        transition-duration: 1s;
+                        border: 1px solid #FFFFFF;
+                        cursor: pointer;
+
+                    }
                     .items {
+                        z-index: -1;
                         display: flex;
                         flex-direction: column;
                         margin: 15px;
+                        min-height: 100px;
+
+                       
                         .item {
+                            z-index: 2;
                             display: flex;
                             flex-direction: row;
                             margin: 10px 0;
                             background-color: #FFFFFF;
                             border: 1px solid #D4D8E3;
+                            cursor: pointer;
                             .preview {
                                 margin: 25px;
                                 height: 45px;
@@ -49,6 +78,33 @@
                             .itemControl {
                                 margin: 25px;
                                 width: 10%;
+                                .dropWorkBtn {
+                                    height: 100%;
+                                }
+                                .dropdownWorkSet {
+                                    
+                                    position: absolute;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    flex-direction: column;
+                                    right: 0;
+                                    margin: 25px;
+                                    margin-top: 75px;
+                                    width: 160px;
+                                    background-color: white;
+                                    outline: 1px solid #D4D8E3;
+                                    z-index: 999;
+                                    opacity: .99;
+                                    button {
+                                        width: 100px;
+                                        margin: 15px;
+                                        outline: none;
+                                        border: none;
+                                        background-color: transparent;
+                                    }
+                                }
+                                
                             }
 
                         }
@@ -58,4 +114,23 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 1200px) {
+    .home {
+        #mainContent {
+            .content {
+                .workFlowComponents {
+                    .toDo, .InProgress, .Completed {
+                        .addItem {
+                            left: 0;
+                            margin-left: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
 }

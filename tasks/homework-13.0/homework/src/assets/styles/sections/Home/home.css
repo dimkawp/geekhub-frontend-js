@@ -12,7 +12,8 @@
   justify-content: center; }
 
 .home {
-  display: flex; }
+  display: flex;
+  min-height: 100vh; }
   .home .title h2 {
     color: #0D1935;
     font-size: 48px; }
