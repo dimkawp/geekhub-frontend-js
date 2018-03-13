@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Preloader from './Preloader';
 import TopMenu from './Menu/TopMenu';
 import SideMenu from './Menu/SideMenu';
+import Table from './Users/Table';
 
 class Users extends Component {
 
@@ -18,7 +19,7 @@ class Users extends Component {
             <h2>User Name</h2>
           </div>
           <div className="workFlowComponents">
-            <p>UsersComponents</p>
+            <Table />
           </div>        
         </div>
       </section>  

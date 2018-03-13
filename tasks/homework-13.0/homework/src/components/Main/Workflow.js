@@ -18,18 +18,18 @@ class Workflow extends Component {
     componentDidMount() {
         const $ = window.$;
         $(".dropdownWorkSet").hide();
-        function handler(event) {
+        function toggleDropBox(event) {
             var target = $(event.target);
             if (target.is(".dropWorkBtn")) {
               console.log(event);
               target.children().toggle("fast");
             }
           }
-          $(".dropWorkBtn").click(handler).find(".dropdownWorkSet").hide("fast");
+          $(".dropWorkBtn").click(toggleDropBox).find(".dropdownWorkSet").hide("fast");
           $(".allClose").click(function(){         
             $(".dropdownWorkSet").hide("fast");
         });
-        }
+    }
   constructor(props) {
     super(props);
     this.state = {
@@ -39,16 +39,30 @@ class Workflow extends Component {
         completedArray: ['Text8', 'Text9', 'Text10', 'Text11'],
         test1: [{id: 1,title: 'title1',description: 'text1'},{id: 2,title: 'title2',description: 'text2'},{id: 3,title: 'title3',description: 'text3'}],
         test2: [{id: 1,title: 'title21',description: 'text21'},{id: 2,title: 'title22',description: 'text22'},{id: 3,title: 'title23',description: 'text23'}],
-        test3: [{id: 1,title: 'title321',description: 'text321'},{id: 2,title: 'title322',description: 'text322'},{id: 3,title: 'title323',description: 'text323'}]
+        test3: [{id: 1,title: 'title321',description: 'text321'},{id: 2,title: 'title322',description: 'text322'},{id: 3,title: 'title323',description: 'text323'}],
+        active: false
     };
   }
 
-  dropWorkBtn = (e) => {
-    console.log(e.target.value);
-    
-  }
+  dropWorkBtn = (event) => {
+      let thisObject = event.target;
+      this.setState({
+          active: !this.state.active
+      })
+    console.log(thisObject.children.find);  
+  };
 
 render() {
+    let DropBox;
+    if (this.state.active) {
+        DropBox = (
+        <div className="dropdownWorkSetTest">
+            <button>ADD</button>
+            <button>DEL</button>
+            <button className="allCloseTest">CLOSE</button>
+        </div>
+        )
+    }
     const toDoArray = this.state.toDoArray.map((val, key) => (
       <div className="item" key={uniqueId()} data-id={val}>
         <div className="preview">N</div>
@@ -57,12 +71,8 @@ render() {
           <span className={val}><i></i>data</span>
         </div>
         <div className="itemControl">   
-            <div className="dropWorkBtn">
-                <div className="dropdownWorkSet">
-                    <button>ADD</button>
-                    <button>DEL</button>
-                    <button className="allClose">CLOSE</button>
-                </div>
+            <div className="dropWorkBtnTest" onClick={this.dropWorkBtn}>
+                {DropBox}
             </div>
         </div>
       </div>
@@ -133,7 +143,7 @@ render() {
                               }
                           }}
                           className="items"
-                          ref="group-left"
+                          ref="toDo"
                           onChange={(items) => {
                               this.setState({ toDoArray: items });
                           }}

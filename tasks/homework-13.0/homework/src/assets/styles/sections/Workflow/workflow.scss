@@ -80,13 +80,13 @@
                                 height: 33px;
                                 width: 7px;
  
-                                .dropWorkBtn {
+                                .dropWorkBtn, .dropWorkBtnTest {
                                     height: 100%;
                                     width: 100%;
                                     background: url(../img/workflow/item-icon.fw.png) no-repeat center;
                                     background-size: 100% 100%;
                                 }
-                                .dropdownWorkSet {
+                                .dropdownWorkSet, .dropdownWorkSetTest {
                                     position: absolute;
                                     display: flex;
                                     flex-direction: column;
