@@ -3,6 +3,7 @@ import Preloader from './Preloader';
 import TopMenu from './Menu/TopMenu';
 import SideMenu from './Menu/SideMenu';
 
+
 class Calendar extends Component {
 
   render() {
@@ -18,7 +19,7 @@ class Calendar extends Component {
             <h2>User Name</h2>
           </div>
           <div className="workFlowComponents">
-            <p>CalendarComponents</p>
+            
           </div>        
         </div>
       </section>  

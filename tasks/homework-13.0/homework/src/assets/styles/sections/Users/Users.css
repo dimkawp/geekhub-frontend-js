@@ -1,0 +1,99 @@
+/* Users */
+.home #mainContent .content .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .home #mainContent .content .title .count {
+    color: #8391AF; }
+  .home #mainContent .content .title div span {
+    color: #8391AF;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    margin: 15px;
+    padding-left: 15px; }
+  .home #mainContent .content .title select {
+    padding: 15px 35px 15px 75px;
+    border: 1px solid #8391AF;
+    outline: 0;
+    border-radius: 25px 25px 25px 25px;
+    color: #0D1935;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .home #mainContent .content .title select:hover {
+    transition: 1s;
+    background-color: #FF3975; }
+  .home #mainContent .content .title select:focus > option:checked {
+    font-weight: 600;
+    background-color: #FF3975; }
+
+.home #mainContent .content .usersComponents {
+  margin: 0 40px; }
+  .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table {
+    border: none;
+    outline: none; }
+    .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-header table {
+      background-color: #F6F7FA; }
+      .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-header table thead tr th {
+        border: none;
+        outline: none;
+        color: #8391AF;
+        font-size: 20px;
+        font-weight: 400; }
+    .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body {
+      font-size: 20px;
+      font-weight: 600; }
+      .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr {
+        background-color: white; }
+        .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .userBlock {
+          display: flex;
+          margin: 25px; }
+          .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .userBlock .avatar {
+            height: 70px;
+            width: 70px;
+            background-color: rebeccapurple;
+            border-radius: 50%; }
+            .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .userBlock .avatar .online {
+              position: absolute;
+              margin-left: 55px;
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              background-color: #00BF1B;
+              border: 3px solid white; }
+          .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .userBlock .userBlockInfo {
+            display: flex;
+            flex-direction: column;
+            margin: 0 25px; }
+            .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .userBlock .userBlockInfo .name {
+              color: #0D1935; }
+            .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .userBlock .userBlockInfo .position {
+              color: #8391AF;
+              font-weight: 400; }
+        .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .activityBlock {
+          display: flex;
+          margin: 45px 25px;
+          align-items: center;
+          color: #8391AF;
+          font-weight: 500; }
+          .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .activityBlock span {
+            margin: 0 10px; }
+        .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .online {
+          color: #00BF1B; }
+        .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .phoneBlock, .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .mailBlock {
+          display: flex;
+          align-items: center;
+          margin: 45px 25px; }
+        .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .dropDown {
+          height: 33px;
+          width: 7px;
+          margin: 45px 25px; }
+          .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .dropDown .dropWorkBtn {
+            height: 100%;
+            width: 100%;
+            background: url(../img/workflow/item-icon.fw.png) no-repeat center;
+            background-size: 100% 100%;
+            cursor: pointer; }

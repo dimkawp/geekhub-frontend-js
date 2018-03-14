@@ -45,11 +45,12 @@ class Workflow extends Component {
   }
 
   dropWorkBtn = (event) => {
+      let activeD = this.state.active;
       let thisObject = event.target;
       this.setState({
-          active: !this.state.active
+        activeD
       })
-    console.log(thisObject.children.find);  
+    console.log(thisObject);  
   };
 
 render() {

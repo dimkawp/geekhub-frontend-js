@@ -1,0 +1,156 @@
+/* Users */
+.home {
+    #mainContent {
+        .content {
+            .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .count {
+                    color: #8391AF;
+                }
+                div {
+                    span {
+                        color: #8391AF;
+                        font-size: 14px;
+                        font-weight: 600;
+                        position: absolute;
+                        margin: 15px;
+                        padding-left: 15px;
+                    }
+                }
+                select {
+                    padding: 15px 35px 15px 75px;
+                    border: 1px solid #8391AF;
+                    outline: 0;
+                    border-radius: 25px 25px 25px 25px;
+                    color: #0D1935;
+                    font-size: 14px;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                select:hover {
+                    transition: 1s;
+                    background-color: #FF3975;
+                }
+                select:focus > option:checked { 
+                    font-weight: 600;
+                    background-color: #FF3975;  
+                }
+            }
+            .usersComponents {
+                margin: 0 40px;
+                .table {
+
+                    .react-bs-table-container {
+                        .react-bs-table {
+                            border: none;
+                            outline: none;
+                            
+                            .react-bs-container-header {
+                                table {
+                                    background-color: #F6F7FA;        
+                                    thead {
+                                        tr {                                           
+                                            th {
+                                                border: none;
+                                                outline: none;
+                                                color: #8391AF;
+                                                font-size: 20px;
+                                                font-weight: 400;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .react-bs-container-body {
+                                
+                                font-size: 20px;
+                                font-weight: 600;
+                                table {
+                                    tbody {
+                                        tr {
+                                            background-color: white;  
+                                            td {
+                                                .userBlock {
+                                                    display: flex;
+                                                    margin: 25px;
+                                                     
+                                                    .avatar {
+                                                        height: 70px;
+                                                        width: 70px;
+                                                        background-color: rebeccapurple;
+                                                        border-radius: 50%;
+                                                        .online {
+                                                            position: absolute;
+                                                            margin-left: 55px;
+                                                            width: 15px;
+                                                            height: 15px;
+                                                            border-radius: 50%;
+                                                            background-color: #00BF1B;
+                                                            border: 3px solid white;
+                                                        }
+                                                    }
+                                                    .userBlockInfo {
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        margin: 0 25px;
+                                                        .name {
+                                                            color: #0D1935;
+
+                                                        }
+                                                        .position {
+                                                            color: #8391AF;
+                                                            font-weight: 400;
+
+                                                        }
+                                                    }
+                                                }
+                                                .activityBlock {
+                                                    display: flex;
+                                                    margin: 45px 25px;
+                                                    align-items: center;
+                                                    color: #8391AF;
+                                                    font-weight: 500;
+                                                    span {
+                                                        margin: 0 10px;
+                                                    }
+                                                }
+                                                .online {
+                                                    color: #00BF1B;
+                                                }
+                                                .phoneBlock, .mailBlock {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    margin: 45px 25px;
+                                                }
+                                                .dropDown {
+                                                    height: 33px;
+                                                    width: 7px;
+                                                    margin: 45px 25px;
+                                                    .dropWorkBtn {
+                                                        height: 100%;
+                                                        width: 100%;
+                                                        background: url(../img/workflow/item-icon.fw.png) no-repeat center;
+                                                        background-size: 100% 100%;
+                                                        cursor: pointer;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .react-bs-table-pagination {
+                    
+                }
+
+            }
+        }
+    }
+}
