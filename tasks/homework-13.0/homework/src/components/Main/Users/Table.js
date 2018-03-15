@@ -123,15 +123,14 @@ class Table extends Component {
         }
         return UserBlock
       }
-
-
+      
   render() {
     console.log("TableComponents");
     return (
       <div className="table">
       <BootstrapTable data={this.state.products} striped hover pagination={true}>
-        <TableHeaderColumn isKey dataField='name' dataFormat={this.UserBlock} width='25%'>Name</TableHeaderColumn>
-        <TableHeaderColumn dataField='status' dataFormat={this.Activity}>Last activity</TableHeaderColumn>
+        <TableHeaderColumn isKey dataField='name' dataFormat={this.UserBlock} width='25%' dataSort={true}>Name</TableHeaderColumn>
+        <TableHeaderColumn dataField='status' dataFormat={this.Activity} dataSort={true}>Last activity</TableHeaderColumn>
         <TableHeaderColumn dataField='mail' dataFormat={this.MailBlock}>Mail</TableHeaderColumn>
         <TableHeaderColumn dataField='phone' dataFormat={this.PhoneBlock}>Phone</TableHeaderColumn>
         <TableHeaderColumn width='10%' dataFormat={this.DropButton} dataAlign="center"></TableHeaderColumn>

@@ -27,7 +27,6 @@ class Users extends Component {
       <Preloader />
       <SideMenu />
       <section id="mainContent">
-      <button onClick={this.getData}>TEST</button>
         <TopMenu />
         <div className="content">
           <div className="title">
