@@ -588,7 +588,8 @@ nav {
 .home #mainContent .content .title {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin: 45px 0; }
   .home #mainContent .content .title .count {
     color: #8391AF; }
   .home #mainContent .content .title div span {
@@ -683,6 +684,35 @@ nav {
             background: url(../img/workflow/item-icon.fw.png) no-repeat center;
             background-size: 100% 100%;
             cursor: pointer; }
+            .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .dropDown .dropWorkBtn .dropDownTableContent {
+              position: absolute;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              margin-top: -30px;
+              margin-left: 5px; }
+            .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .dropDown .dropWorkBtn button {
+              margin: 5px;
+              font-size: 12px;
+              font-weight: 400;
+              text-transform: uppercase;
+              height: 20px;
+              width: 50px;
+              outline: none;
+              border: none;
+              background-color: transparent;
+              outline: 1px solid #D4D8E3; }
+            .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .dropDown .dropWorkBtn button:hover {
+              transition: 1s;
+              box-shadow: 1px 1px 30px 0px rgba(50, 50, 50, 0.75); }
+
+@media screen and (max-width: 1200px) {
+  .home #mainContent .content .title {
+    flex-direction: column; }
+  .home #mainContent .content .usersComponents .table {
+    width: 1200px;
+    overflow: scroll; } }
 
 /* sales */
 .sales, .report {

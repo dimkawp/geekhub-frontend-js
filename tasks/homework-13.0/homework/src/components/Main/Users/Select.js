@@ -3,32 +3,27 @@ import React, { Component } from 'react';
 
 
 class Select extends Component {
+    TestOnClick = () => {
+        console.log('click selected');
+    }
     onChange = (e) => {
         console.log(e.target.value);
-        if (e.target.value === "Last Yeat") {
+        if (e.target.value === "Sort Name") {
+            this.TestOnClick;
             this.props.UserTableSendData(
-                [
-                    
-                ]
+                {sort: 'name'}        
             );
         }
-        if (e.target.value === "Last Month") {
+        if (e.target.value === "Sort Status") {
             this.props.UserTableSendData(
-                [
-                    
-                ]
+                {sort: 'status'}     
             );
         }
-        if (e.target.value === "Last Week") {
-            this.props.UserTableSendData(
-                [
-                    
-                ]
-            );
-        } 
     }
+
   render() {
     console.log("SelectComponents");
+
     return (
         <div>
         <span>Sort: </span>

@@ -1,8 +1,24 @@
 import React, { Component } from 'react';
 import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
 import '../../../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
-
+let order = 'desc';
 class Table extends Component {
+      //JQ
+      componentDidMount() {
+        const $ = window.$;
+        $(".dropDownTableContent").hide();
+        function toggleDropBox(event) {
+            var target = $(event.target);
+            if (target.is(".dropWorkBtn")) {
+              console.log(event);
+              target.children().toggle("fast");
+            }
+          }
+          $(".dropWorkBtn").click(toggleDropBox).find(".dropDownTableContent").hide("fast");
+          $(".allCloseTable").click(function(){         
+            $(".dropDownTableContent").hide("fast");
+        });
+    }
     constructor(props) {
         super(props);
         this.DropButton;
@@ -36,7 +52,8 @@ class Table extends Component {
             {id: 62, name: 'User2',position: 'WEB',status: 'online',mail: 'johndoe2@design.com', phone: '(000) 311 222 333'},
             {id: 63, name: 'User3',position: 'DEVELOPER',status: 'offline',mail: 'johndoe3@design.com', phone: '(000) 111 777 333'},
             {id: 64, name: 'User3',position: 'DEVELOPER',status: 'offline',mail: 'johndoe3@design.com', phone: '(000) 111 777 333'},
-          ]
+          ],
+          sortName: 'status'
         }
         this.props.productsDataLength(this.state.products.length);        
       }
@@ -80,12 +97,19 @@ class Table extends Component {
         )
         return PhoneBlock
       }
+      DropDownMenu = () => {
+        console.log('dropdown meny');
+      }
       DropButton(cell, row, enumObject, rowIndex) {
         let DropButton
         DropButton = (
           <div className="dropDown">
             <div className="dropWorkBtn">
-              
+              <div className="dropDownTableContent">
+                <button>add</button>
+                <button>delete</button>      
+                <button className="allCloseTable">close</button>      
+              </div>
             </div>
           </div>
         )
@@ -123,12 +147,57 @@ class Table extends Component {
         }
         return UserBlock
       }
+
+      onChangeSelect = (e) => {
+        if (e.target.value === "Sort Name") {
+          console.log(e.target.value);
+          if (order === 'desc') {
+            this.refs.table.handleSort('asc', 'name');
+            order = 'asc';
+          } else {
+            this.refs.table.handleSort('desc', 'name');
+            order = 'desc';
+          }
+        }
+        if (e.target.value === "Sort Status") {
+          console.log(e.target.value);
+          if (order === 'desc') {
+            this.refs.table.handleSort('desc', 'status');
+            order = 'desc';
+          } else {
+            this.refs.table.handleSort('asc', 'status');
+            order = 'asc';
+          }
+        }
+    }
+    
       
   render() {
+
     console.log("TableComponents");
+    const UsersSelect = ["Sort Name","Sort Status"];
     return (
       <div className="table">
-      <BootstrapTable data={this.state.products} striped hover pagination={true}>
+      <div className="headerTable">
+      <div className="title">
+        <h2>Users <span className="count">{"("+this.state.products.length+")"}</span></h2>
+        <div>
+          <span>Sort: </span>
+          <select onChange={this.onChangeSelect}>  
+          {
+              UsersSelect.map((item, index) => {
+                  return (
+                  <option key={index} value={item}>
+                      {item} 
+                  </option>
+                  ); 
+              })
+          }
+          </select>
+        </div>       
+      </div>
+      </div>
+      <BootstrapTable ref='table' data={this.state.products} striped hover pagination={true}>
         <TableHeaderColumn isKey dataField='name' dataFormat={this.UserBlock} width='25%' dataSort={true}>Name</TableHeaderColumn>
         <TableHeaderColumn dataField='status' dataFormat={this.Activity} dataSort={true}>Last activity</TableHeaderColumn>
         <TableHeaderColumn dataField='mail' dataFormat={this.MailBlock}>Mail</TableHeaderColumn>

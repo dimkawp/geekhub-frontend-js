@@ -6,6 +6,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                margin: 45px 0;
                 .count {
                     color: #8391AF;
                 }
@@ -136,6 +137,32 @@
                                                         background: url(../img/workflow/item-icon.fw.png) no-repeat center;
                                                         background-size: 100% 100%;
                                                         cursor: pointer;
+                                                        .dropDownTableContent {
+                                                            position: absolute;
+                                                            display: flex;
+                                                            align-items: center;
+                                                            justify-content: center;
+                                                            flex-direction: column;
+                                                            margin-top: -30px;
+                                                            margin-left: 5px;
+                                                            
+                                                        }
+                                                        button {
+                                                            margin: 5px;
+                                                            font-size: 12px;
+                                                            font-weight: 400;
+                                                            text-transform: uppercase;
+                                                            height: 20px;
+                                                            width: 50px;
+                                                            outline: none;
+                                                            border: none;
+                                                            background-color: transparent;
+                                                            outline: 1px solid #D4D8E3;
+                                                        }
+                                                        button:hover {
+                                                            transition: 1s;
+                                                            box-shadow: 1px 1px 30px 0px rgba(50, 50, 50, 0.75);
+                                                        }
                                                     }
                                                 }
                                             }
@@ -153,4 +180,22 @@
             }
         }
     }
+}
+@media screen and (max-width: 1200px) {
+    .home {
+        #mainContent {
+            .content {
+                .title {
+                    flex-direction: column;
+                }
+                .usersComponents {
+                    
+                    .table {
+                        width: 1200px;
+                        overflow: scroll;
+                    }
+                }
+            }
+        }
+    }   
 }

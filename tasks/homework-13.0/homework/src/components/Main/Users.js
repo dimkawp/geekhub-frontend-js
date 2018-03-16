@@ -9,7 +9,8 @@ class Users extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      productsDataLength: []
+      productsDataLength: [],
+      UserTableSendData: []
     }
   }
   productsDataLength = (val) => {
@@ -17,10 +18,16 @@ class Users extends Component {
       productsDataLength: val
     })
   };
+  UserTableSendData = (val) => {
+    this.setState({
+      UserTableSendData: val
+    })
+  };
 
   render() {
     console.log("UsersComponents");
-    const UsersSelect = ["Last Yeat","Last Month", "Last Week"];
+    console.log(this.state.UserTableSendData.sort);
+    const UsersSelect = ["Sort Name","Sort Status"];
     
     return (
       <div className="wrapper home">
@@ -29,12 +36,8 @@ class Users extends Component {
       <section id="mainContent">
         <TopMenu />
         <div className="content">
-          <div className="title">
-            <h2>Users <span className="count">{"("+this.state.productsDataLength+")"}</span></h2>
-            <Select data={UsersSelect}/>       
-          </div>
           <div className="usersComponents">
-            <Table productsDataLength={this.productsDataLength}/>
+            <Table data={this.state.UserTableSendData.sort} productsDataLength={this.productsDataLength}/>
           </div>        
         </div>
       </section>  
