@@ -9,7 +9,9 @@ class Login extends Component {
         super(props);
         this.state = {
             addClass: false,
-            errorClass: false
+            errorClass: false,
+            disabled: false,
+            preloader: false
         }
     }
     toggle() {
@@ -17,6 +19,8 @@ class Login extends Component {
     }
 
     handleLogin = () => {
+        this.setState({disabled: !this.state.disabled});
+        this.setState({preloader: !this.state.preloader});
         const data = {
             name: this.login.value.trim(),
             password: this.password.value.trim()
@@ -38,8 +42,9 @@ class Login extends Component {
             else {
                 console.log(response.login);
                 this.setState({errorClass: true});
+                this.setState({disabled: !this.state.disabled});
+                this.setState({preloader: !this.state.preloader});
             }
-
         })
     }
     handleRegistration = () => {
@@ -99,7 +104,7 @@ class Login extends Component {
                                     <i className="material-icons">https</i>
                                     <input className="col-lg-12" type="password" placeholder="password" ref={el => this.password = el}/>
                                     </div>                            
-                                    <button onClick={this.handleLogin} className="btnLogin">Enter<i className="material-icons">keyboard_arrow_right</i></button>
+                                    <button disabled={this.state.disabled} onClick={this.handleLogin} className={this.state.preloader ? 'btnLogin preloader' : 'btnLogin'}>Enter<i className="material-icons">keyboard_arrow_right</i></button>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +128,7 @@ class Login extends Component {
                                     <i className="material-icons">markunread_mailbox</i>
                                     <input className="col-lg-12" type="password" placeholder="password" ref={el => this.regPassword = el}/>
                                     </div>
-                                    <button disabled onClick={this.handleRegistration} className="btnLogin" type="submit">Enter<i className="material-icons">keyboard_arrow_right</i></button>
+                                    <button disabled={this.state.disabled} onClick={this.handleRegistration} className={this.state.preloader ? 'btnLogin preloader' : 'btnLogin'} type="submit">Enter<i className="material-icons">keyboard_arrow_right</i></button>
                                 </div>
                             </div>
                         </div>

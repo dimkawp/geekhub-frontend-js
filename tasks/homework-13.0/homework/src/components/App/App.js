@@ -14,6 +14,12 @@ import { BrowserRouter as Router, Route, Switch, Redirect, withRouter } from 're
 import PrivateLayout from './PrivateLayout';
 import UserLayout from './UserLayout';
 
+//import ReactGlobalize from 'react-globalize'
+//import localizer from 'react-big-calendar/lib/localizers/globalize'
+//import globalize from 'globalize'
+
+//localizer(globalize)
+
 class App extends Component {
   render() {
     return (

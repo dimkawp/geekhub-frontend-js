@@ -3,6 +3,7 @@ import Preloader from './Preloader';
 import TopMenu from './Menu/TopMenu';
 import SideMenu from './Menu/SideMenu';
 import Test from './Calendar/Test';
+import Basic from './Calendar/Basic';
 
 
 class Calendar extends Component {
@@ -20,7 +21,6 @@ class Calendar extends Component {
             <h2>User Name</h2>
           </div>
           <div className="workFlowComponents">
-          <Test />
             
           </div>        
         </div>

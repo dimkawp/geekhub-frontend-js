@@ -90,8 +90,14 @@
                         position: absolute;
                         margin-top: 6px;
                         right: 20px;
-                    }
+                    }        
                 }
+                .preloader {
+                    background: url(../img/login/loader.gif) no-repeat, #5583FF;
+                    color: #5583FF;
+                    background-size: 70px 70px;
+                    background-position: center;
+                  }              
             }
         }
     }
