@@ -1,0 +1,8 @@
+/* calendar */
+.home #mainContent .content .calendarComponents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .home #mainContent .content .calendarComponents .bigCalendar {
+    margin: 15px; }

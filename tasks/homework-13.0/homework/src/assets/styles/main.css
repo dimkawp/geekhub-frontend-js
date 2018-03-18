@@ -428,6 +428,15 @@ nav {
     left: 0;
     margin-left: 30px; } }
 
+/* calendar */
+.home #mainContent .content .calendarComponents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .home #mainContent .content .calendarComponents .bigCalendar {
+    margin: 15px; }
+
 /* statistics */
 .home #mainContent .content .statisticsComponents .active {
   display: flex;

@@ -20,8 +20,8 @@ class Calendar extends Component {
           <div className="title">
             <h2>User Name</h2>
           </div>
-          <div className="workFlowComponents">
-            
+          <div className="calendarComponents">
+          <Test /> 
           </div>        
         </div>
       </section>  
