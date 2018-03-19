@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import BigCalendar from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import moment from 'moment';
-//material-ui
+//semantic-ui
+import { Dropdown, Modal, Button } from 'semantic-ui-react'
 
 BigCalendar.momentLocalizer(moment); 
 const events = [
@@ -57,8 +58,8 @@ const events = [
   {
     id: 7,
     title: 'Lunch',
-    start: new Date(2018, 3, 18, 12, 0, 0, 0),
-    end: new Date(2018, 3, 18, 13, 0, 0, 0),
+    start: new Date(2018, 4, 18, 12, 0, 0, 0),
+    end: new Date(2018, 4, 18, 13, 0, 0, 0),
     desc: 'Power lunch',
   },
   {
@@ -70,8 +71,8 @@ const events = [
   {
     id: 9,
     title: 'Happy Hour',
-    start: new Date(2018, 3, 18, 17, 0, 0, 0),
-    end: new Date(2018, 3, 18, 17, 30, 0, 0),
+    start: new Date(2018, 2, 18, 17, 0, 0, 0),
+    end: new Date(2018, 2, 18, 17, 30, 0, 0),
     desc: 'Most important meal of the day',
   },
   {
@@ -102,22 +103,32 @@ const events = [
 let allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k])
 
 class Test extends Component {
-  
+  handleSelectEvent(event,target) {
+    let obj = target.currentTarget;
+    console.log(target.currentTarget.children);
+    return (
+      <div id="testModal">{event.title}</div>
+    );
+
+  }
+  calendarDropdown = (
+  <div></div>
+  );
 
     render() {
         return (
           <div className="bigCalendar col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div>
 
+
             </div>
             <BigCalendar
               selectable
               events={events}
-              defaultView="week"
-              
+              defaultView="month"    
               scrollToTime={new Date(1970, 1, 1, 6)}
-              defaultDate={new Date(2018, 3, 18)}
-              onSelectEvent={event => alert(event.title)}
+              defaultDate={new Date(2018, 3, 19)}
+              onSelectEvent={this.handleSelectEvent}
               onSelectSlot={slotInfo =>
                 alert(
                   `selected slot: \n\nstart ${slotInfo.start.toLocaleString()} ` +

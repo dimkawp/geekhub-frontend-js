@@ -421,6 +421,63 @@ nav {
   justify-content: space-between; }
   .home #mainContent .content .calendarComponents .bigCalendar {
     margin: 15px; }
+    .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar {
+      background-color: #FFFFFF; }
+      .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-toolbar {
+        background-color: #F5F7F9;
+        margin: 0; }
+      .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-row .rbc-row-bg .rbc-off-range-bg {
+        background-color: #FFFFFF; }
+      .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-row .rbc-row-content .rbc-row .rbc-row-segment .rbc-event {
+        background-color: #5583FF;
+        border-radius: none;
+        padding: 0; }
+        .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-row .rbc-row-content .rbc-row .rbc-row-segment .rbc-event .rbc-event-content {
+          font-family: 'Roboto', sans-serif;
+          display: flex;
+          align-items: center;
+          text-align: left;
+          margin-left: 5px;
+          height: 45px;
+          background-color: #F5F7F9;
+          font-size: 14px;
+          color: #0D1935; }
+      .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-row .rbc-row-content .rbc-row .rbc-date-cell {
+        text-align: left;
+        margin-top: 25px; }
+        .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-row .rbc-row-content .rbc-row .rbc-date-cell a {
+          font-family: 'Roboto', sans-serif;
+          margin-left: 25px;
+          text-transform: uppercase;
+          font-size: 20px;
+          font-weight: 400;
+          color: #8391AF; }
+      .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-header {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        color: #0D1935;
+        font-size: 20px;
+        font-weight: 400; }
+        .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-header a, .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-header span {
+          text-transform: uppercase;
+          margin-left: 25px; }
+      .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-view .rbc-month-row {
+        display: flex;
+        display: flex;
+        position: relative;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex: 150px;
+        flex: 150px;
+        overflow: hidden;
+        height: 100%; }
+
+#testModal {
+  z-index: 9999;
+  position: absolute;
+  background-color: red; }
 
 /* statistics */
 .home #mainContent .content .statisticsComponents .active {
