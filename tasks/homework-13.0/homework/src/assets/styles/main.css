@@ -397,31 +397,16 @@ nav {
           color: #8391AF; }
         .home #mainContent .content .workFlowComponents .toDo .items .item .description .delete, .home #mainContent .content .workFlowComponents .InProgress .items .item .description .delete, .home #mainContent .content .workFlowComponents .Completed .items .item .description .delete {
           color: #F73B7B; }
-      .home #mainContent .content .workFlowComponents .toDo .items .item .itemControl, .home #mainContent .content .workFlowComponents .InProgress .items .item .itemControl, .home #mainContent .content .workFlowComponents .Completed .items .item .itemControl {
+      .home #mainContent .content .workFlowComponents .toDo .items .item .testDropDown, .home #mainContent .content .workFlowComponents .InProgress .items .item .testDropDown, .home #mainContent .content .workFlowComponents .Completed .items .item .testDropDown {
         height: 33px;
-        width: 7px; }
-        .home #mainContent .content .workFlowComponents .toDo .items .item .itemControl .dropWorkBtn, .home #mainContent .content .workFlowComponents .toDo .items .item .itemControl .dropWorkBtnTest, .home #mainContent .content .workFlowComponents .InProgress .items .item .itemControl .dropWorkBtn, .home #mainContent .content .workFlowComponents .InProgress .items .item .itemControl .dropWorkBtnTest, .home #mainContent .content .workFlowComponents .Completed .items .item .itemControl .dropWorkBtn, .home #mainContent .content .workFlowComponents .Completed .items .item .itemControl .dropWorkBtnTest {
-          height: 100%;
-          width: 100%;
-          background: url(../img/workflow/item-icon.fw.png) no-repeat center;
-          background-size: 100% 100%; }
-        .home #mainContent .content .workFlowComponents .toDo .items .item .itemControl .dropdownWorkSet, .home #mainContent .content .workFlowComponents .toDo .items .item .itemControl .dropdownWorkSetTest, .home #mainContent .content .workFlowComponents .InProgress .items .item .itemControl .dropdownWorkSet, .home #mainContent .content .workFlowComponents .InProgress .items .item .itemControl .dropdownWorkSetTest, .home #mainContent .content .workFlowComponents .Completed .items .item .itemControl .dropdownWorkSet, .home #mainContent .content .workFlowComponents .Completed .items .item .itemControl .dropdownWorkSetTest {
-          position: absolute;
+        width: 7px;
+        background: url(../img/workflow/item-icon.fw.png) no-repeat center;
+        background-size: cover; }
+        .home #mainContent .content .workFlowComponents .toDo .items .item .testDropDown i, .home #mainContent .content .workFlowComponents .toDo .items .item .testDropDown .text, .home #mainContent .content .workFlowComponents .InProgress .items .item .testDropDown i, .home #mainContent .content .workFlowComponents .InProgress .items .item .testDropDown .text, .home #mainContent .content .workFlowComponents .Completed .items .item .testDropDown i, .home #mainContent .content .workFlowComponents .Completed .items .item .testDropDown .text {
+          display: none; }
+        .home #mainContent .content .workFlowComponents .toDo .items .item .testDropDown .menu .item .text, .home #mainContent .content .workFlowComponents .InProgress .items .item .testDropDown .menu .item .text, .home #mainContent .content .workFlowComponents .Completed .items .item .testDropDown .menu .item .text {
           display: flex;
-          flex-direction: column;
-          margin: -30px 10px;
-          right: 25px;
-          z-index: 99;
-          background-color: white;
-          outline: 1px solid #D4D8E3; }
-          .home #mainContent .content .workFlowComponents .toDo .items .item .itemControl .dropdownWorkSet button, .home #mainContent .content .workFlowComponents .toDo .items .item .itemControl .dropdownWorkSetTest button, .home #mainContent .content .workFlowComponents .InProgress .items .item .itemControl .dropdownWorkSet button, .home #mainContent .content .workFlowComponents .InProgress .items .item .itemControl .dropdownWorkSetTest button, .home #mainContent .content .workFlowComponents .Completed .items .item .itemControl .dropdownWorkSet button, .home #mainContent .content .workFlowComponents .Completed .items .item .itemControl .dropdownWorkSetTest button {
-            margin: 5px;
-            outline: none;
-            border: none;
-            background-color: transparent; }
-          .home #mainContent .content .workFlowComponents .toDo .items .item .itemControl .dropdownWorkSet button:hover, .home #mainContent .content .workFlowComponents .toDo .items .item .itemControl .dropdownWorkSetTest button:hover, .home #mainContent .content .workFlowComponents .InProgress .items .item .itemControl .dropdownWorkSet button:hover, .home #mainContent .content .workFlowComponents .InProgress .items .item .itemControl .dropdownWorkSetTest button:hover, .home #mainContent .content .workFlowComponents .Completed .items .item .itemControl .dropdownWorkSet button:hover, .home #mainContent .content .workFlowComponents .Completed .items .item .itemControl .dropdownWorkSetTest button:hover {
-            transition: 1s;
-            box-shadow: 1px 1px 30px 0px rgba(50, 50, 50, 0.75); }
+          text-align: center; }
 
 @media screen and (max-width: 1200px) {
   .home #mainContent .content .workFlowComponents .toDo .addItem, .home #mainContent .content .workFlowComponents .InProgress .addItem, .home #mainContent .content .workFlowComponents .Completed .addItem {

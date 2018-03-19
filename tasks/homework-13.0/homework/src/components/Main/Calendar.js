@@ -17,9 +17,6 @@ class Calendar extends Component {
       <section id="mainContent">
         <TopMenu />
         <div className="content">
-          <div className="title">
-            <h2>User Name</h2>
-          </div>
           <div className="calendarComponents">
           <Test /> 
           </div>        

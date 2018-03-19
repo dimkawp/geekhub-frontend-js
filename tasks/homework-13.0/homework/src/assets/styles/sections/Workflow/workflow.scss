@@ -76,39 +76,23 @@
                                     color: #F73B7B;
                                 }
                             }
-                            .itemControl {
+                            .testDropDown {
                                 height: 33px;
                                 width: 7px;
- 
-                                .dropWorkBtn, .dropWorkBtnTest {
-                                    height: 100%;
-                                    width: 100%;
-                                    background: url(../img/workflow/item-icon.fw.png) no-repeat center;
-                                    background-size: 100% 100%;
+                                background: url(../img/workflow/item-icon.fw.png) no-repeat center;
+                                background-size: cover;
+                                i, .text {
+                                    display: none;
                                 }
-                                .dropdownWorkSet, .dropdownWorkSetTest {
-                                    position: absolute;
-                                    display: flex;
-                                    flex-direction: column;
-                                    margin: -30px 10px;                     
-                                    right: 25px;
-                                    z-index: 99;
-                                    background-color: white;
-                                    outline: 1px solid #D4D8E3;
-                                    button {
-                                        margin: 5px;
-                                        outline: none;
-                                        border: none;
-                                        background-color: transparent;
-                                    }
-                                    button:hover {
-                                        transition: 1s;
-                                        box-shadow: 1px 1px 30px 0px rgba(50, 50, 50, 0.75);
+                                .menu {
+                                    .item {
+                                        .text {
+                                            display: flex;
+                                            text-align: center;
+                                        }
                                     }
                                 }
-                                
                             }
-
                         }
                     }
 

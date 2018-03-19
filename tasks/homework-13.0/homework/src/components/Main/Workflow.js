@@ -11,24 +11,20 @@ import random from 'lodash/random';
 import uniqueId from 'lodash/uniqueId';
 import uniq from 'lodash/uniq';
 import Sortable from 'react-sortablejs';
+//semantic-ui
+import { Dropdown } from 'semantic-ui-react'
 
+const dropDownOptions = [
+    { key: 'new', text: 'New', value: 'new' },
+    { key: 'save', text: 'Save', value: 'save' },
+    { key: 'edit', text: 'Edit', value: 'edit' },
+  ]
 
 class Workflow extends Component {
     //JQ
     componentDidMount() {
         const $ = window.$;
-        $(".dropdownWorkSet").hide();
-        function toggleDropBox(event) {
-            var target = $(event.target);
-            if (target.is(".dropWorkBtn")) {
-              console.log(event);
-              target.children().toggle("fast");
-            }
-          }
-          $(".dropWorkBtn").click(toggleDropBox).find(".dropdownWorkSet").hide("fast");
-          $(".allClose").click(function(){         
-            $(".dropdownWorkSet").hide("fast");
-        });
+
     }
   constructor(props) {
     super(props);
@@ -71,11 +67,7 @@ render() {
           <p>{val}</p>
           <span className={val}><i></i>data</span>
         </div>
-        <div className="itemControl">   
-            <div className="dropWorkBtnTest" onClick={this.dropWorkBtn}>
-                {DropBox}
-            </div>
-        </div>
+        <Dropdown className="testDropDown" upward floating options={dropDownOptions} text='' />
       </div>
     ));
     let toDoArrayCount = toDoArray.length;
@@ -87,15 +79,7 @@ render() {
             <p>{val}</p>
             <span className={val}><i></i>data</span>
             </div>
-            <div className="itemControl">   
-                <div className="dropWorkBtn">
-                    <div className="dropdownWorkSet">
-                        <button>ADD</button>
-                        <button>DEL</button>
-                        <button className="allClose">CLOSE</button>
-                    </div>
-                </div>
-            </div>
+            <Dropdown className="testDropDown" upward floating options={dropDownOptions} text='' />
         </div>
     ));
     let inProgressArrayCount = inProgressArray.length;
@@ -107,15 +91,7 @@ render() {
                 <p>{val}</p>
                 <span className={val}><i></i>data</span>
             </div>
-            <div className="itemControl">   
-                <div className="dropWorkBtn">
-                    <div className="dropdownWorkSet">
-                        <button>ADD</button>
-                        <button>DEL</button>
-                        <button className="allClose">CLOSE</button>
-                    </div>
-                </div>
-            </div>
+            <Dropdown className="testDropDown" upward floating options={dropDownOptions} text='' />
       </div>
     ));
     let completedArrayCount = completedArray.length;

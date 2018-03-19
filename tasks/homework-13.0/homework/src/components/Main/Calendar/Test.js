@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import BigCalendar from 'react-big-calendar';
-import moment from 'moment';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
+import moment from 'moment';
+//material-ui
+
 BigCalendar.momentLocalizer(moment); 
 const events = [
   {
@@ -98,30 +100,35 @@ const events = [
   },
 ]
 let allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k])
+
 class Test extends Component {
+  
+
     render() {
         return (
           <div className="bigCalendar col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div>
+
+            </div>
             <BigCalendar
-                  selectable
-                  events={events}
-                  defaultView="week"
-                  
-                  scrollToTime={new Date(1970, 1, 1, 6)}
-                  defaultDate={new Date(2018, 3, 18)}
-                  onSelectEvent={event => alert(event.title)}
-                  onSelectSlot={slotInfo =>
-                    alert(
-                      `selected slot: \n\nstart ${slotInfo.start.toLocaleString()} ` +
-                        `\nend: ${slotInfo.end.toLocaleString()}` +
-                        `\naction: ${slotInfo.action}`
-                    )
-                  }
-                />
+              selectable
+              events={events}
+              defaultView="week"
+              
+              scrollToTime={new Date(1970, 1, 1, 6)}
+              defaultDate={new Date(2018, 3, 18)}
+              onSelectEvent={event => alert(event.title)}
+              onSelectSlot={slotInfo =>
+                alert(
+                  `selected slot: \n\nstart ${slotInfo.start.toLocaleString()} ` +
+                    `\nend: ${slotInfo.end.toLocaleString()}` +
+                    `\naction: ${slotInfo.action}`
+                )
+              }
+            />
           </div>
         );
     }
 }
-
 
 export default Test
