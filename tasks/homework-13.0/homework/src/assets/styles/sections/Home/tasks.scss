@@ -77,9 +77,13 @@
                     }
                     .menu {
                         flex-direction: column;
+                        position: absolute;
+                        left: -35px;
+                        
                         button {
                             color: #0D1935;
-                            width: 60px;
+                            width: 70px;
+                            height: 30px;
                             border: none;
                             outline: none;
                             margin: 2px;

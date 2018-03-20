@@ -7,6 +7,9 @@
                 justify-content: space-between;
                 align-items: center;
                 margin: 45px 0;
+                h2 {
+                    margin-left: 0;
+                }
                 .count {
                     color: #8391AF;
                 }
@@ -75,6 +78,8 @@
                                         tr {
                                             background-color: white;  
                                             td {
+
+                                                
                                                 .userBlock {
                                                     display: flex;
                                                     margin: 25px;
@@ -130,41 +135,35 @@
                                                 .dropDown {
                                                     height: 33px;
                                                     width: 7px;
-                                                    margin: 45px 25px;
-                                                    .dropWorkBtn {
-                                                        height: 100%;
-                                                        width: 100%;
-                                                        background: url(../img/workflow/item-icon.fw.png) no-repeat center;
-                                                        background-size: 100% 100%;
-                                                        cursor: pointer;
-                                                        .dropDownTableContent {
-                                                            position: absolute;
-                                                            display: flex;
-                                                            align-items: center;
-                                                            justify-content: center;
-                                                            flex-direction: column;
-                                                            margin-top: -30px;
-                                                            margin-left: 5px;
-                                                            
-                                                        }
+                                                    background: url(../img/workflow/item-icon.fw.png) no-repeat center;
+                                                    background-size: cover;
+                                                    i, .text {
+                                                        display: none;
+                                                    }
+                                                    .menu {
+                                                        flex-direction: column;
+                                                        position: absolute;
+                                                        left: -35px;
+                                                        top: -15px;
+                                                        
                                                         button {
-                                                            margin: 5px;
-                                                            font-size: 12px;
-                                                            font-weight: 400;
-                                                            text-transform: uppercase;
-                                                            height: 20px;
-                                                            width: 50px;
-                                                            outline: none;
+                                                            color: #0D1935;
+                                                            width: 70px;
+                                                            height: 30px;
                                                             border: none;
-                                                            background-color: transparent;
-                                                            outline: 1px solid #D4D8E3;
+                                                            outline: none;
+                                                            margin: 2px;
                                                         }
-                                                        button:hover {
-                                                            transition: 1s;
-                                                            box-shadow: 1px 1px 30px 0px rgba(50, 50, 50, 0.75);
-                                                        }
+                                
+                                                    }
+                                                    .visible {
+                                                        display: flex;
+                                                        flex-direction: column;
                                                     }
                                                 }
+                                            }
+                                            td:last-child {
+                                               padding: 45px 0;
                                             }
                                         }
                                     }

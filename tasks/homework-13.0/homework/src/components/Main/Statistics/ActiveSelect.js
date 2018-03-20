@@ -22,21 +22,21 @@ class ActiveSelect extends Component {
         if (e.target.value === "Last Week") {
             this.props.activeSendData(
                 [
-                    ["Websites",3],["Logo", 333],["Social Media",33],["Adwords", 3], ["E-Commerce", 333]
+                    ["Websites",13],["Logo", 333],["Social Media",33],["Adwords", 3], ["E-Commerce", 333]
                 ]
             );
         } 
         if (e.target.value === "Notifications") {
             this.props.activeSendData(
                 [
-                    ["Websites",0],["Logo", 0],["Social Media",0],["Adwords", 3], ["E-Commerce", 333]
+                    ["Websites",10],["Logo", 320],["Social Media",220],["Adwords", 113], ["E-Commerce", 333]
                 ]
             );
         } 
         if (e.target.value === "Modification") {
             this.props.activeSendData(
                 [
-                    ["Websites",0],["Logo", 0],["Social Media",0]
+                    ["Websites",2230],["Logo",11110],["Social Media",10],["Adwords", 23], ["E-Commerce", 333]
                 ]
             );
         } 

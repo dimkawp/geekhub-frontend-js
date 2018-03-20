@@ -37,11 +37,11 @@ class Active extends Component {
             <div className="result col-xs-12 col-sm-12 col-lg-12">
                 <div className="resultBlock col-xs-12 col-sm-12 col-lg-5">
                     <div className="sale">
-                        <div className="title">1,560</div>
+                        <div className="title">{this.state.ActivefieldVal[0][1]}</div>
                         <p>Sales</p>
                     </div>
                     <div className="views">
-                        <div className="title">3,230</div>
+                        <div className="title">{this.state.ActivefieldVal[4][1]}</div>
                         <p>Views</p>
                     </div>
                 </div>

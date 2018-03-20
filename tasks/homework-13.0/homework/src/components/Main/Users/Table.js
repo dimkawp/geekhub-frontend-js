@@ -1,23 +1,13 @@
 import React, { Component } from 'react';
 import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
 import '../../../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
+//senabtic-ui
+import { Dropdown } from 'semantic-ui-react'
 let order = 'desc';
 class Table extends Component {
       //JQ
       componentDidMount() {
         const $ = window.$;
-        $(".dropDownTableContent").hide();
-        function toggleDropBox(event) {
-            var target = $(event.target);
-            if (target.is(".dropWorkBtn")) {
-              console.log(event);
-              target.children().toggle("fast");
-            }
-          }
-          $(".dropWorkBtn").click(toggleDropBox).find(".dropDownTableContent").hide("fast");
-          $(".allCloseTable").click(function(){         
-            $(".dropDownTableContent").hide("fast");
-        });
     }
     constructor(props) {
         super(props);
@@ -103,15 +93,13 @@ class Table extends Component {
       DropButton(cell, row, enumObject, rowIndex) {
         let DropButton
         DropButton = (
-          <div className="dropDown">
-            <div className="dropWorkBtn">
-              <div className="dropDownTableContent">
+          <Dropdown className="dropDown">
+            <Dropdown.Menu className="dropDownContent">
+                <button>delete</button>
+                <br/>
                 <button>add</button>
-                <button>delete</button>      
-                <button className="allCloseTable">close</button>      
-              </div>
-            </div>
-          </div>
+            </Dropdown.Menu>
+          </Dropdown>    
         )
         return DropButton
       }

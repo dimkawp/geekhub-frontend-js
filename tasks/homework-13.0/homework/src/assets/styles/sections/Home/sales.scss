@@ -28,6 +28,7 @@
             }
         }
         select {
+            
             padding: 15px 35px 15px 75px;
             border: 1px solid #8391AF;
             outline: 0;
@@ -44,6 +45,7 @@
             background-color: #FF3975;
         }
         select:focus > option:checked { 
+            appearance: none;
             font-weight: 600;
             background-color: #FF3975;  
         }

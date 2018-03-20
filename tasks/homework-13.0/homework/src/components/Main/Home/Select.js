@@ -37,7 +37,7 @@ class Select extends Component {
             this.props.data.map((item, index) => {
                 return (
                 <option key={index} value={item}>
-                    {item} 
+                {item}
                 </option>
                 ); 
             })

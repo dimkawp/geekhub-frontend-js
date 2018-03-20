@@ -1,4 +1,7 @@
 /*topMenu*/
+.ui.active.modal {
+  height: 200px; }
+
 #topMenu {
   width: 100%; }
   #topMenu .topMenuBlock {

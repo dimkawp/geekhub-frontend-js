@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+//semantic-ui
+import { Button, Modal } from 'semantic-ui-react'
 
 class TopMenu extends Component {
     componentDidMount() {
@@ -18,6 +20,9 @@ class TopMenu extends Component {
         window.location.reload();
         console.log(localStorage.getItem('User'));
     }
+    addProjectEvent = () => {
+        console.log('add');
+    }
   render() {
     const UserImg = localStorage.getItem('UserImg');
     console.log("TopMenuComponents");
@@ -33,7 +38,15 @@ class TopMenu extends Component {
                     </div>
                 </div>
                 <div className="userProfile">
-                    <button className="addProject"><i className="material-icons">add</i>Add project</button>
+                <Modal
+                    trigger={<Button className="addProject" onClick={this.addProjectEvent}><i className="material-icons">add</i>Add project</Button>}
+                    header='ADD NEW PROJECT'
+                    content=''
+                    actions={[
+                    'ADD',
+                    { key: 'done', content: 'CLOSE', positive: true },
+                    ]}
+                />                   
                     <i className="material-icons">mail</i>
                     <i className="material-icons">notifications</i>
                     <div className="dropdownMenu">

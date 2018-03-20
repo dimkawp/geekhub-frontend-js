@@ -35,7 +35,11 @@ $main-bg: #F6F7FA;
             flex-direction: column;
             background-color: $main-bg;
             .title {
-                margin: 45px;
+                margin: 45px 0;
+                h2 {
+                    margin-left: 50px;
+
+                }
             }
             .homeComponents {
                 
@@ -75,6 +79,15 @@ $main-bg: #F6F7FA;
 @media screen and (max-width:1200px) {
     .home {
         flex-direction: column;
+        #mainContent {
+            .content {
+                .title {
+                    h2 {
+                        margin: 0;
+                    }
+                }
+            }
+        }
         .sales, .report, .messages, .activity, .tasks {
             width: 100%;
             margin: 0;

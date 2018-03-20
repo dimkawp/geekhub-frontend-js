@@ -38,5 +38,6 @@
       transition: 1s;
       background-color: #FF3975; }
     .sales .header select:focus > option:checked, .report .header select:focus > option:checked {
+      appearance: none;
       font-weight: 600;
       background-color: #FF3975; }

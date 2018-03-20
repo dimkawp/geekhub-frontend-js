@@ -83,7 +83,7 @@
 					curr ++;
 					setTimeout(function(){
 						animateChart(stop,curr,$elm);
-					},1);
+					},50);
 				}
 			};			
 			

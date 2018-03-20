@@ -5,6 +5,7 @@ class TotalSales extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      totalSalesArray: [{id:1 ,value: 45},{id:2 ,value: 20},{id:3 ,value: 25}]
     }
   }
   componentDidMount() {
@@ -47,21 +48,21 @@ class TotalSales extends Component {
           </div>
           <div className="items">
             <div className="item col-xs-12 col-sm-12 col-lg-4">
-             <div className="demo-1" data-percent="45"></div>
+             <div className="demo-1" data-percent={this.state.totalSalesArray[0].value}></div>
              <div className="resultBlock">
               <p>2,300$</p>
               <span>Direct Sales</span>
              </div>
             </div>
             <div className="item col-xs-12 col-sm-12 col-lg-4">
-              <div className="demo-2" data-percent="20"></div>
+              <div className="demo-2" data-percent={this.state.totalSalesArray[1].value}></div>
               <div className="resultBlock">
               <p>2,300$</p>
               <span>Direct Sales</span>
              </div>
             </div>
             <div className="item col-xs-12 col-sm-12 col-lg-4">
-              <div className="demo-3" data-percent="25"></div>   
+              <div className="demo-3" data-percent={this.state.totalSalesArray[2].value}></div>   
               <div className="resultBlock">
               <p>2,300$</p>
               <span>Direct Sales</span>
