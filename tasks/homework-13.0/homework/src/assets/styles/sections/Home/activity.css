@@ -39,6 +39,7 @@
       color: white; }
     .activity .items .item .description {
       margin: 17px 0;
+      margin-right: 10px;
       font-size: 14px; }
       .activity .items .item .description .activityData {
         font-size: 14px;

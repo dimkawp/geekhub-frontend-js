@@ -64,6 +64,33 @@
             .itemControl {
                 margin: 25px;
                 width: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .dropDown {
+                    height: 33px;
+                    width: 7px;
+                    background: url(../img/workflow/item-icon.fw.png) no-repeat center;
+                    background-size: cover;
+                    i, .text {
+                        display: none;
+                    }
+                    .menu {
+                        flex-direction: column;
+                        button {
+                            color: #0D1935;
+                            width: 60px;
+                            border: none;
+                            outline: none;
+                            margin: 2px;
+                        }
+
+                    }
+                    .visible {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
             }
         }
         .item:first-child {

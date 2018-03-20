@@ -109,18 +109,11 @@ class Test extends Component {
     return (
       <div id="testModal">{event.title}</div>
     );
-
   }
-  calendarDropdown = (
-  <div></div>
-  );
-
     render() {
         return (
           <div className="bigCalendar col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div>
-
-
             </div>
             <BigCalendar
               selectable

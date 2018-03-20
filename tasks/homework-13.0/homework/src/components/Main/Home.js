@@ -25,7 +25,7 @@ class Home extends Component {
             <div className="title">
               <h2>User Name</h2>
             </div>
-            <div className="homeComponents">
+            <div className="homeComponents col-lg-12">
               <Sales />
               <Report />
               <div className="homeComponentsFooter">
