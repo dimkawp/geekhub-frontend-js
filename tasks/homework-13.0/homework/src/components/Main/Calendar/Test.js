@@ -101,27 +101,77 @@ const events = [
   },
 ]
 let allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k])
-
 class Test extends Component {
-  handleSelectEvent(event,target) {
-    let obj = target.currentTarget;
-    console.log(target.currentTarget.children);
+  constructor(props) {
+    super(props);
+    this.state = {
+      event: [],
+      user: [{name: 'Nicky Hunt'},{work: 'Product Designer'}]
+    }
+  }
+  
+  handleSelectEvent(event) {
+    let obj = event;
+    this.state.event = obj.title;
+    this.setState({
+      event: obj
+    })
+    console.log(this.state.event);
     return (
-      <div id="testModal">{event.title}</div>
+      <div>{this.state.event}</div>
     );
   }
+  closeModel = () => {
+    this.state.event = [];
+    this.setState({
+      event: []
+    })
+    console.log(this.state.event);
+  }
     render() {
+      console.log(this.state.event);
         return (
           <div className="bigCalendar col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div>
-            </div>
+            {
+              this.state.event > [] &&
+            <div id="testModal">
+            <button className="close" onClick={this.closeModel}>X</button>
+              <div className="header">
+                <span>AUTHOR:</span>
+                <div className="author">
+                <div className="avatarImg"></div>
+                <div>
+                  <span className="name">{this.state.user[0].name}</span>
+                  <span className="work">{this.state.user[1].work}</span>
+                </div>
+                </div>
+              </div>
+              <div className="content">
+                <div className="contentBlock">
+                  <div className="block">
+                    <span>TITLE: </span>
+                    <p>{this.state.event.title}</p>
+                  </div>
+                  <div className="block">
+                    <span>START: </span>
+                    <p>{this.state.event.start.toString().slice(0,15)}</p>
+                  </div>
+                  <div className="block">
+                    <span>END: </span>
+                    <p>{this.state.event.end.toString().slice(0,15)}</p>
+                  </div>
+                </div>          
+              </div>  
+              <div className="buttonBlock"><button>Edit Event</button></div>  
+            </div>      
+            }            
             <BigCalendar
               selectable
               events={events}
-              defaultView="month"    
+              defaultView="month"   
               scrollToTime={new Date(1970, 1, 1, 6)}
               defaultDate={new Date(2018, 3, 19)}
-              onSelectEvent={this.handleSelectEvent}
+              onSelectEvent={(event) => this.handleSelectEvent(event)}
               onSelectSlot={slotInfo =>
                 alert(
                   `selected slot: \n\nstart ${slotInfo.start.toLocaleString()} ` +
