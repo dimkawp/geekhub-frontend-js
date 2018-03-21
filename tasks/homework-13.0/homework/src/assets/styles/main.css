@@ -551,6 +551,15 @@ nav {
         overflow: hidden;
         height: 100%; }
 
+@media screen and (max-width: 1200px) {
+  #testModal {
+    left: 10%;
+    top: 10%; }
+  .home #mainContent .content .calendarComponents .bigCalendar {
+    overflow: scroll; }
+    .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar {
+      width: 1200px; } }
+
 /* statistics */
 .home #mainContent .content .statisticsComponents .active {
   display: flex;

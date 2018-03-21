@@ -193,3 +193,27 @@
         }
     }
 }
+@media screen and (max-width: 1200px) {
+    #testModal {
+        left: 10%;
+        top: 10%;
+    }
+    .home {
+        #mainContent {
+            .content {
+                .calendarComponents {
+                    .bigCalendar {
+                        overflow: scroll;
+                        .rbc-calendar {
+                            width: 1200px;
+                            
+
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }   
+}
