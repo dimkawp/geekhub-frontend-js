@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactHighcharts from 'react-highcharts';
 
 class TotalSales extends Component {
   constructor(props) {

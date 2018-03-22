@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 //config
-
-
 class Select extends Component {
     TestOnClick = () => {
         console.log('click selected');
@@ -9,7 +7,6 @@ class Select extends Component {
     onChange = (e) => {
         console.log(e.target.value);
         if (e.target.value === "Sort Name") {
-            this.TestOnClick;
             this.props.UserTableSendData(
                 {sort: 'name'}        
             );
@@ -23,7 +20,6 @@ class Select extends Component {
 
   render() {
     console.log("SelectComponents");
-
     return (
         <div>
         <span>Sort: </span>

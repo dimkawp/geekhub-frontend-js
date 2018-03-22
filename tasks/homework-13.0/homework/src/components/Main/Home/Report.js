@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import reportImg from '../../../assets/img/home/report.fw.png';
-import Select from './Select';
 import SelectReport from './SelectReport';
 import ReactHighcharts from 'react-highcharts';
 //config

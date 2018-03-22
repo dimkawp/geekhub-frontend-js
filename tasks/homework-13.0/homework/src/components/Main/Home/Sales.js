@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import salesImg from '../../../assets/img/home/sales.fw.png';
 import Select from './Select';
 import ReactHighcharts from 'react-highcharts';
 //config

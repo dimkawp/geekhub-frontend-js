@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Nav from './Nav';
 import TopMenu from './Menu/TopMenu';
 import SideMenu from './Menu/SideMenu';
 //homeComponents
@@ -9,7 +7,6 @@ import Messages from './Home/Messages';
 import Report from './Home/Report';
 import Sales from './Home/Sales';
 import Tasks from './Home/Tasks';
-import Redirect from 'react-router-dom/Redirect';
 import Preloader from './Preloader';
 
 class Home extends Component {

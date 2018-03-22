@@ -1,6 +1,9 @@
 /*topMenu*/
 .ui.active.modal {
     height: 200px;
+    .positive {
+        background-color: #5583FF;
+    }
 }
 #topMenu {
     width: 100%;
@@ -98,9 +101,27 @@
 @media screen and (max-width:1200px) {
     #topMenu {
         .topMenuBlock {
+            .navigation {
+                
+                .sideMenu {
+                    margin: 25px 0 25px 25px;
+                }
+                .search {
+                    margin: 25px 0 25px 5px;
+                }
+                .dropdownMenu {
+                    display: flex;
+                    align-self: flex-end;
+                }
+            }
             .userProfile {
                 width: 100%;
                 justify-content: flex-end;
+                .addProject {
+                    width: 140px;
+                    font-size: 12px;
+                }
+                
             }
             .userProfile > * {
                 margin: 0 2%;

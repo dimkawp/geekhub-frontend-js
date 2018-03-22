@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import Preloader from './Preloader';
 import TopMenu from './Menu/TopMenu';
 import SideMenu from './Menu/SideMenu';
-import ToDo from './Workfolow/ToDo';
-import InProgress from './Workfolow/InProgress';
-import Completed from './Workfolow/Completed';
-import Test from './Workfolow/Test';
-
 import random from 'lodash/random';
 import uniqueId from 'lodash/uniqueId';
 import uniq from 'lodash/uniq';
@@ -22,10 +17,9 @@ const dropDownOptions = [
 
 class Workflow extends Component {
     //JQ
-    componentDidMount() {
-        const $ = window.$;
-
-    }
+    //componentDidMount() {
+    //    const $ = window.$;
+    //}
   constructor(props) {
     super(props);
     this.state = {

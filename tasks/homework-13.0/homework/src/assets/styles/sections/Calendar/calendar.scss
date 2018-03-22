@@ -28,37 +28,27 @@
         .author {
             display: flex;
             flex-direction: row;
-
             .avatarImg {
                 height: 40px;
                 width: 40px;
                 border-radius: 50%;
                 background-color: #231F3D;
-            }
-            
+            }       
             div {
                 display: flex;
                 flex-direction: column;
                 span {
                     margin: 0;
-                    margin-left: 10px;
-                    
+                    margin-left: 10px;   
                 }
                 .name {
                     color: #0D1935;
                     font-size: 20px;
                     font-weight: 600;
                 }
-
-
-            }
-            
+            }   
         }
-
-
-
     }
-
     .contentBlock {
         display: flex;
         flex-direction: column;
@@ -90,7 +80,6 @@
             padding: 15px 35px;
             border-radius: 30px;
         }
-
     }
 }
 .home {
@@ -103,14 +92,30 @@
                 justify-content: space-between;
                 .bigCalendar {
                     margin: 15px;
-                    .rbc-calendar {
-                        
+                    .rbc-calendar {                
                         background-color: #FFFFFF;
                         .rbc-toolbar {
                             background-color: #F5F7F9;
                             margin: 0;
+                            color: #0D1935;
+                            font-size: 14px;
+                            .rbc-btn-group {
+                                button {
+                                    border: none;
+                                    outline: none;
+                                    text-transform: uppercase;
+
+                                }
+                                .rbc-active {
+                                    border-radius: 1px;
+                                    border-bottom: 2px solid #5583FF;
+                                    background-color: #F5F7F9;
+                                }
+
+                                
+                            }
                         }
-                        .rbc-month-row {
+                        .rbc-month-row, .rbc-time-view {
                             .rbc-row-bg {
                                 .rbc-off-range-bg {
                                     background-color: #FFFFFF;
@@ -121,7 +126,7 @@
                                     .rbc-row-segment {
                                         .rbc-event {
                                             background-color: #5583FF;
-                                            border-radius: none;
+                                            border-radius: 1px;
                                             padding: 0;
                                             .rbc-event-content {
                                                 font-family: 'Roboto', sans-serif;
@@ -129,11 +134,11 @@
                                                 align-items: center;
                                                 text-align: left;
                                                 margin-left: 5px;
+                                                padding-left: 15px;
                                                 height: 45px;
                                                 background-color: #F5F7F9;
                                                 font-size: 14px;
                                                 color: #0D1935;
-
                                             }
                                         }
                                     }
@@ -152,8 +157,7 @@
                                 }
                             }
                         }
-                        .rbc-header {
-                            
+                        .rbc-header {                     
                             height: 75px;
                             display: flex;
                             align-items: center;
@@ -168,8 +172,6 @@
                             }
                         }
                         .rbc-month-view {
-
-
                             .rbc-month-row {
                                 display: flex;
                                 display: flex;
@@ -181,14 +183,9 @@
                                 overflow: hidden;
                                 height: 100%;
                             }
-    
-
                         }
-
-                    }
-                    
+                    }   
                 }
-
             }
         }
     }
@@ -206,13 +203,9 @@
                         overflow: scroll;
                         .rbc-calendar {
                             width: 1200px;
-                            
-
                         }
-
                     }
                 }
-
             }
         }
     }   

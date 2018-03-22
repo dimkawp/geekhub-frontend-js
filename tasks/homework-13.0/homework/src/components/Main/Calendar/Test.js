@@ -3,7 +3,7 @@ import BigCalendar from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import moment from 'moment';
 //semantic-ui
-import { Dropdown, Modal, Button } from 'semantic-ui-react'
+import { Dropdown, Modal, Button, ButtonGroup } from 'semantic-ui-react'
 
 BigCalendar.momentLocalizer(moment); 
 const events = [
@@ -101,12 +101,16 @@ const events = [
   },
 ]
 let allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k])
+
 class Test extends Component {
   constructor(props) {
     super(props);
     this.state = {
       event: [],
-      user: [{name: 'Nicky Hunt'},{work: 'Product Designer'}]
+      user: [
+        {name: 'Nicky Hunt'},
+        {work: 'Product Designer'}
+      ]
     }
   }
   
@@ -116,20 +120,13 @@ class Test extends Component {
     this.setState({
       event: obj
     })
-    console.log(this.state.event);
-    return (
-      <div>{this.state.event}</div>
-    );
   }
   closeModel = () => {
-    this.state.event = [];
     this.setState({
       event: []
     })
-    console.log(this.state.event);
   }
     render() {
-      console.log(this.state.event);
         return (
           <div className="bigCalendar col-xs-12 col-sm-12 col-md-12 col-lg-12">
             {
@@ -154,7 +151,7 @@ class Test extends Component {
                   </div>
                   <div className="block">
                     <span>START: </span>
-                    <p>{this.state.event.start.toString().slice(0,15)}</p>
+                    <p>{this.state.event.start.toLocaleString()}</p>
                   </div>
                   <div className="block">
                     <span>END: </span>
@@ -169,16 +166,11 @@ class Test extends Component {
               selectable
               events={events}
               defaultView="month"   
+              views={['month','week','work_week','day']}
               scrollToTime={new Date(1970, 1, 1, 6)}
               defaultDate={new Date(2018, 3, 19)}
               onSelectEvent={(event) => this.handleSelectEvent(event)}
-              onSelectSlot={slotInfo =>
-                alert(
-                  `selected slot: \n\nstart ${slotInfo.start.toLocaleString()} ` +
-                    `\nend: ${slotInfo.end.toLocaleString()}` +
-                    `\naction: ${slotInfo.action}`
-                )
-              }
+              onSelectSlot={(event) => this.handleSelectEvent(event)}
             />
           </div>
         );

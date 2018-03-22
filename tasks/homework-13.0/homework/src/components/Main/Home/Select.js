@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 //config
-import SalesChart from '../../../config/pieChart.config';
-
 class Select extends Component {
     onChange = (e) => {
         console.log(e.target.value);

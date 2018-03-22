@@ -80,27 +80,38 @@
       background-color: #FFFFFF; }
       .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-toolbar {
         background-color: #F5F7F9;
-        margin: 0; }
-      .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-row .rbc-row-bg .rbc-off-range-bg {
+        margin: 0;
+        color: #0D1935;
+        font-size: 14px; }
+        .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-toolbar .rbc-btn-group button {
+          border: none;
+          outline: none;
+          text-transform: uppercase; }
+        .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-toolbar .rbc-btn-group .rbc-active {
+          border-radius: 1px;
+          border-bottom: 2px solid #5583FF;
+          background-color: #F5F7F9; }
+      .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-row .rbc-row-bg .rbc-off-range-bg, .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-time-view .rbc-row-bg .rbc-off-range-bg {
         background-color: #FFFFFF; }
-      .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-row .rbc-row-content .rbc-row .rbc-row-segment .rbc-event {
+      .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-row .rbc-row-content .rbc-row .rbc-row-segment .rbc-event, .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-time-view .rbc-row-content .rbc-row .rbc-row-segment .rbc-event {
         background-color: #5583FF;
-        border-radius: none;
+        border-radius: 1px;
         padding: 0; }
-        .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-row .rbc-row-content .rbc-row .rbc-row-segment .rbc-event .rbc-event-content {
+        .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-row .rbc-row-content .rbc-row .rbc-row-segment .rbc-event .rbc-event-content, .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-time-view .rbc-row-content .rbc-row .rbc-row-segment .rbc-event .rbc-event-content {
           font-family: 'Roboto', sans-serif;
           display: flex;
           align-items: center;
           text-align: left;
           margin-left: 5px;
+          padding-left: 15px;
           height: 45px;
           background-color: #F5F7F9;
           font-size: 14px;
           color: #0D1935; }
-      .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-row .rbc-row-content .rbc-row .rbc-date-cell {
+      .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-row .rbc-row-content .rbc-row .rbc-date-cell, .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-time-view .rbc-row-content .rbc-row .rbc-date-cell {
         text-align: left;
         margin-top: 25px; }
-        .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-row .rbc-row-content .rbc-row .rbc-date-cell a {
+        .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-month-row .rbc-row-content .rbc-row .rbc-date-cell a, .home #mainContent .content .calendarComponents .bigCalendar .rbc-calendar .rbc-time-view .rbc-row-content .rbc-row .rbc-date-cell a {
           font-family: 'Roboto', sans-serif;
           margin-left: 25px;
           text-transform: uppercase;

@@ -6,16 +6,11 @@ import { Dropdown } from 'semantic-ui-react'
 let order = 'desc';
 class Table extends Component {
       //JQ
-      componentDidMount() {
-        const $ = window.$;
-    }
+      //componentDidMount() {
+      //  const $ = window.$;
+      //}
     constructor(props) {
         super(props);
-        this.DropButton;
-        this.UserBlock;
-        this.Activity;
-        this.MailBlock;
-        this.PhoneBlock;
         this.state = {
           products: [
             {id: 1, name: 'User',position: 'CEO',status: 'online',mail: 'johndoe@design.com', phone: '(000) 111 222 333'},
@@ -110,7 +105,7 @@ class Table extends Component {
             <div className="userBlock">
               <div className="avatar">
               <div className="online"></div>
-                <img />
+                
               </div>
               <div className="userBlockInfo">
                 <span className='name'>{row.name}</span>
@@ -123,7 +118,7 @@ class Table extends Component {
           UserBlock = (
             <div className="userBlock">
             <div className="avatar">
-              <img />
+              
             </div>
             <div className="userBlockInfo">
               <span className='name'>{row.name}</span>

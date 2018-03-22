@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 //semantic-ui
 import { Button, Modal } from 'semantic-ui-react'
 

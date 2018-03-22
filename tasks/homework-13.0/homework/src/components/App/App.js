@@ -8,17 +8,9 @@ import Calendar from '../../components/Main/Calendar';
 import Users from '../../components/Main/Users';
 import Settings from '../../components/Main/Settings';
 import Login from '../../components/Main/Auth/Login';
-import Registration from '../../components/Main/Auth/Registration';
-import Private from './Private';
-import { BrowserRouter as Router, Route, Switch, Redirect, withRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import PrivateLayout from './PrivateLayout';
 import UserLayout from './UserLayout';
-
-//import ReactGlobalize from 'react-globalize'
-//import localizer from 'react-big-calendar/lib/localizers/globalize'
-//import globalize from 'globalize'
-
-//localizer(globalize)
 
 class App extends Component {
   render() {
