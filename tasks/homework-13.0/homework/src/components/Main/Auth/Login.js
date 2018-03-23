@@ -26,10 +26,12 @@ class Login extends Component {
             password: this.password.value.trim()
         }
         fetch('/api/users/authentication', {
+            method: 'post',
+            mode: 'cors',
             headers: {
+                'Access-Control-Allow-Origin':'*',
                 'Content-type': 'application/json'
             },
-            method: 'post',
             body: JSON.stringify(data)
         })
         .then(response => response.json())
