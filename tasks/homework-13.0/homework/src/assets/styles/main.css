@@ -52,6 +52,15 @@ nav {
       border-bottom: 10px solid #5583FF;
       margin-bottom: -10px; }
 
+@media screen and (max-width: 600px) {
+  nav {
+    justify-content: center;
+    align-items: center; }
+    nav .logo {
+      margin: 0; }
+    nav ul {
+      padding: 0; } }
+
 /* login block */
 .loginBlock .formBlock, .regBlock .formBlock {
   background-color: #F5F7F9; }
@@ -72,6 +81,13 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .loginBlock .formBlock .formBlockContent .form .login-error, .regBlock .formBlock .formBlockContent .form .login-error {
+      color: red;
+      font-weight: 600;
+      padding: 10px 20px;
+      background-color: #66001d;
+      border: 1px solid red;
+      text-transform: uppercase; }
     .loginBlock .formBlock .formBlockContent .form .input, .regBlock .formBlock .formBlockContent .form .input {
       margin-top: 50px;
       display: flex;
@@ -99,13 +115,13 @@ nav {
       .loginBlock .formBlock .formBlockContent .form .input ::-webkit-input-placeholder-shown, .regBlock .formBlock .formBlockContent .form .input ::-webkit-input-placeholder-shown {
         height: 50px; }
     .loginBlock .formBlock .formBlockContent .form .error i, .regBlock .formBlock .formBlockContent .form .error i {
-      color: red; }
+      color: #66001d; }
     .loginBlock .formBlock .formBlockContent .form .error input, .regBlock .formBlock .formBlockContent .form .error input {
       border-bottom: 1px solid red; }
     .loginBlock .formBlock .formBlockContent .form .error input[type=text], .loginBlock .formBlock .formBlockContent .form .error input[type=password], .regBlock .formBlock .formBlockContent .form .error input[type=text], .regBlock .formBlock .formBlockContent .form .error input[type=password] {
-      color: red; }
+      color: #66001d; }
     .loginBlock .formBlock .formBlockContent .form .error ::-webkit-input-placeholder, .regBlock .formBlock .formBlockContent .form .error ::-webkit-input-placeholder {
-      color: red; }
+      color: #66001d; }
     .loginBlock .formBlock .formBlockContent .form button, .regBlock .formBlock .formBlockContent .form button {
       position: relative;
       width: 370px;
@@ -128,6 +144,10 @@ nav {
       color: #5583FF;
       background-size: 70px 70px;
       background-position: center; }
+
+@media screen and (max-width: 600px) {
+  button {
+    width: 300px; } }
 
 /*topMenu*/
 .ui.active.modal {

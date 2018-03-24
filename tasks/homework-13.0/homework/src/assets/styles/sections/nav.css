@@ -43,3 +43,12 @@ nav {
     nav .items .item:hover {
       border-bottom: 10px solid #5583FF;
       margin-bottom: -10px; }
+
+@media screen and (max-width: 600px) {
+  nav {
+    justify-content: center;
+    align-items: center; }
+    nav .logo {
+      margin: 0; }
+    nav ul {
+      padding: 0; } }

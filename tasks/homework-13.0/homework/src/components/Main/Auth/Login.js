@@ -10,6 +10,7 @@ class Login extends Component {
         this.state = {
             addClass: false,
             errorClass: false,
+            errorValid: false,
             disabled: false,
             preloader: false
         }
@@ -50,36 +51,58 @@ class Login extends Component {
         })
     }
     handleRegistration = () => {
-        const data = {
-            name: this.name.value.trim(),
-            email: this.email.value.trim(),
-            password: this.regPassword.value.trim(),
-        }
-        fetch('/api/users/create_user', {
-            headers: {
-                'Content-type': 'application/json'
-            },
-            method: 'post',
-            body: JSON.stringify(data)
-        })
-        .then(response => response.json())
-        .then(response => {
-            console.log(response);
-            if (response === 'user created') {
-                this.props.history.push("/");
+        this.setState({disabled: !this.state.disabled});
+        this.setState({preloader: !this.state.preloader});
+        const reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (reg.test(this.email.value.trim()) === true) {
+            console.log('valid');
+            const data = {
+                name: this.name.value.trim(),
+                email: this.email.value.trim(),
+                password: this.regPassword.value.trim(),
             }
-            else {
+            fetch('/api/users/create_user', {
+                method: 'post',
+                mode: 'cors',
+                headers: {
+                    'Access-Control-Allow-Origin':'*',
+                    'Content-type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(response => {
                 console.log(response);
-                this.setState({errorClass: true});
-            }
-        })
+                if (response === 'user created') {
+                    this.props.history.push("/");
+                }
+                else {
+                    console.log(response);
+                   
+                    this.setState({disabled: !this.state.disabled});
+                    this.setState({preloader: !this.state.preloader});
+                }
+            })
+        }
+        else{
+            console.log('invalid');      
+            this.setState({disabled: this.state.disabled = false});
+            this.setState({preloader: this.state.preloader = false});
+            this.setState({errorValid: true});
+            
+        }
+
     }
 
   render() {
 
     let error = [""];
+    let errorValid =[""];
     if(this.state.errorClass) {
         error.push("error");
+    }
+    if(this.state.errorValid) {
+        errorValid.push("error");
     }
 
     console.log("LoginComponents");
@@ -98,13 +121,17 @@ class Login extends Component {
                             </header>
                             <div className="formBlockContent container">
                                 <div className="form">
-                                    <div className={"input col-sm-12 col-lg-6" + error.join(' ')}>
+                                {
+                                    error > [] &&
+                                    <div className={'login-'+error.join('')}>BAD PASSWORD OR LOGIN</div>
+                                }
+                                    <div className={"input col-sm-8 col-md-6 col-lg-6" + error.join(' ')}>
                                     <i className="material-icons">face</i>
-                                    <input className="col-lg-12" type="text" placeholder="username" ref={el => this.login = el}/>
+                                    <input className="col-sm-12 col-md-12 col-lg-12" type="text" placeholder="username" ref={el => this.login = el}/>
                                     </div>
-                                    <div className={"input col-sm-12 col-lg-6" + error.join(' ')}>
+                                    <div className={"input col-sm-8 col-md-6 col-lg-6" + error.join(' ')}>
                                     <i className="material-icons">https</i>
-                                    <input className="col-lg-12" type="password" placeholder="password" ref={el => this.password = el}/>
+                                    <input className="col-sm-12 col-md-12 col-lg-12" type="password" placeholder="password" ref={el => this.password = el}/>
                                     </div>                            
                                     <button disabled={this.state.disabled} onClick={this.handleLogin} className={this.state.preloader ? 'btnLogin preloader' : 'btnLogin'}>Enter<i className="material-icons">keyboard_arrow_right</i></button>
                                 </div>
@@ -118,17 +145,21 @@ class Login extends Component {
                             </header>
                             <div className="formBlockContent">
                                 <div className="form">
-                                    <div className={"input col-sm-12 col-lg-6" + error.join(' ')}>
+                                {
+                                    errorValid > [] &&
+                                    <div className={'login-'+errorValid.join('')}>Fields not filled in correctly</div>
+                                }
+                                    <div className={"input col-sm-8 col-md-6 col-lg-6" + errorValid.join(' ')}>
                                     <i className="material-icons">face</i>
-                                    <input className="col-lg-12" type="text" placeholder="name" ref={el => this.name = el}/>
+                                    <input className="col-sm-12 col-md-12 col-lg-12" type="text" placeholder="name" ref={el => this.name = el}/>
                                     </div>
-                                    <div className={"input col-sm-12 col-lg-6" + error.join(' ')}>
+                                    <div className={"input col-sm-8 col-md-6 col-lg-6" + errorValid.join(' ')}>
                                     <i className="material-icons">https</i>
-                                    <input className="col-lg-12" type="text" placeholder="email" ref={el => this.email = el}/>
+                                    <input className="col-sm-12 col-md-12 col-lg-12" type="text" placeholder="email" ref={el => this.email = el}/>
                                     </div>
-                                    <div className={"input col-sm-12 col-lg-6" + error.join(' ')}>
+                                    <div className={"input col-sm-8 col-md-6 col-lg-6" + errorValid.join(' ')}>
                                     <i className="material-icons">markunread_mailbox</i>
-                                    <input className="col-lg-12" type="password" placeholder="password" ref={el => this.regPassword = el}/>
+                                    <input className="col-sm-12 col-md-12 col-lg-12" type="password" placeholder="password" ref={el => this.regPassword = el}/>
                                     </div>
                                     <button disabled={this.state.disabled} onClick={this.handleRegistration} className={this.state.preloader ? 'btnLogin preloader' : 'btnLogin'} type="submit">Enter<i className="material-icons">keyboard_arrow_right</i></button>
                                 </div>

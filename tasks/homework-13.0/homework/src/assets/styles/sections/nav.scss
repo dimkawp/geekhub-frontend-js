@@ -57,3 +57,15 @@ nav {
         }
     }
 }
+@media screen and (max-width: 600px) {
+    nav {
+        justify-content: center;
+        align-items: center;
+        .logo {
+            margin: 0;
+        }
+        ul {
+            padding: 0;
+        }
+    }
+}
