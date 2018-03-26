@@ -146,7 +146,7 @@ nav {
       background-position: center; }
 
 @media screen and (max-width: 600px) {
-  button {
+  .loginBlock .formBlock button, .regBlock .formBlock button {
     width: 300px; } }
 
 /*topMenu*/
@@ -246,6 +246,20 @@ nav {
       font-size: 12px; }
   #topMenu .topMenuBlock .userProfile > * {
     margin: 0 2%; } }
+
+@media screen and (max-width: 600px) {
+  #topMenu .topMenuBlock .userProfile {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    #topMenu .topMenuBlock .userProfile .addProject {
+      display: none; }
+    #topMenu .topMenuBlock .userProfile .dropdownMenu {
+      width: 10px; }
+      #topMenu .topMenuBlock .userProfile .dropdownMenu img {
+        display: none; } }
 
 /*side menu*/
 #SideMenu {
@@ -743,8 +757,16 @@ nav {
       flex-wrap: wrap;
       padding: 0; }
       .home #mainContent .content .statisticsComponents .active .result .resultBlock {
+        height: 300px;
         margin-right: 0;
         margin-bottom: 40px; }
+        .home #mainContent .content .statisticsComponents .active .result .resultBlock .sale, .home #mainContent .content .statisticsComponents .active .result .resultBlock .views {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center; }
+          .home #mainContent .content .statisticsComponents .active .result .resultBlock .sale .title, .home #mainContent .content .statisticsComponents .active .result .resultBlock .views .title {
+            padding: 0; }
     .home #mainContent .content .statisticsComponents .totalSales .items {
       flex-wrap: wrap; }
       .home #mainContent .content .statisticsComponents .totalSales .items .item {
@@ -826,7 +848,6 @@ nav {
             background-color: rebeccapurple;
             border-radius: 50%; }
             .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .userBlock .avatar .online {
-              position: absolute;
               margin-left: 55px;
               width: 15px;
               height: 15px;
@@ -884,9 +905,11 @@ nav {
 @media screen and (max-width: 1200px) {
   .home #mainContent .content .title {
     flex-direction: column; }
-  .home #mainContent .content .usersComponents .table {
-    width: 1200px;
-    overflow: scroll; } }
+  .home #mainContent .content .usersComponents {
+    margin: 0; }
+    .home #mainContent .content .usersComponents .table {
+      width: 1200px;
+      overflow: scroll; } }
 
 /* sales */
 .sales, .report {
@@ -932,6 +955,11 @@ nav {
       font-weight: 600;
       background-color: #FF3975; }
 
+@media screen and (max-width: 600px) {
+  .sales .header, .report .header {
+    justify-content: center;
+    flex-direction: column; } }
+
 /* activity */
 .activity {
   padding: 0;
@@ -972,6 +1000,7 @@ nav {
       font-size: 24px;
       color: white; }
     .activity .items .item .description {
+      width: 65%;
       margin: 17px 0;
       margin-right: 10px;
       font-size: 14px; }
@@ -1018,7 +1047,10 @@ nav {
       .tasks .header .taskCounts .taskDelete {
         background-color: #F73B7B; }
   .tasks .items .item {
-    border-bottom: 1px solid #D4D8E3; }
+    border-bottom: 1px solid #D4D8E3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
     .tasks .items .item .preview {
       margin: 25px;
       height: 45px;
@@ -1126,6 +1158,7 @@ nav {
       font-size: 24px;
       color: white; }
     .messages .items .item .description {
+      width: 65%;
       margin: 17px 0;
       font-size: 14px; }
       .messages .items .item .description .avtorName {

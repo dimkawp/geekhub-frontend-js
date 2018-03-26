@@ -112,8 +112,13 @@
     }
 }
 @media screen and (max-width: 600px) {
-    button {
-        width: 300px;
+    .loginBlock, .regBlock {
+        .formBlock {
+            button {
+                width: 300px;
+            }
+        }
     }
+
 
 }

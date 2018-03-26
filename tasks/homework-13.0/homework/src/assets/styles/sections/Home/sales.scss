@@ -52,3 +52,11 @@
     }
 
 }
+@media screen and (max-width:600px) {
+    .sales, .report {
+        .header {
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}

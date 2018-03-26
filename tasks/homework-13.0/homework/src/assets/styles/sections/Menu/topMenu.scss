@@ -130,3 +130,29 @@
         }
     }
 }
+@media screen and (max-width:600px) {
+    #topMenu {
+        .topMenuBlock {
+            .navigation {
+            }
+            .userProfile {
+                width: 100px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                .addProject {
+                    display: none;
+                }
+                .dropdownMenu {
+                    width: 10px;
+                    img {
+                        display: none;
+                    }
+                }
+                
+            }
+        }
+    }
+
+}

@@ -90,7 +90,6 @@
                                                         background-color: rebeccapurple;
                                                         border-radius: 50%;
                                                         .online {
-                                                            position: absolute;
                                                             margin-left: 55px;
                                                             width: 15px;
                                                             height: 15px;
@@ -188,6 +187,7 @@
                     flex-direction: column;
                 }
                 .usersComponents {
+                    margin: 0;
                     
                     .table {
                         width: 1200px;

@@ -41,3 +41,8 @@
       appearance: none;
       font-weight: 600;
       background-color: #FF3975; }
+
+@media screen and (max-width: 600px) {
+  .sales .header, .report .header {
+    justify-content: center;
+    flex-direction: column; } }

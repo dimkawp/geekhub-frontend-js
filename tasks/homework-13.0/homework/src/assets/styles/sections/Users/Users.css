@@ -60,7 +60,6 @@
             background-color: rebeccapurple;
             border-radius: 50%; }
             .home #mainContent .content .usersComponents .table .react-bs-table-container .react-bs-table .react-bs-container-body table tbody tr td .userBlock .avatar .online {
-              position: absolute;
               margin-left: 55px;
               width: 15px;
               height: 15px;
@@ -118,6 +117,8 @@
 @media screen and (max-width: 1200px) {
   .home #mainContent .content .title {
     flex-direction: column; }
-  .home #mainContent .content .usersComponents .table {
-    width: 1200px;
-    overflow: scroll; } }
+  .home #mainContent .content .usersComponents {
+    margin: 0; }
+    .home #mainContent .content .usersComponents .table {
+      width: 1200px;
+      overflow: scroll; } }

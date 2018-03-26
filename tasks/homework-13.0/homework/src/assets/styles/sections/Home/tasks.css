@@ -26,7 +26,10 @@
       .tasks .header .taskCounts .taskDelete {
         background-color: #F73B7B; }
   .tasks .items .item {
-    border-bottom: 1px solid #D4D8E3; }
+    border-bottom: 1px solid #D4D8E3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
     .tasks .items .item .preview {
       margin: 25px;
       height: 45px;

@@ -95,3 +95,17 @@
       font-size: 12px; }
   #topMenu .topMenuBlock .userProfile > * {
     margin: 0 2%; } }
+
+@media screen and (max-width: 600px) {
+  #topMenu .topMenuBlock .userProfile {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    #topMenu .topMenuBlock .userProfile .addProject {
+      display: none; }
+    #topMenu .topMenuBlock .userProfile .dropdownMenu {
+      width: 10px; }
+      #topMenu .topMenuBlock .userProfile .dropdownMenu img {
+        display: none; } }

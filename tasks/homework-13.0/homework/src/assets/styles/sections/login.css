@@ -83,5 +83,5 @@
       background-position: center; }
 
 @media screen and (max-width: 600px) {
-  button {
+  .loginBlock .formBlock button, .regBlock .formBlock button {
     width: 300px; } }

@@ -38,6 +38,7 @@
       font-size: 24px;
       color: white; }
     .activity .items .item .description {
+      width: 65%;
       margin: 17px 0;
       margin-right: 10px;
       font-size: 14px; }

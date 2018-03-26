@@ -138,8 +138,16 @@
       flex-wrap: wrap;
       padding: 0; }
       .home #mainContent .content .statisticsComponents .active .result .resultBlock {
+        height: 300px;
         margin-right: 0;
         margin-bottom: 40px; }
+        .home #mainContent .content .statisticsComponents .active .result .resultBlock .sale, .home #mainContent .content .statisticsComponents .active .result .resultBlock .views {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center; }
+          .home #mainContent .content .statisticsComponents .active .result .resultBlock .sale .title, .home #mainContent .content .statisticsComponents .active .result .resultBlock .views .title {
+            padding: 0; }
     .home #mainContent .content .statisticsComponents .totalSales .items {
       flex-wrap: wrap; }
       .home #mainContent .content .statisticsComponents .totalSales .items .item {

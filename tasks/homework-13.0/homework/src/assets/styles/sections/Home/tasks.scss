@@ -33,6 +33,9 @@
     .items {
         .item {          
             border-bottom: 1px solid #D4D8E3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             .preview {
                 margin: 25px;
                 height: 45px;
