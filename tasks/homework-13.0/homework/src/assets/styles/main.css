@@ -167,8 +167,11 @@ nav {
       align-items: center; }
       #topMenu .topMenuBlock .navigation .sideMenu {
         cursor: pointer; }
+      #topMenu .topMenuBlock .navigation .search .testSearch i {
+        margin: 0; }
       #topMenu .topMenuBlock .navigation i {
-        color: #0E1A35; }
+        color: #0E1A35;
+        cursor: pointer; }
     #topMenu .topMenuBlock .navigation > * {
       margin: 25px; }
     #topMenu .topMenuBlock .userProfile {
