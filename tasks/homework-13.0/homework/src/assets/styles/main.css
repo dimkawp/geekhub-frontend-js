@@ -1175,6 +1175,32 @@ nav {
         display: flex;
         flex-direction: row;
         align-items: flex-start; }
+        .messages .items .item .description .messageControl i {
+          cursor: pointer; }
+        .messages .items .item .description .messageControl i:hover {
+          color: #66001d; }
+        .messages .items .item .description .messageControl .dropDown {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          margin-left: -20px; }
+          .messages .items .item .description .messageControl .dropDown i, .messages .items .item .description .messageControl .dropDown .text {
+            display: none; }
+          .messages .items .item .description .messageControl .dropDown .menu {
+            flex-direction: column;
+            position: absolute;
+            left: -35px; }
+            .messages .items .item .description .messageControl .dropDown .menu button {
+              font-size: 12px;
+              color: #0D1935;
+              width: 70px;
+              height: 30px;
+              border: none;
+              outline: none;
+              margin: 2px; }
+          .messages .items .item .description .messageControl .dropDown .visible {
+            display: flex;
+            flex-direction: column; }
   .messages .items .read {
     background-color: #F4F5F8; }
   .messages .items .item:first-child {

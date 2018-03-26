@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+//senabtic-ui
+import { Dropdown } from 'semantic-ui-react'
 
 class Messages extends Component {
   constructor(props) {
@@ -29,6 +31,25 @@ class Messages extends Component {
       ]
     };
   }
+    readMessage = (item) => {
+    console.log(item.status);
+        if (item.status === 'read') {
+            item.status = 'no-read'
+        }
+        else {
+            item.status = 'read';
+        }
+        this.setState({messageItems: this.state.messageItems});
+    }
+    removeMessage(item) {
+        const newItem = this.state.messageItems.filter(messageItems => {
+            return messageItems !== item;
+        });
+        this.setState({
+            messageItems: [...newItem]
+        })
+        console.log(item);
+    }
 
   render() {
     let noReadMessage = this.state.messageItems.filter(item => item.status === 'no-read');
@@ -39,9 +60,11 @@ class Messages extends Component {
         <div className="header">
           <h3>Messages</h3>
           <div className="messageCout">
-            <div className="noReadMessage">
-              {noReadMessageCount}
-            </div>
+              {noReadMessageCount > 0 &&
+                <div className="noReadMessage">
+                    {noReadMessageCount}
+                </div>
+              }
           </div>
         </div>
         <div className="items">
@@ -54,8 +77,16 @@ class Messages extends Component {
                 <div className="avtorName">{item.name} <span className="messageData">{item.data}</span></div>
                 <p>{item.message}</p>
                 <div className="messageControl">
-                  <i className="material-icons">reply</i>
-                  <i className="material-icons">brightness_low</i>
+                  <i className="material-icons" onClick={(e)=>this.readMessage(item)}>reply</i>
+                  <i className="material-icons">brightness_low
+                      <Dropdown className="dropDown">
+                          <Dropdown.Menu className="dropDownContent">
+                              <button onClick={(e)=>this.removeMessage(item)}>delete</button>
+                              <br/>
+                              <button>add</button>
+                          </Dropdown.Menu>
+                      </Dropdown>
+                  </i>
                 </div>
               </div>
             </div>
