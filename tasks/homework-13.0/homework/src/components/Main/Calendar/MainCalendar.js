@@ -4,8 +4,6 @@ import 'react-big-calendar/lib/css/react-big-calendar.css';
 import moment from 'moment';
 //redux
 import  store from '../../../redux/store'
-//semantic-ui
-import { Dropdown, Modal, Button, ButtonGroup } from 'semantic-ui-react'
 
 BigCalendar.momentLocalizer(moment); 
 const events = [
@@ -102,9 +100,7 @@ const events = [
     end: new Date(2018, 3, 22, 2, 0, 0),
   },
 ]
-let allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k])
-
-class Test extends Component {
+class MainCalendar extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -114,13 +110,12 @@ class Test extends Component {
           name: 'Nicky Hunt',
           work: 'Product Designer'
         }
-
     }
   }
   
   handleSelectEvent(event) {
     let obj = event;
-    this.state.event = obj.title;
+
     this.setState({
       event: obj
     })
@@ -137,7 +132,6 @@ class Test extends Component {
     });
         return (
           <div className="bigCalendar col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <button >REDUX TEST</button>
             {
               this.state.event > [] &&
             <div id="testModal">
@@ -186,4 +180,4 @@ class Test extends Component {
     }
 }
 
-export default Test
+export default MainCalendar;

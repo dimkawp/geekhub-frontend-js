@@ -14,11 +14,9 @@ class Settings extends Component {
       <section id="mainContent">
         <TopMenu />
         <div className="content">
-          <div className="title">
-            <h2>User Name</h2>
-          </div>
-          <div className="workFlowComponents">
-            <p>SettingsComponents</p>
+          <div className="settingsComponents">
+            <p>SETTINGS</p>
+
           </div>        
         </div>
       </section>  

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Nav from '../Nav';
 import Preloader from '../Preloader';
-import Redirect from 'react-router/Redirect';
 
 class Login extends Component {
     constructor(props) {
@@ -89,9 +88,7 @@ class Login extends Component {
             this.setState({disabled: this.state.disabled = false});
             this.setState({preloader: this.state.preloader = false});
             this.setState({errorValid: true});
-            
         }
-
     }
 
   render() {

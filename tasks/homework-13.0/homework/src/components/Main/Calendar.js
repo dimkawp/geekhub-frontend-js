@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import Preloader from './Preloader';
 import TopMenu from './Menu/TopMenu';
 import SideMenu from './Menu/SideMenu';
-import Test from './Calendar/Test';
-import Basic from './Calendar/Basic';
-
+import MainCalendar from './Calendar/MainCalendar';
 
 class Calendar extends Component {
 
@@ -18,7 +16,7 @@ class Calendar extends Component {
         <TopMenu />
         <div className="content">
           <div className="calendarComponents">
-          <Test /> 
+          <MainCalendar />
           </div>        
         </div>
       </section>  

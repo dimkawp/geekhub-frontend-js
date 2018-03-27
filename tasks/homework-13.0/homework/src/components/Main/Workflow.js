@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import Preloader from './Preloader';
 import TopMenu from './Menu/TopMenu';
 import SideMenu from './Menu/SideMenu';
-import random from 'lodash/random';
 import uniqueId from 'lodash/uniqueId';
-import uniq from 'lodash/uniq';
 import Sortable from 'react-sortablejs';
 //semantic-ui
 import { Dropdown } from 'semantic-ui-react'

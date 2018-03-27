@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 //config
 class Select extends Component {
-    TestOnClick = () => {
-        console.log('click selected');
-    }
+
     onChange = (e) => {
-        console.log(e.target.value);
         if (e.target.value === "Sort Name") {
             this.props.UserTableSendData(
                 {sort: 'name'}        

@@ -789,6 +789,10 @@ nav {
     .home #mainContent .content .statisticsComponents .totalSales .items .item {
       flex-direction: column; } }
 
+/* setting */
+.home #mainContent .content .settingsComponents {
+  height: 100vh; }
+
 /* Users */
 .home #mainContent .content .title {
   display: flex;

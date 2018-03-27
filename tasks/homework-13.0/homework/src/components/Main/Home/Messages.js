@@ -83,7 +83,7 @@ class Messages extends Component {
                           <Dropdown.Menu className="dropDownContent">
                               <button onClick={(e)=>this.removeMessage(item)}>delete</button>
                               <br/>
-                              <button>add</button>
+                              <button onClick={(e)=>this.readMessage(item)}>add</button>
                           </Dropdown.Menu>
                       </Dropdown>
                   </i>

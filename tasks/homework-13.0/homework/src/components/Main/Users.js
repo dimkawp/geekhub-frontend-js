@@ -3,7 +3,6 @@ import Preloader from './Preloader';
 import TopMenu from './Menu/TopMenu';
 import SideMenu from './Menu/SideMenu';
 import Table from './Users/Table';
-import Select from './Users/Select';
 
 class Users extends Component {
   constructor(props) {
@@ -27,8 +26,6 @@ class Users extends Component {
   render() {
     console.log("UsersComponents");
     console.log(this.state.UserTableSendData.sort);
-    const UsersSelect = ["Sort Name","Sort Status"];
-    
     return (
       <div className="wrapper home">
       <Preloader />
