@@ -8,9 +8,32 @@ import Report from './Home/Report';
 import Sales from './Home/Sales';
 import Tasks from './Home/Tasks';
 import Preloader from './Preloader';
+import store from "../../redux/store";
+
 
 class Home extends Component {
+  constructor(props) {
+      super(props);
+      this.state = {
+          userName: 'asd'
+      }
+  }
+  componentWillMount(){
+      console.log('testRedux');
+      store.dispatch({
+          type: 'User',
+          payload: {
+              user: {
+                  name: 'ADMIN',
+                  position: 'administrator'
+              }
+          }
+      })
+  }
   render() {
+    store.subscribe(() => {
+        console.log(store.getState().name);
+    });
     console.log("HomeComponents");
     return (
       <div className="wrapper home">
@@ -20,7 +43,7 @@ class Home extends Component {
           <TopMenu />
           <div className="content">
             <div className="title">
-              <h2>User Name</h2>
+              <h2>{store.getState().name}</h2>
             </div>
             <div className="homeComponents col-lg-12">
               <Sales />

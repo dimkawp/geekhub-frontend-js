@@ -82,11 +82,13 @@ class Table extends Component {
         )
         return PhoneBlock
       }
-      DropDownMenu = () => {
-        console.log('dropdown meny');
+
+      handleClick = (e) => {
+          console.log(e+'dropdown meny');
       }
+
       DropButton(cell, row, enumObject, rowIndex) {
-        let DropButton
+        let DropButton;
         DropButton = (
           <Dropdown className="dropDown">
             <Dropdown.Menu className="dropDownContent">
@@ -153,10 +155,8 @@ class Table extends Component {
           }
         }
     }
-    
       
   render() {
-
     console.log("TableComponents");
     const UsersSelect = ["Sort Name","Sort Status"];
     return (
@@ -180,7 +180,12 @@ class Table extends Component {
         </div>       
       </div>
       </div>
-      <BootstrapTable ref='table' data={this.state.products} striped hover pagination={true}>
+      <BootstrapTable ref='table'
+                      data={this.state.products}
+                      options={{onDeleteRow: this.handleDeleteRow}}
+                      striped
+                      hover
+                      pagination={true}>
         <TableHeaderColumn isKey dataField='name' dataFormat={this.UserBlock} width='25%' dataSort={true}>Name</TableHeaderColumn>
         <TableHeaderColumn dataField='status' dataFormat={this.Activity} dataSort={true}>Last activity</TableHeaderColumn>
         <TableHeaderColumn dataField='mail' dataFormat={this.MailBlock}>Mail</TableHeaderColumn>

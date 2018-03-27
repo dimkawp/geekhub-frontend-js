@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import BigCalendar from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import moment from 'moment';
+//redux
+import  store from '../../../redux/store'
 //semantic-ui
 import { Dropdown, Modal, Button, ButtonGroup } from 'semantic-ui-react'
 
@@ -107,10 +109,12 @@ class Test extends Component {
     super(props);
     this.state = {
       event: [],
-      user: [
-        {name: 'Nicky Hunt'},
-        {work: 'Product Designer'}
-      ]
+      user:
+        {
+          name: 'Nicky Hunt',
+          work: 'Product Designer'
+        }
+
     }
   }
   
@@ -126,9 +130,14 @@ class Test extends Component {
       event: []
     })
   }
+
     render() {
+    store.subscribe(() => {
+      //
+    });
         return (
           <div className="bigCalendar col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <button >REDUX TEST</button>
             {
               this.state.event > [] &&
             <div id="testModal">
@@ -138,8 +147,8 @@ class Test extends Component {
                 <div className="author">
                 <div className="avatarImg"></div>
                 <div>
-                  <span className="name">{this.state.user[0].name}</span>
-                  <span className="work">{this.state.user[1].work}</span>
+                  <span className="name">{store.getState().name}</span>
+                  <span className="work">{this.state.user.work}</span>
                 </div>
                 </div>
               </div>

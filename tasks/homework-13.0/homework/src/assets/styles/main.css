@@ -357,7 +357,7 @@ nav {
       .home #mainContent .content .title {
         margin: 45px 0; }
         .home #mainContent .content .title h2 {
-          margin-left: 50px; }
+          padding-left: 50px; }
       .home #mainContent .content .homeComponents {
         display: flex;
         flex-direction: row;
