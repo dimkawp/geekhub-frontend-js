@@ -39,6 +39,6 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "proxy": "https://api-fore-homework-13.herokuapp.com"
+  }
+  //"proxy": "https://api-fore-homework-13.herokuapp.com"
 }

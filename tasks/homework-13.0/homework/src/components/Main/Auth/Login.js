@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Nav from '../Nav';
 import Preloader from '../Preloader';
 
+const apiUrl = "https://api-fore-homework-13.herokuapp.com"
+
 class Login extends Component {
     constructor(props) {
         super(props);
@@ -25,7 +27,7 @@ class Login extends Component {
             name: this.login.value.trim(),
             password: this.password.value.trim()
         }
-        fetch('/api/users/authentication', {
+        fetch(apiUrl+'/api/users/authentication', {
             method: 'post',
             mode: 'cors',
             headers: {
@@ -60,7 +62,7 @@ class Login extends Component {
                 email: this.email.value.trim(),
                 password: this.regPassword.value.trim(),
             }
-            fetch('/api/users/create_user', {
+            fetch(apiUrl+'/api/users/create_user', {
                 method: 'post',
                 mode: 'cors',
                 headers: {
