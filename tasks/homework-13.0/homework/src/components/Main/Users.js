@@ -3,6 +3,7 @@ import Preloader from './Preloader';
 import TopMenu from './Menu/TopMenu';
 import SideMenu from './Menu/SideMenu';
 import Table from './Users/Table';
+import store from "../../redux/store";
 
 class Users extends Component {
   constructor(props) {

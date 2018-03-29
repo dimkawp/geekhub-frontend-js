@@ -15,7 +15,7 @@ class Home extends Component {
   constructor(props) {
       super(props);
       this.state = {
-          userName: 'asd'
+          userName: ''
       }
   }
   componentWillMount(){
@@ -25,7 +25,8 @@ class Home extends Component {
           payload: {
               user: {
                   name: 'ADMIN',
-                  position: 'administrator'
+                  position: 'administrator',
+                  avatarUrl: 'https://thumbs.dreamstime.com/z/vista-delantera-del-avatar-del-hombre-silueta-masculina-de-la-cara-90980567.jpg'
               }
           }
       })

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 //semantic-ui
 import { Button, Modal, Search } from 'semantic-ui-react'
 import _ from "lodash";
+import store from "../../../redux/store";
 
 const source = [
     {
@@ -40,7 +41,8 @@ class TopMenu extends Component {
     state = {
         isLoading: false,
         results: [],
-        value: ""
+        value: "",
+        avatarImg: ''
     };
     //SEARCH
     componentWillMount() {
@@ -86,6 +88,7 @@ class TopMenu extends Component {
     logOut = () => {
         console.log(localStorage.getItem('User'));
         localStorage['User'] = 'false';
+        localStorage['Token'] = '';
         window.location.reload();
         console.log(localStorage.getItem('User'));
     }
@@ -93,11 +96,22 @@ class TopMenu extends Component {
     addProjectEvent = () => {
         console.log('add');
     }
+    //FORM ADD Avatar
+    addAvatar = () => {
+        let url = this.avatarImg.value.trim();
+        this.setState({ avatarImg: url });
+        store.dispatch({
+            type: 'User',
+            payload: {
+                user: {
+                    avatarUrl: url,
+                }
+            }
+        })
+    }
 
   render() {
-    const UserImg = localStorage.getItem('UserImg');
     console.log("TopMenuComponents");
-
     return (
         <section id="topMenu">
             <div className="topMenuBlock">
@@ -130,10 +144,13 @@ class TopMenu extends Component {
                     <i className="material-icons">mail</i>
                     <i className="material-icons">notifications</i>
                     <div className="dropdownMenu">
-                    <img className="avatar" src={UserImg} alt="avatat"/>
+                    <img className="avatar" src={store.getState().avatarUrl} alt="avatat"/>
                         <button className="dropBtn"><i className="material-icons">arrow_drop_down</i></button>
                         <div className="dropdownContent">
-                            <button>CONTENT</button>
+
+                        <input className="" type="text" placeholder="URL ..." ref={el => this.avatarImg = el}/>
+                        <button type="submit" onClick={this.addAvatar}>ADD</button>
+
                             <button onClick={this.logOut}>LOGOUT</button>
                         </div>
                     </div>        

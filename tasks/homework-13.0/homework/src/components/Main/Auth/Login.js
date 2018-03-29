@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Nav from '../Nav';
 import Preloader from '../Preloader';
 
+import store from "../../../redux/store";
+
 const apiUrl = "https://api-fore-homework-13.herokuapp.com"
 
 class Login extends Component {
@@ -27,7 +29,7 @@ class Login extends Component {
             name: this.login.value.trim(),
             password: this.password.value.trim()
         }
-        fetch(apiUrl+'/api/users/authentication', {
+        fetch('http://localhost:3000/api/users/authentication', {
             method: 'post',
             mode: 'cors',
             headers: {
@@ -39,7 +41,16 @@ class Login extends Component {
         .then(response => response.json())
         .then(response => {
             if (response.login === 'true') {
+                store.dispatch({
+                    type: 'Auth',
+                    payload: {
+                        auth: {
+                            token: response.token
+                        }
+                    }
+                })
                 localStorage.setItem('User', response.login);
+                localStorage.setItem('Token', response.token);
                 console.log(response.login);
                 this.props.history.push("/");
             }

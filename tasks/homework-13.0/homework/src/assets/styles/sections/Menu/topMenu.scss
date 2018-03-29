@@ -83,7 +83,7 @@
                     margin: 25px;
                     margin-top: 75px;
                     width: 160px;
-                    background-color: white;
+                    background-color: #ffffff;
                     outline: 1px solid #D4D8E3;
                     button {
                         width: 100px;
@@ -95,6 +95,13 @@
                     button:hover {
                         transition: 1s;
                         box-shadow: 1px 1px 30px 0px rgba(50, 50, 50, 0.75);
+                    }
+                    input {
+                        height: 50px;
+                        width: 100px;
+                        border: none;
+                        outline: none;
+                        border-bottom: 1px solid #D4D8E3;
                     }
                 }
             }
