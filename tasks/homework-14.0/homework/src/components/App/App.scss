@@ -1,0 +1,18 @@
+.wrapper {
+  #mainContent {
+    display: flex;
+    flex-direction: row;
+    section {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    #mainContent {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+//components
+import HeaderMenu from '../Menu/HeaderMenu';
+import SideMenu from "../Menu/SideMenu";
 
 class Raport extends Component {
     Logout = () => {
@@ -9,9 +12,15 @@ class Raport extends Component {
     render() {
         console.log("RaportComponents");
         return (
-            <div>
-                Raport
-                <button onClick={this.Logout}>Logout</button>
+            <div className="wrapper">
+                <HeaderMenu />
+                <section id="mainContent">
+                    <SideMenu />
+                    <section id="raport">
+                        Raport
+                        <button onClick={this.Logout}>Logout</button>
+                    </section>
+                </section>
             </div>
 
         );
