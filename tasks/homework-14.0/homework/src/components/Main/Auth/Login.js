@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'reactstrap';
 
 class Login extends Component {
     //LOGIN
@@ -25,6 +26,7 @@ class Login extends Component {
                 <input type="text" placeholder="username" ref={el => this.login = el}/>
                 <input type="password" placeholder="password" ref={el => this.password = el}/>
                 <button onClick={this.handleLogin}>Enter</button>
+                <Button color="danger">Danger!</Button>
             </div>
         );
     }
