@@ -17,7 +17,6 @@ class Login extends Component {
             localStorage.setItem('User', false);
             this.props.history.push("/");
         }
-
     }
 
     render() {
@@ -26,8 +25,7 @@ class Login extends Component {
             <div>
                 <input type="text" placeholder="username" ref={el => this.login = el}/>
                 <input type="password" placeholder="password" ref={el => this.password = el}/>
-                <button onClick={this.handleLogin}>Enter</button>
-                <Button primary>Danger!</Button>
+                <Button primary onClick={this.handleLogin}>Enter</Button>
             </div>
         );
     }
