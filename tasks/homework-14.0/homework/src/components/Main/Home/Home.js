@@ -26,7 +26,9 @@ class Home extends Component {
                  <SideMenu />
                  <section id="home">
                      <Row>
-                         <Col xl="9"><HomeChart/></Col>
+                         <Col xl="9">
+                             <HomeChart/>
+                         </Col>
                          <Col xl="3"><Projects/></Col>
                      </Row>
                      <Row>

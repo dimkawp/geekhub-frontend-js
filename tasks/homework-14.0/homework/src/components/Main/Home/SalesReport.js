@@ -5,9 +5,7 @@ class SalesReport extends Component {
     render() {
         console.log("SalesReportComponents");
         return (
-            <div>
-                SalesReport
-            </div>
+            <div>SALES</div>
         );
     }
 }
