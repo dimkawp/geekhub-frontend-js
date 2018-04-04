@@ -25,8 +25,7 @@ const ReportChart = {
         },
         type: 'datetime',
         dateTimeLabelFormats: {
-            month: '%e. %b',
-            year: '%b'
+            week: "%e. %b"
         },
         //categories: ['MON', 'TUE', 'WED', 'THU', 'FRI'],
     },

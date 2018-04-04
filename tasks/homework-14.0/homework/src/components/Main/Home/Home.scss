@@ -1,0 +1,15 @@
+/* Home */
+#mainContent {
+  background-color: #282A37;
+  #home {
+    background-color: #282A38;
+    margin: 60px 20px 20px 60px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #mainContent {
+    #home {
+      margin: 0;
+    }
+  }
+}

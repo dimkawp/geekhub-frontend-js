@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Home.css';
 //components
 import HeaderMenu from '../Menu/HeaderMenu';
 import SideMenu from '../Menu/SideMenu';
@@ -31,6 +32,7 @@ class Home extends Component {
                          </Col>
                          <Col xl="3"><Projects/></Col>
                      </Row>
+                     <br/>
                      <Row>
                          <Col xl="6"><SalesReport/></Col>
                          <Col xl="3"><Inbox/></Col>

@@ -2,7 +2,10 @@
 .sideMenuBlock {
   width: 95px;
   background-color: #2F3141;
+  display: flex;
+  justify-content: center;
   .items {
+    width: 95px;
     display: flex;
     flex-direction: column;
     .item {

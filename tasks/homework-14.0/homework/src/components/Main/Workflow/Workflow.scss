@@ -1,0 +1,67 @@
+/* workflow */
+#mainContent {
+  #workflow {
+    .workflowHeader {
+      background-color: #237FCA;
+      height: 95px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title {
+        margin-left: 50px;
+        h3 {
+          color: #2B2D3B;
+          span {
+            color: white;
+          }
+        }
+      }
+      .select {
+        width: 200px;
+        color: white;
+        margin-right: 130px;
+
+        select {
+
+
+        }
+      }
+    }
+    .workflowBlock {
+      width: auto;
+      display: flex;
+      overflow: scroll;
+      .columns {
+        height: 100%;
+        width: 4500px;
+        display: flex;
+        .column {
+          display: flex;
+          flex-direction: column;
+          align-self: flex-start;
+          width: 300px;
+          margin: 25px;
+          .items {
+            .item {
+              height: 150px;
+              background-color: #393D51;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  #mainContent {
+    #workflow {
+      .workflowHeader {
+        .select {
+          margin-right: 50px;
+        }
+
+      }
+    }
+  }
+
+}
