@@ -1,0 +1,80 @@
+/* projects */
+#mainContent {
+  #projects {
+    min-height: 100vh;
+    background-color: #2A2C3A;
+    .projectsHeader {
+      background-color: #237FCA;
+      height: 95px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title {
+        margin-left: 50px;
+        h3 {
+          color: white;
+          span {
+            color: #2B2D3B;
+          }
+        }
+      }
+      .select {
+        width: 200px;
+        color: white;
+        margin-right: 50px;
+
+        select {
+
+        }
+      }
+    }
+    .projectsBlock {
+
+      .testTable {
+        thead {
+          tr {
+
+            th {
+              color: #9DA3B3;
+              border: none;
+              outline: none;
+              text-align: center;
+            }
+
+          }
+
+        }
+        tbody {
+          tr {
+            border: none;
+            outline: none;
+            td {
+              margin: 0;
+              padding: 0;
+              color: white;
+
+              border: none;
+              outline: none;
+              background-color: #393D51;
+              .testRow {
+                height: 120px;
+                .testRowBody {
+                  height: 90px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+
+                }
+                .testRowButton {
+                  height: 30px;
+                  background-color: #2B2D3A;
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
