@@ -12,6 +12,31 @@
     color: white;
     display: flex;
     flex-direction: row;
+    .addNewProjectBlock {
+      margin: 0;
+      position: absolute;
+      top: 96px;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+
+    }
+    .bigSearchBlock {
+      margin: 0;
+      z-index: 2;
+      opacity: 0.9;
+      top: 95px;
+      left: 0;
+      background-color: #9DA3B3;
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     svg {
       height: 30px;
       width: 25px;
@@ -28,12 +53,88 @@
       }
     }
     .buttonAdd {
+      cursor: pointer;
       height: 50px;
       width: 130px;
       outline: none;
       border: none;
       border-radius: 25px 25px 25px 25px;
       background-color: #2195F3;
+      span {
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+      }
+    }
+    .buttonAdd:hover {
+      border: 2px solid #2195F3;
+      background-color: #2F3241;
+    }
+    .events {
+      .lastMessageEvents {
+        position: absolute;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        background-color: #2195F3;
+        display: flex;
+        align-self: flex-start;
+        margin-top: 10px;
+        margin-left: 35px;
+        cursor: pointer;
+        .lastMessageBlock {
+          z-index: 2;
+          position: absolute;
+          right: 0;
+          top: 0;
+          .items {
+            display: flex;
+            flex-direction: column;
+            border-top: 1px solid #9BA1B1;
+            border-left: 1px solid #9BA1B1;
+            border-right: 1px solid #9BA1B1;
+            margin: 0;
+            .item {
+              margin: 0;
+              background-color: #2E3040;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              border-bottom: 1px solid #9BA1B1;
+              .description {
+                font-size: 12px;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                .header {
+                  background-color: #2E3040;
+                  height: auto;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: space-between;
+                  .title {
+                    color: white;
+                  }
+                  .data {
+                    color: #2195F2;
+                  }
+                }
+                .text {
+                  height: 80px;
+                  text-overflow: clip;
+                  overflow: hidden;
+                }
+              }
+
+            }
+          }
+        }
+
+      }
+    }
+    .search {
+      cursor: pointer;
     }
   }
   .userBlock * {
@@ -44,7 +145,13 @@
 }
 @media screen and (max-width: 1200px) {
   .headerBlock {
+    height: auto;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+    .userBlock {
+      flex-wrap: wrap;
+
+    }
   }
 }

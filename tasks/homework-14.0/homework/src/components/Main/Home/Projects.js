@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Projects.css';
+import { Dropdown } from 'semantic-ui-react';
 
 class Projects extends Component {
     constructor(props) {
@@ -39,6 +40,13 @@ class Projects extends Component {
                 }
         };
     }
+    removeItem = (item) => {
+        console.log(item.sum);
+
+    }
+    chengeStatus = (item) => {
+
+    }
 
     render() {
         console.log("ProjectsComponents");
@@ -60,7 +68,15 @@ class Projects extends Component {
                                         <div className="title">{item.title}</div>
                                         <div className="projectSum">{item.description} - {item.sum}</div>
                                     </div>
-                                    <div className="dropbox">dr</div>
+                                    <div className="dropbox">
+                                        <Dropdown className="dropDownBox">
+                                            <Dropdown.Menu className="dropDownBoxMenu">
+                                                <button onClick={(e)=>this.removeItem(item)}>delete</button>
+                                                <br/>
+                                                <button onClick={(e)=>this.chengeStatus(item)}>add</button>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </div>
                                 </div>
                             );
                         })

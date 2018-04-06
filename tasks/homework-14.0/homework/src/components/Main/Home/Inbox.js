@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Inbox.css';
-
+import $ from 'jquery';
 class Inbox extends Component {
     constructor(props) {
         super(props);
@@ -70,12 +70,36 @@ class Inbox extends Component {
         };
     }
 
+    //JQ
+    componentDidMount() {
+        $(document).ready(function() {
+            $(".highcharts-credits, .highcharts-legend").hide();
+        });
+    }
+
+    changeStatus = (item) => {
+        if (item.status === 'no-read') {
+            item.status = 'read'
+        }
+        else {
+            item.status = 'no-read';
+        }
+        this.setState({messageItems: this.state.messageItems});
+    }
+
     render() {
         console.log("InboxComponents");
+        let messageItems = this.state.messageItems.filter(item => item.status === 'no-read');
+        let messageItemsCount = messageItems.length;
         return (
             <div className="inboxBlock">
                 <div className="header">
-                    <h3>Inbox</h3>
+                    <h3>
+                        Inbox
+                        { messageItemsCount > 0 &&
+                        <span> (<span>{messageItemsCount}</span>)</span>
+                        }
+                    </h3>
                 </div>
                 <div className="items">
                     {
@@ -85,8 +109,8 @@ class Inbox extends Component {
                                     <div className="avatar">
                                         <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(4).jpg" alt="avatar"/>
                                     </div>
-                                    <div className="description">
-                                        <div className="header">
+                                    <div className="description" onClick={(e)=>this.changeStatus(item)}>
+                                        <div className={"header "+item.status}>
                                             <div className="title">{item.name}</div>
                                             <div className="data">{item.data}</div>
                                         </div>

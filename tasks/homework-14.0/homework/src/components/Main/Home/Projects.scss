@@ -27,6 +27,7 @@
         }
       }
       .description {
+        width: 50%;
         .title {
           color: white;
         }
@@ -35,7 +36,19 @@
         }
       }
       .dropbox {
-        margin-left: 50%;
+        margin-left: 20%;
+        .dropDownBox {
+          height: 16px;
+          width: 4px;
+          background: url(../../../assets/img/Home/drp.fw.png) no-repeat center;
+          i {
+            display: none;
+          }
+          .dropDownBoxMenu {
+            right: 0;
+
+          }
+        }
       }
 
     }

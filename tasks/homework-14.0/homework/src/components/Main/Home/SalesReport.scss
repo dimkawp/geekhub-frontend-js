@@ -1,0 +1,16 @@
+/* sales report */
+.salesReportBlock {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2F3242;
+    .title {
+      margin: 35px;
+      color: white;
+      font-size: 24.5px;
+    }
+    .select {
+      margin: 35px;
+    }
+  }
+}
