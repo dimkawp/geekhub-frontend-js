@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Projects.css';
-import { Dropdown } from 'semantic-ui-react';
+import { Dropdown, Button } from 'semantic-ui-react';
+import store from "../../../Redux/store";
 
 class Projects extends Component {
     constructor(props) {
@@ -32,6 +33,7 @@ class Projects extends Component {
                     sum: '2500'
                 }
             ],
+            testarr: ['asdad','asdsada','asdsad'],
             activeUser:
                 {
                     id: 1,
@@ -47,6 +49,29 @@ class Projects extends Component {
     chengeStatus = (item) => {
 
     }
+    tester = () => {
+
+        let newID = this.state.projectsItems.length+1;
+        let newName = store.getState().name;
+        console.log(newName);
+        let newprojectsItems =
+            {
+                id: newID,
+                title: newName,
+                name: 'Nina Jones',
+                email: 'NinaJones@gmail.com',
+                description: 'Symu.c4o',
+                sum: '4500'
+            }
+        ;
+        this.state.projectsItems.push(newprojectsItems);
+        this.setState(this.state);
+        this.state;
+        console.log(store.getState().name);
+        //this.state.projectsItems = [...this.state.projectsItems, newprojectsItems];
+        //this.setState({ projectsItems: this.state.projectsItems });
+    }
+
 
     render() {
         console.log("ProjectsComponents");
@@ -55,6 +80,9 @@ class Projects extends Component {
                 <div className="header">
                     <h3>Your projects</h3>
                 </div>
+
+                <button onClick={this.tester}>TEST</button>
+
                 <div className="items">
                     {
                         this.state.projectsItems.map((item) => {
@@ -71,9 +99,9 @@ class Projects extends Component {
                                     <div className="dropbox">
                                         <Dropdown className="dropDownBox">
                                             <Dropdown.Menu className="dropDownBoxMenu">
-                                                <button onClick={(e)=>this.removeItem(item)}>delete</button>
+                                                <Button onClick={(e)=>this.removeItem(item)}>delete</Button>
                                                 <br/>
-                                                <button onClick={(e)=>this.chengeStatus(item)}>add</button>
+                                                <Button onClick={(e)=>this.chengeStatus(item)}>add</Button>
                                             </Dropdown.Menu>
                                         </Dropdown>
                                     </div>

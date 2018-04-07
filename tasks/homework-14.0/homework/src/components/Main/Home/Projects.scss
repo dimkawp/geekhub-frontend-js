@@ -37,6 +37,19 @@
       }
       .dropbox {
         margin-left: 20%;
+        .dropdown {
+          .menu {
+            top: 0;
+            left: -100px;
+            right: 0;
+            button {
+              width: 100%;
+              text-align: center;
+              color: white;
+              background-color: #393D51;
+            }
+          }
+        }
         .dropDownBox {
           height: 16px;
           width: 4px;
@@ -45,7 +58,6 @@
             display: none;
           }
           .dropDownBoxMenu {
-            right: 0;
 
           }
         }

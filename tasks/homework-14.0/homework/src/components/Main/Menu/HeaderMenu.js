@@ -5,7 +5,7 @@ import IconSearch from 'react-icons/lib/fa/search';
 import IconBell from 'react-icons/lib/fa/bell-o';
 import { Dropdown, Input, Button } from 'semantic-ui-react';
 import _ from 'lodash';
-
+import store from "../../../Redux/store";
 
 class HeaderMenu extends Component {
     constructor(props) {
@@ -72,13 +72,30 @@ class HeaderMenu extends Component {
                     status: 'read',
                     data: 'Today, 5:32 PM'
                 }
-            ]
+            ],
+            value: ''
         }
     }
     componentDidMount () {
         setTimeout(function () {
             this.setState({lastMessageEvents: !this.state.lastMessageEvents});
         }.bind(this), 3000);
+    }
+
+    handleChangeValue = (e) => {
+        this.setState({value: e.target.value});
+    }
+    CreatedNewProject = (e) => {
+        this.setState({value: e.target.value});
+        let projectName = this.state.value;
+        store.dispatch({
+            type: 'NewProject',
+            payload: {
+                project: {
+                    name: projectName
+                }
+            }
+        })
     }
     AddNewProject = () => {
         this.setState({addNewProjectBlock: !this.state.addNewProjectBlock});
@@ -93,6 +110,9 @@ class HeaderMenu extends Component {
 
     render() {
         console.log("HeaderMenuComponents");
+        store.subscribe(() => {
+            console.log(store.getState().name);
+        });
         return (
             <div className="headerBlock">
                 <div className="logo">
@@ -108,8 +128,8 @@ class HeaderMenu extends Component {
                     <button className="buttonAdd" onClick={this.AddNewProject}><span>Add</span></button>
                     { this.state.addNewProjectBlock === true &&
                             <div className="addNewProjectBlock">
-                            <Input placeholder='Project Name' />
-                        <Button type='submit'>CREATE</Button>
+                            <Input type='text' placeholder='Project Name' value={this.state.value} onChange={this.handleChangeValue}/>
+                        <Button type='submit' onClick={this.CreatedNewProject}>CREATE</Button>
                         </div>
                     }
                     <div className="search" onClick={this.searchBlock}><IconSearch/></div>
