@@ -9,6 +9,15 @@
     color: white;
 
   }
+  .addNewProjectBlock {
+    display: flex;
+    justify-content: space-between;
+    .input {
+      input {
+        width: 100%;
+      }
+    }
+  }
   .items {
     display: flex;
     flex-direction: column;

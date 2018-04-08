@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './Projects.css';
-import { Dropdown, Button } from 'semantic-ui-react';
+import { Dropdown, Button, Input } from 'semantic-ui-react';
 import store from "../../../Redux/store";
 
 class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            addNewProjectBlock: false,
+            projectName: '',
             projectsItems: [
                 {
                     id: 1,
@@ -42,46 +44,64 @@ class Projects extends Component {
                 }
         };
     }
-    removeItem = (item) => {
-        console.log(item.sum);
+    componentWillMount() {
 
     }
-    chengeStatus = (item) => {
+    removeItem(item) {
+        const newItems = this.state.projectsItems.filter(projectsItems => {
+            return projectsItems !== item;
+        });
+        this.setState({
+            projectsItems: [...newItems]
+        })
+    }
+    addNewProject = () => {
+        this.setState({addNewProjectBlock: !this.state.addNewProjectBlock});
 
     }
-    tester = () => {
-
+    handleChangeProjectName = (e) => {
+        this.setState({projectName: e.target.value});
+    }
+    createNewProject = (e) => {
         let newID = this.state.projectsItems.length+1;
-        let newName = store.getState().name;
-        console.log(newName);
-        let newprojectsItems =
+        this.setState({projectName: e.target.value});
+        let projectName = this.state.projectName;
+        let newProjectsItems =
             {
                 id: newID,
-                title: newName,
+                title: projectName,
                 name: 'Nina Jones',
                 email: 'NinaJones@gmail.com',
                 description: 'Symu.c4o',
                 sum: '4500'
             }
         ;
-        this.state.projectsItems.push(newprojectsItems);
+        this.state.projectsItems.push(newProjectsItems);
         this.setState(this.state);
         this.state;
-        console.log(store.getState().name);
+        this.setState({addNewProjectBlock: !this.state.addNewProjectBlock});
+
         //this.state.projectsItems = [...this.state.projectsItems, newprojectsItems];
         //this.setState({ projectsItems: this.state.projectsItems });
     }
 
 
+
     render() {
         console.log("ProjectsComponents");
+
         return (
             <div className="projectsBlock">
                 <div className="header">
                     <h3>Your projects</h3>
                 </div>
 
-                <button onClick={this.tester}>TEST</button>
+                { this.state.addNewProjectBlock === true &&
+                <div className="addNewProjectBlock">
+                    <Input type='text' placeholder='Project Name' value={this.state.projectName} onChange={this.handleChangeProjectName}/>
+                    <Button type='submit' onClick={this.createNewProject}>CREATE</Button>
+                </div>
+                }
 
                 <div className="items">
                     {
@@ -101,7 +121,7 @@ class Projects extends Component {
                                             <Dropdown.Menu className="dropDownBoxMenu">
                                                 <Button onClick={(e)=>this.removeItem(item)}>delete</Button>
                                                 <br/>
-                                                <Button onClick={(e)=>this.chengeStatus(item)}>add</Button>
+                                                <Button onClick={(e)=>this.addNewProject(item)}>add</Button>
                                             </Dropdown.Menu>
                                         </Dropdown>
                                     </div>

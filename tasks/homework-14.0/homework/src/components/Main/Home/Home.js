@@ -13,10 +13,6 @@ import Calendar from './Calendar';
 import { Row, Col } from 'reactstrap';
 
 class Home extends Component {
-    Logout = () => {
-        localStorage.setItem('User', false);
-        this.props.history.push("/");
-    }
 
     render() {
         console.log("HomeComponents");

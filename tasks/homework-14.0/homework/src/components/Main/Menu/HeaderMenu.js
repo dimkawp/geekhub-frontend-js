@@ -73,7 +73,7 @@ class HeaderMenu extends Component {
                     data: 'Today, 5:32 PM'
                 }
             ],
-            value: ''
+            projectName: ''
         }
     }
     componentDidMount () {
@@ -81,13 +81,17 @@ class HeaderMenu extends Component {
             this.setState({lastMessageEvents: !this.state.lastMessageEvents});
         }.bind(this), 3000);
     }
+    Logout = () => {
+        localStorage.setItem('User', false);
+        window.location.reload();
+    }
 
-    handleChangeValue = (e) => {
-        this.setState({value: e.target.value});
+    handleChangeProjectName = (e) => {
+        this.setState({projectName: e.target.value});
     }
     CreatedNewProject = (e) => {
-        this.setState({value: e.target.value});
-        let projectName = this.state.value;
+        this.setState({projectName: e.target.value});
+        let projectName = this.state.projectName;
         store.dispatch({
             type: 'NewProject',
             payload: {
@@ -128,7 +132,7 @@ class HeaderMenu extends Component {
                     <button className="buttonAdd" onClick={this.AddNewProject}><span>Add</span></button>
                     { this.state.addNewProjectBlock === true &&
                             <div className="addNewProjectBlock">
-                            <Input type='text' placeholder='Project Name' value={this.state.value} onChange={this.handleChangeValue}/>
+                            <Input type='text' placeholder='Project Name' value={this.state.projectName} onChange={this.handleChangeProjectName}/>
                         <Button type='submit' onClick={this.CreatedNewProject}>CREATE</Button>
                         </div>
                     }
@@ -160,8 +164,6 @@ class HeaderMenu extends Component {
                                         </div>
                                 }
                             </div>
-
-
                         }
                         <IconBell/>
                     </div>
