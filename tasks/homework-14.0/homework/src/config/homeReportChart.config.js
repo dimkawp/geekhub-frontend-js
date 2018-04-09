@@ -23,11 +23,7 @@ const ReportChart = {
                 textTransform: 'uppercase'
             }
         },
-        type: 'datetime',
-        dateTimeLabelFormats: {
-            week: "%e. %b"
-        },
-        //categories: ['MON', 'TUE', 'WED', 'THU', 'FRI'],
+        categories: ['MON', 'TUE', 'WED', 'THU', 'FRI'],
     },
     yAxis: {
         gridLineWidth: false,
@@ -44,7 +40,7 @@ const ReportChart = {
     tooltip: {
         headerFormat: 'header',
         pointFormat: '{point.x:%e. %b}: {point.y:.2f} m',
-        backgroundColor: 'red'
+        backgroundColor: '#9BA1B1'
     },
 
     plotOptions: {
@@ -64,12 +60,11 @@ const ReportChart = {
         color: '#2196F3',
         lineWidth: 3,
         data: [
-            [Date.UTC(1970, 9, 21), 10],
-            [Date.UTC(1970, 10, 4), 0.28],
-            [Date.UTC(1970, 10, 9), 20.25],
-            [Date.UTC(1970, 10, 27), 10.2],
-            [Date.UTC(1970, 11, 2), 30.28],
-            [Date.UTC(1970, 11, 26), 20.28]
+            [10],
+            [0.28],
+            [20.25],
+            [10.2],
+            [30.28]
         ]
     }]
 }

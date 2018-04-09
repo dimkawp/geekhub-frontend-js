@@ -1,18 +1,40 @@
 /* select */
 .select {
-  span {
-    color: #9DA3B3;
-    font-size: 16px;
+  div {
+    display: flex;
+    align-items: center;
+    span {
+      color: #9DA3B3;
+      font-size: 16px;
+      margin-right: 10px;
+
+    }
+    select {
+      height: 36px;
+      width: 155px;
+      cursor: pointer;
+      background-color: #2F3141;
+      border: 2px solid #2195F3;
+      border-radius: 25px 25px;
+      outline: none;
+      color: #9DA3B3;
+      font-size: 16px;
+      padding-left: 10px;
+
+    }
+    select:hover {
+      background-color: #2195F3;
+      border: 2px solid #2195F3;
+    }
 
   }
-  select {
-    cursor: pointer;
-    background-color: #2195F3;
-    border: none;
-    border-radius: 25px 25px;
-    outline: none;
-    color: #9DA3B3;
-    font-size: 16px;
-    padding: 10px 100px 10px 15px;
+}
+@media screen and (max-width: 600px) {
+  .select {
+    div {
+      select {
+        width: 100px;
+      }
+    }
   }
 }

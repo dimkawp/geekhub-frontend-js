@@ -4,7 +4,7 @@ import './Select.css';
 class Select extends Component {
     onChange = (e) => {
         console.log(e.target.value);
-        if (e.target.value === "Yeat") {
+        if (e.target.value === "Year") {
             console.log('1');
             this.props.SelectSendData(
 

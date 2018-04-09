@@ -4,6 +4,7 @@ import './Home.css';
 import HeaderMenu from '../Menu/HeaderMenu';
 import SideMenu from '../Menu/SideMenu';
 import HomeChart from './HomeChart';
+import HomeChartHeader from './HomeChartHeader';
 import Projects from './Projects';
 import SalesReport from './SalesReport';
 import Inbox from './Inbox';
@@ -23,7 +24,8 @@ class Home extends Component {
                  <SideMenu />
                  <section id="home">
                      <Row>
-                         <Col xl="9">
+                         <Col className="homeChart" xl="9">
+                             <HomeChartHeader />
                              <HomeChart/>
                          </Col>
                          <Col xl="3"><Projects/></Col>

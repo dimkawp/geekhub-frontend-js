@@ -19,7 +19,7 @@ class SalesReport extends Component {
     }
 
     render() {
-        const SelectReportData = ["Yeat","Month", "Week"];
+        const SelectReportData = ["Year","Month", "Week"];
         SalesChart.series[0].data = this.state.fieldVal;
         console.log("SalesReportComponents");
         return (

@@ -1,14 +1,18 @@
 /* sales report */
+#highcharts-bgopghi-0 {
+
+}
 .highcharts-container {
 
   .highcharts-root {
     .highcharts-axis-labels {
-      position: absolute;
-      height: 2222px;
-      background-color: red;
+
     }
-
-
   }
-
+}
+@media screen and (max-width: 1200px) {
+  .highcharts-container {
+    width: 1200px;
+    overflow: hidden;
+  }
 }

@@ -4,15 +4,29 @@ const SalesChart = {
         backgroundColor: '#2F3242'
     },
     title: {
-        text: 'Chart.update'
+        text: ''
     },
 
     subtitle: {
-        text: 'Plain'
+        text: ''
     },
 
     xAxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        categories: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+    },
+    yAxis: {
+        title: {
+            text: ''
+        },
+    },
+    plotOptions: {
+        column: {
+            states: {
+                hover: {
+                    color: '#2195F2'
+                }
+            }
+        }
     },
 
     series: [{

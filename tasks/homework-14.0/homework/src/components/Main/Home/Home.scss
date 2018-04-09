@@ -4,12 +4,26 @@
   #home {
     background-color: #282A38;
     margin: 60px 20px 20px 60px;
+    .row {
+      .homeChart {
+
+
+      }
+
+    }
   }
 }
 @media screen and (max-width: 1200px) {
   #mainContent {
     #home {
       margin: 0;
+      .row {
+        .homeChart {
+          width: 1200px;
+          overflow: hidden;
+
+        }
+      }
     }
   }
 }
