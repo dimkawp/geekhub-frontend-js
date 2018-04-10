@@ -32,6 +32,7 @@
       width: auto;
       display: flex;
       overflow: scroll;
+      margin: 60px;
       .columns {
         height: 100%;
         width: 4500px;
@@ -41,11 +42,95 @@
           flex-direction: column;
           align-self: flex-start;
           width: 300px;
-          margin: 25px;
+          .header {
+            display: flex;
+            justify-content: space-between;
+            margin: 12.5px;
+            .title {
+              color: white;
+              font-size: 18px;
+              h4 {
+                margin-bottom: 5px;
+              }
+            }
+            span {
+              color: #9DA3B3;
+              font-size: 14px;
+              span {
+                color: #2195F2;
+              }
+            }
+            button {
+              cursor: pointer;
+              color: #9DA3B3;
+              border: none;
+              outline: none;
+              background-color: #282A37;
+            }
+
+          }
           .items {
+            min-height: 50px;
             .item {
-              height: 150px;
+              margin: 12.5px;
               background-color: #393D51;
+              border-radius: 3px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              .avatar {
+                img {
+                  margin: 20px;
+                  height: 42px;
+                  width: 42px;
+                  border-radius: 50%;
+                }
+              }
+
+              .description {
+                width: 50%;
+                .title {
+                  color: white;
+
+                }
+                p {
+                  color: white;
+                  margin-bottom: 5px;
+                }
+                span {
+                  color: #9DA3B3;
+                }
+                .projectSum {
+                  color: #9DA3B3;
+                }
+              }
+              .dropbox {
+                margin-left: 15%;
+                .dropdown {
+                  .menu {
+                    top: 0;
+                    left: -100px;
+                    right: 0;
+                    button {
+                      width: 100%;
+                      text-align: center;
+                      color: white;
+                      background-color: #393D51;
+                    }
+                  }
+                }
+                .dropDownBox {
+                  height: 16px;
+                  width: 4px;
+                  background: url(../../../assets/img/Home/drp.fw.png) no-repeat center;
+                  i {
+                    display: none;
+                  }
+                  .dropDownBoxMenu {
+
+                  }
+                }
+              }
             }
           }
         }
