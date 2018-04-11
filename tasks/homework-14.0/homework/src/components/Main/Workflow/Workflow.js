@@ -9,11 +9,13 @@ import Design from './Design';
 import Development from './Development';
 import Testing from './Testing';
 import Completed from './Completed';
+import Select from './Select';
 
 class Workflow extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            selectData: '',
             Quened:
             [
                 'Wordpress theme1 / Symu.co / 2500',
@@ -89,8 +91,16 @@ class Workflow extends Component {
         this.state;
     };
 
+    selectData = (val) => {
+        this.setState({
+            selectData: val
+        });
+    };
+
     render() {
         console.log('workflowComponent');
+        console.log(this.state.selectData);
+        const SelectDataOption = ["All","Symu.co","Google"];
         return (
             <div className="wrapper">
                 <HeaderMenu />
@@ -103,10 +113,11 @@ class Workflow extends Component {
                             </div>
                             <div className="select">
                                 <span>Show projects:</span>
-                                <select name="" id="">
-                                    <option value="">value 1</option>
-                                    <option value="">value 2</option>
-                                </select>
+                                <Select
+                                    option={SelectDataOption}
+                                    QuenedArray={this.state.Quened}
+                                    DesignArray={this.state.Design}
+                                    selectData={this.selectData}/>
                             </div>
                         </div>
                         <div className="workflowBlock">
