@@ -30,6 +30,7 @@
     }
     .workflowBlock {
       width: auto;
+      max-height: 800px;
       display: flex;
       overflow: scroll;
       margin: 60px;
@@ -112,10 +113,14 @@
                     left: -100px;
                     right: 0;
                     button {
+                      font-size: 10px;
                       width: 100%;
                       text-align: center;
                       color: white;
                       background-color: #393D51;
+                    }
+                    button:hover {
+                      border-bottom: 1px solid white;
                     }
                   }
                 }

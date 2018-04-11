@@ -3,32 +3,29 @@ import './Workflow.css';
 //components
 import HeaderMenu from '../Menu/HeaderMenu';
 import SideMenu from "../Menu/SideMenu";
-import Sortable from 'react-sortablejs';
-import uniqueId from 'lodash/uniqueId';
-import { Dropdown, Button } from 'semantic-ui-react';
 import Quened from './Quened';
+import Planning from './Planning';
 import Design from './Design';
-//bootstrap 4
-import { Row, Col } from 'reactstrap';
-//icons
-import AngleRight from 'react-icons/lib/fa/angle-right';
+import Development from './Development';
+import Testing from './Testing';
+import Completed from './Completed';
 
 class Workflow extends Component {
     constructor(props) {
         super(props);
         this.state = {
             Quened:
-                [
-                    'Wordpress theme1 / Symu.co / 2500',
-                    'Wordpress theme2 / Symu.co / 3500',
-                    'Wordpress theme3 / Symu.co / 500',
-                    'Wordpress theme4 / Symu.co / 1500'
-                ],
+            [
+                'Wordpress theme1 / Symu.co / 2500',
+                'Wordpress theme2 / Google / 3500',
+                'Wordpress theme3 / Google / 500',
+                'Wordpress theme4 / Symu.co / 1500'
+            ],
             Design:
             [
                 'Wordpress theme1 / Symu.co / 2500',
                 'Wordpress theme2 / Symu.co / 3500',
-                'Wordpress theme3 / Symu.co / 500',
+                'Wordpress theme3 / Google / 500',
                 'Wordpress theme4 / Symu.co / 1500'
             ],
             Planning:
@@ -40,186 +37,60 @@ class Workflow extends Component {
             ],
             Development:
             [
-                'Wordpress theme1',
-                'Wordpress theme2',
-                'Wordpress theme3'
+                'Wordpress theme1 / Symu.co / 2100',
+                'Wordpress theme2 / Symu.co / 3200',
+                'Wordpress theme3 / Symu.co / 550',
+                'Wordpress theme4 / Symu.co / 1200'
             ],
             Testing:
             [
-                'Wordpress theme1',
-                'Wordpress theme2',
-                'Wordpress theme3'
+                'Wordpress theme1 / Symu.co / 100',
+                'Wordpress theme2 / Symu.co / 200',
+                'Wordpress theme3 / Symu.co / 50',
+                'Wordpress theme4 / Symu.co / 200'
             ],
             Completed:
             [
-                'Wordpress theme1',
-                'Wordpress theme2',
-                'Wordpress theme3'
+                'Wordpress theme1 / Google / 1100',
+                'Wordpress theme2 / Symu.co / 2200',
+                'Wordpress theme3 / Symu.co / 520',
+                'Wordpress theme4 / Symu.co / 2200'
             ],
-
-            workflowHeaderColumn: [
-                {id: 1, title: 'Quened',
-                    items:
-                        [
-                            'Wordpress theme1',
-                            'Wordpress theme2',
-                            'Wordpress theme3',
-                            'Wordpress theme4'
-                        ]
-                },
-                {id: 2, title: 'Planning',
-                    items:
-                        [
-                            'Landing page1',
-                            'Landing page2',
-                            'Landing page3',
-                            'Landing page4'
-                        ]
-                },
-                {id: 3, title: 'Design',
-                    items:
-                        [
-                            'Wordpress theme1',
-                            'Wordpress theme2',
-                            'Wordpress theme3'
-                        ]
-                },
-                {id: 4, title: 'Development',
-                    items:
-                        [
-                            'Wordpress theme1'
-
-                        ]
-                },
-                {id: 5, title: 'Testing',
-                    items:
-                        [
-                            'Wordpress theme1',
-                            'Wordpress theme2',
-                            'Wordpress theme3'
-                        ]
-                },
-                {id: 6, title: 'Completed',
-                    items:
-                        [
-                            'Wordpress theme1',
-                            'Wordpress theme2',
-                            'Wordpress theme3',
-                            'Wordpress theme4'
-                        ]
-                },
-                {id: 7, title: 'Testing-2',
-                    items:
-                        [
-                            'Wordpress theme1',
-                            'Wordpress theme2',
-                            'Wordpress theme3',
-                            'Wordpress theme4'
-                        ]
-                },
-                {id: 8, title: 'Testing-3',
-                    items:
-                        [
-                            'Wordpress theme1',
-                            'Wordpress theme2'
-                        ]
-                },
-            ]
         }
     }
-    removeItem(item) {
-
-    }
-    PlanningGetData = (val) => {
-        this.setState({
-            Planning: val
-        })
+    quenedMoveToValue = (val) => {
+        this.state.Quened.push(val);
+        this.setState(this.state);
+        this.state;
+    };
+    designMoveToValue = (val) => {
+        this.state.Design.push(val);
+        this.setState(this.state);
+        this.state;
+    };
+    planningMoveToValue = (val) => {
+        this.state.Planning.push(val);
+        this.setState(this.state);
+        this.state;
+    };
+    developmentMoveToValue = (val) => {
+        this.state.Development.push(val);
+        this.setState(this.state);
+        this.state;
+    };
+    testingMoveToValue = (val) => {
+        this.state.Testing.push(val);
+        this.setState(this.state);
+        this.state;
+    };
+    completedMoveToValue = (val) => {
+        this.state.Completed.push(val);
+        this.setState(this.state);
+        this.state;
     };
 
-
     render() {
-
-        const Planning = this.state.Planning.map((val, key) =>(
-            <div className="item" key={uniqueId()} data-id={val}>
-                <div className="avatar">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAFEkYKhA8fT4D4Q00B4_yVglFAOkMkUnncMaXaO1SDs8GhyOI" alt=""/>
-                </div>
-                <div className="description">
-                    <p>{val}</p>
-                    <span>Symu.co $1500</span>
-                </div>
-                <div className="dropbox">
-                    <Dropdown className="dropDownBox">
-                        <Dropdown.Menu className="dropDownBoxMenu">
-                            <Button onClick={(e)=>this.removeItem(val)}>delete</Button>
-                            <br/>
-                            <Button onClick={(e)=>this.addNewProject()}>add</Button>
-                        </Dropdown.Menu>
-                    </Dropdown>
-                </div>
-            </div>
-        ));
-        const Development = this.state.Development.map((val, key) =>(
-            <div className="item" key={uniqueId()} data-id={val}>
-                <div className="avatar">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAFEkYKhA8fT4D4Q00B4_yVglFAOkMkUnncMaXaO1SDs8GhyOI" alt=""/>
-                </div>
-                <div className="description">
-                    <p>{val}</p>
-                    <span>Symu.co $1500</span>
-                </div>
-                <div className="dropbox">
-                    <Dropdown className="dropDownBox">
-                        <Dropdown.Menu className="dropDownBoxMenu">
-                            <Button onClick={(e)=>this.removeItem()}>delete</Button>
-                            <br/>
-                            <Button onClick={(e)=>this.addNewProject()}>add</Button>
-                        </Dropdown.Menu>
-                    </Dropdown>
-                </div>
-            </div>
-        ));
-        const Testing = this.state.Testing.map((val, key) =>(
-            <div className="item" key={uniqueId()} data-id={val}>
-                <div className="avatar">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAFEkYKhA8fT4D4Q00B4_yVglFAOkMkUnncMaXaO1SDs8GhyOI" alt=""/>
-                </div>
-                <div className="description">
-                    <p>{val}</p>
-                    <span>Symu.co $1500</span>
-                </div>
-                <div className="dropbox">
-                    <Dropdown className="dropDownBox">
-                        <Dropdown.Menu className="dropDownBoxMenu">
-                            <Button onClick={(e)=>this.removeItem()}>delete</Button>
-                            <br/>
-                            <Button onClick={(e)=>this.addNewProject()}>add</Button>
-                        </Dropdown.Menu>
-                    </Dropdown>
-                </div>
-            </div>
-        ));
-        const Completed = this.state.Completed.map((val, key) =>(
-            <div className="item" key={uniqueId()} data-id={val}>
-                <div className="avatar">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAFEkYKhA8fT4D4Q00B4_yVglFAOkMkUnncMaXaO1SDs8GhyOI" alt=""/>
-                </div>
-                <div className="description">
-                    <p>{val}</p>
-                    <span>Symu.co $1500</span>
-                </div>
-                <div className="dropbox">
-                    <Dropdown className="dropDownBox">
-                        <Dropdown.Menu className="dropDownBoxMenu">
-                            <Button onClick={(e)=>this.removeItem()}>delete</Button>
-                            <br/>
-                            <Button onClick={(e)=>this.addNewProject()}>add</Button>
-                        </Dropdown.Menu>
-                    </Dropdown>
-                </div>
-            </div>
-        ));
-
+        console.log('workflowComponent');
         return (
             <div className="wrapper">
                 <HeaderMenu />
@@ -240,130 +111,64 @@ class Workflow extends Component {
                         </div>
                         <div className="workflowBlock">
                             <div className="columns">
-                              <Quened value={this.state.Quened} planningValue={this.state.Planning} quenedSendData={this.PlanningGetData}/>
+                              <Quened
+                                  value={this.state.Quened}
+                                  designMoveToValue={this.designMoveToValue}
+                                  planningMoveToValue={this.planningMoveToValue}
+                                  developmentMoveToValue={this.developmentMoveToValue}
+                                  testingMoveToValue={this.testingMoveToValue}
+                                  completedMoveToValue={this.completedMoveToValue}
+                              />
                             </div>
                             <div className="columns">
-                                <div className="column quenedItems">
-                                    <div className="header">
-                                        <div className="title">
-                                            <h4>Planning</h4>
-                                            <span>1 project <span>$1500</span></span>
-                                        </div>
-                                        <button><AngleRight /></button>
-                                    </div>
-                                    <div className="items">
-                                        <Sortable
-                                            options={{
-                                                animation: 150,
-                                                group: {
-                                                    name: 'shared',
-                                                    pull: true,
-                                                    put: true
-                                                }
-                                            }}
-                                            className="items"
-                                            ref="Planning"
-                                            onChange={(items) => {
-                                                this.setState({ Planning: items });
-                                            }}
-                                        >
-                                            {Planning}
-                                        </Sortable>
-                                    </div>
-                                </div>
+                                <Planning
+                                    value={this.state.Planning}
+                                    quenedMoveToValue={this.quenedMoveToValue}
+                                    designMoveToValue={this.designMoveToValue}
+                                    developmentMoveToValue={this.developmentMoveToValue}
+                                    testingMoveToValue={this.testingMoveToValue}
+                                    completedMoveToValue={this.completedMoveToValue}
+                                />
                             </div>
                             <div className="columns">
-                                <Design />
+                                <Design
+                                    value={this.state.Design}
+                                    quenedMoveToValue={this.quenedMoveToValue}
+                                    planningMoveToValue={this.planningMoveToValue}
+                                    developmentMoveToValue={this.developmentMoveToValue}
+                                    testingMoveToValue={this.testingMoveToValue}
+                                    completedMoveToValue={this.completedMoveToValue}
+                                />
                             </div>
                             <div className="columns">
-                                <div className="column quenedItems">
-                                    <div className="header">
-                                        <div className="title">
-                                            <h4>Development</h4>
-                                            <span>1 project <span>$1500</span></span>
-                                        </div>
-                                        <button><AngleRight /></button>
-                                    </div>
-                                    <div className="items">
-                                        <Sortable
-                                            options={{
-                                                animation: 150,
-                                                group: {
-                                                    name: 'shared',
-                                                    pull: true,
-                                                    put: true
-                                                }
-                                            }}
-                                            className="items"
-                                            ref="Development"
-                                            onChange={(items) => {
-                                                this.setState({ Development: items });
-                                            }}
-                                        >
-                                            {Development}
-                                        </Sortable>
-                                    </div>
-                                </div>
+                                <Development
+                                    value={this.state.Development}
+                                    quenedMoveToValue={this.quenedMoveToValue}
+                                    designMoveToValue={this.designMoveToValue}
+                                    planningMoveToValue={this.planningMoveToValue}
+                                    testingMoveToValue={this.testingMoveToValue}
+                                    completedMoveToValue={this.completedMoveToValue}
+                                />
                             </div>
                             <div className="columns">
-                                <div className="column quenedItems">
-                                    <div className="header">
-                                        <div className="title">
-                                            <h4>Testing</h4>
-                                            <span>1 project <span>$1500</span></span>
-                                        </div>
-                                        <button><AngleRight /></button>
-                                    </div>
-                                    <div className="items">
-                                        <Sortable
-                                            options={{
-                                                animation: 150,
-                                                group: {
-                                                    name: 'shared',
-                                                    pull: true,
-                                                    put: true
-                                                }
-                                            }}
-                                            className="items"
-                                            ref="Testing"
-                                            onChange={(items) => {
-                                                this.setState({ Testing: items });
-                                            }}
-                                        >
-                                            {Testing}
-                                        </Sortable>
-                                    </div>
-                                </div>
+                                <Testing
+                                    value={this.state.Testing}
+                                    quenedMoveToValue={this.quenedMoveToValue}
+                                    designMoveToValue={this.designMoveToValue}
+                                    planningMoveToValue={this.planningMoveToValue}
+                                    developmentMoveToValue={this.developmentMoveToValue}
+                                    completedMoveToValue={this.completedMoveToValue}
+                                />
                             </div>
                             <div className="columns">
-                                <div className="column quenedItems">
-                                    <div className="header">
-                                        <div className="title">
-                                            <h4>Completed</h4>
-                                            <span>1 project <span>$1500</span></span>
-                                        </div>
-                                        <button><AngleRight /></button>
-                                    </div>
-                                    <div className="items">
-                                        <Sortable
-                                            options={{
-                                                animation: 150,
-                                                group: {
-                                                    name: 'shared',
-                                                    pull: true,
-                                                    put: true
-                                                }
-                                            }}
-                                            className="items"
-                                            ref="Completed"
-                                            onChange={(items) => {
-                                                this.setState({ Completed: items });
-                                            }}
-                                        >
-                                            {Completed}
-                                        </Sortable>
-                                    </div>
-                                </div>
+                                <Completed
+                                    value={this.state.Completed}
+                                    quenedMoveToValue={this.quenedMoveToValue}
+                                    designMoveToValue={this.designMoveToValue}
+                                    planningMoveToValue={this.planningMoveToValue}
+                                    developmentMoveToValue={this.developmentMoveToValue}
+                                    testingMoveToValue={this.testingMoveToValue}
+                                />
                             </div>
                         </div>
                     </section>

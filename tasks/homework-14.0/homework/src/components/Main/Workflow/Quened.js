@@ -9,12 +9,17 @@ class Quened extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            filterName: 'Google',
             sumQuened: '',
-            Quened: this.props.value,
-            Planning: this.props.planningValue
+            Quened: this.props.value
         }
     }
     //ALL BOX BUTTONS
+//designMoveToValue
+//planningMoveToValue
+//developmentMoveToValue
+//testingMoveToValue
+//completedMoveToValue
     removeItem(item) {
         const newItems = this.state.Quened.filter(projectsItems => {
             return projectsItems !== item;
@@ -24,10 +29,7 @@ class Quened extends Component {
         });
     }
     moveToDesign(item) {
-
-        this.state.Design.push(item);
-        this.setState(this.state);
-        this.state;
+        this.props.designMoveToValue(item);
         const newItems = this.state.Quened.filter(projectsItems => {
             return projectsItems !== item;
         });
@@ -36,9 +38,7 @@ class Quened extends Component {
         });
     }
     moveToDevelopment(item) {
-        this.state.Development.push(item);
-        this.setState(this.state);
-        this.state;
+        this.props.developmentMoveToValue(item);
         const newItems = this.state.Quened.filter(projectsItems => {
             return projectsItems !== item;
         });
@@ -47,9 +47,7 @@ class Quened extends Component {
         });
     }
     moveToTesting(item) {
-        this.state.Testing.push(item);
-        this.setState(this.state);
-        this.state;
+        this.props.testingMoveToValue(item);
         const newItems = this.state.Quened.filter(projectsItems => {
             return projectsItems !== item;
         });
@@ -58,9 +56,7 @@ class Quened extends Component {
         });
     }
     moveToCompleted(item) {
-        this.state.Planning.push(item);
-        this.setState(this.state);
-        this.state;
+        this.props.completedMoveToValue(item);
         const newItems = this.state.Quened.filter(projectsItems => {
             return projectsItems !== item;
         });
@@ -69,21 +65,7 @@ class Quened extends Component {
         });
     }
     moveToPlanning(item) {
-        this.state.Planning.push(item);
-        this.setState(this.state);
-        this.state;
-        const newItems = this.state.Quened.filter(projectsItems => {
-            return projectsItems !== item;
-        });
-        this.setState({
-            Quened: [...newItems]
-        });
-        this.props.quenedSendData = this.state.Planning;
-    }
-    moveToQuened(item) {
-        this.state.Quened.push(item);
-        this.setState(this.state);
-        this.state;
+        this.props.planningMoveToValue(item);
         const newItems = this.state.Quened.filter(projectsItems => {
             return projectsItems !== item;
         });
@@ -97,7 +79,12 @@ class Quened extends Component {
         const array1 = this.state.Quened;
         const map1 = array1.map(x => x.split('/')[2]);
         const map2 = map1.map(x => Number(x));
+        const map3 = array1.map(x => x.split('/')[1].replace(/\s*/g,''));
+        const map4 = map3.filter(item => item === 'Google');
+        const map5 = array1.includes('Google');
         this.state.sumQuened = map2.reduce( (previousValue, currentValue) => previousValue + currentValue, 0);
+
+        console.log(map5);
 
         const Quened = this.state.Quened.map((val, key) =>(
             <div className="item" key={uniqueId()} data-id={val}>
@@ -134,7 +121,7 @@ class Quened extends Component {
                 <div className="header">
                     <div className="title">
                         <h4>Quened</h4>
-                        <span>1 project <span>${this.state.sumQuened}</span></span>
+                        <span>{this.state.Quened.length} project{this.state.Quened.length > 1 && "'s"} <span>${this.state.sumQuened}</span></span>
                     </div>
                     <button><AngleRight /></button>
                 </div>

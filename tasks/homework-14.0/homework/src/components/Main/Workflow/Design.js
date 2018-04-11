@@ -10,12 +10,7 @@ class Design extends Component {
         super(props);
         this.state = {
             sumDesign: '',
-            Design:
-                [
-                    'Wordpress theme1 / Symu.co / 3500',
-                    'Wordpress theme2 / Symu.co / 1500',
-                    'Wordpress theme3 / Symu.co / 500'
-                ],
+            Design: this.props.value
         }
     }
     //ALL BOX BUTTONS
@@ -27,11 +22,17 @@ class Design extends Component {
             Design: [...newItems]
         });
     }
-
+    moveToQuened(item) {
+        this.props.quenedMoveToValue(item);
+        const newItems = this.state.Design.filter(projectsItems => {
+            return projectsItems !== item;
+        });
+        this.setState({
+            Design: [...newItems]
+        });
+    }
     moveToDevelopment(item) {
-        this.state.Development.push(item);
-        this.setState(this.state);
-        this.state;
+        this.props.developmentMoveToValue(item);
         const newItems = this.state.Design.filter(projectsItems => {
             return projectsItems !== item;
         });
@@ -40,9 +41,7 @@ class Design extends Component {
         });
     }
     moveToTesting(item) {
-        this.state.Testing.push(item);
-        this.setState(this.state);
-        this.state;
+        this.props.testingMoveToValue(item);
         const newItems = this.state.Design.filter(projectsItems => {
             return projectsItems !== item;
         });
@@ -51,9 +50,7 @@ class Design extends Component {
         });
     }
     moveToCompleted(item) {
-        this.state.Completed.push(item);
-        this.setState(this.state);
-        this.state;
+        this.props.completedMoveToValue(item);
         const newItems = this.state.Design.filter(projectsItems => {
             return projectsItems !== item;
         });
@@ -62,20 +59,7 @@ class Design extends Component {
         });
     }
     moveToPlanning(item) {
-        this.state.Planning.push(item);
-        this.setState(this.state);
-        this.state;
-        const newItems = this.state.Design.filter(projectsItems => {
-            return projectsItems !== item;
-        });
-        this.setState({
-            Design: [...newItems]
-        });
-    }
-    moveToQuened(item) {
-        this.state.Quened.push(item);
-        this.setState(this.state);
-        this.state;
+        this.props.planningMoveToValue(item);
         const newItems = this.state.Design.filter(projectsItems => {
             return projectsItems !== item;
         });
@@ -126,7 +110,7 @@ class Design extends Component {
                 <div className="header">
                     <div className="title">
                         <h4>Design</h4>
-                        <span>1 project <span>${this.state.sumDesign}</span></span>
+                        <span>{this.state.Design.length} project{this.state.Design.length > 1 && "'s"} <span>${this.state.sumDesign}</span></span>
                     </div>
                     <button><AngleRight /></button>
                 </div>
