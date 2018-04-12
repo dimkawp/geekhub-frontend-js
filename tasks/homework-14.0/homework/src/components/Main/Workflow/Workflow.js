@@ -15,7 +15,8 @@ class Workflow extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectData: '',
+            selectData: [],
+            testArray: [],
             Quened:
             [
                 'Wordpress theme1 / Symu.co / 2500',
@@ -60,6 +61,7 @@ class Workflow extends Component {
             ],
         }
     }
+
     quenedMoveToValue = (val) => {
         this.state.Quened.push(val);
         this.setState(this.state);
@@ -91,15 +93,23 @@ class Workflow extends Component {
         this.state;
     };
 
+    takeValue = (val) => {
+        this.setState({
+            Quened: val
+        });
+        console.log('takeValue',this.state.Quened);
+    }
+
     selectData = (val) => {
         this.setState({
-            selectData: val
+            Quened: val
         });
+
+        console.log('selectData',this.state.Quened);
     };
 
     render() {
-        console.log('workflowComponent');
-        console.log(this.state.selectData);
+        console.log('workflowComponent',this.state.Quened);
         const SelectDataOption = ["All","Symu.co","Google"];
         return (
             <div className="wrapper">
@@ -115,15 +125,16 @@ class Workflow extends Component {
                                 <span>Show projects:</span>
                                 <Select
                                     option={SelectDataOption}
-                                    QuenedArray={this.state.Quened}
-                                    DesignArray={this.state.Design}
+                                    value={this.state.Quened}
                                     selectData={this.selectData}/>
                             </div>
                         </div>
                         <div className="workflowBlock">
                             <div className="columns">
                               <Quened
+                                  selectFilter={this.state.selectData}
                                   value={this.state.Quened}
+                                  takeValue={this.takeValue}
                                   designMoveToValue={this.designMoveToValue}
                                   planningMoveToValue={this.planningMoveToValue}
                                   developmentMoveToValue={this.developmentMoveToValue}

@@ -14,12 +14,15 @@ class Quened extends Component {
             Quened: this.props.value
         }
     }
+    componentWillMount() {
+        this.props.takeValue(this.state.Quened);
+    }
     //ALL BOX BUTTONS
-//designMoveToValue
-//planningMoveToValue
-//developmentMoveToValue
-//testingMoveToValue
-//completedMoveToValue
+    //designMoveToValue
+    //planningMoveToValue
+    //developmentMoveToValue
+    //testingMoveToValue
+    //completedMoveToValue
     removeItem(item) {
         const newItems = this.state.Quened.filter(projectsItems => {
             return projectsItems !== item;
@@ -84,8 +87,6 @@ class Quened extends Component {
         const map5 = array1.includes('Google');
         this.state.sumQuened = map2.reduce( (previousValue, currentValue) => previousValue + currentValue, 0);
 
-        console.log(map5);
-
         const Quened = this.state.Quened.map((val, key) =>(
             <div className="item" key={uniqueId()} data-id={val}>
                 <div className="avatar">
@@ -93,7 +94,6 @@ class Quened extends Component {
                 </div>
                 <div className="description">
                     <p>{val.split('/')[0]}</p>
-
                     <span>{val.split('/')[1]} ${val.split('/')[2]}</span>
                 </div>
                 <div className="dropbox">
@@ -118,12 +118,15 @@ class Quened extends Component {
         ));
         return (
             <div className="column quenedItems">
+
                 <div className="header">
                     <div className="title">
                         <h4>Quened</h4>
                         <span>{this.state.Quened.length} project{this.state.Quened.length > 1 && "'s"} <span>${this.state.sumQuened}</span></span>
                     </div>
-                    <button><AngleRight /></button>
+                    <button>
+                        <AngleRight />
+                    </button>
                 </div>
                 <div className="items">
                     <Sortable
