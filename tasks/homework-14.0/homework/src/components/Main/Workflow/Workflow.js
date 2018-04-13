@@ -16,7 +16,14 @@ class Workflow extends Component {
         super(props);
         this.state = {
             selectData: [],
-            testArray: [],
+            TestQuened:
+                [
+                    {id: 1, body: 'Wordpress theme1 / Symu.co / 2500'},
+                    {id: 2, body: 'Wordpress theme1 / Symu.co / 2500'},
+                    {id: 3, body: 'Wordpress theme2 / Google / 3500'},
+                    {id: 4, body: 'Wordpress theme3 / Google / 500'},
+                    {id: 5, body: 'Wordpress theme4 / Symu.co / 1500'}
+                ],
             Quened:
             [
                 'Wordpress theme1 / Symu.co / 2500',
@@ -93,11 +100,11 @@ class Workflow extends Component {
         this.state;
     };
 
-    takeValue = (val) => {
+    quenedLength = (val) => {
         this.setState({
-            Quened: val
+            quenedLength: val
         });
-        console.log('takeValue',this.state.Quened);
+        console.log('quenedLength',this.state.quenedLength);
     }
 
     selectData = (val) => {
@@ -134,7 +141,7 @@ class Workflow extends Component {
                               <Quened
                                   selectFilter={this.state.selectData}
                                   value={this.state.Quened}
-                                  takeValue={this.takeValue}
+                                  quenedLength={this.quenedLength}
                                   designMoveToValue={this.designMoveToValue}
                                   planningMoveToValue={this.planningMoveToValue}
                                   developmentMoveToValue={this.developmentMoveToValue}

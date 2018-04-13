@@ -15,7 +15,6 @@ class Quened extends Component {
         }
     }
     componentWillMount() {
-        this.props.takeValue(this.state.Quened);
     }
     //ALL BOX BUTTONS
     //designMoveToValue

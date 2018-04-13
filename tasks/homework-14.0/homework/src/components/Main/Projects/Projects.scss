@@ -29,8 +29,10 @@
       }
     }
     .projectsBlock {
-
+      overflow: scroll;
       .testTable {
+        min-width: 1200px;
+
         thead {
           tr {
 
@@ -49,6 +51,13 @@
             border: none;
             outline: none;
             td {
+              .titleColumn {
+                height: 90px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+              }
               margin: 0;
               padding: 0;
               color: white;
@@ -56,16 +65,88 @@
               border: none;
               outline: none;
               background-color: #393D51;
-              .testRow {
+              .mainRow {
                 height: 120px;
-                .testRowBody {
+                .mainRowBody {
                   height: 90px;
                   display: flex;
                   align-items: center;
                   justify-content: center;
+                  font-size: 16px;
+                  .dropDownBox {
+                    height: 16px;
+                    width: 4px;
+                    background: url(../../../assets/img/Home/drp.fw.png) no-repeat center;
+                    .menu {
+                      top: 0;
+                      left: -100px;
+                      right: 0;
+                      button {
+                        font-size: 10px;
+                        width: 100%;
+                        text-align: center;
+                        color: white;
+                        background-color: #393D51;
+                      }
+                      button:hover {
+                        border-bottom: 1px solid white;
+                      }
+                    }
+                    i {
+                      display: none;
+                    }
+                    .dropDownBoxMenu {
+
+                    }
+                  }
+                }
+                .mainRowBodyProgress {
+                  height: 90px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 16px;
+                  span {
+                    margin-right: 10px;
+                  }
+                  .progress {
+                    height: 5px;
+                    width: 250px;
+                    background-color: #9DA3B3;
+                  }
 
                 }
-                .testRowButton {
+                .assignedBlock {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  img {
+                    height: 42px;
+                    width: 42px;
+                    border-radius: 50%;
+                    margin: 25px;
+                  }
+                  .userBlock {
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                      font-size: 14px;
+                      color: #9DA3B3;
+
+                    }
+                  }
+                }
+                .titleRow {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  font-size: 16px;
+                  span {
+                    font-size: 14px;
+                    color: #9DA3B3;
+                  }
+                }
+                .mainRowButton {
                   height: 30px;
                   background-color: #2B2D3A;
                 }
