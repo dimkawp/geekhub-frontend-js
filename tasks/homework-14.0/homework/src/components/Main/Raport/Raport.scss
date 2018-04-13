@@ -3,8 +3,13 @@
   #raport {
     height: 100%;
     color: white;
+
     .raportTable {
+      overflow: scroll;
       font-size: 16px;
+      .react-bootstrap-table {
+        min-width: 1200px;
+      }
       thead {
         tr {
 

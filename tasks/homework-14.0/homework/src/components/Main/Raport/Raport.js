@@ -8,7 +8,6 @@ import BootstrapTable from 'react-bootstrap-table-next';
 //components
 import HeaderMenu from '../Menu/HeaderMenu';
 import SideMenu from "../Menu/SideMenu";
-import SalesChart from "../../../config/salesReportChart.config";
 import $ from "jquery";
 
 const headerSortingClasses = (column, sortOrder, isLastSorting, colIndex) => (

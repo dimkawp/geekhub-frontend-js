@@ -1,0 +1,19 @@
+/* inbox */
+#inbox {
+  height: 100vh;
+  .headerBlock {
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2195F3;
+    color: white;
+    .headerMenu {
+      display: flex;
+    }
+    .selectBlock {
+      display: flex;
+    }
+  }
+
+}
