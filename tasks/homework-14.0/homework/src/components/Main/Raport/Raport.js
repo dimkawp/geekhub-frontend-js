@@ -9,51 +9,65 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import HeaderMenu from '../Menu/HeaderMenu';
 import SideMenu from "../Menu/SideMenu";
 import SalesChart from "../../../config/salesReportChart.config";
+import $ from "jquery";
 
-function rankFormatter(cell, row, rowIndex) {
-    return (
-        <div className="testRow">
-
-        </div>
-    );
-}
-
+const headerSortingClasses = (column, sortOrder, isLastSorting, colIndex) => (
+    sortOrder === 'asc' ? 'sorting-asc' : 'sorting-desc'
+);
 const columns = [ {
     dataField: 'campaing',
     text: 'Campaing',
-    sort: true
+    formatter: campaingFormatter,
+    sort: true,
+    headerSortingClasses
 }, {
     dataField: 'time',
     text: 'Time',
-    sort: true
+    formatter: otherFormatter,
+    sort: true,
+    headerSortingClasses
 }, {
     dataField: 'views',
     text: 'Views',
-    sort: true
+    formatter: otherFormatter,
+    sort: true,
+    headerSortingClasses
 }, {
     dataField: 'visitor',
     text: 'Visitor',
-    sort: true
+    formatter: otherFormatter,
+    sort: true,
+    headerSortingClasses
 }, {
     dataField: 'ctr',
     text: 'ctr',
-    sort: true
+    formatter: otherFormatter,
+    sort: true,
+    headerSortingClasses
 }, {
     dataField: 'cps',
     text: 'cps',
-    sort: true
+    formatter: otherFormatter,
+    sort: true,
+    headerSortingClasses
 }, {
     dataField: 'cpv',
     text: 'cpv',
-    sort: true
+    formatter: otherFormatter,
+    sort: true,
+    headerSortingClasses
 }, {
     dataField: 'cpm',
     text: 'cpm',
-    sort: true
+    formatter: otherFormatter,
+    sort: true,
+    headerSortingClasses
 }, {
     dataField: 'status',
     text: 'status',
-    sort: true
+    formatter: statusFormatter,
+    sort: true,
+    headerSortingClasses
 }];
 
 const products = [{
@@ -94,12 +108,51 @@ const products = [{
     cpm: 11.4,
     status: 'disable'
 }];
+function campaingFormatter(cell, row, rowIndex) {
+    return (
+        <div className="mainRow">
+            <div className="mainRowBody">
+                {cell}
+            </div>
+        </div>
+    );
+}
+function otherFormatter(cell, row, rowIndex) {
+    return (
+        <div className="mainRowOther">
+            <div className="otherRowBody">
+                {cell}
+            </div>
+        </div>
+    );
+}
+function statusFormatter(cell, row, rowIndex) {
+    return (
+        <div className="mainRowOther">
+            <div className="otherRowBody">
+                <div className="status">
+                    {
+                        cell == 'active' &&
+                        <div className="statusActive"></div>
+                    }
+                    {
+                        cell == 'disable' &&
+                        <div className="statusDisable"></div>
+                    }
+                </div>{cell}
+            </div>
+        </div>
+    );
+}
 
 class Raport extends Component {
-    Logout = () => {
-        localStorage.setItem('User', false);
-        this.props.history.push("/");
+    //JQ
+    componentDidMount() {
+        $(document).ready(function() {
+            $(".highcharts-credits, .highcharts-legend").hide();
+        });
     }
+
 
     render() {
         console.log("RaportComponents");

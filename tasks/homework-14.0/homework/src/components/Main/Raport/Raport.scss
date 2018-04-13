@@ -1,6 +1,72 @@
 /* raport */
 #mainContent {
   #raport {
-    height: 100vh;
+    height: 100%;
+    color: white;
+    .raportTable {
+      font-size: 16px;
+      thead {
+        tr {
+
+
+          th {
+            padding: 25px;
+            color: #9DA3B3;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+
+          }
+          .sorting-desc {
+            color: white;
+          }
+
+        }
+
+      }
+      tbody {
+        tr {
+          td {
+            margin: 0;
+            padding: 0;
+            .mainRow {
+              margin: 25px;
+              .mainRowBody {
+                width: 300px;
+                display: flex;
+                align-items: center;
+              }
+            }
+            .mainRowOther {
+              display: flex;
+              align-items: center;
+              .otherRowBody {
+                padding: 35px 25px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .status {
+                  margin: 0 10px;
+                  .statusActive {
+                    height: 13px;
+                    width: 13px;
+                    border-radius: 50%;
+                    background-color: #4BAF4F;
+                  }
+                  .statusDisable {
+                    height: 13px;
+                    width: 13px;
+                    border-radius: 50%;
+                    background-color: #F34335;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
   }
 }

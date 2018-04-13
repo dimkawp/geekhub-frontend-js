@@ -12,8 +12,17 @@ import Calendar from './Calendar';
 
 //bootstrap 4
 import { Row, Col } from 'reactstrap';
+import $ from "jquery";
+
+
 
 class Home extends Component {
+    //JQ
+    componentDidMount() {
+        $(document).ready(function() {
+            $(".highcharts-credits, .highcharts-legend").hide();
+        });
+    }
 
     render() {
         console.log("HomeComponents");

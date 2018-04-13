@@ -47,6 +47,13 @@ const RaportChart = {
                     }
                 }
             }
+        },
+        column: {
+            states: {
+                hover: {
+                    color: '#2195F2'
+                }
+            }
         }
     },
     series: [{

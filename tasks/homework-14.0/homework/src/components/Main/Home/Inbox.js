@@ -70,12 +70,7 @@ class Inbox extends Component {
         };
     }
 
-    //JQ
-    componentDidMount() {
-        $(document).ready(function() {
-            $(".highcharts-credits, .highcharts-legend").hide();
-        });
-    }
+
 
     changeStatus = (item) => {
         if (item.status === 'no-read') {
