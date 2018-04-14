@@ -1,6 +1,7 @@
 /* inbox */
 #inbox {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   .headerBlock {
     height: 96px;
     display: flex;
@@ -14,6 +15,202 @@
     .selectBlock {
       display: flex;
     }
+  }
+  .chatMessageGroup {
+    .items {
+      display: flex;
+      flex-direction: column;
+      .item {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        border-bottom: 1px solid #9BA1B1;
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: white;
+          font-size: 22px;
+          font-weight: 600;
+          .avatar {
+            img {
+              height: 42px;
+              width: 42px;
+              border-radius: 50%;
+            }
+          }
+          .date {
+            color: #2195F2;
+            font-size: 14px;
+            font-weight: 400;
+
+          }
+        }
+        .message {
+          padding: 25px 0;
+          font-size: 16px;
+          color: #9BA1B1;
+        }
+      }
+      .item:hover {
+        cursor: pointer;
+        background-color: #2F3141;
+      }
+    }
+    .newCovers {
+      display: flex;
+      justify-content: center;
+      margin: 10%;
+      button {
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        width: 100%;
+        background-color: #2195F3;
+      }
+    }
+  }
+  .correspond {
+    .yourMessage {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+
+
+      .messageBody {
+        display: flex;
+        flex-direction: column;
+        p {
+          padding: 20px;
+          color: white;
+          font-size: 16px;
+          background-color: #3F4359;
+          border-radius: 10px 10px 10px 0;
+
+        }
+        .date {
+          color: #9BA1B1;
+          font-size: 12px;
+          text-align: left;
+        }
+      }
+      .avatar {
+        margin-right: 20px;
+      }
+    }
+    .youMessage {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      .messageBody {
+        display: flex;
+        flex-direction: column;
+        p {
+          padding: 20px;
+          color: white;
+          font-size: 16px;
+          background-color: #2195F3;
+          border-radius: 10px 10px 0 10px;
+        }
+        .date {
+          color: #9BA1B1;
+          font-size: 12px;
+          text-align: right;
+        }
+      }
+      .avatar {
+        margin-left: 20px;
+      }
+
+    }
+  }
+  .yourMessage, .youMessage {
+    .avatar {
+      img {
+        height: 56px;
+        width: 56px;
+        border-radius: 50%;
+      }
+
+    }
+  }
+  .writeMessageBlock {
+    .form {
+      .writeMessageTextarea {
+        border: 1px solid #9BA1B1;
+        background-color: #3F4359;
+      }
+      button {
+        margin: 3px;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+  .userProfileInfo {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title {
+      margin-top: 30px;
+      .name {
+        font-size: 22px;
+        color: white;
+      }
+      span {
+        color: #9BA1B1;
+        font-size: 16px;
+      }
+
+    }
+    span {
+      margin: 20px;
+      font-size: 16px;
+      color: white;
+    }
+    .lable, p {
+      text-align: justify;
+      color: #9BA1B1;
+      font-size: 14px;
+    }
+    .avatar {
+      display: flex;
+      height: 124px;
+      width: 124px;
+      .status {
+        position: absolute;
+        height: 124px;
+        width: 124px;
+        .dot {
+          position: absolute;
+          margin-right: 15px;
+          border: 3px solid #282A37;
+          top: 0;
+          right: 0;
+          height: 27px;
+          width: 27px;
+          border-radius: 50%;
+          background-color: #4BAF4F;
+        }
+
+      }
+      img {
+        height: 124px;
+        width: 124px;
+        border-radius: 50%;
+      }
+    }
+
   }
 
 }
