@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './Projects.css';
 //components
 import HeaderMenu from '../Menu/HeaderMenu';
-import SideMenu from "../Menu/SideMenu";
+import SideMenu from '../Menu/SideMenu';
+import Select from './Select';
 //table
 import BootstrapTable from 'react-bootstrap-table-next';
 import { Progress, Dropdown, Button } from 'semantic-ui-react';
@@ -186,6 +187,7 @@ const products = [{
 class Projects extends Component {
     render() {
         console.log("ProjectsComponents");
+        const SelectProjectData = ["Date","Month", "Week"];
         return (
             <div className="wrapper">
                 <HeaderMenu />
@@ -197,11 +199,7 @@ class Projects extends Component {
                                 <h3>All Projects (358) <span>Workflow</span></h3>
                             </div>
                             <div className="select">
-                                <span>Show projects:</span>
-                                <select name="" id="">
-                                    <option value="">value 1</option>
-                                    <option value="">value 2</option>
-                                </select>
+                                <Select value={SelectProjectData}/>
                             </div>
                         </div>
                         <div className="projectsBlock">

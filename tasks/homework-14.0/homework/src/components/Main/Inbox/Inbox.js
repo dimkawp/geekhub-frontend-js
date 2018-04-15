@@ -3,6 +3,7 @@ import './Inbox.css';
 //components
 import HeaderMenu from '../Menu/HeaderMenu';
 import SideMenu from "../Menu/SideMenu";
+import Select from './Select';
 import Moment from 'react-moment';
 import 'moment-timezone';
 //bootstrap
@@ -132,6 +133,7 @@ class Inbox extends Component {
     }
     render() {
         console.log("InboxComponents");
+        const SelectInboxData = ["Date","Month", "Week"];
         const User = this.state.User;
         return (
 
@@ -142,17 +144,13 @@ class Inbox extends Component {
                     <section id="inbox">
                         <div className="headerBlock">
                             <div className="headerMenu">
-                                <Moment format="YYYY-MM-DD HH:mm"></Moment>
                                 <div>Inbox</div>
                                 <div>Sent</div>
                                 <div>Trash</div>
                             </div>
                             <div className="selectBlock">
-                                <span>Filter messages:</span>
-                                <select name="" id="">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
+                                <Select value={SelectInboxData}/>
+
                             </div>
                         </div>
                         <Row>

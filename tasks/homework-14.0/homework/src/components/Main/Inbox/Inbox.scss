@@ -10,9 +10,11 @@
     background-color: #2195F3;
     color: white;
     .headerMenu {
+      margin: 20px 20px 20px 60px;
       display: flex;
     }
     .selectBlock {
+      margin: 20px;
       display: flex;
     }
   }
@@ -213,4 +215,18 @@
 
   }
 
+}
+@media screen and (max-width: 600px) {
+  #inbox {
+    .headerBlock {
+      .headerMenu {
+        margin: 10px;
+      }
+      .selectBlock {
+        margin: 10px;
+      }
+
+
+    }
+  }
 }

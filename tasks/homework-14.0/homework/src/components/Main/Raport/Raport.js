@@ -7,7 +7,8 @@ import RaportChart from '../../../config/raportChart.config';
 import BootstrapTable from 'react-bootstrap-table-next';
 //components
 import HeaderMenu from '../Menu/HeaderMenu';
-import SideMenu from "../Menu/SideMenu";
+import SideMenu from '../Menu/SideMenu';
+import RaptorChartHeader from './RaptorChartHeader';
 import $ from "jquery";
 
 const headerSortingClasses = (column, sortOrder, isLastSorting, colIndex) => (
@@ -148,7 +149,7 @@ class Raport extends Component {
     //JQ
     componentDidMount() {
         $(document).ready(function() {
-            $(".highcharts-credits, .highcharts-legend").hide();
+            $(".highcharts-credits, .highcharts-legend, .highcharts-yaxis-labels").hide();
         });
     }
 
@@ -162,6 +163,7 @@ class Raport extends Component {
                     <SideMenu />
                     <section id="raport">
                         <div className="raportChart">
+                            <RaptorChartHeader/>
                             <ReactHighcharts config = {RaportChart}></ReactHighcharts>
                         </div>
                         <div className="raportTable">

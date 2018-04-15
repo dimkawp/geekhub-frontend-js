@@ -1,0 +1,39 @@
+/* select */
+.select {
+  div {
+    display: flex;
+    align-items: center;
+    span {
+      color: white;
+      font-size: 16px;
+      margin-right: 10px;
+
+    }
+    select {
+      height: 36px;
+      width: 155px;
+      cursor: pointer;
+      background-color: #2F3141;
+      border: 2px solid white;
+      border-radius: 25px 25px;
+      outline: none;
+      color: white;
+      font-size: 16px;
+      padding-left: 10px;
+
+    }
+    select:hover {
+      background-color: #2195F3;
+    }
+
+  }
+}
+@media screen and (max-width: 600px) {
+  .select {
+    div {
+      select {
+        width: 100px;
+      }
+    }
+  }
+}

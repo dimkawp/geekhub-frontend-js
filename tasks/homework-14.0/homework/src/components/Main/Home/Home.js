@@ -9,6 +9,7 @@ import Projects from './Projects';
 import SalesReport from './SalesReport';
 import Inbox from './Inbox';
 import Calendar from './Calendar';
+import Preloader from '../Preloader';
 
 //bootstrap 4
 import { Row, Col } from 'reactstrap';
@@ -28,6 +29,7 @@ class Home extends Component {
         console.log("HomeComponents");
         return (
          <div className="wrapper">
+             <Preloader/>
              <HeaderMenu />
              <section id="mainContent">
                  <SideMenu />

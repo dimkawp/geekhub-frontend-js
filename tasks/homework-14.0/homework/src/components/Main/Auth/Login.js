@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
 //import { Button } from 'reactstrap';
-import { Button } from 'semantic-ui-react'
+import { Button, Input } from 'semantic-ui-react';
+import './Login.css';
+import Preloader from '../Preloader';
 
 class Login extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+    }
     //LOGIN
     handleLogin = () => {
         const data = {
@@ -10,11 +18,11 @@ class Login extends Component {
             password: this.password.value.trim()
         }
         if (data.name === 'admin') {
-            localStorage.setItem('User', true);
+            localStorage.setItem('User', 'true');
             this.props.history.push("/");
         }
         else {
-            localStorage.setItem('User', false);
+            localStorage.setItem('User', 'false');
             this.props.history.push("/");
         }
     }
@@ -22,10 +30,19 @@ class Login extends Component {
     render() {
         console.log("HomeComponents");
         return (
-            <div>
-                <input type="text" placeholder="username" ref={el => this.login = el}/>
-                <input type="password" placeholder="password" ref={el => this.password = el}/>
-                <Button primary onClick={this.handleLogin}>Enter</Button>
+            <div className="loginBlock">
+                <Preloader/>
+                <div className="loginForm">
+                    <div className="ui input">
+                        <input type="text" placeholder="username" ref={el => this.login = el}/>
+                    </div>
+                    <div className="ui input">
+                        <input type="password" placeholder="password" ref={el => this.password = el}/>
+                    </div>
+
+                    <Button primary onClick={this.handleLogin}>Enter</Button>
+                </div>
+
             </div>
         );
     }
