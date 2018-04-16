@@ -3,9 +3,42 @@ import './HeaderMenu.css';
 import logo from '../../../assets/img/logo.fw.png';
 import IconSearch from 'react-icons/lib/fa/search';
 import IconBell from 'react-icons/lib/fa/bell-o';
-import { Dropdown, Input, Button } from 'semantic-ui-react';
+import { Dropdown, Input, Button, Search } from 'semantic-ui-react';
 import _ from 'lodash';
 import store from "../../../Redux/store";
+
+const source = [
+    {
+        "title": "Roberts Inc",
+        "description": "Inverse dedicated infrastructure",
+        "image": "https://s3.amazonaws.com/uifaces/faces/twitter/josecarlospsh/128.jpg",
+        "price": "$66.77"
+    },
+    {
+        "title": "Morissette Inc",
+        "description": "Profit-focused upward-trending secured line",
+        "image": "https://s3.amazonaws.com/uifaces/faces/twitter/shaneIxD/128.jpg",
+        "price": "$70.42"
+    },
+    {
+        "title": "Purdy, Aufderhar and Hintz",
+        "description": "Total value-added database",
+        "image": "https://s3.amazonaws.com/uifaces/faces/twitter/Skyhartman/128.jpg",
+        "price": "$69.99"
+    },
+    {
+        "title": "Hessel Group",
+        "description": "Virtual 24 hour orchestration",
+        "image": "https://s3.amazonaws.com/uifaces/faces/twitter/falconerie/128.jpg",
+        "price": "$64.84"
+    },
+    {
+        "title": "Bergnaum Group",
+        "description": "Polarised tangible groupware",
+        "image": "https://s3.amazonaws.com/uifaces/faces/twitter/alxndrustinov/128.jpg",
+        "price": "$13.33"
+    }
+]
 
 class HeaderMenu extends Component {
     constructor(props) {
@@ -76,6 +109,31 @@ class HeaderMenu extends Component {
             projectName: ''
         }
     }
+    //SEARCH
+    componentWillMount() {
+        this.resetComponent();
+    }
+    resetComponent = () =>
+        this.setState({ isLoading: false, results: [], value: "" });
+
+    handleSearchChange = (e, { value }) => {
+        this.setState({ isLoading: true, value });
+
+        setTimeout(() => {
+            if (this.state.value.length < 1) this.resetComponent();
+
+            const re = new RegExp(_.escapeRegExp(this.state.value), "i");
+            const isMatch = result => re.test(result.title);
+
+            this.setState({
+                isLoading: false,
+                results: _.filter(source, isMatch)
+            });
+        }, 500);
+    };
+    handleResultSelect = (e, { result }) =>
+        this.setState({ value: result.title });
+    /*****************************************/
     componentDidMount () {
         setTimeout(function () {
             this.setState({lastMessageEvents: !this.state.lastMessageEvents});
@@ -125,7 +183,15 @@ class HeaderMenu extends Component {
                 <div className="userBlock">
                     { this.state.searchBlockEvent === true &&
                         <div className="bigSearchBlock">
-                            <Input focus placeholder='Search...' />
+                            <Search
+                                fluid
+                                className="col-xl-6"
+                                loading={false}
+                                results={this.state.results}
+                                value={this.state.value}
+                                onSearchChange={this.handleSearchChange}
+                                onResultSelect={this.handleResultSelect}
+                            />
                             <Button basic color='blue' onClick={this.searchBlock}>X</Button>
                         </div>
                     }
@@ -171,9 +237,7 @@ class HeaderMenu extends Component {
                     <Dropdown text=''>
                         <Dropdown.Menu>
                             <Dropdown.Item text='New' />
-                            <Dropdown.Item text='Open...' description='ctrl + o' />
-                            <Dropdown.Item icon='folder' text='Move to folder' />
-                            <Dropdown.Item icon='trash' text='Move to trash' />
+                            <Dropdown.Item text='Open...'/>
                             <Dropdown.Divider />
                             <Button basic color='red' onClick={this.Logout}>Logout</Button>
                         </Dropdown.Menu>

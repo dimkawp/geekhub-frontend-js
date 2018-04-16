@@ -3,7 +3,7 @@ import './Projects.css';
 //components
 import HeaderMenu from '../Menu/HeaderMenu';
 import SideMenu from '../Menu/SideMenu';
-import Select from './Select';
+import SelectProject from './SelectProject';
 //table
 import BootstrapTable from 'react-bootstrap-table-next';
 import { Progress, Dropdown, Button } from 'semantic-ui-react';
@@ -185,9 +185,24 @@ const products = [{
 
 
 class Projects extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            SelectProjectVal: 0
+        }
+    }
+
+    SelectProjectSendData = (val) => {
+        this.setState({
+            SelectProjectVal: val
+        })
+        console.log('onChangeSelect', this.state.SelectProjectVal);
+    }
+
     render() {
         console.log("ProjectsComponents");
-        const SelectProjectData = ["Date","Month", "Week"];
+        const ProjectCount = products.length;
+        const SelectProjectData = ["Campaing","Status"];
         return (
             <div className="wrapper">
                 <HeaderMenu />
@@ -196,10 +211,10 @@ class Projects extends Component {
                     <section id="projects">
                         <div className="projectsHeader">
                             <div className="title">
-                                <h3>All Projects (358) <span>Workflow</span></h3>
+                                <h3>All Projects ({ProjectCount}) <span>Projects</span></h3>
                             </div>
                             <div className="select">
-                                <Select value={SelectProjectData}/>
+                                <SelectProject value={SelectProjectData} SelectProjectSendData={this.SelectProjectSendData}/>
                             </div>
                         </div>
                         <div className="projectsBlock">

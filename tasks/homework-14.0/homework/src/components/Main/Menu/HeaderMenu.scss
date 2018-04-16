@@ -29,13 +29,38 @@
       opacity: 0.9;
       top: 95px;
       left: 0;
-      background-color: #9DA3B3;
+      background-color: #2F3241;
       position: absolute;
       height: 100vh;
       width: 100vw;
       display: flex;
       justify-content: center;
       align-items: center;
+      .search {
+        .input {
+          width: 100%;
+          input {
+            width: 100%;
+          }
+        }
+        .results {
+          background-color: #2F3241;
+          .result {
+
+            background-color: #2F3241;
+            .content {
+              .price, .title, .description {
+                color: white;
+
+              }
+
+
+            }
+          }
+        }
+      }
+
+
     }
     svg {
       height: 30px;
@@ -49,7 +74,16 @@
     .dropdown {
       margin-left: 0;
       .menu {
+        background-color: #2F3241;
         left: -150px;
+        .item {
+          span {
+            color: white;
+          }
+        }
+        button {
+          width: 100%;
+        }
       }
     }
     .buttonAdd {
@@ -59,7 +93,8 @@
       outline: none;
       border: none;
       border-radius: 25px 25px 25px 25px;
-      background-color: #2195F3;
+      border: 2px solid #2195F3;
+      background-color: #2F3241;
       span {
         font-size: 18px;
         font-weight: 400;
@@ -67,8 +102,7 @@
       }
     }
     .buttonAdd:hover {
-      border: 2px solid #2195F3;
-      background-color: #2F3241;
+      background-color: #2195F3;
     }
     .events {
       .lastMessageEvents {
@@ -151,7 +185,20 @@
     flex-direction: column;
     .userBlock {
       flex-wrap: wrap;
-
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .headerBlock {
+    .userBlock * {
+      margin: 0 5px;
+    }
+    .userBlock {
+      .dropdown {
+        .menu {
+          left: -50px;
+        }
+      }
     }
   }
 }

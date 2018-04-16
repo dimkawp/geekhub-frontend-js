@@ -16,6 +16,7 @@ class Workflow extends Component {
         super(props);
         this.state = {
             selectData: [],
+            sumQuened: 0,
             TestQuened:
                 [
                     {id: 1, body: 'Wordpress theme1 / Symu.co / 2500'},
@@ -69,6 +70,12 @@ class Workflow extends Component {
         }
     }
 
+    sumQuened = (val) => {
+        this.setState({
+            sumQuened: val
+        });
+
+    };
     quenedMoveToValue = (val) => {
         this.state.Quened.push(val);
         this.setState(this.state);
@@ -118,6 +125,13 @@ class Workflow extends Component {
     render() {
         console.log('workflowComponent',this.state.Quened);
         const SelectDataOption = ["All","Symu.co","Google"];
+        const WorkflowCount =
+            this.state.Quened.length +
+            this.state.Design.length +
+            this.state.Development.length +
+            this.state.Planning.length +
+            this.state.Testing.length +
+            this.state.Completed.length;
         return (
             <div className="wrapper">
                 <HeaderMenu />
@@ -126,7 +140,7 @@ class Workflow extends Component {
                     <section id="workflow">
                         <div className="workflowHeader">
                             <div className="title">
-                                <h3>All Projects (358) <span>Workflow</span></h3>
+                                <h3>All Projects ({WorkflowCount}) <span>Workflow</span></h3>
                             </div>
                             <div className="select">
                                 <span>Show projects:</span>
@@ -139,6 +153,7 @@ class Workflow extends Component {
                         <div className="workflowBlock">
                             <div className="columns">
                               <Quened
+                                  sumQuened={this.sumQuened}
                                   selectFilter={this.state.selectData}
                                   value={this.state.Quened}
                                   quenedLength={this.quenedLength}

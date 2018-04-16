@@ -49,3 +49,33 @@
     }
   }
 }
+@media screen and (max-width: 600px) {
+  .raptorChartHeader {
+    margin: 5px;
+    .items {
+      .item {
+        margin: 5px 60px 5px 5px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .raptorChartHeader {
+    margin: 5px;
+    .items {
+      height: 100%;
+      flex-direction: column;
+
+      .item {
+        height: 70px;
+        width: 70px;
+        margin: 5px 30px 5px 5px;
+        .testPieChart {
+          svg {
+
+          }
+        }
+      }
+    }
+  }
+}

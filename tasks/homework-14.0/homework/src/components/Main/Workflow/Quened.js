@@ -12,9 +12,11 @@ class Quened extends Component {
             filterName: 'Google',
             sumQuened: '',
             Quened: this.props.value
+            //lengQuened: this.props.value.length,
         }
     }
     componentWillMount() {
+
     }
     //ALL BOX BUTTONS
     //designMoveToValue
@@ -27,7 +29,7 @@ class Quened extends Component {
             return projectsItems !== item;
         });
         this.setState({
-            Quened: [...newItems]
+            Quened: [...newItems],
         });
     }
     moveToDesign(item) {

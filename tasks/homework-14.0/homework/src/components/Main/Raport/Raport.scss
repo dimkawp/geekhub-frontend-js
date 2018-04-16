@@ -12,8 +12,6 @@
       }
       thead {
         tr {
-
-
           th {
             padding: 25px;
             color: #9DA3B3;
@@ -26,9 +24,7 @@
           .sorting-desc {
             color: white;
           }
-
         }
-
       }
       tbody {
         tr {
@@ -72,6 +68,13 @@
         }
       }
 
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #mainContent {
+    #raport {
     }
   }
 }

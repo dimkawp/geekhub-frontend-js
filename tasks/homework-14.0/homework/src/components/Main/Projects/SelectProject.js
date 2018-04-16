@@ -1,25 +1,16 @@
 import React, { Component } from 'react';
 import './Select.css';
 
-class Select extends Component {
+class SelectProject extends Component {
     onChange = (e) => {
         console.log(e.target.value);
         if (e.target.value === "Year") {
-            console.log('1');
-            this.props.SelectInboxData(
-
-            );
+            console.log('campaing 1');
+            this.props.SelectProjectSendData(11);
         }
         if (e.target.value === "Month") {
-            console.log('2');
-            this.props.SelectInboxData(
-            );
-        }
-        if (e.target.value === "Week") {
-            console.log('3');
-            this.props.SelectInboxData(
-
-            );
+            console.log('status 2');
+            this.props.SelectProjectSendData(22);
         }
     }
     render() {
@@ -43,4 +34,4 @@ class Select extends Component {
     }
 
 }
-export default Select;
+export default SelectProject;

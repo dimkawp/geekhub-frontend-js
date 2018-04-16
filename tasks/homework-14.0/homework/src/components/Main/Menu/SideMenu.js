@@ -8,6 +8,18 @@ import IconMail from 'react-icons/lib/fa/envelope'
 import IconUser from 'react-icons/lib/fa/user'
 
 class SideMenu extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            lastMessageEvents: false,
+        }
+    }
+
+    componentWillMount() {
+        setTimeout(() => {
+            this.setState({lastMessageEvents: !this.state.lastMessageEvents});
+        }, 4000);
+    }
 
     render() {
         console.log("SideMenuComponents");
