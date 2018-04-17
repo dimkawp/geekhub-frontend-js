@@ -60,27 +60,30 @@ class Inbox extends Component {
                     ],
                 }
             ],
-            Correspond: [
-
-            ],
+            Correspond: [],
+            CorrespondFiltr: [],
             NewChatGroupButton: true,
             TextMessage: '',
+            fieldVal: ''
         };
     }
-    CloseChatUserChangeGroup = (item) => {
+    CloseChatUserChangeGroup = () => {
         this.setState({
             Correspond: []
         });
     }
+
     ChatUserChangeGroup = (item) => {
         this.setState({
             Correspond: item.correspond
         });
     }
+
     handleChangeTextMessage = (e) => {
         this.setState({TextMessage: e.target.value});
         console.log(this.state.TextMessage);
     }
+
     createMessage = (e) => {
         let newID = this.state.Correspond.length+1;
         let message = this.state.TextMessage;
@@ -131,9 +134,33 @@ class Inbox extends Component {
         this.state.NewChatGroupButton = !this.state.NewChatGroupButton;
 
     }
+
+    onChange = (e) => {
+        var FullCorrespond = this.state.Correspond;
+
+        if (e.target.value === "All") {
+
+            let All = FullCorrespond.filter(item => item.id > 0);
+            this.setState({
+                Correspond: All
+            });
+        }
+        if (e.target.value === "YourMessage") {
+            let yourMessage = FullCorrespond.filter(item => item.init === 'yourMessage');
+            this.setState({
+                Correspond: yourMessage
+            });
+        }
+        if (e.target.value === "YouMessage") {
+            let youMessage = FullCorrespond.filter(item => item.init === 'youMessage');
+            this.setState({
+                Correspond: youMessage
+            });
+        }
+    }
     render() {
         console.log("InboxComponents");
-        const SelectInboxData = ["Date","Month", "Week"];
+        const SelectInboxData = ["All","YouMessage", "YourMessage"];
         const User = this.state.User;
         return (
 
@@ -149,8 +176,20 @@ class Inbox extends Component {
                                 <div>Trash</div>
                             </div>
                             <div className="selectBlock">
-                                <Select value={SelectInboxData}/>
-
+                                <div className="selectBlock">
+                                    <span>Filter messages: </span>
+                                    <select onChange={this.onChange}>
+                                        {
+                                            SelectInboxData.map((item, index) => {
+                                                return (
+                                                    <option key={index} value={item}>
+                                                        {item}
+                                                    </option>
+                                                );
+                                            })
+                                        }
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <Row>

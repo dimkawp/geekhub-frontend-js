@@ -143,7 +143,6 @@ class Workflow extends Component {
                                 <h3>All Projects ({WorkflowCount}) <span>Workflow</span></h3>
                             </div>
                             <div className="select">
-                                <span>Show projects:</span>
                                 <Select
                                     option={SelectDataOption}
                                     value={this.state.Quened}

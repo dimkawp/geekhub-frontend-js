@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 //config
 class Select extends Component {
+
     constructor(props) {
         super(props);
         this.state = {
             Quened: this.props.value
         }
     }
+
     onChange = (e) => {
         console.log(e.target.value);
         if (e.target.value === "All") {
@@ -46,6 +48,7 @@ class Select extends Component {
             );
         }
     }
+
     render() {
         console.log("SelectComponents");
         return (

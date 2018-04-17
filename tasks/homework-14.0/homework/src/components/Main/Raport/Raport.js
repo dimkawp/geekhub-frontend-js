@@ -10,6 +10,8 @@ import HeaderMenu from '../Menu/HeaderMenu';
 import SideMenu from '../Menu/SideMenu';
 import RaptorChartHeader from './RaptorChartHeader';
 import $ from "jquery";
+import Select from "./Select";
+import SalesChart from "../../../config/salesReportChart.config";
 
 const headerSortingClasses = (column, sortOrder, isLastSorting, colIndex) => (
     sortOrder === 'asc' ? 'sorting-asc' : 'sorting-desc'
@@ -145,7 +147,15 @@ function statusFormatter(cell, row, rowIndex) {
     );
 }
 
+
+
 class Raport extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            fieldVal: [2040, 11233, 22224, 27342, 26662, 12956, 6912]
+        }
+    }
     //JQ
     componentDidMount() {
         $(document).ready(function() {
@@ -153,9 +163,17 @@ class Raport extends Component {
         });
     }
 
+    sendSelectData = (val) => {
+        this.setState({
+            fieldVal: val
+        })
+    }
+
 
     render() {
         console.log("RaportComponents");
+        const RaportSelectValue = ["Array1","Array2"];
+        RaportChart.series[0].data = this.state.fieldVal;
         return (
             <div className="wrapper">
                 <HeaderMenu />
@@ -164,6 +182,7 @@ class Raport extends Component {
                     <section id="raport">
                         <div className="raportChart">
                             <RaptorChartHeader/>
+                            <Select value={RaportSelectValue} sendSelectData={this.sendSelectData}/>
                             <ReactHighcharts config = {RaportChart}></ReactHighcharts>
                         </div>
                         <div className="raportTable">

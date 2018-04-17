@@ -4,21 +4,19 @@ import './Select.css';
 class Select extends Component {
     onChange = (e) => {
         console.log(e.target.value);
-        if (e.target.value === "Year") {
-            console.log('1');
+        if (e.target.value === "All") {
             this.props.SelectInboxData(
-
+                'All'
             );
         }
-        if (e.target.value === "Month") {
-            console.log('2');
+        if (e.target.value === "YourMessage") {
             this.props.SelectInboxData(
+                'YourMessage'
             );
         }
-        if (e.target.value === "Week") {
-            console.log('3');
+        if (e.target.value === "YouMessage") {
             this.props.SelectInboxData(
-
+                'YouMessage'
             );
         }
     }

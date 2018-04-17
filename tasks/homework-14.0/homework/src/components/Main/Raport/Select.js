@@ -4,18 +4,22 @@ import './Select.css';
 class SelectProject extends Component {
     onChange = (e) => {
         console.log(e.target.value);
-        if (e.target.value === "Campaing") {
-            this.props.SelectProjectSendData('campaing');
+        if (e.target.value === "Array1") {
+            this.props.sendSelectData(
+                [1040, 11233, 22224, 27342, 2662, 12956, 6912]
+            );
         }
-        if (e.target.value === "Status") {
-            this.props.SelectProjectSendData('status');
+        if (e.target.value === "Array2") {
+            this.props.sendSelectData(
+                [40, 1233, 22224, 27342, 26662, 12956, 6912]
+            );
         }
     }
     render() {
         console.log("SelectComponents");
         return (
-            <div>
-                <span>Show projects:: </span>
+            <div className="RaportSelect">
+                <span>Raport: </span>
                 <select onChange={this.onChange}>
                     {
                         this.props.value.map((item, index) => {

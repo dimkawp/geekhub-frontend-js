@@ -34,19 +34,22 @@ class Home extends Component {
              <section id="mainContent">
                  <SideMenu />
                  <section id="home">
-                     <Row>
-                         <Col className="homeChart" xl="9">
-                             <HomeChartHeader />
-                             <HomeChart/>
-                         </Col>
-                         <Col xl="3"><Projects/></Col>
-                     </Row>
-                     <br/>
-                     <Row>
-                         <Col xl="6"><SalesReport/></Col>
-                         <Col xl="3"><Inbox/></Col>
-                         <Col xl="3"><Calendar/></Col>
-                     </Row>
+                     <div className="container-fluid">
+                         <Row>
+                             <Col className="homeChart" xl="9">
+                                 <HomeChartHeader />
+                                 <HomeChart/>
+                             </Col>
+                             <Col xl="3"><Projects/></Col>
+                         </Row>
+                         <br/>
+                         <Row>
+                             <Col xl="6"><SalesReport/></Col>
+                             <Col xl="3"><Inbox/></Col>
+                             <Col xl="3"><Calendar/></Col>
+                         </Row>
+                     </div>
+
                  </section>
              </section>
          </div>
