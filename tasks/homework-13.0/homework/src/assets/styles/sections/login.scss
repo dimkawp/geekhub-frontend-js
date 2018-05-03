@@ -117,7 +117,22 @@
             .formBlockContent {
                 .form {
                     button {
-                        width: 300px;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 360px) {
+    .loginBlock, .regBlock {
+        .formBlock {
+            .formBlockContent {
+                .form {
+                    .input {
+                        input {
+                            width: 90%;
+                        }
                     }
                 }
             }
