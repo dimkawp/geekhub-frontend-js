@@ -13,6 +13,25 @@ class Design extends Component {
             Design: this.props.value
         }
     }
+    //FILTER
+    getFilter(val) {
+        let a = this.state.Design;
+        let Filter = val;
+
+        let result = a.filter(function(value)
+        {
+            if (Filter === 'All') {
+                return value;
+            }
+            else {
+                return value.includes(Filter);
+            }
+        });
+        this.setState({
+            Design: result
+        });
+        this.props.designLength(result.length);
+    }
     //ALL BOX BUTTONS
     removeItem(item) {
         const newItems = this.state.Design.filter(projectsItems => {
@@ -21,6 +40,7 @@ class Design extends Component {
         this.setState({
             Design: [...newItems]
         });
+        this.props.designLength(newItems.length);
     }
     moveToQuened(item) {
         this.props.quenedMoveToValue(item);

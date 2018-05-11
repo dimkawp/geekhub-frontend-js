@@ -11,12 +11,31 @@ class Quened extends Component {
         this.state = {
             filterName: 'Google',
             sumQuened: '',
-            Quened: this.props.value
+            Quened: this.props.value,
+
             //lengQuened: this.props.value.length,
         }
     }
     componentWillMount() {
 
+    }
+    getFilter(val) {
+        let a = this.state.Quened;
+        let Filter = val;
+
+        let result = a.filter(function(value)
+        {
+            if (Filter === 'All') {
+                return value;
+            }
+            else {
+                return value.includes(Filter);
+            }
+        });
+        this.setState({
+            Quened: result
+        });
+        this.props.quenedLength(result.length);
     }
     //ALL BOX BUTTONS
     //designMoveToValue
@@ -31,6 +50,7 @@ class Quened extends Component {
         this.setState({
             Quened: [...newItems],
         });
+        this.props.quenedLength(newItems.length);
     }
     moveToDesign(item) {
         this.props.designMoveToValue(item);
@@ -76,6 +96,7 @@ class Quened extends Component {
         this.setState({
             Quened: [...newItems]
         });
+        this.props.quenedLength(newItems.length);
     }
 
     render() {

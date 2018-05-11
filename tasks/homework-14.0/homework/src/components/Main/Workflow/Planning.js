@@ -13,6 +13,25 @@ class Planning extends Component {
             Planning: this.props.value
         }
     }
+    //FILTER
+    getFilter(val) {
+        let a = this.state.Planning;
+        let Filter = val;
+
+        let result = a.filter(function(value)
+        {
+            if (Filter === 'All') {
+                return value;
+            }
+            else {
+                return value.includes(Filter);
+            }
+        });
+        this.setState({
+            Planning: result
+        });
+        this.props.planningLength(result.length);
+    }
     //ALL BOX BUTTONS
     removeItem(item) {
         const newItems = this.state.Planning.filter(projectsItems => {
@@ -21,6 +40,7 @@ class Planning extends Component {
         this.setState({
             Planning: [...newItems]
         });
+        this.props.planningLength(newItems.length);
     }
     moveToQuened(item) {
         this.props.quenedMoveToValue(item);

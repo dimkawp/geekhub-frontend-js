@@ -13,6 +13,25 @@ class Development extends Component {
             Development: this.props.value
         }
     }
+    //FILTER
+    getFilter(val) {
+        let a = this.state.Development;
+        let Filter = val;
+
+        let result = a.filter(function(value)
+        {
+            if (Filter === 'All') {
+                return value;
+            }
+            else {
+                return value.includes(Filter);
+            }
+        });
+        this.setState({
+            Development: result
+        });
+        this.props.developmentLength(result.length);
+    }
     //ALL BOX BUTTONS
     removeItem(item) {
         const newItems = this.state.Development.filter(projectsItems => {
@@ -21,6 +40,7 @@ class Development extends Component {
         this.setState({
             Development: [...newItems]
         });
+        this.props.developmentLength(newItems.length);
     }
     moveToQuened(item) {
         this.props.quenedMoveToValue(item);

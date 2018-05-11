@@ -14,17 +14,17 @@ import Select from './Select';
 class Workflow extends Component {
     constructor(props) {
         super(props);
+        this.refQuened = React.createRef();
+        this.refPlanning = React.createRef();
+        this.refDesign = React.createRef();
+        this.refDevelopment = React.createRef();
+        this.refTesting = React.createRef();
+        this.refCompleted = React.createRef();
+
         this.state = {
             selectData: [],
             sumQuened: 0,
-            TestQuened:
-                [
-                    {id: 1, body: 'Wordpress theme1 / Symu.co / 2500'},
-                    {id: 2, body: 'Wordpress theme1 / Symu.co / 2500'},
-                    {id: 3, body: 'Wordpress theme2 / Google / 3500'},
-                    {id: 4, body: 'Wordpress theme3 / Google / 500'},
-                    {id: 5, body: 'Wordpress theme4 / Symu.co / 1500'}
-                ],
+            selectDataFilter: 'All',
             Quened:
             [
                 'Wordpress theme1 / Symu.co / 2500',
@@ -67,15 +67,23 @@ class Workflow extends Component {
                 'Wordpress theme3 / Symu.co / 520',
                 'Wordpress theme4 / Symu.co / 2200'
             ],
+            quenedLength: '',
+            planningLength: '',
+            designLength: '',
+            developmentLength: '',
+            testingLength: '',
+            completedLength: '',
         }
     }
+    componentWillMount() {
+        this.state.quenedLength = this.state.Quened.length;
+        this.state.planningLength = this.state.Planning.length;
+        this.state.designLength = this.state.Design.length;
+        this.state.developmentLength = this.state.Development.length;
+        this.state.testingLength = this.state.Testing.length;
+        this.state.completedLength = this.state.Completed.length;
+    }
 
-    sumQuened = (val) => {
-        this.setState({
-            sumQuened: val
-        });
-
-    };
     quenedMoveToValue = (val) => {
         this.state.Quened.push(val);
         this.setState(this.state);
@@ -107,31 +115,55 @@ class Workflow extends Component {
         this.state;
     };
 
+    //All LENGTH Child COMPONENTS
     quenedLength = (val) => {
         this.setState({
             quenedLength: val
         });
-        console.log('quenedLength',this.state.quenedLength);
+    }
+    planningLength = (val) => {
+        this.setState({
+            planningLength: val
+        });
+    }
+    designLength = (val) => {
+        this.setState({
+            designLength: val
+        });
+    }
+    developmentLength = (val) => {
+        this.setState({
+            developmentLength: val
+        });
+    }
+    testingLength = (val) => {
+        this.setState({
+            testingLength: val
+        });
+    }
+    completedLength = (val) => {
+        this.setState({
+            completedLength: val
+        });
     }
 
     selectData = (val) => {
-        this.setState({
-            Quened: val
-        });
-
-        console.log('selectData',this.state.Quened);
+        this.refQuened.current.getFilter(val);
+        this.refDesign.current.getFilter(val);
+        this.refDevelopment.current.getFilter(val);
+        this.refPlanning.current.getFilter(val);
+        this.refTesting.current.getFilter(val);
+        this.refCompleted.current.getFilter(val);
     };
 
     render() {
-        console.log('workflowComponent',this.state.Quened);
         const SelectDataOption = ["All","Symu.co","Google"];
-        const WorkflowCount =
-            this.state.Quened.length +
-            this.state.Design.length +
-            this.state.Development.length +
-            this.state.Planning.length +
-            this.state.Testing.length +
-            this.state.Completed.length;
+        const countComponents =
+        this.state.quenedLength +
+        this.state.designLength +
+        this.state.developmentLength +
+        this.state.testingLength +
+        this.state.completedLength;
         return (
             <div className="wrapper">
                 <HeaderMenu />
@@ -140,20 +172,19 @@ class Workflow extends Component {
                     <section id="workflow">
                         <div className="workflowHeader">
                             <div className="title">
-                                <h3>All Projects ({WorkflowCount}) <span>Workflow</span></h3>
+                                <h3>All Projects ({countComponents}) <span>Workflow</span></h3>
                             </div>
                             <div className="select">
                                 <Select
                                     option={SelectDataOption}
-                                    value={this.state.Quened}
-                                    selectData={this.selectData}/>
+                                    selectData={this.selectData}
+                                />
                             </div>
                         </div>
                         <div className="workflowBlock">
                             <div className="columns">
                               <Quened
-                                  sumQuened={this.sumQuened}
-                                  selectFilter={this.state.selectData}
+                                  ref={this.refQuened}
                                   value={this.state.Quened}
                                   quenedLength={this.quenedLength}
                                   designMoveToValue={this.designMoveToValue}
@@ -165,7 +196,9 @@ class Workflow extends Component {
                             </div>
                             <div className="columns">
                                 <Planning
+                                    ref={this.refPlanning}
                                     value={this.state.Planning}
+                                    planningLength={this.planningLength}
                                     quenedMoveToValue={this.quenedMoveToValue}
                                     designMoveToValue={this.designMoveToValue}
                                     developmentMoveToValue={this.developmentMoveToValue}
@@ -175,7 +208,9 @@ class Workflow extends Component {
                             </div>
                             <div className="columns">
                                 <Design
+                                    ref={this.refDesign}
                                     value={this.state.Design}
+                                    designLength={this.designLength}
                                     quenedMoveToValue={this.quenedMoveToValue}
                                     planningMoveToValue={this.planningMoveToValue}
                                     developmentMoveToValue={this.developmentMoveToValue}
@@ -185,7 +220,9 @@ class Workflow extends Component {
                             </div>
                             <div className="columns">
                                 <Development
+                                    ref={this.refDevelopment}
                                     value={this.state.Development}
+                                    developmentLength={this.developmentLength}
                                     quenedMoveToValue={this.quenedMoveToValue}
                                     designMoveToValue={this.designMoveToValue}
                                     planningMoveToValue={this.planningMoveToValue}
@@ -195,7 +232,9 @@ class Workflow extends Component {
                             </div>
                             <div className="columns">
                                 <Testing
+                                    ref={this.refTesting}
                                     value={this.state.Testing}
+                                    testingLength={this.testingLength}
                                     quenedMoveToValue={this.quenedMoveToValue}
                                     designMoveToValue={this.designMoveToValue}
                                     planningMoveToValue={this.planningMoveToValue}
@@ -205,7 +244,9 @@ class Workflow extends Component {
                             </div>
                             <div className="columns">
                                 <Completed
+                                    ref={this.refCompleted}
                                     value={this.state.Completed}
+                                    completedLength={this.completedLength}
                                     quenedMoveToValue={this.quenedMoveToValue}
                                     designMoveToValue={this.designMoveToValue}
                                     planningMoveToValue={this.planningMoveToValue}

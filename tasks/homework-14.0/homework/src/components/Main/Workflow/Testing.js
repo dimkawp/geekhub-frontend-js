@@ -13,6 +13,25 @@ class Testing extends Component {
             Testing: this.props.value
         }
     }
+    //FILTER
+    getFilter(val) {
+        let a = this.state.Testing;
+        let Filter = val;
+
+        let result = a.filter(function(value)
+        {
+            if (Filter === 'All') {
+                return value;
+            }
+            else {
+                return value.includes(Filter);
+            }
+        });
+        this.setState({
+            Testing: result
+        });
+        this.props.testingLength(result.length);
+    }
     //ALL BOX BUTTONS
     removeItem(item) {
         const newItems = this.state.Testing.filter(projectsItems => {
@@ -21,6 +40,7 @@ class Testing extends Component {
         this.setState({
             Testing: [...newItems]
         });
+        this.props.testingLength(newItems.length);
     }
     moveToQuened(item) {
         this.props.quenedMoveToValue(item);

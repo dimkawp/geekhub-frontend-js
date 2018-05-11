@@ -13,6 +13,25 @@ class Testing extends Component {
             Completed: this.props.value
         }
     }
+    //FILTER
+    getFilter(val) {
+        let a = this.state.Completed;
+        let Filter = val;
+
+        let result = a.filter(function(value)
+        {
+            if (Filter === 'All') {
+                return value;
+            }
+            else {
+                return value.includes(Filter);
+            }
+        });
+        this.setState({
+            Completed: result
+        });
+        this.props.completedLength(result.length);
+    }
     //ALL BOX BUTTONS
     removeItem(item) {
         const newItems = this.state.Completed.filter(projectsItems => {
@@ -21,6 +40,7 @@ class Testing extends Component {
         this.setState({
             Completed: [...newItems]
         });
+        this.props.completedLength(newItems.length);
     }
     moveToQuened(item) {
         this.props.quenedMoveToValue(item);
