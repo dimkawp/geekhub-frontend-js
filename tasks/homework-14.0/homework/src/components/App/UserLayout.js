@@ -4,7 +4,7 @@ import { Route, Redirect } from 'react-router-dom';
 const UserLayout = ({component: Component, ...rest}) => {
     return (
         <Route {...rest} render={matchProps => {
-            if (localStorage.getItem('User') === 'false' || !localStorage.getItem('User')) {
+            if (localStorage.getItem('UserToken') === 'false' || !localStorage.getItem('UserToken')) {
                 return (
                     <Component {...matchProps} />
                 );

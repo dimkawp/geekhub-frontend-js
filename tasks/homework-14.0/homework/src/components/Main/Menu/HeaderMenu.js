@@ -140,7 +140,7 @@ class HeaderMenu extends Component {
         }.bind(this), 3000);
     }
     Logout = () => {
-        localStorage.setItem('User', false);
+        localStorage.setItem('UserToken', false);
         window.location.reload();
     }
 
